@@ -1,6 +1,10 @@
 package com.nsgaiii.nsgaiiidemo.App;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 import org.jzy3d.analysis.AWTAbstractAnalysis;
 import org.jzy3d.analysis.AnalysisLauncher;
 import org.jzy3d.chart.factories.AWTChartFactory;
@@ -14,12 +18,15 @@ import org.jzy3d.plot3d.rendering.canvas.Quality;
 import com.jogamp.opengl.GLCapabilities;
 import com.jogamp.opengl.GLProfile;
 import com.nsgaiii.nsgaiiidemo.App.Algoritmo.Nsgaiii;
+import com.nsgaiii.nsgaiiidemo.App.Lectura.LecturaDeDatos;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
+import com.nsgaiii.nsgaiiidemo.App.Modelo.Poblacion;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.DTLZ1;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.DTLZ2;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.DTLZ5;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.DTLZ7;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
+import com.nsgaiii.nsgaiiidemo.App.Problemas.Vuelos;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
 
 
@@ -31,9 +38,9 @@ public class App extends AWTAbstractAnalysis
     public static void main( String[] args ) throws Exception
     {
     	//Indicar parámetros del problema y algoritmo
-    	int numeroDeIndividuos = 500;
-    	int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 5000;
+    	int numeroDeIndividuos = 5;
+    	int numeroDeVariables = 10;
+    	int numeroDeGeneraciones = 5;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1;
@@ -42,8 +49,22 @@ public class App extends AWTAbstractAnalysis
     	int divisiones = 30;
     	int numeroDeObjetivos = 3;
     	
-    	Problema problema = new DTLZ7(numeroDeVariables, numeroDeObjetivos);
-    	long startTime = System.nanoTime();
+    	Map<List<String>, Integer> conexiones = new HashMap<>();
+        Map<List<String>, Double> riesgos = new HashMap<>();
+        Map<List<String>, Integer> vuelos = new HashMap<>();
+        
+        
+        LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);
+        List<List<String>> llaves = new ArrayList<>(riesgos.keySet());
+        System.out.println(riesgos);
+    	
+    	Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, 
+    			conexiones, vuelos);
+    	
+    	Poblacion pob = new Poblacion(numeroDeIndividuos, problema);
+    	pob.generarPoblacionInicial(problema);
+    	System.out.println(pob);
+    	/*long startTime = System.nanoTime();
     	
         Nsgaiii nsgaiii = new Nsgaiii(numeroDeIndividuos, 
         		numeroDeGeneraciones, indiceDeDistribucionC,
@@ -68,7 +89,7 @@ public class App extends AWTAbstractAnalysis
         String nombre = Utils.crearCSVConObjetivos(frenteDePareto, problema.getNombre());
     	frenteDePareto = Utils.leerCSV(nombre);
         
-        AnalysisLauncher.open(new App());
+        AnalysisLauncher.open(new App());*/
         
         
     }

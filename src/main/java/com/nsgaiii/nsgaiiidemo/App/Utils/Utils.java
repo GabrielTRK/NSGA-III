@@ -27,6 +27,15 @@ public class Utils {
 		return (int) ((Math.random() * (max - min)) + min);
 	}
 	
+	public static Double getRandBinNumber() {
+		double rand = Math.random();
+		if (rand < 0.5) {
+			return 0.0;
+		}
+		else
+			return 1.0;
+	}
+	
 	public static boolean isProbValid (Double prob) {
 		if ((prob < 0.0) || (prob > 1.0)) {
 		      return false;
@@ -204,6 +213,13 @@ public class Utils {
 		    }
 		    return frente;
 		}
+	}
+	
+	public List<String> convertirALista(String a, String b){
+		List<String> lista = new ArrayList<>(2);
+		lista.add(b);
+		lista.add(a);
+		return lista;
 	}
 
 }

@@ -1,0 +1,1106 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),entrada.iata,salida.iata,entrada.airportName,salida.airportName
+96.0,ACE,BCN,Lanzarote Airport,Barcelona International Airport
+103.0,ACE,BGY,Lanzarote Airport,Milan Bergamo Airport
+103.0,ACE,BJL,Lanzarote Airport,Banjul International Airport
+103.0,ACE,BRS,Lanzarote Airport,Bristol Airport
+103.0,ACE,DUB,Lanzarote Airport,Dublin Airport
+103.0,ACE,DUB,Lanzarote Airport,Dublin Airport
+87.0,ACE,DUB,Lanzarote Airport,Dublin Airport
+103.0,ACE,EMA,Lanzarote Airport,East Midlands Airport
+115.0,ACE,LGW,Lanzarote Airport,London Gatwick Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+89.0,ACE,LUX,Lanzarote Airport,Luxembourg-Findel International Airport
+103.0,ACE,MAD,Lanzarote Airport,Adolfo Suárez Madrid–Barajas Airport
+115.0,ACE,MAD,Lanzarote Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,ACE,MAN,Lanzarote Airport,Manchester Airport
+103.0,ACE,ORK,Lanzarote Airport,Cork Airport
+103.0,ACE,STN,Lanzarote Airport,London Stansted Airport
+45.0,ACE,TFN,Lanzarote Airport,Tenerife Norte Airport
+45.0,ACE,TFN,Lanzarote Airport,Tenerife Norte Airport
+45.0,ACE,TFN,Lanzarote Airport,Tenerife Norte Airport
+45.0,ACE,TFN,Lanzarote Airport,Tenerife Norte Airport
+45.0,ACE,TFN,Lanzarote Airport,Tenerife Norte Airport
+103.0,ACE,VLC,Lanzarote Airport,Valencia Airport
+96.0,ACE,VLC,Lanzarote Airport,Valencia Airport
+103.0,AGP,AMS,Málaga Airport,Amsterdam Airport Schiphol
+96.0,AGP,ARN,Málaga Airport,Stockholm-Arlanda Airport
+103.0,AGP,ARN,Málaga Airport,Stockholm-Arlanda Airport
+103.0,AGP,BCN,Málaga Airport,Barcelona International Airport
+96.0,AGP,BCN,Málaga Airport,Barcelona International Airport
+87.0,AGP,BCN,Málaga Airport,Barcelona International Airport
+103.0,AGP,BFS,Málaga Airport,Belfast International Airport
+103.0,AGP,BGY,Málaga Airport,Milan Bergamo Airport
+103.0,AGP,BHX,Málaga Airport,Birmingham International Airport
+68.0,AGP,BIO,Málaga Airport,Bilbao Airport
+87.0,AGP,BIO,Málaga Airport,Bilbao Airport
+103.0,AGP,BLL,Málaga Airport,Billund Airport
+72.0,AGP,BOD,Málaga Airport,Bordeaux-Mérignac Airport
+103.0,AGP,BOH,Málaga Airport,Bournemouth Airport
+103.0,AGP,BRE,Málaga Airport,Bremen Airport
+96.0,AGP,BRS,Málaga Airport,Bristol Airport
+103.0,AGP,BRS,Málaga Airport,Bristol Airport
+103.0,AGP,BRU,Málaga Airport,Brussels Airport
+87.0,AGP,BRU,Málaga Airport,Brussels Airport
+103.0,AGP,CDG,Málaga Airport,Charles de Gaulle International Airport
+103.0,AGP,CDG,Málaga Airport,Charles de Gaulle International Airport
+103.0,AGP,CGN,Málaga Airport,Cologne Bonn Airport
+103.0,AGP,CMN,Málaga Airport,Mohammed V International Airport
+96.0,AGP,CPH,Málaga Airport,Copenhagen Kastrup Airport
+103.0,AGP,CPH,Málaga Airport,Copenhagen Kastrup Airport
+103.0,AGP,CRL,Málaga Airport,Brussels South Charleroi Airport
+103.0,AGP,DUB,Málaga Airport,Dublin Airport
+103.0,AGP,DUB,Málaga Airport,Dublin Airport
+87.0,AGP,DUB,Málaga Airport,Dublin Airport
+103.0,AGP,EDI,Málaga Airport,Edinburgh Airport
+103.0,AGP,EIN,Málaga Airport,Eindhoven Airport
+103.0,AGP,EIN,Málaga Airport,Eindhoven Airport
+103.0,AGP,EMA,Málaga Airport,East Midlands Airport
+103.0,AGP,EMA,Málaga Airport,East Midlands Airport
+29.0,AGP,FAB,Málaga Airport,Farnborough Airport
+103.0,AGP,FCO,Málaga Airport,Leonardo da Vinci–Fiumicino Airport
+103.0,AGP,FKB,Málaga Airport,Karlsruhe Baden-Baden Airport
+103.0,AGP,FRA,Málaga Airport,Frankfurt am Main Airport
+96.0,AGP,GLA,Málaga Airport,Glasgow International Airport
+103.0,AGP,GLA,Málaga Airport,Glasgow International Airport
+103.0,AGP,IBZ,Málaga Airport,Ibiza Airport
+115.0,AGP,IST,Málaga Airport,Istanbul Airport
+72.0,AGP,LGW,Málaga Airport,London Gatwick Airport
+115.0,AGP,LGW,Málaga Airport,London Gatwick Airport
+87.0,AGP,LHR,Málaga Airport,London Heathrow Airport
+11.0,AGP,LIS,Málaga Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+45.0,AGP,LIS,Málaga Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+87.0,AGP,LPA,Málaga Airport,Gran Canaria Airport
+96.0,AGP,LPL,Málaga Airport,Liverpool John Lennon Airport
+87.0,AGP,LPL,Málaga Airport,Liverpool John Lennon Airport
+103.0,AGP,LPL,Málaga Airport,Liverpool John Lennon Airport
+103.0,AGP,LPL,Málaga Airport,Liverpool John Lennon Airport
+87.0,AGP,LTN,Málaga Airport,London Luton Airport
+87.0,AGP,LTN,Málaga Airport,London Luton Airport
+103.0,AGP,LTN,Málaga Airport,London Luton Airport
+58.0,AGP,MAD,Málaga Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,AGP,MAD,Málaga Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,AGP,MAD,Málaga Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,AGP,MAN,Málaga Airport,Manchester Airport
+103.0,AGP,MAN,Málaga Airport,Manchester Airport
+103.0,AGP,MAN,Málaga Airport,Manchester Airport
+5.0,AGP,MLN,Málaga Airport,Melilla Airport
+45.0,AGP,MLN,Málaga Airport,Melilla Airport
+5.0,AGP,MLN,Málaga Airport,Melilla Airport
+45.0,AGP,MLN,Málaga Airport,Melilla Airport
+5.0,AGP,MLN,Málaga Airport,Melilla Airport
+45.0,AGP,MLN,Málaga Airport,Melilla Airport
+96.0,AGP,MUC,Málaga Airport,Munich Airport
+115.0,AGP,MXP,Málaga Airport,Malpensa International Airport
+103.0,AGP,NCL,Málaga Airport,Newcastle Airport
+103.0,AGP,NYO,Málaga Airport,Stockholm Skavsta Airport
+103.0,AGP,ORY,Málaga Airport,Paris-Orly Airport
+103.0,AGP,OSL,Málaga Airport,Oslo Gardermoen Airport
+68.0,AGP,OVD,Málaga Airport,Asturias Airport
+103.0,AGP,PIK,Málaga Airport,Glasgow Prestwick Airport
+3.0,AGP,PMI,Málaga Airport,Palma De Mallorca Airport
+103.0,AGP,PMI,Málaga Airport,Palma De Mallorca Airport
+87.0,AGP,PMI,Málaga Airport,Palma De Mallorca Airport
+103.0,AGP,PRG,Málaga Airport,Václav Havel Airport Prague
+103.0,AGP,SCQ,Málaga Airport,Santiago de Compostela Airport
+103.0,AGP,SEN,Málaga Airport,Southend Airport
+103.0,AGP,STN,Málaga Airport,London Stansted Airport
+103.0,AGP,STN,Málaga Airport,London Stansted Airport
+2.0,AGP,SVQ,Málaga Airport,Sevilla Airport
+96.0,AGP,TFN,Málaga Airport,Tenerife Norte Airport
+87.0,AGP,TNG,Málaga Airport,Ibn Batouta Airport
+103.0,AGP,VIE,Málaga Airport,Vienna International Airport
+93.0,AGP,ZRH,Málaga Airport,Zürich Airport
+103.0,ALC,ABZ,Alicante International Airport,Aberdeen Dyce Airport
+103.0,ALC,AMS,Alicante International Airport,Amsterdam Airport Schiphol
+87.0,ALC,BCN,Alicante International Airport,Barcelona International Airport
+103.0,ALC,BHX,Alicante International Airport,Birmingham International Airport
+87.0,ALC,BIO,Alicante International Airport,Bilbao Airport
+103.0,ALC,BLL,Alicante International Airport,Billund Airport
+103.0,ALC,BRE,Alicante International Airport,Bremen Airport
+96.0,ALC,BRS,Alicante International Airport,Bristol Airport
+103.0,ALC,BRS,Alicante International Airport,Bristol Airport
+103.0,ALC,BRU,Alicante International Airport,Brussels Airport
+103.0,ALC,BVA,Alicante International Airport,Paris Beauvais Tillé Airport
+87.0,ALC,CWL,Alicante International Airport,Cardiff International Airport
+103.0,ALC,DUB,Alicante International Airport,Dublin Airport
+103.0,ALC,EDI,Alicante International Airport,Edinburgh Airport
+103.0,ALC,EIN,Alicante International Airport,Eindhoven Airport
+103.0,ALC,EIN,Alicante International Airport,Eindhoven Airport
+103.0,ALC,EMA,Alicante International Airport,East Midlands Airport
+5.0,ALC,EMA,Alicante International Airport,East Midlands Airport
+103.0,ALC,FKB,Alicante International Airport,Karlsruhe Baden-Baden Airport
+103.0,ALC,FMM,Alicante International Airport,Memmingen Allgau Airport
+96.0,ALC,GLA,Alicante International Airport,Glasgow International Airport
+103.0,ALC,GLA,Alicante International Airport,Glasgow International Airport
+6.0,ALC,INN,Alicante International Airport,Innsbruck Airport
+103.0,ALC,KUN,Alicante International Airport,Kaunas International Airport
+2.0,ALC,LEI,Alicante International Airport,Almería International Airport
+96.0,ALC,LGW,Alicante International Airport,London Gatwick Airport
+87.0,ALC,LGW,Alicante International Airport,London Gatwick Airport
+103.0,ALC,LGW,Alicante International Airport,London Gatwick Airport
+87.0,ALC,LPL,Alicante International Airport,Liverpool John Lennon Airport
+103.0,ALC,LPL,Alicante International Airport,Liverpool John Lennon Airport
+96.0,ALC,LTN,Alicante International Airport,London Luton Airport
+103.0,ALC,LTN,Alicante International Airport,London Luton Airport
+58.0,ALC,MAD,Alicante International Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,ALC,MAD,Alicante International Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,ALC,MAD,Alicante International Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,ALC,MAN,Alicante International Airport,Manchester Airport
+103.0,ALC,MAN,Alicante International Airport,Manchester Airport
+103.0,ALC,MAN,Alicante International Airport,Manchester Airport
+103.0,ALC,NCL,Alicante International Airport,Newcastle Airport
+103.0,ALC,ORK,Alicante International Airport,Cork Airport
+103.0,ALC,OSL,Alicante International Airport,Oslo Gardermoen Airport
+87.0,ALC,OTP,Alicante International Airport,Henri Coandă International Airport
+103.0,ALC,PED,Alicante International Airport,Pardubice Airport
+103.0,ALC,PIK,Alicante International Airport,Glasgow Prestwick Airport
+87.0,ALC,PMI,Alicante International Airport,Palma De Mallorca Airport
+58.0,ALC,PMI,Alicante International Airport,Palma De Mallorca Airport
+89.0,ALC,RTM,Alicante International Airport,Rotterdam The Hague Airport
+5.0,ALC,SDR,Alicante International Airport,Santander Airport
+87.0,ALC,SOF,Alicante International Airport,Sofia Airport
+103.0,ALC,STN,Alicante International Airport,London Stansted Airport
+5.0,ALC,STN,Alicante International Airport,London Stansted Airport
+103.0,ALC,STN,Alicante International Airport,London Stansted Airport
+87.0,ALC,TFN,Alicante International Airport,Tenerife Norte Airport
+97.0,ALC,VIT,Alicante International Airport,Vitoria/Foronda Airport
+103.0,ALC,VXO,Alicante International Airport,Växjö Kronoberg Airport
+96.0,BCN,ACE,Barcelona International Airport,Lanzarote Airport
+103.0,BCN,AGP,Barcelona International Airport,Málaga Airport
+87.0,BCN,AGP,Barcelona International Airport,Málaga Airport
+96.0,BCN,AGP,Barcelona International Airport,Málaga Airport
+87.0,BCN,ALC,Barcelona International Airport,Alicante International Airport
+89.0,BCN,AMS,Barcelona International Airport,Amsterdam Airport Schiphol
+103.0,BCN,AMS,Barcelona International Airport,Amsterdam Airport Schiphol
+89.0,BCN,AMS,Barcelona International Airport,Amsterdam Airport Schiphol
+72.0,BCN,AMS,Barcelona International Airport,Amsterdam Airport Schiphol
+96.0,BCN,ARN,Barcelona International Airport,Stockholm-Arlanda Airport
+168.0,BCN,AUH,Barcelona International Airport,Abu Dhabi International Airport
+103.0,BCN,BGY,Barcelona International Airport,Milan Bergamo Airport
+103.0,BCN,BHX,Barcelona International Airport,Birmingham International Airport
+87.0,BCN,BIO,Barcelona International Airport,Bilbao Airport
+96.0,BCN,BIO,Barcelona International Airport,Bilbao Airport
+87.0,BCN,BIO,Barcelona International Airport,Bilbao Airport
+103.0,BCN,BLQ,Barcelona International Airport,Bologna Guglielmo Marconi Airport
+87.0,BCN,BLQ,Barcelona International Airport,Bologna Guglielmo Marconi Airport
+87.0,BCN,BOD,Barcelona International Airport,Bordeaux-Mérignac Airport
+3.0,BCN,BQH,Barcelona International Airport,London Biggin Hill Airport
+87.0,BCN,BRS,Barcelona International Airport,Bristol Airport
+103.0,BCN,BRU,Barcelona International Airport,Brussels Airport
+113.0,BCN,BRU,Barcelona International Airport,Brussels Airport
+87.0,BCN,BSL,Barcelona International Airport,EuroAirport Basel-Mulhouse-Freiburg Airport
+103.0,BCN,BVA,Barcelona International Airport,Paris Beauvais Tillé Airport
+113.0,BCN,CDG,Barcelona International Airport,Charles de Gaulle International Airport
+72.0,BCN,CDG,Barcelona International Airport,Charles de Gaulle International Airport
+72.0,BCN,CDG,Barcelona International Airport,Charles de Gaulle International Airport
+72.0,BCN,CDG,Barcelona International Airport,Charles de Gaulle International Airport
+133.0,BCN,CGN,Barcelona International Airport,Cologne Bonn Airport
+103.0,BCN,CGN,Barcelona International Airport,Cologne Bonn Airport
+87.0,BCN,CPH,Barcelona International Airport,Copenhagen Kastrup Airport
+229.0,BCN,DOH,Barcelona International Airport,Hamad International Airport
+188.0,BCN,DOH,Barcelona International Airport,Hamad International Airport
+188.0,BCN,DOH,Barcelona International Airport,Hamad International Airport
+72.0,BCN,DSS,Barcelona International Airport,Blaise Diagne International Airport
+103.0,BCN,DUB,Barcelona International Airport,Dublin Airport
+72.0,BCN,EAS,Barcelona International Airport,San Sebastian Airport
+103.0,BCN,EMA,Barcelona International Airport,East Midlands Airport
+103.0,BCN,FCO,Barcelona International Airport,Leonardo da Vinci–Fiumicino Airport
+51.0,BCN,FCO,Barcelona International Airport,Leonardo da Vinci–Fiumicino Airport
+96.0,BCN,FCO,Barcelona International Airport,Leonardo da Vinci–Fiumicino Airport
+87.0,BCN,FCO,Barcelona International Airport,Leonardo da Vinci–Fiumicino Airport
+96.0,BCN,FRA,Barcelona International Airport,Frankfurt am Main Airport
+72.0,BCN,FRA,Barcelona International Airport,Frankfurt am Main Airport
+87.0,BCN,FUE,Barcelona International Airport,Fuerteventura Airport
+87.0,BCN,GRX,Barcelona International Airport,Federico Garcia Lorca Airport
+87.0,BCN,GVA,Barcelona International Airport,Geneva Cointrin International Airport
+103.0,BCN,HAM,Barcelona International Airport,Hamburg Airport
+103.0,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+103.0,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+96.0,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+96.0,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+87.0,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+87.0,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+87.0,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+87.0,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+107.0,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+115.0,BCN,IST,Barcelona International Airport,Istanbul Airport
+87.0,BCN,KEF,Barcelona International Airport,Keflavik International Airport
+11.0,BCN,LBG,Barcelona International Airport,Paris-Le Bourget Airport
+87.0,BCN,LCG,Barcelona International Airport,A Coruña Airport
+97.0,BCN,LEJ,Barcelona International Airport,Leipzig/Halle Airport
+113.0,BCN,LEJ,Barcelona International Airport,Leipzig/Halle Airport
+97.0,BCN,LEJ,Barcelona International Airport,Leipzig/Halle Airport
+97.0,BCN,LGG,Barcelona International Airport,Liège Airport
+72.0,BCN,LGW,Barcelona International Airport,London Gatwick Airport
+96.0,BCN,LGW,Barcelona International Airport,London Gatwick Airport
+72.0,BCN,LIS,Barcelona International Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+87.0,BCN,LIS,Barcelona International Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+56.0,BCN,LIS,Barcelona International Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+107.0,BCN,LPA,Barcelona International Airport,Gran Canaria Airport
+107.0,BCN,LPA,Barcelona International Airport,Gran Canaria Airport
+103.0,BCN,LPL,Barcelona International Airport,Liverpool John Lennon Airport
+96.0,BCN,LTN,Barcelona International Airport,London Luton Airport
+87.0,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,BCN,MAH,Barcelona International Airport,Menorca Airport
+96.0,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,BCN,MAH,Barcelona International Airport,Menorca Airport
+96.0,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,BCN,MAN,Barcelona International Airport,Manchester Airport
+103.0,BCN,MAN,Barcelona International Airport,Manchester Airport
+103.0,BCN,MAN,Barcelona International Airport,Manchester Airport
+72.0,BCN,MUC,Barcelona International Airport,Munich Airport
+96.0,BCN,MUC,Barcelona International Airport,Munich Airport
+97.0,BCN,MXP,Barcelona International Airport,Malpensa International Airport
+96.0,BCN,MXP,Barcelona International Airport,Malpensa International Airport
+87.0,BCN,MXP,Barcelona International Airport,Malpensa International Airport
+103.0,BCN,NAP,Barcelona International Airport,Naples International Airport
+87.0,BCN,NAP,Barcelona International Airport,Naples International Airport
+87.0,BCN,NDR,Barcelona International Airport,Nador International Airport
+87.0,BCN,NDR,Barcelona International Airport,Nador International Airport
+87.0,BCN,NTE,Barcelona International Airport,Nantes Atlantique Airport
+103.0,BCN,OPO,Barcelona International Airport,Francisco de Sá Carneiro Airport
+87.0,BCN,OPO,Barcelona International Airport,Francisco de Sá Carneiro Airport
+87.0,BCN,ORY,Barcelona International Airport,Paris-Orly Airport
+87.0,BCN,ORY,Barcelona International Airport,Paris-Orly Airport
+87.0,BCN,ORY,Barcelona International Airport,Paris-Orly Airport
+107.0,BCN,ORY,Barcelona International Airport,Paris-Orly Airport
+87.0,BCN,OVD,Barcelona International Airport,Asturias Airport
+17.0,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+107.0,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+87.0,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+107.0,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+107.0,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+87.0,BCN,PMO,Barcelona International Airport,Falcone–Borsellino Airport
+103.0,BCN,PRG,Barcelona International Airport,Václav Havel Airport Prague
+107.0,BCN,SCQ,Barcelona International Airport,Santiago de Compostela Airport
+103.0,BCN,SCQ,Barcelona International Airport,Santiago de Compostela Airport
+96.0,BCN,SCQ,Barcelona International Airport,Santiago de Compostela Airport
+103.0,BCN,SDR,Barcelona International Airport,Santander Airport
+97.0,BCN,SEN,Barcelona International Airport,Southend Airport
+107.0,BCN,SOF,Barcelona International Airport,Sofia Airport
+103.0,BCN,SOF,Barcelona International Airport,Sofia Airport
+103.0,BCN,STN,Barcelona International Airport,London Stansted Airport
+103.0,BCN,STN,Barcelona International Airport,London Stansted Airport
+72.0,BCN,STR,Barcelona International Airport,Stuttgart Airport
+87.0,BCN,SVO,Barcelona International Airport,Sheremetyevo International Airport
+103.0,BCN,SVQ,Barcelona International Airport,Sevilla Airport
+87.0,BCN,SVQ,Barcelona International Airport,Sevilla Airport
+96.0,BCN,SVQ,Barcelona International Airport,Sevilla Airport
+96.0,BCN,SVQ,Barcelona International Airport,Sevilla Airport
+87.0,BCN,SXF,Barcelona International Airport,Berlin-Schönefeld Airport
+103.0,BCN,SXF,Barcelona International Airport,Berlin-Schönefeld Airport
+87.0,BCN,TFN,Barcelona International Airport,Tenerife Norte Airport
+87.0,BCN,TFN,Barcelona International Airport,Tenerife Norte Airport
+23.0,BCN,TNG,Barcelona International Airport,Ibn Batouta Airport
+103.0,BCN,VCE,Barcelona International Airport,Venice Marco Polo Airport
+87.0,BCN,VCE,Barcelona International Airport,Venice Marco Polo Airport
+87.0,BCN,VGO,Barcelona International Airport,Vigo Airport
+87.0,BCN,VIE,Barcelona International Airport,Vienna International Airport
+133.0,BCN,VLC,Barcelona International Airport,Valencia Airport
+97.0,BCN,VLC,Barcelona International Airport,Valencia Airport
+103.0,BCN,VLL,Barcelona International Airport,Valladolid Airport
+77.0,BCN,ZRH,Barcelona International Airport,Zürich Airport
+68.0,BIO,AGP,Bilbao Airport,Málaga Airport
+87.0,BIO,AGP,Bilbao Airport,Málaga Airport
+87.0,BIO,ALC,Bilbao Airport,Alicante International Airport
+89.0,BIO,AMS,Bilbao Airport,Amsterdam Airport Schiphol
+89.0,BIO,AMS,Bilbao Airport,Amsterdam Airport Schiphol
+87.0,BIO,BCN,Bilbao Airport,Barcelona International Airport
+96.0,BIO,BCN,Bilbao Airport,Barcelona International Airport
+87.0,BIO,BCN,Bilbao Airport,Barcelona International Airport
+87.0,BIO,LGW,Bilbao Airport,London Gatwick Airport
+96.0,BIO,LPA,Bilbao Airport,Gran Canaria Airport
+107.0,BIO,MAD,Bilbao Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,BIO,MAD,Bilbao Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,BIO,MAD,Bilbao Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,BIO,MAH,Bilbao Airport,Menorca Airport
+68.0,BIO,MAH,Bilbao Airport,Menorca Airport
+47.0,BIO,MUC,Bilbao Airport,Munich Airport
+107.0,BIO,PMI,Bilbao Airport,Palma De Mallorca Airport
+68.0,BIO,SVQ,Bilbao Airport,Sevilla Airport
+96.0,BIO,SVQ,Bilbao Airport,Sevilla Airport
+87.0,BIO,SVQ,Bilbao Airport,Sevilla Airport
+87.0,BIO,TFN,Bilbao Airport,Tenerife Norte Airport
+68.0,BIO,VLC,Bilbao Airport,Valencia Airport
+58.0,BIO,VLC,Bilbao Airport,Valencia Airport
+87.0,BIO,VLC,Bilbao Airport,Valencia Airport
+2.0,CDT,BCN,Castellón-Costa Azahar Airport,Barcelona International Airport
+103.0,CDT,STN,Castellón-Costa Azahar Airport,London Stansted Airport
+72.0,EAS,BCN,San Sebastian Airport,Barcelona International Airport
+45.0,EAS,MAD,San Sebastian Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,FUE,BCN,Fuerteventura Airport,Barcelona International Airport
+103.0,FUE,BGY,Fuerteventura Airport,Milan Bergamo Airport
+103.0,FUE,DUB,Fuerteventura Airport,Dublin Airport
+103.0,FUE,EDI,Fuerteventura Airport,Edinburgh Airport
+115.0,FUE,LGW,Fuerteventura Airport,London Gatwick Airport
+45.0,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+115.0,FUE,MAD,Fuerteventura Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,FUE,STN,Fuerteventura Airport,London Stansted Airport
+96.0,FUE,SVQ,Fuerteventura Airport,Sevilla Airport
+45.0,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
+45.0,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
+45.0,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
+45.0,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
+45.0,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
+5.0,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
+103.0,GRO,BRS,Girona Airport,Bristol Airport
+103.0,GRO,EDI,Girona Airport,Edinburgh Airport
+7.0,GRO,HAJ,Girona Airport,Hannover Airport
+103.0,GRO,NRN,Girona Airport,Weeze Airport
+2.0,GRX,AGP,Federico Garcia Lorca Airport,Málaga Airport
+2.0,GRX,AGP,Federico Garcia Lorca Airport,Málaga Airport
+2.0,GRX,AGP,Federico Garcia Lorca Airport,Málaga Airport
+87.0,GRX,BCN,Federico Garcia Lorca Airport,Barcelona International Airport
+58.0,GRX,MAD,Federico Garcia Lorca Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,GRX,MAD,Federico Garcia Lorca Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,GRX,MAH,Federico Garcia Lorca Airport,Menorca Airport
+45.0,GRX,MLN,Federico Garcia Lorca Airport,Melilla Airport
+103.0,GRX,PMI,Federico Garcia Lorca Airport,Palma De Mallorca Airport
+107.0,GRX,PMI,Federico Garcia Lorca Airport,Palma De Mallorca Airport
+87.0,GRX,TFN,Federico Garcia Lorca Airport,Tenerife Norte Airport
+103.0,IBZ,AGP,Ibiza Airport,Málaga Airport
+103.0,IBZ,AMS,Ibiza Airport,Amsterdam Airport Schiphol
+103.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+103.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+107.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+87.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+96.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+96.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+87.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+87.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+87.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+103.0,IBZ,BGY,Ibiza Airport,Milan Bergamo Airport
+103.0,IBZ,BGY,Ibiza Airport,Milan Bergamo Airport
+103.0,IBZ,BHX,Ibiza Airport,Birmingham International Airport
+103.0,IBZ,BLQ,Ibiza Airport,Bologna Guglielmo Marconi Airport
+103.0,IBZ,CRL,Ibiza Airport,Brussels South Charleroi Airport
+103.0,IBZ,DUB,Ibiza Airport,Dublin Airport
+87.0,IBZ,DUS,Ibiza Airport,Düsseldorf Airport
+103.0,IBZ,EIN,Ibiza Airport,Eindhoven Airport
+103.0,IBZ,EIN,Ibiza Airport,Eindhoven Airport
+103.0,IBZ,FCO,Ibiza Airport,Leonardo da Vinci–Fiumicino Airport
+103.0,IBZ,LBA,Ibiza Airport,Leeds Bradford Airport
+96.0,IBZ,LGW,Ibiza Airport,London Gatwick Airport
+72.0,IBZ,LHR,Ibiza Airport,London Heathrow Airport
+72.0,IBZ,LHR,Ibiza Airport,London Heathrow Airport
+107.0,IBZ,LIS,Ibiza Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+96.0,IBZ,LTN,Ibiza Airport,London Luton Airport
+103.0,IBZ,MAD,Ibiza Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,IBZ,MAD,Ibiza Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,IBZ,MAD,Ibiza Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,IBZ,MAD,Ibiza Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,IBZ,MAD,Ibiza Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,IBZ,MAN,Ibiza Airport,Manchester Airport
+103.0,IBZ,MRS,Ibiza Airport,Marseille Provence Airport
+72.0,IBZ,MUC,Ibiza Airport,Munich Airport
+87.0,IBZ,MXP,Ibiza Airport,Malpensa International Airport
+87.0,IBZ,MXP,Ibiza Airport,Malpensa International Airport
+87.0,IBZ,MXP,Ibiza Airport,Malpensa International Airport
+103.0,IBZ,NRN,Ibiza Airport,Weeze Airport
+103.0,IBZ,ORY,Ibiza Airport,Paris-Orly Airport
+45.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+45.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+45.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+45.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+58.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+58.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+58.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+58.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+103.0,IBZ,STN,Ibiza Airport,London Stansted Airport
+103.0,IBZ,SVQ,Ibiza Airport,Sevilla Airport
+103.0,IBZ,TXL,Ibiza Airport,Berlin-Tegel Airport
+87.0,IBZ,VIE,Ibiza Airport,Vienna International Airport
+103.0,IBZ,VLC,Ibiza Airport,Valencia Airport
+29.0,IBZ,VLC,Ibiza Airport,Valencia Airport
+3.0,IBZ,ZRH,Ibiza Airport,Zürich Airport
+87.0,LCG,BCN,A Coruña Airport,Barcelona International Airport
+96.0,LCG,MAD,A Coruña Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,LCG,MAD,A Coruña Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,LCG,MAD,A Coruña Airport,Adolfo Suárez Madrid–Barajas Airport
+9.0,LEI,HHN,Almería International Airport,Frankfurt-Hahn Airport
+72.0,LEI,LGW,Almería International Airport,London Gatwick Airport
+58.0,LEI,MAD,Almería International Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,LEI,MAD,Almería International Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,LEI,MAN,Almería International Airport,Manchester Airport
+45.0,LEI,MLN,Almería International Airport,Melilla Airport
+10.0,LEI,VLC,Almería International Airport,Valencia Airport
+78.0,LEN,BZZ,Leon Airport,RAF Brize Norton
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+87.0,LPA,AGP,Gran Canaria Airport,Málaga Airport
+107.0,LPA,BCN,Gran Canaria Airport,Barcelona International Airport
+107.0,LPA,BCN,Gran Canaria Airport,Barcelona International Airport
+96.0,LPA,BIO,Gran Canaria Airport,Bilbao Airport
+103.0,LPA,BLQ,Gran Canaria Airport,Bologna Guglielmo Marconi Airport
+45.0,LPA,DSS,Gran Canaria Airport,Blaise Diagne International Airport
+103.0,LPA,DUB,Gran Canaria Airport,Dublin Airport
+45.0,LPA,FNC,Gran Canaria Airport,Madeira Airport
+45.0,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+87.0,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+113.0,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+97.0,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+115.0,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,LPA,OVD,Gran Canaria Airport,Asturias Airport
+1.0,LPA,PMI,Gran Canaria Airport,Palma De Mallorca Airport
+1.0,LPA,SDR,Gran Canaria Airport,Santander Airport
+45.0,LPA,SPC,Gran Canaria Airport,La Palma Airport
+45.0,LPA,SPC,Gran Canaria Airport,La Palma Airport
+45.0,LPA,SPC,Gran Canaria Airport,La Palma Airport
+45.0,LPA,SPC,Gran Canaria Airport,La Palma Airport
+103.0,LPA,STN,Gran Canaria Airport,London Stansted Airport
+103.0,LPA,SVQ,Gran Canaria Airport,Sevilla Airport
+96.0,LPA,SVQ,Gran Canaria Airport,Sevilla Airport
+45.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+1.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,LPA,TFS,Gran Canaria Airport,Tenerife South Airport
+45.0,LPA,TFS,Gran Canaria Airport,Tenerife South Airport
+45.0,LPA,TFS,Gran Canaria Airport,Tenerife South Airport
+45.0,LPA,VDE,Gran Canaria Airport,Hierro Airport
+103.0,MAD,ACE,Adolfo Suárez Madrid–Barajas Airport,Lanzarote Airport
+115.0,MAD,ACE,Adolfo Suárez Madrid–Barajas Airport,Lanzarote Airport
+58.0,MAD,AGP,Adolfo Suárez Madrid–Barajas Airport,Málaga Airport
+58.0,MAD,AGP,Adolfo Suárez Madrid–Barajas Airport,Málaga Airport
+45.0,MAD,AGP,Adolfo Suárez Madrid–Barajas Airport,Málaga Airport
+58.0,MAD,ALC,Adolfo Suárez Madrid–Barajas Airport,Alicante International Airport
+58.0,MAD,ALC,Adolfo Suárez Madrid–Barajas Airport,Alicante International Airport
+58.0,MAD,ALC,Adolfo Suárez Madrid–Barajas Airport,Alicante International Airport
+87.0,MAD,AMS,Adolfo Suárez Madrid–Barajas Airport,Amsterdam Airport Schiphol
+103.0,MAD,AMS,Adolfo Suárez Madrid–Barajas Airport,Amsterdam Airport Schiphol
+89.0,MAD,AMS,Adolfo Suárez Madrid–Barajas Airport,Amsterdam Airport Schiphol
+89.0,MAD,AMS,Adolfo Suárez Madrid–Barajas Airport,Amsterdam Airport Schiphol
+96.0,MAD,ARN,Adolfo Suárez Madrid–Barajas Airport,Stockholm-Arlanda Airport
+168.0,MAD,AUH,Adolfo Suárez Madrid–Barajas Airport,Abu Dhabi International Airport
+96.0,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+96.0,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+107.0,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+87.0,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+103.0,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+87.0,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+103.0,MAD,BEY,Adolfo Suárez Madrid–Barajas Airport,Beirut Rafic Hariri International Airport
+103.0,MAD,BGY,Adolfo Suárez Madrid–Barajas Airport,Milan Bergamo Airport
+96.0,MAD,BIO,Adolfo Suárez Madrid–Barajas Airport,Bilbao Airport
+103.0,MAD,BIO,Adolfo Suárez Madrid–Barajas Airport,Bilbao Airport
+107.0,MAD,BIO,Adolfo Suárez Madrid–Barajas Airport,Bilbao Airport
+58.0,MAD,BLQ,Adolfo Suárez Madrid–Barajas Airport,Bologna Guglielmo Marconi Airport
+96.0,MAD,BRU,Adolfo Suárez Madrid–Barajas Airport,Brussels Airport
+96.0,MAD,BRU,Adolfo Suárez Madrid–Barajas Airport,Brussels Airport
+113.0,MAD,BRU,Adolfo Suárez Madrid–Barajas Airport,Brussels Airport
+133.0,MAD,CDG,Adolfo Suárez Madrid–Barajas Airport,Charles de Gaulle International Airport
+72.0,MAD,CDG,Adolfo Suárez Madrid–Barajas Airport,Charles de Gaulle International Airport
+72.0,MAD,CDG,Adolfo Suárez Madrid–Barajas Airport,Charles de Gaulle International Airport
+97.0,MAD,CDG,Adolfo Suárez Madrid–Barajas Airport,Charles de Gaulle International Airport
+133.0,MAD,CGN,Adolfo Suárez Madrid–Barajas Airport,Cologne Bonn Airport
+103.0,MAD,CGN,Adolfo Suárez Madrid–Barajas Airport,Cologne Bonn Airport
+97.0,MAD,CGN,Adolfo Suárez Madrid–Barajas Airport,Cologne Bonn Airport
+103.0,MAD,CIA,Adolfo Suárez Madrid–Barajas Airport,Ciampino–G. B. Pastine International Airport
+45.0,MAD,CMN,Adolfo Suárez Madrid–Barajas Airport,Mohammed V International Airport
+232.0,MAD,DFW,Adolfo Suárez Madrid–Barajas Airport,Dallas Fort Worth International Airport
+188.0,MAD,DOH,Adolfo Suárez Madrid–Barajas Airport,Hamad International Airport
+229.0,MAD,DOH,Adolfo Suárez Madrid–Barajas Airport,Hamad International Airport
+188.0,MAD,DOH,Adolfo Suárez Madrid–Barajas Airport,Hamad International Airport
+87.0,MAD,DUB,Adolfo Suárez Madrid–Barajas Airport,Dublin Airport
+103.0,MAD,DUB,Adolfo Suárez Madrid–Barajas Airport,Dublin Airport
+232.0,MAD,DXB,Adolfo Suárez Madrid–Barajas Airport,Dubai International Airport
+45.0,MAD,EAS,Adolfo Suárez Madrid–Barajas Airport,San Sebastian Airport
+113.0,MAD,EMA,Adolfo Suárez Madrid–Barajas Airport,East Midlands Airport
+97.0,MAD,EMA,Adolfo Suárez Madrid–Barajas Airport,East Midlands Airport
+5.0,MAD,FAO,Adolfo Suárez Madrid–Barajas Airport,Faro Airport
+107.0,MAD,FCO,Adolfo Suárez Madrid–Barajas Airport,Leonardo da Vinci–Fiumicino Airport
+72.0,MAD,FCO,Adolfo Suárez Madrid–Barajas Airport,Leonardo da Vinci–Fiumicino Airport
+21.0,MAD,FKB,Adolfo Suárez Madrid–Barajas Airport,Karlsruhe Baden-Baden Airport
+72.0,MAD,FLR,Adolfo Suárez Madrid–Barajas Airport,Peretola Airport
+96.0,MAD,FRA,Adolfo Suárez Madrid–Barajas Airport,Frankfurt am Main Airport
+96.0,MAD,FRA,Adolfo Suárez Madrid–Barajas Airport,Frankfurt am Main Airport
+115.0,MAD,FUE,Adolfo Suárez Madrid–Barajas Airport,Fuerteventura Airport
+58.0,MAD,GRX,Adolfo Suárez Madrid–Barajas Airport,Federico Garcia Lorca Airport
+58.0,MAD,GRX,Adolfo Suárez Madrid–Barajas Airport,Federico Garcia Lorca Airport
+107.0,MAD,GVA,Adolfo Suárez Madrid–Barajas Airport,Geneva Cointrin International Airport
+87.0,MAD,GVA,Adolfo Suárez Madrid–Barajas Airport,Geneva Cointrin International Airport
+221.0,MAD,GYE,Adolfo Suárez Madrid–Barajas Airport,José Joaquín de Olmedo International Airport
+160.0,MAD,HAV,Adolfo Suárez Madrid–Barajas Airport,José Martí International Airport
+103.0,MAD,IBZ,Adolfo Suárez Madrid–Barajas Airport,Ibiza Airport
+103.0,MAD,IBZ,Adolfo Suárez Madrid–Barajas Airport,Ibiza Airport
+103.0,MAD,IBZ,Adolfo Suárez Madrid–Barajas Airport,Ibiza Airport
+107.0,MAD,IBZ,Adolfo Suárez Madrid–Barajas Airport,Ibiza Airport
+107.0,MAD,IBZ,Adolfo Suárez Madrid–Barajas Airport,Ibiza Airport
+145.0,MAD,ISL,Adolfo Suárez Madrid–Barajas Airport,Istanbul Atatürk Airport
+115.0,MAD,IST,Adolfo Suárez Madrid–Barajas Airport,Istanbul Airport
+103.0,MAD,KBP,Adolfo Suárez Madrid–Barajas Airport,Boryspil International Airport
+96.0,MAD,LCG,Adolfo Suárez Madrid–Barajas Airport,A Coruña Airport
+96.0,MAD,LCG,Adolfo Suárez Madrid–Barajas Airport,A Coruña Airport
+103.0,MAD,LCG,Adolfo Suárez Madrid–Barajas Airport,A Coruña Airport
+58.0,MAD,LEI,Adolfo Suárez Madrid–Barajas Airport,Almería International Airport
+58.0,MAD,LEI,Adolfo Suárez Madrid–Barajas Airport,Almería International Airport
+113.0,MAD,LEJ,Adolfo Suárez Madrid–Barajas Airport,Leipzig/Halle Airport
+154.0,MAD,LEJ,Adolfo Suárez Madrid–Barajas Airport,Leipzig/Halle Airport
+232.0,MAD,LGG,Adolfo Suárez Madrid–Barajas Airport,Liège Airport
+97.0,MAD,LGG,Adolfo Suárez Madrid–Barajas Airport,Liège Airport
+72.0,MAD,LGW,Adolfo Suárez Madrid–Barajas Airport,London Gatwick Airport
+188.0,MAD,LHR,Adolfo Suárez Madrid–Barajas Airport,London Heathrow Airport
+107.0,MAD,LHR,Adolfo Suárez Madrid–Barajas Airport,London Heathrow Airport
+221.0,MAD,LHR,Adolfo Suárez Madrid–Barajas Airport,London Heathrow Airport
+5.0,MAD,LIN,Adolfo Suárez Madrid–Barajas Airport,Milano Linate Airport
+96.0,MAD,LIS,Adolfo Suárez Madrid–Barajas Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+96.0,MAD,LIS,Adolfo Suárez Madrid–Barajas Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+72.0,MAD,LIS,Adolfo Suárez Madrid–Barajas Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+45.0,MAD,LIS,Adolfo Suárez Madrid–Barajas Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+45.0,MAD,LIS,Adolfo Suárez Madrid–Barajas Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+87.0,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+45.0,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+45.0,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+103.0,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+103.0,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+103.0,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+115.0,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+115.0,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+43.0,MAD,LUX,Adolfo Suárez Madrid–Barajas Airport,Luxembourg-Findel International Airport
+58.0,MAD,LYS,Adolfo Suárez Madrid–Barajas Airport,Lyon Saint-Exupéry Airport
+103.0,MAD,MAH,Adolfo Suárez Madrid–Barajas Airport,Menorca Airport
+87.0,MAD,MAH,Adolfo Suárez Madrid–Barajas Airport,Menorca Airport
+103.0,MAD,MAN,Adolfo Suárez Madrid–Barajas Airport,Manchester Airport
+168.0,MAD,MEX,Adolfo Suárez Madrid–Barajas Airport,Licenciado Benito Juarez International Airport
+103.0,MAD,MLA,Adolfo Suárez Madrid–Barajas Airport,Malta International Airport
+58.0,MAD,MRS,Adolfo Suárez Madrid–Barajas Airport,Marseille Provence Airport
+96.0,MAD,MUC,Adolfo Suárez Madrid–Barajas Airport,Munich Airport
+72.0,MAD,MUC,Adolfo Suárez Madrid–Barajas Airport,Munich Airport
+96.0,MAD,MXP,Adolfo Suárez Madrid–Barajas Airport,Malpensa International Airport
+103.0,MAD,MXP,Adolfo Suárez Madrid–Barajas Airport,Malpensa International Airport
+97.0,MAD,MXP,Adolfo Suárez Madrid–Barajas Airport,Malpensa International Airport
+5.0,MAD,NTE,Adolfo Suárez Madrid–Barajas Airport,Nantes Atlantique Airport
+58.0,MAD,OPO,Adolfo Suárez Madrid–Barajas Airport,Francisco de Sá Carneiro Airport
+107.0,MAD,ORY,Adolfo Suárez Madrid–Barajas Airport,Paris-Orly Airport
+107.0,MAD,ORY,Adolfo Suárez Madrid–Barajas Airport,Paris-Orly Airport
+107.0,MAD,ORY,Adolfo Suárez Madrid–Barajas Airport,Paris-Orly Airport
+103.0,MAD,ORY,Adolfo Suárez Madrid–Barajas Airport,Paris-Orly Airport
+103.0,MAD,ORY,Adolfo Suárez Madrid–Barajas Airport,Paris-Orly Airport
+103.0,MAD,OTP,Adolfo Suárez Madrid–Barajas Airport,Henri Coandă International Airport
+87.0,MAD,OTP,Adolfo Suárez Madrid–Barajas Airport,Henri Coandă International Airport
+96.0,MAD,OVD,Adolfo Suárez Madrid–Barajas Airport,Asturias Airport
+96.0,MAD,OVD,Adolfo Suárez Madrid–Barajas Airport,Asturias Airport
+17.0,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+45.0,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+45.0,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+115.0,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+107.0,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,MAD,PMO,Adolfo Suárez Madrid–Barajas Airport,Falcone–Borsellino Airport
+58.0,MAD,PNA,Adolfo Suárez Madrid–Barajas Airport,Pamplona Airport
+58.0,MAD,PNA,Adolfo Suárez Madrid–Barajas Airport,Pamplona Airport
+103.0,MAD,PSA,Adolfo Suárez Madrid–Barajas Airport,Pisa International Airport
+188.0,MAD,PVG,Adolfo Suárez Madrid–Barajas Airport,Shanghai Pudong International Airport
+87.0,MAD,SCQ,Adolfo Suárez Madrid–Barajas Airport,Santiago de Compostela Airport
+87.0,MAD,SCQ,Adolfo Suárez Madrid–Barajas Airport,Santiago de Compostela Airport
+160.0,MAD,SDQ,Adolfo Suárez Madrid–Barajas Airport,Las Américas International Airport
+96.0,MAD,SDR,Adolfo Suárez Madrid–Barajas Airport,Santander Airport
+97.0,MAD,SEN,Adolfo Suárez Madrid–Barajas Airport,Southend Airport
+143.0,MAD,SJO,Adolfo Suárez Madrid–Barajas Airport,Juan Santamaria International Airport
+87.0,MAD,SPC,Adolfo Suárez Madrid–Barajas Airport,La Palma Airport
+103.0,MAD,STN,Adolfo Suárez Madrid–Barajas Airport,London Stansted Airport
+87.0,MAD,SVQ,Adolfo Suárez Madrid–Barajas Airport,Sevilla Airport
+87.0,MAD,SVQ,Adolfo Suárez Madrid–Barajas Airport,Sevilla Airport
+87.0,MAD,SVX,Adolfo Suárez Madrid–Barajas Airport,Koltsovo Airport
+29.0,MAD,SXB,Adolfo Suárez Madrid–Barajas Airport,Strasbourg Airport
+103.0,MAD,SXF,Adolfo Suárez Madrid–Barajas Airport,Berlin-Schönefeld Airport
+87.0,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+97.0,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+113.0,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+103.0,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+103.0,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+87.0,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+87.0,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+87.0,MAD,TFS,Adolfo Suárez Madrid–Barajas Airport,Tenerife South Airport
+58.0,MAD,TLS,Adolfo Suárez Madrid–Barajas Airport,Toulouse-Blagnac Airport
+87.0,MAD,TNG,Adolfo Suárez Madrid–Barajas Airport,Ibn Batouta Airport
+0.0,MAD,TOJ,Adolfo Suárez Madrid–Barajas Airport,Torrejón Airport
+87.0,MAD,TXL,Adolfo Suárez Madrid–Barajas Airport,Berlin-Tegel Airport
+96.0,MAD,VCE,Adolfo Suárez Madrid–Barajas Airport,Venice Marco Polo Airport
+103.0,MAD,VGO,Adolfo Suárez Madrid–Barajas Airport,Vigo Airport
+96.0,MAD,VGO,Adolfo Suárez Madrid–Barajas Airport,Vigo Airport
+87.0,MAD,VGO,Adolfo Suárez Madrid–Barajas Airport,Vigo Airport
+87.0,MAD,VIE,Adolfo Suárez Madrid–Barajas Airport,Vienna International Airport
+45.0,MAD,VLC,Adolfo Suárez Madrid–Barajas Airport,Valencia Airport
+58.0,MAD,VLC,Adolfo Suárez Madrid–Barajas Airport,Valencia Airport
+58.0,MAD,VLC,Adolfo Suárez Madrid–Barajas Airport,Valencia Airport
+45.0,MAD,VLC,Adolfo Suárez Madrid–Barajas Airport,Valencia Airport
+5.0,MAD,XRY,Adolfo Suárez Madrid–Barajas Airport,Jerez Airport
+58.0,MAD,XRY,Adolfo Suárez Madrid–Barajas Airport,Jerez Airport
+58.0,MAD,XRY,Adolfo Suárez Madrid–Barajas Airport,Jerez Airport
+103.0,MAH,BCN,Menorca Airport,Barcelona International Airport
+96.0,MAH,BCN,Menorca Airport,Barcelona International Airport
+87.0,MAH,BCN,Menorca Airport,Barcelona International Airport
+87.0,MAH,BCN,Menorca Airport,Barcelona International Airport
+87.0,MAH,BCN,Menorca Airport,Barcelona International Airport
+87.0,MAH,BCN,Menorca Airport,Barcelona International Airport
+96.0,MAH,BCN,Menorca Airport,Barcelona International Airport
+87.0,MAH,BCN,Menorca Airport,Barcelona International Airport
+68.0,MAH,BIO,Menorca Airport,Bilbao Airport
+96.0,MAH,BIO,Menorca Airport,Bilbao Airport
+87.0,MAH,GRX,Menorca Airport,Federico Garcia Lorca Airport
+87.0,MAH,LGW,Menorca Airport,London Gatwick Airport
+103.0,MAH,MAD,Menorca Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,MAH,MAD,Menorca Airport,Adolfo Suárez Madrid–Barajas Airport
+4.0,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+45.0,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+45.0,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+58.0,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+58.0,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+58.0,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+58.0,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+68.0,MAH,VLC,Menorca Airport,Valencia Airport
+96.0,MAH,VLC,Menorca Airport,Valencia Airport
+45.0,MLN,AGP,Melilla Airport,Málaga Airport
+45.0,MLN,AGP,Melilla Airport,Málaga Airport
+45.0,MLN,AGP,Melilla Airport,Málaga Airport
+5.0,MLN,AGP,Melilla Airport,Málaga Airport
+5.0,MLN,AGP,Melilla Airport,Málaga Airport
+5.0,MLN,AGP,Melilla Airport,Málaga Airport
+45.0,MLN,GRX,Melilla Airport,Federico Garcia Lorca Airport
+45.0,MLN,LEI,Melilla Airport,Almería International Airport
+68.0,OVD,AGP,Asturias Airport,Málaga Airport
+87.0,OVD,BCN,Asturias Airport,Barcelona International Airport
+107.0,OVD,LPA,Asturias Airport,Gran Canaria Airport
+96.0,OVD,MAD,Asturias Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,OVD,MAD,Asturias Airport,Adolfo Suárez Madrid–Barajas Airport
+4.0,OZP,STR,Moron Air Base,Stuttgart Airport
+0.0,OZP,ZAZ,Moron Air Base,Zaragoza Air Base
+103.0,PMI,AGP,Palma De Mallorca Airport,Málaga Airport
+87.0,PMI,AGP,Palma De Mallorca Airport,Málaga Airport
+87.0,PMI,ALC,Palma De Mallorca Airport,Alicante International Airport
+58.0,PMI,ALC,Palma De Mallorca Airport,Alicante International Airport
+103.0,PMI,AMS,Palma De Mallorca Airport,Amsterdam Airport Schiphol
+96.0,PMI,ARN,Palma De Mallorca Airport,Stockholm-Arlanda Airport
+17.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+17.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+107.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+107.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+87.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+107.0,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+87.0,PMI,BFS,Palma De Mallorca Airport,Belfast International Airport
+11.0,PMI,BGI,Palma De Mallorca Airport,Grantley Adams International Airport
+103.0,PMI,BGY,Palma De Mallorca Airport,Milan Bergamo Airport
+103.0,PMI,BHX,Palma De Mallorca Airport,Birmingham International Airport
+107.0,PMI,BIO,Palma De Mallorca Airport,Bilbao Airport
+5.0,PMI,BMA,Palma De Mallorca Airport,Stockholm-Bromma Airport
+96.0,PMI,BRS,Palma De Mallorca Airport,Bristol Airport
+103.0,PMI,BRS,Palma De Mallorca Airport,Bristol Airport
+103.0,PMI,BRU,Palma De Mallorca Airport,Brussels Airport
+87.0,PMI,BSL,Palma De Mallorca Airport,EuroAirport Basel-Mulhouse-Freiburg Airport
+87.0,PMI,BSL,Palma De Mallorca Airport,EuroAirport Basel-Mulhouse-Freiburg Airport
+72.0,PMI,CGN,Palma De Mallorca Airport,Cologne Bonn Airport
+103.0,PMI,CGN,Palma De Mallorca Airport,Cologne Bonn Airport
+103.0,PMI,CGN,Palma De Mallorca Airport,Cologne Bonn Airport
+103.0,PMI,CIA,Palma De Mallorca Airport,Ciampino–G. B. Pastine International Airport
+107.0,PMI,CWL,Palma De Mallorca Airport,Cardiff International Airport
+103.0,PMI,DTM,Palma De Mallorca Airport,Dortmund Airport
+87.0,PMI,DUS,Palma De Mallorca Airport,Düsseldorf Airport
+103.0,PMI,EDI,Palma De Mallorca Airport,Edinburgh Airport
+103.0,PMI,EIN,Palma De Mallorca Airport,Eindhoven Airport
+7.0,PMI,EIN,Palma De Mallorca Airport,Eindhoven Airport
+103.0,PMI,EMA,Palma De Mallorca Airport,East Midlands Airport
+103.0,PMI,FKB,Palma De Mallorca Airport,Karlsruhe Baden-Baden Airport
+3.0,PMI,FMM,Palma De Mallorca Airport,Memmingen Allgau Airport
+103.0,PMI,FMM,Palma De Mallorca Airport,Memmingen Allgau Airport
+72.0,PMI,FRA,Palma De Mallorca Airport,Frankfurt am Main Airport
+96.0,PMI,FRA,Palma De Mallorca Airport,Frankfurt am Main Airport
+103.0,PMI,FRA,Palma De Mallorca Airport,Frankfurt am Main Airport
+107.0,PMI,GRX,Palma De Mallorca Airport,Federico Garcia Lorca Airport
+103.0,PMI,GRX,Palma De Mallorca Airport,Federico Garcia Lorca Airport
+87.0,PMI,GVA,Palma De Mallorca Airport,Geneva Cointrin International Airport
+87.0,PMI,HAM,Palma De Mallorca Airport,Hamburg Airport
+103.0,PMI,HAM,Palma De Mallorca Airport,Hamburg Airport
+103.0,PMI,HAM,Palma De Mallorca Airport,Hamburg Airport
+103.0,PMI,HHN,Palma De Mallorca Airport,Frankfurt-Hahn Airport
+45.0,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+45.0,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+45.0,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+17.0,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+45.0,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+58.0,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+58.0,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+58.0,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+58.0,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+103.0,PMI,LBA,Palma De Mallorca Airport,Leeds Bradford Airport
+87.0,PMI,LGW,Palma De Mallorca Airport,London Gatwick Airport
+87.0,PMI,LGW,Palma De Mallorca Airport,London Gatwick Airport
+72.0,PMI,LHR,Palma De Mallorca Airport,London Heathrow Airport
+1.0,PMI,LPA,Palma De Mallorca Airport,Gran Canaria Airport
+96.0,PMI,LPL,Palma De Mallorca Airport,Liverpool John Lennon Airport
+96.0,PMI,LTN,Palma De Mallorca Airport,London Luton Airport
+87.0,PMI,LTN,Palma De Mallorca Airport,London Luton Airport
+43.0,PMI,LUX,Palma De Mallorca Airport,Luxembourg-Findel International Airport
+17.0,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+115.0,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+58.0,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+45.0,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+58.0,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+4.0,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+58.0,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+58.0,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+96.0,PMI,MAN,Palma De Mallorca Airport,Manchester Airport
+103.0,PMI,MAN,Palma De Mallorca Airport,Manchester Airport
+103.0,PMI,MAN,Palma De Mallorca Airport,Manchester Airport
+87.0,PMI,MXP,Palma De Mallorca Airport,Malpensa International Airport
+103.0,PMI,NCL,Palma De Mallorca Airport,Newcastle Airport
+72.0,PMI,NTE,Palma De Mallorca Airport,Nantes Atlantique Airport
+103.0,PMI,OPO,Palma De Mallorca Airport,Francisco de Sá Carneiro Airport
+103.0,PMI,ORY,Palma De Mallorca Airport,Paris-Orly Airport
+107.0,PMI,ORY,Palma De Mallorca Airport,Paris-Orly Airport
+103.0,PMI,PIK,Palma De Mallorca Airport,Glasgow Prestwick Airport
+107.0,PMI,SCQ,Palma De Mallorca Airport,Santiago de Compostela Airport
+107.0,PMI,SDR,Palma De Mallorca Airport,Santander Airport
+103.0,PMI,SEN,Palma De Mallorca Airport,Southend Airport
+103.0,PMI,STN,Palma De Mallorca Airport,London Stansted Airport
+87.0,PMI,STR,Palma De Mallorca Airport,Stuttgart Airport
+103.0,PMI,SVQ,Palma De Mallorca Airport,Sevilla Airport
+107.0,PMI,SVQ,Palma De Mallorca Airport,Sevilla Airport
+87.0,PMI,SXF,Palma De Mallorca Airport,Berlin-Schönefeld Airport
+103.0,PMI,SXF,Palma De Mallorca Airport,Berlin-Schönefeld Airport
+11.0,PMI,SXF,Palma De Mallorca Airport,Berlin-Schönefeld Airport
+87.0,PMI,TXL,Palma De Mallorca Airport,Berlin-Tegel Airport
+87.0,PMI,TXL,Palma De Mallorca Airport,Berlin-Tegel Airport
+103.0,PMI,TXL,Palma De Mallorca Airport,Berlin-Tegel Airport
+87.0,PMI,VIE,Palma De Mallorca Airport,Vienna International Airport
+45.0,PMI,VLC,Palma De Mallorca Airport,Valencia Airport
+103.0,PMI,VLC,Palma De Mallorca Airport,Valencia Airport
+103.0,PMI,VLC,Palma De Mallorca Airport,Valencia Airport
+96.0,PMI,VLC,Palma De Mallorca Airport,Valencia Airport
+103.0,PMI,VLL,Palma De Mallorca Airport,Valladolid Airport
+93.0,PMI,ZRH,Palma De Mallorca Airport,Zürich Airport
+58.0,PNA,MAD,Pamplona Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,PNA,MAD,Pamplona Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,REU,CRL,Reus Air Base,Brussels South Charleroi Airport
+103.0,REU,LPL,Reus Air Base,Liverpool John Lennon Airport
+103.0,REU,STN,Reus Air Base,London Stansted Airport
+103.0,SCQ,AGP,Santiago de Compostela Airport,Málaga Airport
+103.0,SCQ,BCN,Santiago de Compostela Airport,Barcelona International Airport
+96.0,SCQ,BCN,Santiago de Compostela Airport,Barcelona International Airport
+107.0,SCQ,BCN,Santiago de Compostela Airport,Barcelona International Airport
+87.0,SCQ,MAD,Santiago de Compostela Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,SCQ,MAD,Santiago de Compostela Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,SCQ,PMI,Santiago de Compostela Airport,Palma De Mallorca Airport
+5.0,SCQ,STN,Santiago de Compostela Airport,London Stansted Airport
+103.0,SCQ,STN,Santiago de Compostela Airport,London Stansted Airport
+103.0,SCQ,SVQ,Santiago de Compostela Airport,Sevilla Airport
+103.0,SCQ,TFS,Santiago de Compostela Airport,Tenerife South Airport
+97.0,SCQ,VIT,Santiago de Compostela Airport,Vitoria/Foronda Airport
+103.0,SDR,BCN,Santander Airport,Barcelona International Airport
+1.0,SDR,LPA,Santander Airport,Gran Canaria Airport
+96.0,SDR,MAD,Santander Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,SDR,PMI,Santander Airport,Palma De Mallorca Airport
+103.0,SDR,VIE,Santander Airport,Vienna International Airport
+103.0,SDR,VLC,Santander Airport,Valencia Airport
+45.0,SPC,LPA,La Palma Airport,Gran Canaria Airport
+45.0,SPC,LPA,La Palma Airport,Gran Canaria Airport
+45.0,SPC,LPA,La Palma Airport,Gran Canaria Airport
+45.0,SPC,LPA,La Palma Airport,Gran Canaria Airport
+87.0,SPC,MAD,La Palma Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,SPC,TFN,La Palma Airport,Tenerife Norte Airport
+45.0,SPC,TFN,La Palma Airport,Tenerife Norte Airport
+45.0,SPC,TFN,La Palma Airport,Tenerife Norte Airport
+45.0,SPC,TFN,La Palma Airport,Tenerife Norte Airport
+45.0,SPC,TFN,La Palma Airport,Tenerife Norte Airport
+45.0,SPC,TFN,La Palma Airport,Tenerife Norte Airport
+45.0,SPC,TFN,La Palma Airport,Tenerife Norte Airport
+45.0,SPC,TFN,La Palma Airport,Tenerife Norte Airport
+45.0,SPC,TFN,La Palma Airport,Tenerife Norte Airport
+45.0,SPC,TFN,La Palma Airport,Tenerife Norte Airport
+103.0,SVQ,AMS,Sevilla Airport,Amsterdam Airport Schiphol
+103.0,SVQ,BCN,Sevilla Airport,Barcelona International Airport
+96.0,SVQ,BCN,Sevilla Airport,Barcelona International Airport
+96.0,SVQ,BCN,Sevilla Airport,Barcelona International Airport
+87.0,SVQ,BCN,Sevilla Airport,Barcelona International Airport
+103.0,SVQ,BGY,Sevilla Airport,Milan Bergamo Airport
+87.0,SVQ,BIO,Sevilla Airport,Bilbao Airport
+68.0,SVQ,BIO,Sevilla Airport,Bilbao Airport
+96.0,SVQ,BIO,Sevilla Airport,Bilbao Airport
+62.0,SVQ,CDG,Sevilla Airport,Charles de Gaulle International Airport
+103.0,SVQ,CGN,Sevilla Airport,Cologne Bonn Airport
+103.0,SVQ,CRL,Sevilla Airport,Brussels South Charleroi Airport
+103.0,SVQ,FCO,Sevilla Airport,Leonardo da Vinci–Fiumicino Airport
+96.0,SVQ,FUE,Sevilla Airport,Fuerteventura Airport
+87.0,SVQ,GVA,Sevilla Airport,Geneva Cointrin International Airport
+103.0,SVQ,IBZ,Sevilla Airport,Ibiza Airport
+103.0,SVQ,LPA,Sevilla Airport,Gran Canaria Airport
+96.0,SVQ,LPA,Sevilla Airport,Gran Canaria Airport
+87.0,SVQ,MAD,Sevilla Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,SVQ,MAD,Sevilla Airport,Adolfo Suárez Madrid–Barajas Airport
+7.0,SVQ,MPL,Sevilla Airport,Montpellier-Méditerranée Airport
+11.0,SVQ,MRS,Sevilla Airport,Marseille Provence Airport
+103.0,SVQ,NTE,Sevilla Airport,Nantes Atlantique Airport
+103.0,SVQ,ORY,Sevilla Airport,Paris-Orly Airport
+87.0,SVQ,ORY,Sevilla Airport,Paris-Orly Airport
+103.0,SVQ,PMI,Sevilla Airport,Palma De Mallorca Airport
+107.0,SVQ,PMI,Sevilla Airport,Palma De Mallorca Airport
+103.0,SVQ,SCQ,Sevilla Airport,Santiago de Compostela Airport
+68.0,SVQ,SDR,Sevilla Airport,Santander Airport
+103.0,SVQ,STN,Sevilla Airport,London Stansted Airport
+103.0,SVQ,SXF,Sevilla Airport,Berlin-Schönefeld Airport
+96.0,SVQ,TFN,Sevilla Airport,Tenerife Norte Airport
+103.0,SVQ,TFS,Sevilla Airport,Tenerife South Airport
+154.0,SVQ,TNG,Sevilla Airport,Ibn Batouta Airport
+148.0,SVQ,VIT,Sevilla Airport,Vitoria/Foronda Airport
+97.0,SVQ,VIT,Sevilla Airport,Vitoria/Foronda Airport
+154.0,SVQ,VIT,Sevilla Airport,Vitoria/Foronda Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,SVQ,XRY,Sevilla Airport,Jerez Airport
+45.0,TFN,ACE,Tenerife Norte Airport,Lanzarote Airport
+45.0,TFN,ACE,Tenerife Norte Airport,Lanzarote Airport
+45.0,TFN,ACE,Tenerife Norte Airport,Lanzarote Airport
+45.0,TFN,ACE,Tenerife Norte Airport,Lanzarote Airport
+45.0,TFN,ACE,Tenerife Norte Airport,Lanzarote Airport
+96.0,TFN,AGP,Tenerife Norte Airport,Málaga Airport
+87.0,TFN,ALC,Tenerife Norte Airport,Alicante International Airport
+87.0,TFN,BCN,Tenerife Norte Airport,Barcelona International Airport
+87.0,TFN,BCN,Tenerife Norte Airport,Barcelona International Airport
+87.0,TFN,BIO,Tenerife Norte Airport,Bilbao Airport
+45.0,TFN,FUE,Tenerife Norte Airport,Fuerteventura Airport
+45.0,TFN,FUE,Tenerife Norte Airport,Fuerteventura Airport
+45.0,TFN,FUE,Tenerife Norte Airport,Fuerteventura Airport
+45.0,TFN,FUE,Tenerife Norte Airport,Fuerteventura Airport
+45.0,TFN,FUE,Tenerife Norte Airport,Fuerteventura Airport
+87.0,TFN,GRX,Tenerife Norte Airport,Federico Garcia Lorca Airport
+1.0,TFN,LIS,Tenerife Norte Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+97.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+113.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+1.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+87.0,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+96.0,TFN,SVQ,Tenerife Norte Airport,Sevilla Airport
+45.0,TFN,VDE,Tenerife Norte Airport,Hierro Airport
+45.0,TFN,VDE,Tenerife Norte Airport,Hierro Airport
+45.0,TFN,VDE,Tenerife Norte Airport,Hierro Airport
+45.0,TFN,VDE,Tenerife Norte Airport,Hierro Airport
+1.0,TFN,VGO,Tenerife Norte Airport,Vigo Airport
+9.0,TFS,BCN,Tenerife South Airport,Barcelona International Airport
+103.0,TFS,BHX,Tenerife South Airport,Birmingham International Airport
+96.0,TFS,BRS,Tenerife South Airport,Bristol Airport
+103.0,TFS,BRS,Tenerife South Airport,Bristol Airport
+221.0,TFS,BRU,Tenerife South Airport,Brussels Airport
+103.0,TFS,DUB,Tenerife South Airport,Dublin Airport
+103.0,TFS,KTW,Tenerife South Airport,Katowice International Airport
+115.0,TFS,LGW,Tenerife South Airport,London Gatwick Airport
+45.0,TFS,LPA,Tenerife South Airport,Gran Canaria Airport
+45.0,TFS,LPA,Tenerife South Airport,Gran Canaria Airport
+45.0,TFS,LPA,Tenerife South Airport,Gran Canaria Airport
+87.0,TFS,LTN,Tenerife South Airport,London Luton Airport
+87.0,TFS,MAD,Tenerife South Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,TFS,MAN,Tenerife South Airport,Manchester Airport
+103.0,TFS,MAN,Tenerife South Airport,Manchester Airport
+87.0,TFS,MXP,Tenerife South Airport,Malpensa International Airport
+103.0,TFS,SCQ,Tenerife South Airport,Santiago de Compostela Airport
+103.0,TFS,SNN,Tenerife South Airport,Shannon Airport
+103.0,TFS,STN,Tenerife South Airport,London Stansted Airport
+103.0,TFS,SVQ,Tenerife South Airport,Sevilla Airport
+87.0,TFS,VIE,Tenerife South Airport,Vienna International Airport
+103.0,TFS,WAW,Tenerife South Airport,Warsaw Chopin Airport
+87.0,TFS,ZRH,Tenerife South Airport,Zürich Airport
+45.0,VDE,LPA,Hierro Airport,Gran Canaria Airport
+45.0,VDE,TFN,Hierro Airport,Tenerife Norte Airport
+45.0,VDE,TFN,Hierro Airport,Tenerife Norte Airport
+45.0,VDE,TFN,Hierro Airport,Tenerife Norte Airport
+45.0,VDE,TFN,Hierro Airport,Tenerife Norte Airport
+87.0,VGO,BCN,Vigo Airport,Barcelona International Airport
+96.0,VGO,MAD,Vigo Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,VGO,MAD,Vigo Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,VGO,MAD,Vigo Airport,Adolfo Suárez Madrid–Barajas Airport
+1.0,VGO,TFN,Vigo Airport,Tenerife Norte Airport
+97.0,VIT,ALC,Vitoria/Foronda Airport,Alicante International Airport
+97.0,VIT,BCN,Vitoria/Foronda Airport,Barcelona International Airport
+154.0,VIT,BRU,Vitoria/Foronda Airport,Brussels Airport
+97.0,VIT,CGN,Vitoria/Foronda Airport,Cologne Bonn Airport
+148.0,VIT,CGN,Vitoria/Foronda Airport,Cologne Bonn Airport
+97.0,VIT,EMA,Vitoria/Foronda Airport,East Midlands Airport
+2.0,VIT,ILD,Vitoria/Foronda Airport,Lleida-Alguaire Airport
+2.0,VIT,ILD,Vitoria/Foronda Airport,Lleida-Alguaire Airport
+154.0,VIT,LEJ,Vitoria/Foronda Airport,Leipzig/Halle Airport
+113.0,VIT,LEJ,Vitoria/Foronda Airport,Leipzig/Halle Airport
+113.0,VIT,LIS,Vitoria/Foronda Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+97.0,VIT,SCQ,Vitoria/Foronda Airport,Santiago de Compostela Airport
+6.0,VIT,SDR,Vitoria/Foronda Airport,Santander Airport
+154.0,VIT,SVQ,Vitoria/Foronda Airport,Sevilla Airport
+148.0,VIT,SVQ,Vitoria/Foronda Airport,Sevilla Airport
+97.0,VIT,VLC,Vitoria/Foronda Airport,Valencia Airport
+103.0,VLC,ACE,Valencia Airport,Lanzarote Airport
+96.0,VLC,ACE,Valencia Airport,Lanzarote Airport
+103.0,VLC,AMS,Valencia Airport,Amsterdam Airport Schiphol
+56.0,VLC,AMS,Valencia Airport,Amsterdam Airport Schiphol
+56.0,VLC,AMS,Valencia Airport,Amsterdam Airport Schiphol
+133.0,VLC,BCN,Valencia Airport,Barcelona International Airport
+97.0,VLC,BCN,Valencia Airport,Barcelona International Airport
+103.0,VLC,BGY,Valencia Airport,Milan Bergamo Airport
+68.0,VLC,BIO,Valencia Airport,Bilbao Airport
+58.0,VLC,BIO,Valencia Airport,Bilbao Airport
+87.0,VLC,BIO,Valencia Airport,Bilbao Airport
+103.0,VLC,BRU,Valencia Airport,Brussels Airport
+103.0,VLC,CDG,Valencia Airport,Charles de Gaulle International Airport
+103.0,VLC,CGN,Valencia Airport,Cologne Bonn Airport
+103.0,VLC,DUB,Valencia Airport,Dublin Airport
+103.0,VLC,EMA,Valencia Airport,East Midlands Airport
+87.0,VLC,FRA,Valencia Airport,Frankfurt am Main Airport
+103.0,VLC,IBZ,Valencia Airport,Ibiza Airport
+29.0,VLC,IBZ,Valencia Airport,Ibiza Airport
+45.0,VLC,LIS,Valencia Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+45.0,VLC,MAD,Valencia Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,VLC,MAD,Valencia Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,VLC,MAD,Valencia Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,VLC,MAH,Valencia Airport,Menorca Airport
+68.0,VLC,MAH,Valencia Airport,Menorca Airport
+103.0,VLC,MXP,Valencia Airport,Malpensa International Airport
+103.0,VLC,NTE,Valencia Airport,Nantes Atlantique Airport
+103.0,VLC,ORY,Valencia Airport,Paris-Orly Airport
+45.0,VLC,PMI,Valencia Airport,Palma De Mallorca Airport
+103.0,VLC,PMI,Valencia Airport,Palma De Mallorca Airport
+103.0,VLC,PMI,Valencia Airport,Palma De Mallorca Airport
+96.0,VLC,PMI,Valencia Airport,Palma De Mallorca Airport
+103.0,VLC,SDR,Valencia Airport,Santander Airport
+103.0,VLC,STN,Valencia Airport,London Stansted Airport
+97.0,VLC,VIT,Valencia Airport,Vitoria/Foronda Airport
+93.0,VLC,ZRH,Valencia Airport,Zürich Airport
+103.0,VLL,BCN,Valladolid Airport,Barcelona International Airport
+103.0,VLL,PMI,Valladolid Airport,Palma De Mallorca Airport
+5.0,XRY,AMS,Jerez Airport,Amsterdam Airport Schiphol
+11.0,XRY,BCN,Jerez Airport,Barcelona International Airport
+58.0,XRY,MAD,Jerez Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,XRY,MAD,Jerez Airport,Adolfo Suárez Madrid–Barajas Airport
+168.0,ZAZ,MIA,Zaragoza Air Base,Miami International Airport
+103.0,ZAZ,STN,Zaragoza Air Base,London Stansted Airport
+21.0,ZAZ,VIT,Zaragoza Air Base,Vitoria/Foronda Airport
