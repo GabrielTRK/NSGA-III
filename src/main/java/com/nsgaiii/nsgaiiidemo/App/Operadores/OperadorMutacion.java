@@ -58,5 +58,22 @@ public class OperadorMutacion {
 		return solucion;
 	}
 	
+	//Mutación cambio de bit
+	public Individuo cambioDeBit(Individuo solucion, Problema prob) {
+		ArrayList<Double> solucionVal = solucion.getVariables();
+		for (int j = 0; j < prob.getNumVariables(); j++) {
+			if (Utils.getRandNumber(0.0, Math.nextUp(1.0)) <= this.probMuta) {
+				if (solucionVal.get(j).equals(0.0)) {
+					solucionVal.set(j, 1.0);
+				} else {
+					solucionVal.set(j, 0.0);
+				}
+			}
+		}
+			
+		solucion.setVariables(solucionVal);
+		return solucion;
+	}
+	
 
 }

@@ -37,34 +37,31 @@ public class App extends AWTAbstractAnalysis
 	static List<Individuo> frenteDePareto;
     public static void main( String[] args ) throws Exception
     {
+    	/*Map<List<String>, Integer> conexiones = new HashMap<>();
+        Map<List<String>, Double> riesgos = new HashMap<>();
+        Map<List<String>, Integer> vuelos = new HashMap<>();
+    	LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);*/
+    	
     	//Indicar parámetros del problema y algoritmo
-    	int numeroDeIndividuos = 5;
-    	int numeroDeVariables = 10;
-    	int numeroDeGeneraciones = 5;
+    	int numeroDeIndividuos = 500;
+    	int numeroDeVariables = 7;
+    	int numeroDeGeneraciones = 2500;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
-    	double probabilidadDeCruce = 1;
-    	double probabilidadDeMutacion = 1 / numeroDeVariables;
+    	double probabilidadDeCruce = 1.0;
+    	double probabilidadDeMutacion = 1.0 / numeroDeVariables;
     	boolean minimizacion = true;
     	int divisiones = 30;
     	int numeroDeObjetivos = 3;
-    	
-    	Map<List<String>, Integer> conexiones = new HashMap<>();
-        Map<List<String>, Double> riesgos = new HashMap<>();
-        Map<List<String>, Integer> vuelos = new HashMap<>();
         
-        
-        LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);
-        List<List<String>> llaves = new ArrayList<>(riesgos.keySet());
-        System.out.println(riesgos);
+    	//System.out.println(riesgos);
     	
-    	Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, 
-    			conexiones, vuelos);
+    	/*Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, 
+    			conexiones, vuelos);*/
     	
-    	Poblacion pob = new Poblacion(numeroDeIndividuos, problema);
-    	pob.generarPoblacionInicial(problema);
-    	System.out.println(pob);
-    	/*long startTime = System.nanoTime();
+    	Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
+    	
+    	long startTime = System.nanoTime();
     	
         Nsgaiii nsgaiii = new Nsgaiii(numeroDeIndividuos, 
         		numeroDeGeneraciones, indiceDeDistribucionC,
@@ -85,11 +82,12 @@ public class App extends AWTAbstractAnalysis
         	System.out.println("Tiempo de ejecucion en segundos: "
                     + elapsedTime);
         }
+        
         //Guarda resultados en un csv y crea un diagrama de dispersión
         String nombre = Utils.crearCSVConObjetivos(frenteDePareto, problema.getNombre());
     	frenteDePareto = Utils.leerCSV(nombre);
         
-        AnalysisLauncher.open(new App());*/
+        AnalysisLauncher.open(new App());
         
         
     }

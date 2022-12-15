@@ -41,7 +41,7 @@ public class Individuo implements Comparable<Individuo> {
 	}
 	
 	public void addIObjetivo(int pos, Double obj) {
-		this.objetivos.add(pos, obj);;
+		this.objetivos.add(pos, obj);
 	}
 	
 	public void setIObjetivo(int pos, Double obj) {

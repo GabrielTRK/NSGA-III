@@ -78,7 +78,6 @@ public class Nsgaiii {
 					nuevosHijos.get(0),
 					nuevosHijos.get(1),
 					this.problema);
-			
 			//Mutacion
 			nuevosHijos.set(0, this.mutacion.polyMut(nuevosHijos.get(0), this.problema));
 			nuevosHijos.set(1, this.mutacion.polyMut(nuevosHijos.get(1), this.problema));
@@ -94,6 +93,7 @@ public class Nsgaiii {
 		}
 		poblacionHijos.setPoblacion(totalHijos);
 		poblacionHijos.calcularObjetivos(this.problema);
+		
 		
 		return poblacionHijos;
 	}
