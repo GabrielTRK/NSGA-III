@@ -67,7 +67,7 @@ public class OperadorReemplazo {
 		int mEstricto = 0;
 		int mOIgual = 0;
 		for (int i = 0; i < prob.getNumObjetivos(); i++) {
-			if(this.isMinimizacion) {
+			if(this.isMinimizacion) {//TODO: Crear lista de boolean
 				if(a.getObjetivos().get(i) < b.getObjetivos().get(i) && mEstricto == 0) {
 					mEstricto = 1;
 				}

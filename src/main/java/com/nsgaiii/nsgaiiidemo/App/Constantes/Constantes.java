@@ -14,5 +14,12 @@ public class Constantes {
     public static final String nombreDTLZ5 = "dtlz5";
     public static final String nombreDTLZ7 = "dtlz7";
     public static final String nombreProblemaVuelos = "problemaVuelos";
-    public static final String nombreFicheroSIR = "sirPrueba";
+    public static final String nombreFicheroSIR = "sir";
+    public static final String nombreFicheroAeropuertos_Entradas = "aeropuertos_entradas";
+    public static final String nombreFicheroAeropuertos_Origen = "aeropuertos_salida";
+    public static final String nombreFicheroCompanyias = "companyias";
+    public static final String nombreFicheroDineroPorVuelo = "dinero_por_vuelo";
+    public static final String nombreFicheroPasajerosPorVuelo = "pasajeros_por_vuelo";
+    public static final String nombreFicheroPasajerosCompanyia = "pasajeros_por_vuelo_y_companyias";
+    public static final String nombreFicheroPasajerosConectividad = "conectividad_por_aeropuerto";
 }

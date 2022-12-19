@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.jzy3d.analysis.AWTAbstractAnalysis;
 import org.jzy3d.analysis.AnalysisLauncher;
@@ -37,11 +38,37 @@ public class App extends AWTAbstractAnalysis
 	static List<Individuo> frenteDePareto;
     public static void main( String[] args ) throws Exception
     {
-    	/*Map<List<String>, Integer> conexiones = new HashMap<>();
+    	Map<List<String>, Integer> conexiones = new HashMap<>();
         Map<List<String>, Double> riesgos = new HashMap<>();
         Map<List<String>, Integer> vuelos = new HashMap<>();
-    	LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);*/
+        List<String> AeropuertosEspanyoles = new ArrayList<>();
+        List<String> AeropuertosOrigen = new ArrayList<>();
+        List<String> companyias = new ArrayList<>();
+        Map<List<String>, Double> dineroMedio = new HashMap<>();
+        Map<List<String>, Integer> pasajeros = new HashMap<>();
+        Map<List<String>, Integer> pasajerosCompanyia = new HashMap<>();
+        Map<List<String>, Integer> vuelosEntrantesConexion = new HashMap<>();
+        Map<String, Integer> vuelosSalientesAEspanya = new HashMap<>();
+        Map<String, Integer> vuelosSalientes = new HashMap<>();
+        Map<String, Double> conectividadesAeropuertosOrigen = new HashMap<>();
+        Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol = new HashMap<>();
+        
+        
+    	LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);
+    	LecturaDeDatos.leerDatosAeropuertosEspanyoles(AeropuertosEspanyoles);
+    	LecturaDeDatos.leerDatosAeropuertosOrigen(AeropuertosOrigen);
+    	LecturaDeDatos.leerDatosCompanyias(companyias);
+    	LecturaDeDatos.leerDatosDineroMedio(dineroMedio);
+    	LecturaDeDatos.leerDatosPasajeros(pasajeros);
+    	LecturaDeDatos.leerDatosPasajerosCompanyia(pasajerosCompanyia);
     	
+    	LecturaDeDatos.leerDatosConectividad(vuelosEntrantesConexion, vuelosSalientesAEspanya,
+    			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
+    	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
+    	
+    	System.out.println(pasajeros.keySet().equals(riesgos.keySet()));
+    	
+    	/*
     	//Indicar parámetros del problema y algoritmo
     	int numeroDeIndividuos = 500;
     	int numeroDeVariables = 7;
@@ -49,15 +76,13 @@ public class App extends AWTAbstractAnalysis
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
-    	double probabilidadDeMutacion = 1.0 / numeroDeVariables;
+    	double probabilidadDeMutacion = 1.0 / conexiones.keySet().size();
     	boolean minimizacion = true;
     	int divisiones = 30;
     	int numeroDeObjetivos = 3;
-        
-    	//System.out.println(riesgos);
     	
-    	/*Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, 
-    			conexiones, vuelos);*/
+    	//Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, 
+    			//conexiones, vuelos);
     	
     	Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	
@@ -88,7 +113,7 @@ public class App extends AWTAbstractAnalysis
     	frenteDePareto = Utils.leerCSV(nombre);
         
         AnalysisLauncher.open(new App());
-        
+        */
         
     }
 
