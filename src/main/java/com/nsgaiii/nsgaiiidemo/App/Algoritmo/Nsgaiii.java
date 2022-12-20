@@ -30,7 +30,7 @@ public class Nsgaiii {
 	
 	public Nsgaiii (int numIndividuos,
 			int numGeneraciones, Double indiceDistrC, Double indiceDistrM, double probCruce,
-			double probMut, boolean isMin, int numberOfDivisions, Problema prob) {
+			double probMut, int numberOfDivisions, Problema prob) {
 		
 		//Inicializar problema, poblacion y operadores
 		this.problema = prob;
@@ -41,7 +41,7 @@ public class Nsgaiii {
 		this.mutacion = new OperadorMutacion(probMut, this.indiceDistrM);
 		this.seleccion = new OperadorSeleccion();
 		(new ReferencePoint()).generateReferencePoints(referencePoints, this.problema.getNumObjetivos(), numberOfDivisions);
-		this.reemplazo = new OperadorReemplazo(isMin, this.problema.getNumObjetivos(), referencePoints);
+		this.reemplazo = new OperadorReemplazo(this.problema.getNumObjetivos(), referencePoints);
 		this.numGeneraciones = numGeneraciones;
 		
 		this.poblacion.generarPoblacionInicial(this.problema);

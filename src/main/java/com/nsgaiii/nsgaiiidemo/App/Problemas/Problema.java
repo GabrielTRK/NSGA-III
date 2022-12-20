@@ -14,6 +14,8 @@ public class Problema {
 	 	- Número de objetivos
 	 	- Límites de cada variable 
 	 	- Nombre del problema, para poder guardar los resultados en un fichero
+	 	- Una lista de booleanos, 
+	 	donde cada valor indica si la funcion objetivo se debe minimizar (true) o maximizar (false)
 	 */
 	
 	private int numVariables;
@@ -21,6 +23,7 @@ public class Problema {
 	private List<Double> limitesInferiores;
     private List<Double> limitesSuperiores;
     private String nombre;
+    private List<Boolean> MinOMax;
 	
 	public Problema(int numVariables, int numObjetivos) {
 		this.numObjetivos = numObjetivos;
@@ -31,11 +34,23 @@ public class Problema {
 			lsup.add(i, Utils.getRandNumber(1.0, 10.0));
 			linf.add(i, Utils.getRandNumber(0.0, lsup.get(i)));
 		}
+		this.MinOMax = new ArrayList<>();
+		for(int i = 0; i < this.numObjetivos; i++) {
+			MinOMax.add(i, true);
+		}
 		this.setLimites(linf, lsup);
 		this.nombre = Constantes.nombreProblemaDefecto;
 		
 	}
-	
+
+	public List<Boolean> getMinOMax() {
+		return MinOMax;
+	}
+
+	public void setMinOMax(List<Boolean> minOMax) {
+		MinOMax = minOMax;
+	}
+
 	public void setLimites(ArrayList<Double> inferiores, ArrayList<Double> superiores) {
 		this.limitesInferiores = inferiores;
 		this.limitesSuperiores = superiores;

@@ -38,6 +38,7 @@ public class App extends AWTAbstractAnalysis
 	static List<Individuo> frenteDePareto;
     public static void main( String[] args ) throws Exception
     {
+    	
     	Map<List<String>, Integer> conexiones = new HashMap<>();
         Map<List<String>, Double> riesgos = new HashMap<>();
         Map<List<String>, Integer> vuelos = new HashMap<>();
@@ -66,7 +67,8 @@ public class App extends AWTAbstractAnalysis
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	
-    	System.out.println(pasajeros.keySet().equals(riesgos.keySet()));
+    	System.out.println(pasajerosCompanyia);
+    	
     	
     	/*
     	//Indicar parámetros del problema y algoritmo
@@ -76,8 +78,8 @@ public class App extends AWTAbstractAnalysis
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
-    	double probabilidadDeMutacion = 1.0 / conexiones.keySet().size();
-    	boolean minimizacion = true;
+    	double probabilidadDeMutacion = 1.0 / numeroDeVariables;
+    	
     	int divisiones = 30;
     	int numeroDeObjetivos = 3;
     	
@@ -91,7 +93,7 @@ public class App extends AWTAbstractAnalysis
         Nsgaiii nsgaiii = new Nsgaiii(numeroDeIndividuos, 
         		numeroDeGeneraciones, indiceDeDistribucionC,
         		indiceDeDistribucionM, probabilidadDeCruce, probabilidadDeMutacion,
-        		minimizacion, divisiones, problema);
+        		 divisiones, problema);
         
         //Ejecutar algoritmo
         frenteDePareto = nsgaiii.ejecutarNSGAIII();

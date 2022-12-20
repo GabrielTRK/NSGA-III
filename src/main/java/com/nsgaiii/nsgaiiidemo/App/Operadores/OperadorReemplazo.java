@@ -15,13 +15,11 @@ public class OperadorReemplazo {
 	
 	//Parámetros del Operador de Reemplazo
 
-	private boolean isMinimizacion;
 	private List<List<Individuo>> frentesDePareto;
 	private int solutionsToSelect;
 	private List<ReferencePoint> referencePoints;
 	
-	public OperadorReemplazo(boolean isMin, int numberOfObjectives, List<ReferencePoint> referencePoints) {
-		this.isMinimizacion = isMin;
+	public OperadorReemplazo(int numberOfObjectives, List<ReferencePoint> referencePoints) {
 		this.referencePoints = referencePoints;
 	}
 	
@@ -67,7 +65,7 @@ public class OperadorReemplazo {
 		int mEstricto = 0;
 		int mOIgual = 0;
 		for (int i = 0; i < prob.getNumObjetivos(); i++) {
-			if(this.isMinimizacion) {//TODO: Crear lista de boolean
+			if(prob.getMinOMax().get(i)) {
 				if(a.getObjetivos().get(i) < b.getObjetivos().get(i) && mEstricto == 0) {
 					mEstricto = 1;
 				}

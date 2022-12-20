@@ -65,13 +65,18 @@ public class Vuelos extends Problema{
 	/*Calcular valores de funcion objetivo. 6 objetivos en total
 	 * Lista de tamaño 6
 	 * Posición 0: Riesgo
-	 * 
+	 * Posición 1: Pasajeros perdidos
+	 * Posición 2: 
+	 * Posición 3: 
+	 * Posición 4: 
+	 * Posición 5: 
 	 */
 	@Override
 	public Individuo evaluate(Individuo solution) {
 		ArrayList<Double> objetivos = new ArrayList<>(super.getNumObjetivos());
 		objetivos.add(0, calcularRiesgo(solution));
 		objetivos.add(1, calcularPasajerosPerdidos(solution));
+		objetivos.add(2, calcularPerdidaDeIngresos(solution));
 		//TODO: Obtener las otras funciones
 		solution.setObjetivos(objetivos);
 		return solution;
@@ -112,5 +117,23 @@ public class Vuelos extends Problema{
         Double porcentaje = 1 - sumatorio / totalPasajeros;
         return porcentaje;
 	}
+	
+	//Función objetivo Perdida de ingresos
+	private Double calcularPerdidaDeIngresos(Individuo solucion) {
+		Double suma = 0.0;
+        Double totalSuma = 0.0;
+        List<List<String>> llaves = new ArrayList<>(conexiones.keySet());
+        for (int i = 0; i < llaves.size(); i++) {
+        	suma += dineroMedio.get(llaves.get(i)) * solucion.getVariables().get(i);
+        	totalSuma += dineroMedio.get(llaves.get(i));
+        }
+        Double aux = 0.0;
+        if (totalSuma != 0.0) {
+            aux = suma / totalSuma;
+        }
+        return 1 - aux;
+	}
+	
+	
 
 }
