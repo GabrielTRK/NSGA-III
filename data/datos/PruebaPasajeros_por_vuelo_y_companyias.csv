@@ -1,0 +1,7 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+96.0,VLG,ACE,BCN,Lanzarote Airport,Barcelona International Airport
+103.0,MAY,ACE,BGY,Lanzarote Airport,Milan Bergamo Airport
+103.0,RYR,ACE,BRS,Lanzarote Airport,Bristol Airport
+103.0,RYR,ACE,DUB,Lanzarote Airport,Dublin Airport
+103.0,RYR,ACE,DUB,Lanzarote Airport,Dublin Airport
+87.0,EIN,ACE,DUB,Lanzarote Airport,Dublin Airport

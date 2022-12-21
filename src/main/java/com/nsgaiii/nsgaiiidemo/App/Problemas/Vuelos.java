@@ -66,8 +66,8 @@ public class Vuelos extends Problema{
 	 * Lista de tamaño 6
 	 * Posición 0: Riesgo
 	 * Posición 1: Pasajeros perdidos
-	 * Posición 2: 
-	 * Posición 3: 
+	 * Posición 2: Pérdida de ingresos
+	 * Posición 3: Homogeneidad de pérdida de pasajeros por las compañías
 	 * Posición 4: 
 	 * Posición 5: 
 	 */
@@ -77,11 +77,12 @@ public class Vuelos extends Problema{
 		objetivos.add(0, calcularRiesgo(solution));
 		objetivos.add(1, calcularPasajerosPerdidos(solution));
 		objetivos.add(2, calcularPerdidaDeIngresos(solution));
+		objetivos.add(3, calculoHomogeneidadPasajerosAerolineas(solution));
 		//TODO: Obtener las otras funciones
 		solution.setObjetivos(objetivos);
 		return solution;
 	}
-		 
+	
 	//Inicializar de forma aleatoria los valores de las variables según los límites
 	@Override
 	public Individuo inicializarValores(Individuo ind) {
@@ -134,6 +135,42 @@ public class Vuelos extends Problema{
         return 1 - aux;
 	}
 	
-	
+	private Double calculoHomogeneidadPasajerosAerolineas(Individuo solucion) {
+        List<List<String>> listaConexiones = new ArrayList<>();
+        //listaConexiones.addAll(conexiones.keySet());
+        listaConexiones.addAll(conexiones.keySet());
+        int i;
+        int[] totalPasajerosCompanyias = new int[companyias.size()];
+        int[] totalPasajerosConexiones = new int[companyias.size()];    
+        List<Double> porcentajePerdido = new ArrayList<>();             
+        double porcentajePerdidoMedia = 0.0;                            
+        double porcentajePerdidoDesviacionMedia = 0.0;                  
+        for (int j = 0; j < companyias.size(); j++) {
+            for (i = 0; i < listaConexiones.size(); i++) {
+                if (pasajerosCompanyia.get(List.of(listaConexiones.get(i).get(0),listaConexiones.get(i).get(1),
+                        companyias.get(j))) != null) {
+                    totalPasajerosCompanyias[j] = totalPasajerosCompanyias[j] + pasajerosCompanyia.get(
+                            List.of(listaConexiones.get(i).get(0), listaConexiones.get(i).get(1), companyias.get(j)));
+                    if (solucion.getVariables().get(i) == 1.0) {
+                        totalPasajerosConexiones[j] = totalPasajerosConexiones[j] + pasajerosCompanyia.
+                                get(List.of(listaConexiones.get(i).get(0), listaConexiones.get(i).get(1),companyias.get(j)));
+                    }
+                }
+            }
+            if (totalPasajerosCompanyias[j] != 0) {
+                porcentajePerdido.add(1 - (double) totalPasajerosConexiones[j] / totalPasajerosCompanyias[j]);
+                porcentajePerdidoMedia = porcentajePerdidoMedia +
+                        1 - (double) totalPasajerosConexiones[j] / totalPasajerosCompanyias[j];
+            }
+        }
+        porcentajePerdidoMedia = porcentajePerdidoMedia / porcentajePerdido.size();
+        for (i = 0; i < porcentajePerdido.size(); i++) {
+            porcentajePerdidoDesviacionMedia = porcentajePerdidoDesviacionMedia +
+                    Math.abs(porcentajePerdido.get(i) - porcentajePerdidoMedia);
+        }
+        porcentajePerdidoDesviacionMedia = porcentajePerdidoDesviacionMedia / porcentajePerdido.size();
+        return porcentajePerdidoDesviacionMedia;
+
+    }
 
 }

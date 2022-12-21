@@ -67,7 +67,19 @@ public class App extends AWTAbstractAnalysis
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	
-    	System.out.println(pasajerosCompanyia);
+    	System.out.println(listaConexionesPorAeropuertoEspanyol);
+    	
+    	Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, conexiones, vuelos, 
+    			AeropuertosEspanyoles, AeropuertosOrigen,
+    			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
+    			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
+    			vuelosSalientes, conectividadesAeropuertosOrigen,
+    			listaConexionesPorAeropuertoEspanyol);
+    	
+    	Poblacion poblacion = new Poblacion(4, problema);
+    	poblacion.generarPoblacionInicial(problema);
+    	
+    	System.out.println(poblacion.getPoblacion());
     	
     	
     	/*
