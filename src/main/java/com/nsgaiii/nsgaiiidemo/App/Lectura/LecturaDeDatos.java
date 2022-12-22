@@ -240,5 +240,25 @@ public class LecturaDeDatos {
             }
         }
 	}
+	
+	public static void leerDatosListaConexionesSalidas(Map<String, Set<String>> listaConexionesSalidas, 
+			List<String> AeropuertosOrigen, Map<List<String>, Integer> conexiones) {
+		for (String aeropuerto : AeropuertosOrigen) {
+            Set<String> aux = Collections.emptySet();
+            listaConexionesSalidas.put(aeropuerto, aux);
+        }
+        for (String aeropuerto : AeropuertosOrigen) {
+            for (List<String> conexion : conexiones.keySet()) {
+                if (conexion.get(0).equals(aeropuerto)) {
+                    Set<String> aux = new HashSet<>();
+                    if (listaConexionesSalidas.get(aeropuerto).size() != 0) {
+                        aux = new HashSet<>(listaConexionesSalidas.get(aeropuerto));
+                    }
+                    aux.add(conexion.get(1));
+                    listaConexionesSalidas.put(aeropuerto, aux);
+                }
+            }
+        }
+	}
 
 }

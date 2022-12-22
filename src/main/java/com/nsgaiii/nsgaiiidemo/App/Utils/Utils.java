@@ -215,11 +215,14 @@ public class Utils {
 		}
 	}
 	
-	public List<String> convertirALista(String a, String b){
-		List<String> lista = new ArrayList<>(2);
-		lista.add(b);
-		lista.add(a);
-		return lista;
+	public static int encontrarIndiceEnLista(List<List<String>> listaConexiones, List<String> origenDestino){
+		int num = 0;
+		for (int i = 0; i < listaConexiones.size(); i++) {
+			if (listaConexiones.get(i).equals(origenDestino)) {
+				num = i;
+			}
+		}
+		return num;
 	}
 
 }

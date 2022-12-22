@@ -53,6 +53,7 @@ public class App extends AWTAbstractAnalysis
         Map<String, Integer> vuelosSalientes = new HashMap<>();
         Map<String, Double> conectividadesAeropuertosOrigen = new HashMap<>();
         Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol = new HashMap<>();
+        Map<String, Set<String>> listaConexionesSalidas = new HashMap<>();
         
         
     	LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);
@@ -62,19 +63,19 @@ public class App extends AWTAbstractAnalysis
     	LecturaDeDatos.leerDatosDineroMedio(dineroMedio);
     	LecturaDeDatos.leerDatosPasajeros(pasajeros);
     	LecturaDeDatos.leerDatosPasajerosCompanyia(pasajerosCompanyia);
-    	
     	LecturaDeDatos.leerDatosConectividad(vuelosEntrantesConexion, vuelosSalientesAEspanya,
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
+    	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
     	
-    	System.out.println(listaConexionesPorAeropuertoEspanyol);
+    	System.out.println(pasajeros);
     	
     	Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
-    			listaConexionesPorAeropuertoEspanyol);
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
     	
     	Poblacion poblacion = new Poblacion(4, problema);
     	poblacion.generarPoblacionInicial(problema);
