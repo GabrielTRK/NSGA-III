@@ -1,0 +1,6 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+ACE,BCN,1,152,4353,Lanzarote Airport,Barcelona International Airport
+ACE,BGY,1,87,302,Lanzarote Airport,Milan Bergamo Airport
+ACE,BRS,1,47,301,Lanzarote Airport,Bristol Airport
+ACE,DUB,3,98,4365,Lanzarote Airport,Dublin Airport
+AGP,AMS,1,342,58263,Málaga Airport,Amsterdam Airport Schiphol

@@ -21,5 +21,5 @@ public class Constantes {
     public static final String nombreFicheroDineroPorVuelo = "PruebaDinero_por_vuelo";
     public static final String nombreFicheroPasajerosPorVuelo = "PruebaPasajeros_por_vuelo";
     public static final String nombreFicheroPasajerosCompanyia = "PruebaPasajeros_por_vuelo_y_companyias";
-    public static final String nombreFicheroPasajerosConectividad = "conectividad_por_aeropuerto";
+    public static final String nombreFicheroPasajerosConectividad = "PruebaConectividad_por_aeropuerto";
 }

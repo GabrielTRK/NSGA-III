@@ -68,7 +68,11 @@ public class App extends AWTAbstractAnalysis
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
     	
-    	System.out.println(pasajeros);
+    	//System.out.println(AeropuertosOrigen);
+    	//System.out.println(listaConexionesSalidas);
+    	System.out.println(vuelosEntrantesConexion);
+    	//System.out.println("Riesgos: " + riesgos);
+    	System.out.println(conectividadesAeropuertosOrigen);
     	
     	Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
