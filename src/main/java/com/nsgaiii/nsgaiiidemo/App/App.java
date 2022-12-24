@@ -4,18 +4,27 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.Set;
 
 import org.jzy3d.analysis.AWTAbstractAnalysis;
 import org.jzy3d.analysis.AnalysisLauncher;
+import org.jzy3d.chart.AWTChart;
 import org.jzy3d.chart.factories.AWTChartFactory;
 import org.jzy3d.chart.factories.AWTPainterFactory;
 import org.jzy3d.chart.factories.IChartFactory;
 import org.jzy3d.chart.factories.IPainterFactory;
+import org.jzy3d.chart2d.Chart2d;
 import org.jzy3d.colors.Color;
 import org.jzy3d.maths.Coord3d;
+import org.jzy3d.plot2d.primitives.LineSerie2d;
+import org.jzy3d.plot3d.primitives.Drawable;
 import org.jzy3d.plot3d.primitives.Scatter;
 import org.jzy3d.plot3d.rendering.canvas.Quality;
+import org.jzy3d.plot3d.rendering.legends.overlay.Legend;
+import org.jzy3d.plot3d.rendering.legends.overlay.LegendLayout;
+import org.jzy3d.plot3d.rendering.legends.overlay.OverlayLegendRenderer;
+
 import com.jogamp.opengl.GLCapabilities;
 import com.jogamp.opengl.GLProfile;
 import com.nsgaiii.nsgaiiidemo.App.Algoritmo.Nsgaiii;
@@ -68,12 +77,6 @@ public class App extends AWTAbstractAnalysis
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
     	
-    	//System.out.println(AeropuertosOrigen);
-    	//System.out.println(listaConexionesSalidas);
-    	System.out.println(vuelosEntrantesConexion);
-    	//System.out.println("Riesgos: " + riesgos);
-    	System.out.println(conectividadesAeropuertosOrigen);
-    	
     	Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
@@ -81,29 +84,19 @@ public class App extends AWTAbstractAnalysis
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
     	
-    	Poblacion poblacion = new Poblacion(4, problema);
-    	poblacion.generarPoblacionInicial(problema);
     	
-    	System.out.println(poblacion.getPoblacion());
-    	
-    	
-    	/*
     	//Indicar parámetros del problema y algoritmo
-    	int numeroDeIndividuos = 500;
-    	int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 2500;
+    	int numeroDeIndividuos = 30;
+    	//int numeroDeVariables = 7;
+    	int numeroDeGeneraciones = 1000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
-    	double probabilidadDeMutacion = 1.0 / numeroDeVariables;
+    	double probabilidadDeMutacion = 1.0 / problema.getNumVariables();
+    	int divisiones = 2;
+    	//int numeroDeObjetivos = 3;
     	
-    	int divisiones = 30;
-    	int numeroDeObjetivos = 3;
-    	
-    	//Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, 
-    			//conexiones, vuelos);
-    	
-    	Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
+    	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	
     	long startTime = System.nanoTime();
     	
@@ -132,7 +125,6 @@ public class App extends AWTAbstractAnalysis
     	frenteDePareto = Utils.leerCSV(nombre);
         
         AnalysisLauncher.open(new App());
-        */
         
     }
 
@@ -148,9 +140,12 @@ public class App extends AWTAbstractAnalysis
 	    //Obtener coordenadas a partir de los valores objetivo
 	    
 	    for (int i = 0; i < frenteDePareto.size(); i++) {
+	    	
+	    	
 		      x = frenteDePareto.get(i).getObjetivos().get(0).floatValue();
-		      y = frenteDePareto.get(i).getObjetivos().get(1).floatValue();
-		      z = frenteDePareto.get(i).getObjetivos().get(2).floatValue();
+		      y = Utils.mediaDeValoresObjetivo(frenteDePareto.get(i).getObjetivos().subList(1, 5)).floatValue();
+		      //y = frenteDePareto.get(i).getObjetivos().get(1).floatValue();
+		      z = frenteDePareto.get(i).getObjetivos().get(5).floatValue();
 		      pointsPareto[i] = new Coord3d(x, y, z);
 		      colorsPareto[i] = Color.RED;
 		}

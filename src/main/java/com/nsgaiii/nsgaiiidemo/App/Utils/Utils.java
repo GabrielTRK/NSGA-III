@@ -225,4 +225,12 @@ public class Utils {
 		return num;
 	}
 
+	public static Double mediaDeValoresObjetivo(List<Double> valores) {
+		double suma = 0.0;
+		for (int i = 0; i < valores.size(); i++) {
+			suma += valores.get(i);
+		}
+		return suma / valores.size();
+	}
+	
 }
