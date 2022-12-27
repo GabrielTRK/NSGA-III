@@ -75,9 +75,17 @@ public class Vuelos extends Problema{
 	@Override
 	public Individuo evaluate(Individuo solution) {
 		ArrayList<Double> objetivos = new ArrayList<>(super.getNumObjetivos());
-		objetivos.add(0, calcularRiesgo(solution));
+		
+		ArrayList<Double> riesgoPasajerosIngresos = calcularRiesgoPasajerosIngresos(solution);
+		
+		objetivos.add(0, riesgoPasajerosIngresos.get(0));
+		objetivos.add(1, riesgoPasajerosIngresos.get(1));
+		objetivos.add(2, riesgoPasajerosIngresos.get(2));
+		
+		
+		/*objetivos.add(0, calcularRiesgo(solution));
 		objetivos.add(1, calcularPasajerosPerdidos(solution));
-		objetivos.add(2, calcularPerdidaDeIngresos(solution));
+		objetivos.add(2, calcularPerdidaDeIngresos(solution));*/
 		objetivos.add(3, calculoHomogeneidadPasajerosAerolineas(solution));
 		objetivos.add(4, calculoHomogeneidadIngresosTurismoAeropuertos(solution));
 		objetivos.add(5, calculoConectividad(solution));
@@ -96,6 +104,45 @@ public class Vuelos extends Problema{
 		ind.setVariables(valores);
 		return ind;
 	}
+	
+	private ArrayList<Double> calcularRiesgoPasajerosIngresos(Individuo solucion) {
+		ArrayList<Double> objetivos = new ArrayList<Double>(3);
+		
+		Double Riesgosumatorio = 0.0;
+        Double RiesgosumatorioTotal = 0.0;
+        
+        Double Pasajerossumatorio = 0.0;
+        Double Pasajerostotal = 0.0;
+        
+        Double Ingresossuma = 0.0;
+        Double IngresostotalSuma = 0.0;
+        List<List<String>> llaves = new ArrayList<>(this.riesgos.keySet());
+        for (int i = 0; i < this.listaConexiones.size(); i++) {
+            
+        	Riesgosumatorio += this.riesgos.get(listaConexiones.get(i)) * 
+        			solucion.getVariables().get(i);
+        	RiesgosumatorioTotal += this.riesgos.get(llaves.get(i));
+        	
+        	Pasajerossumatorio += this.pasajeros.get(llaves.get(i)) * 
+            		solucion.getVariables().get(i);
+        	Pasajerostotal += this.pasajeros.get(llaves.get(i));
+        	
+        	Ingresossuma += this.dineroMedio.get(llaves.get(i)) * 
+        			solucion.getVariables().get(i);
+        	IngresostotalSuma += this.dineroMedio.get(llaves.get(i));
+        }
+        Double aux = 0.0;
+        if (IngresostotalSuma != 0.0) {
+            aux = Ingresossuma / IngresostotalSuma;
+        }
+        
+        objetivos.add(0, Riesgosumatorio / RiesgosumatorioTotal);
+        objetivos.add(1, 1 - Pasajerossumatorio / Pasajerostotal);
+        objetivos.add(2, 1 - aux);
+        
+        return objetivos;
+	}
+	
 	
 	//Función objetivo Riesgo
 	private Double calcularRiesgo(Individuo solucion) {

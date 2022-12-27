@@ -45,6 +45,7 @@ public class Nsgaiii {
 		this.numGeneraciones = numGeneraciones;
 		
 		this.poblacion.generarPoblacionInicial(this.problema);
+		System.out.println("a");
 	}
 	
 	public List<Individuo> ejecutarNSGAIII(){

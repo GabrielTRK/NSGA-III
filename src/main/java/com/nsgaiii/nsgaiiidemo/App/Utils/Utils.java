@@ -217,11 +217,21 @@ public class Utils {
 	
 	public static int encontrarIndiceEnLista(List<List<String>> listaConexiones, List<String> origenDestino){
 		int num = 0;
-		for (int i = 0; i < listaConexiones.size(); i++) {
+		int indice = 0;
+		boolean encontrado = false;
+		
+		while(!encontrado && indice < listaConexiones.size()) {
+			if (listaConexiones.get(indice).equals(origenDestino)) {
+				num = indice;
+				encontrado = true;
+			}
+			indice++;
+		}
+		/*for (int i = 0; i < listaConexiones.size(); i++) {
 			if (listaConexiones.get(i).equals(origenDestino)) {
 				num = i;
 			}
-		}
+		}*/
 		return num;
 	}
 

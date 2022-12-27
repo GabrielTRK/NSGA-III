@@ -86,7 +86,7 @@ public class App extends AWTAbstractAnalysis
     	
     	
     	//Indicar parámetros del problema y algoritmo
-    	int numeroDeIndividuos = 30;
+    	int numeroDeIndividuos = 15;
     	//int numeroDeVariables = 7;
     	int numeroDeGeneraciones = 1000;
     	double indiceDeDistribucionM = 20.0;
@@ -97,7 +97,6 @@ public class App extends AWTAbstractAnalysis
     	//int numeroDeObjetivos = 3;
     	
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
-    	
     	long startTime = System.nanoTime();
     	
         Nsgaiii nsgaiii = new Nsgaiii(numeroDeIndividuos, 
