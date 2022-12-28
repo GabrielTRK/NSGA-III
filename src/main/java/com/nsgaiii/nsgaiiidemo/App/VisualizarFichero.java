@@ -23,7 +23,7 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 	static List<Individuo> frenteDePareto;
     public static void main( String[] args ) throws Exception
     {
-    	String nombre = "problemaVuelosTodos.csv";
+    	String nombre = "problemaVuelos20221228150529.csv";
         
     	frenteDePareto = Utils.leerCSV(nombre);
         
@@ -41,9 +41,12 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 	    Color[] colorsPareto = new Color[frenteDePareto.size() + 1];
 	    
 	    for (int i = 0; i < frenteDePareto.size(); i++) {
+	    	
+	    	
 		      x = frenteDePareto.get(i).getObjetivos().get(0).floatValue();
-		      y = frenteDePareto.get(i).getObjetivos().get(1).floatValue();
-		      z = frenteDePareto.get(i).getObjetivos().get(2).floatValue();
+		      y = Utils.mediaDeValoresObjetivo(frenteDePareto.get(i).getObjetivos().subList(1, 5)).floatValue();
+		      //y = frenteDePareto.get(i).getObjetivos().get(1).floatValue();
+		      z = frenteDePareto.get(i).getObjetivos().get(5).floatValue();
 		      pointsPareto[i] = new Coord3d(x, y, z);
 		      colorsPareto[i] = Color.RED;
 		}
