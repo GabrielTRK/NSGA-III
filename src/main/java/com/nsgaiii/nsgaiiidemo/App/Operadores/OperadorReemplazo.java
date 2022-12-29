@@ -114,7 +114,6 @@ public class OperadorReemplazo {
 	}
 	
 	private ArrayList<Individuo> dasDennis(Problema prob){
-		
 		//Restarle a cada individuo los valores del punto ideal
 		List<Double> punto_ideal = traducirObjetivos(prob);
 		//Calcular los puntos extremos con el Achivement Scalarization Function de cada individuo del primer frente

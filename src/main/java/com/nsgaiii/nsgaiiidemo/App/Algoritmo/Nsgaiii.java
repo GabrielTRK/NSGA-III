@@ -45,20 +45,24 @@ public class Nsgaiii {
 		this.numGeneraciones = numGeneraciones;
 		
 		this.poblacion.generarPoblacionInicial(this.problema);
-		System.out.println("a");
 	}
 	
 	public List<Individuo> ejecutarNSGAIII(){
 		Poblacion hijos;
 		
 		int contadorGeneraciones = 0;
+		long startTime = 0;
+		long elapsedTime = 0;
 		//Se mantiene en el bucle hasta que se lleguen al nº de generaciones especificado
-		while (!condicionDeParadaConseguida(contadorGeneraciones, this.poblacion)) {
+		while (!condicionDeParadaConseguida(contadorGeneraciones, this.poblacion, elapsedTime)) {
+			startTime = System.nanoTime();
 			System.out.println(contadorGeneraciones);
 			hijos = generarDescendientes(); //Seleccion, cruce y mutacion
 			obtenerNuevaGeneracion(hijos); //Reemplazo
 			contadorGeneraciones++;
+			elapsedTime = (System.nanoTime() - startTime) / 1000000000;
 		}
+		System.out.println(elapsedTime);
 		this.frenteDePareto = this.reemplazo.obtenerFrentes(poblacion, problema).get(0);
 		return this.frenteDePareto; //Devuelve el frente de pareto obtenido
 	}
@@ -109,10 +113,10 @@ public class Nsgaiii {
 				total, this.problema);
 	}
 	
-	private boolean condicionDeParadaConseguida(int contadorGeneraciones, Poblacion p) {
+	private boolean condicionDeParadaConseguida(int contadorGeneraciones, Poblacion p, long tiempo) {
 		
 		//Se comprueba la generación en la que se encuentra el algoritmo
-		if(contadorGeneraciones >= this.numGeneraciones) {
+		if(contadorGeneraciones >= this.numGeneraciones || tiempo >= 5) {
 			return true;
 		} else {
 			return false;
