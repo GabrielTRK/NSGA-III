@@ -86,14 +86,14 @@ public class App extends AWTAbstractAnalysis
     	
     	
     	//Indicar parámetros del problema y algoritmo
-    	int numeroDeIndividuos = 50;
+    	int numeroDeIndividuos = 24;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 25000;
+    	int numeroDeGeneraciones = 30000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
     	double probabilidadDeMutacion = 1.0 / problema.getNumVariables();
-    	int divisiones = 3;
+    	int divisiones = 2;
     	//int numeroDeObjetivos = 3;
     	
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
