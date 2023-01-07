@@ -86,14 +86,14 @@ public class App extends AWTAbstractAnalysis
     	
     	
     	//Indicar parámetros del problema y algoritmo
-    	int numeroDeIndividuos = 24;
+    	int numeroDeIndividuos = 12;
     	//int numeroDeVariables = 7;
     	int numeroDeGeneraciones = 30000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
     	double probabilidadDeMutacion = 1.0 / problema.getNumVariables();
-    	int divisiones = 2;
+    	int divisiones = 3;
     	//int numeroDeObjetivos = 3;
     	
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
@@ -142,9 +142,9 @@ public class App extends AWTAbstractAnalysis
 	    	
 	    	
 		      x = frenteDePareto.get(i).getObjetivos().get(0).floatValue();
-		      y = Utils.mediaDeValoresObjetivo(frenteDePareto.get(i).getObjetivos().subList(1, 5)).floatValue();
-		      //y = frenteDePareto.get(i).getObjetivos().get(1).floatValue();
-		      z = frenteDePareto.get(i).getObjetivos().get(5).floatValue();
+		      //y = Utils.mediaDeValoresObjetivo(frenteDePareto.get(i).getObjetivos().subList(1, 5)).floatValue();
+		      y = frenteDePareto.get(i).getObjetivos().get(1).floatValue();
+		      z = frenteDePareto.get(i).getObjetivos().get(2).floatValue();
 		      pointsPareto[i] = new Coord3d(x, y, z);
 		      colorsPareto[i] = Color.RED;
 		}

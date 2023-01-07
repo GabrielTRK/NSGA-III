@@ -23,7 +23,7 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 	static List<Individuo> frenteDePareto;
     public static void main( String[] args ) throws Exception
     {
-    	String nombre = "problemaVuelos20221230170855.csv";
+    	String nombre = "problemaVuelos20230103180440.csv";
         
     	frenteDePareto = Utils.leerCSV(nombre);
         

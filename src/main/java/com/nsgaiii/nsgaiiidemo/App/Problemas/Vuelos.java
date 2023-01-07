@@ -40,7 +40,7 @@ public class Vuelos extends Problema{
 			Map<List<String>, Integer> vuelosEntrantesConexion, Map<String, Integer> vuelosSalientesAEspanya, 
 			Map<String, Integer> vuelosSalientes, Map<String, Double> conectividadesAeropuertosOrigen, 
 			Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol, Map<String, Set<String>> listaConexionesSalidas) {
-		super(numVariables, 6);
+		super(numVariables, 3);
 		
 		super.setNombre(Constantes.nombreProblemaVuelos);
 		this.riesgos = riesgos;
@@ -79,18 +79,18 @@ public class Vuelos extends Problema{
 		ArrayList<Double> riesgoPasajerosIngresos = calcularRiesgoPasajerosIngresosHPasajerosHIngresos(solution);
 		
 		objetivos.add(0, riesgoPasajerosIngresos.get(0));
-		objetivos.add(1, riesgoPasajerosIngresos.get(1));
-		objetivos.add(2, riesgoPasajerosIngresos.get(2));
+		objetivos.add(1, Utils.mediaDeValoresObjetivo(riesgoPasajerosIngresos.subList(1, 5)));
+		//objetivos.add(2, riesgoPasajerosIngresos.get(2));
 		
 		
 		/*objetivos.add(0, calcularRiesgo(solution));
 		objetivos.add(1, calcularPasajerosPerdidos(solution));
 		objetivos.add(2, calcularPerdidaDeIngresos(solution));*/
 		//objetivos.add(3, calculoHomogeneidadPasajerosAerolineas(solution));
-		objetivos.add(3, riesgoPasajerosIngresos.get(3));
+		//objetivos.add(3, riesgoPasajerosIngresos.get(3));
 		//objetivos.add(4, calculoHomogeneidadIngresosTurismoAeropuertos(solution));
-		objetivos.add(4, riesgoPasajerosIngresos.get(4));
-		objetivos.add(5, calculoConectividad(solution));
+		//objetivos.add(4, riesgoPasajerosIngresos.get(4));
+		objetivos.add(2, calculoConectividad(solution));
 		
 		solution.setObjetivos(objetivos);
 		return solution;
