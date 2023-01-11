@@ -58,9 +58,7 @@ public class Nsgaiii {
 			startTime = System.nanoTime();
 			System.out.println(contadorGeneraciones);
 			hijos = generarDescendientes(); //Seleccion, cruce y mutacion
-			System.out.println("a");
 			obtenerNuevaGeneracion(hijos); //Reemplazo
-			System.out.println("b");
 			contadorGeneraciones++;
 			elapsedTime = (System.nanoTime() - startTime) / 1000000000;
 		}
@@ -108,14 +106,11 @@ public class Nsgaiii {
 	private void obtenerNuevaGeneracion(Poblacion hijos) {
 		//Reemplazo
 		Poblacion total = Utils.juntarPoblaciones(this.poblacion, hijos, this.problema);
-		System.out.println("a1");
 		Poblacion totalAux = total;
 		this.reemplazo.obtenerFrentes(totalAux, this.problema);
-		System.out.println("a2");
 		//Elegir grupos según el ranking y aplicar el método de Das y Dennis cuando corresponda 
 		this.poblacion = this.reemplazo.rellenarPoblacionConFrentes(this.poblacion,
 				total, this.problema);
-		System.out.println("a3");
 	}
 	
 	private boolean condicionDeParadaConseguida(int contadorGeneraciones, Poblacion p, long tiempo) {

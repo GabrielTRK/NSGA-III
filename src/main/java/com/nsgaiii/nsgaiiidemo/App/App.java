@@ -77,6 +77,8 @@ public class App extends AWTAbstractAnalysis
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
     	
+    	//Declarar problema y pasarselo al algoritmo
+    	
     	Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,

@@ -213,8 +213,7 @@ public class OperadorReemplazo {
 	
 	//Construcción del hiperplano con los puntos extremos
 	private List<Double> construirHiperplano(List<Individuo> extreme_points, Problema prob){
-		// Check whether there are duplicate extreme points.
-		// This might happen but the original paper does not mention how to deal with it.
+		
 		boolean duplicate = false;
 		for (int i = 0; !duplicate && i < extreme_points.size(); i += 1) {
 			for (int j = i + 1; !duplicate && j < extreme_points.size(); j += 1) {
