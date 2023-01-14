@@ -45,6 +45,7 @@ public class App extends AWTAbstractAnalysis
 {
 	
 	static List<Individuo> frenteDePareto;
+	static List<Individuo> indSimplex;
     public static void main( String[] args ) throws Exception
     {
     	
@@ -90,11 +91,12 @@ public class App extends AWTAbstractAnalysis
     	//Indicar parámetros del problema y algoritmo
     	int numeroDeIndividuos = 12;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 60000;
+    	int numeroDeGeneraciones = 200000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
     	double probabilidadDeMutacion = 1.0 / problema.getNumVariables();
+    	//double probabilidadDeMutacion = 1.0 / numeroDeVariables;
     	int divisiones = 3;
     	//int numeroDeObjetivos = 3;
     	
@@ -124,6 +126,10 @@ public class App extends AWTAbstractAnalysis
         //Guarda resultados en un csv y crea un diagrama de dispersión
         String nombre = Utils.crearCSVConObjetivos(frenteDePareto, problema.getNombre());
     	frenteDePareto = Utils.leerCSV(nombre);
+    	
+    	//String nombreSimplex = "simplex.csv";
+    	
+    	//indSimplex = Utils.leerCSV(nombreSimplex);
         
         AnalysisLauncher.open(new App());
         
@@ -135,8 +141,11 @@ public class App extends AWTAbstractAnalysis
 	    float y;
 	    float z;
 	    
+	    //Coord3d[] pointsPareto = new Coord3d[frenteDePareto.size() + 1 + indSimplex.size()];
+	    //Color[] colorsPareto = new Color[frenteDePareto.size() + 1 + indSimplex.size()];
 	    Coord3d[] pointsPareto = new Coord3d[frenteDePareto.size() + 1];
 	    Color[] colorsPareto = new Color[frenteDePareto.size() + 1];
+	    
 	    
 	    //Obtener coordenadas a partir de los valores objetivo
 	    
@@ -152,6 +161,16 @@ public class App extends AWTAbstractAnalysis
 		}
 	    pointsPareto[frenteDePareto.size()] = new Coord3d(0, 0, 0);
 	    colorsPareto[frenteDePareto.size()] = Color.BLACK;
+	    
+	    /*for (int i = 0; i < indSimplex.size(); i++) {
+	    	
+	    	
+		      x = indSimplex.get(i).getObjetivos().get(0).floatValue();
+		      y = indSimplex.get(i).getObjetivos().get(1).floatValue();
+		      z = indSimplex.get(i).getObjetivos().get(2).floatValue();
+		      pointsPareto[i + frenteDePareto.size() + 1] = new Coord3d(x, y, z);
+		      colorsPareto[i + frenteDePareto.size() + 1] = Color.BLUE;
+		}*/
 
 	    Scatter scatter = new Scatter(pointsPareto, colorsPareto);
 	    scatter.setWidth(5);

@@ -29,7 +29,7 @@ public class Utils {
 	
 	public static Double getRandBinNumber() {
 		double rand = Math.random();
-		if (rand < 0.2) {
+		if (rand < 0.5) {
 			return 0.0;
 		}
 		else
@@ -81,6 +81,19 @@ public class Utils {
 		return frente;
 	}
 	
+	public static List<Individuo> obtenerFrenteConIndice(ArrayList<Individuo> p, int pos){
+		List<Individuo> frente = new ArrayList<>();
+		frente.add(p.get(pos));
+		pos++;
+		while( pos < p.size()) {
+			if(frente.get(0).getdomina() == p.get(pos).getdomina()) {
+				frente.add(p.get(pos));
+			}
+			pos++;
+		}
+		return frente;
+	}
+	
 	public static Poblacion borrarElementosDeLista(List<Individuo> lista, Poblacion p) {
 		ArrayList<Individuo> poblacionABorrar = p.getPoblacion();
 		for(int i = 0; i < lista.size(); i++) {
@@ -88,6 +101,16 @@ public class Utils {
 			poblacionABorrar.remove(ind);
 		}
 		p.setPoblacion(poblacionABorrar);
+		return p;
+	}
+	
+	public static ArrayList<Individuo> borrarElementosDeLista(List<Individuo> lista, ArrayList<Individuo> p) {
+		ArrayList<Individuo> poblacionABorrar = p;
+		for(int i = 0; i < lista.size(); i++) {
+			Individuo ind = lista.get(i);
+			poblacionABorrar.remove(ind);
+		}
+		p = poblacionABorrar;
 		return p;
 	}
 	

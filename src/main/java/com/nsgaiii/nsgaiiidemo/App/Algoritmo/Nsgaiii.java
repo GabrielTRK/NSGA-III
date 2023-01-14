@@ -18,6 +18,7 @@ public class Nsgaiii {
 	
 	private Poblacion poblacion;
 	private List<Individuo> frenteDePareto;
+	private ArrayList<Individuo> frentesAux = new ArrayList<>();
 	private int numGeneraciones;
 	private OperadorCruce cruce;
 	private OperadorMutacion mutacion;
@@ -57,12 +58,14 @@ public class Nsgaiii {
 		while (!condicionDeParadaConseguida(contadorGeneraciones, this.poblacion, elapsedTime)) {
 			startTime = System.nanoTime();
 			System.out.println(contadorGeneraciones);
+			System.out.println("Generando hijos");
 			hijos = generarDescendientes(); //Seleccion, cruce y mutacion
+			System.out.println("Nueva poblacion");
 			obtenerNuevaGeneracion(hijos); //Reemplazo
 			contadorGeneraciones++;
 			elapsedTime = (System.nanoTime() - startTime) / 1000000000;
 		}
-		System.out.println(elapsedTime);
+		//this.frenteDePareto = this.reemplazo.obtenerFrentes(frentesAux, problema).get(0);
 		this.frenteDePareto = this.reemplazo.obtenerFrentes(poblacion, problema).get(0);
 		return this.frenteDePareto; //Devuelve el frente de pareto obtenido
 	}
@@ -104,11 +107,18 @@ public class Nsgaiii {
 	}
 	
 	private void obtenerNuevaGeneracion(Poblacion hijos) {
+		//List<Individuo> frenteI;
 		//Reemplazo
+		System.out.println("Obteniendo población transitoria");
 		Poblacion total = Utils.juntarPoblaciones(this.poblacion, hijos, this.problema);
 		Poblacion totalAux = total;
+		System.out.println("Obteniendo frentes");
 		this.reemplazo.obtenerFrentes(totalAux, this.problema);
-		//Elegir grupos según el ranking y aplicar el método de Das y Dennis cuando corresponda 
+		//frenteI = this.reemplazo.getFrentesDePareto().get(0);
+		System.out.println("Añadiendo frente a aux");
+		//this.frentesAux = Utils.juntarListas(frentesAux, frenteI);
+		//Elegir grupos según el ranking y aplicar el método de Das y Dennis cuando corresponda
+		System.out.println("Rellenando nueva poblacion");
 		this.poblacion = this.reemplazo.rellenarPoblacionConFrentes(this.poblacion,
 				total, this.problema);
 	}
