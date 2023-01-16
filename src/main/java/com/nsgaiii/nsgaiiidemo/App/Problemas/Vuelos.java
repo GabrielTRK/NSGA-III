@@ -138,6 +138,7 @@ public class Vuelos extends Problema{
         for (int j = 0; j < this.companyias.size(); j++) {
         	for (int i = 0; i < this.listaConexiones.size(); i++) {
         		if(!calculado) {
+        			//Riesgo, Pasajeros e Ingresos -----------------------
         			Riesgosumatorio += this.riesgos.get(listaConexiones.get(i)) * 
             			solucion.getVariables().get(i);
         			RiesgosumatorioTotal += this.riesgos.get(llaves.get(i));
@@ -149,7 +150,9 @@ public class Vuelos extends Problema{
         			Ingresossuma += this.dineroMedio.get(llaves.get(i)) * 
             			solucion.getVariables().get(i);
         			IngresostotalSuma += this.dineroMedio.get(llaves.get(i));
+        			//----------------------------------------------------
             	
+        			//calculoHomogeneidadIngresosTurismoAeropuertos
         			if (numPasajerosAeropuerto.get(this.listaConexiones.get(i).get(1)) != null) {
         				numPasajerosAeropuerto.put(this.listaConexiones.get(i).get(1), numPasajerosAeropuerto.get(
                     		this.listaConexiones.get(i).get(1)) + this.pasajeros.get(this.listaConexiones.get(i)));
@@ -164,7 +167,9 @@ public class Vuelos extends Problema{
                         numPasajerosAeropuertoConexiones.put(this.listaConexiones.get(i).get(1), this.pasajeros.get(this.listaConexiones.get(i)));
         				}
         			}
+        			//----------------------------------------------
         		}
+        		//calculoHomogeneidadPasajerosAerolineas------------
         		if (this.pasajerosCompanyia.get(List.of(this.listaConexiones.get(i).get(0),this.listaConexiones.get(i).get(1),
                 		this.companyias.get(j))) != null) {
                     totalPasajerosCompanyias[j] = totalPasajerosCompanyias[j] + this.pasajerosCompanyia.get(
@@ -178,7 +183,7 @@ public class Vuelos extends Problema{
         		
         	}
         	calculado = true;
-        	
+        	//calculoHomogeneidadPasajerosAerolineas----------------
         	if (totalPasajerosCompanyias[j] != 0) {
                 porcentajePerdido.add(1 - (double) totalPasajerosConexiones[j] / totalPasajerosCompanyias[j]);
                 porcentajePerdidoMedia = porcentajePerdidoMedia +

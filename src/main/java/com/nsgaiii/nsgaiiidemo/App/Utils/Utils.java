@@ -29,7 +29,7 @@ public class Utils {
 	
 	public static Double getRandBinNumber() {
 		double rand = Math.random();
-		if (rand < 0.2) {
+		if (rand < 0.6) {
 			return 0.0;
 		}
 		else
