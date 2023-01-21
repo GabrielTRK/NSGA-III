@@ -1,5 +1,7 @@
 package com.nsgaiii.nsgaiiidemo.App.Algoritmo;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
@@ -13,6 +15,7 @@ import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorReemplazo;
 import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorSeleccion;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
+import com.opencsv.exceptions.CsvException;
 
 public class Nsgaiii {
 	
@@ -31,7 +34,7 @@ public class Nsgaiii {
 	
 	public Nsgaiii (int numIndividuos,
 			int numGeneraciones, Double indiceDistrC, Double indiceDistrM, double probCruce,
-			double probMut, int numberOfDivisions, Problema prob) {
+			double probMut, int numberOfDivisions, Problema prob, boolean leerF, String nombreFichero) throws FileNotFoundException, IOException, CsvException {
 		
 		//Inicializar problema, poblacion y operadores
 		this.problema = prob;
@@ -45,7 +48,7 @@ public class Nsgaiii {
 		this.reemplazo = new OperadorReemplazo(this.problema.getNumObjetivos(), referencePoints);
 		this.numGeneraciones = numGeneraciones;
 		
-		this.poblacion.generarPoblacionInicial(this.problema);
+		this.poblacion.generarPoblacionInicial(this.problema, leerF, nombreFichero);
 	}
 	
 	public List<Individuo> ejecutarNSGAIII(){
@@ -58,9 +61,9 @@ public class Nsgaiii {
 		while (!condicionDeParadaConseguida(contadorGeneraciones, this.poblacion, elapsedTime)) {
 			startTime = System.nanoTime();
 			System.out.println(contadorGeneraciones);
-			System.out.println("Generando hijos");
+			//System.out.println("Generando hijos");
 			hijos = generarDescendientes(); //Seleccion, cruce y mutacion
-			System.out.println("Nueva poblacion");
+			//System.out.println("Nueva poblacion");
 			obtenerNuevaGeneracion(hijos); //Reemplazo
 			contadorGeneraciones++;
 			elapsedTime = (System.nanoTime() - startTime) / 1000000000;
@@ -109,16 +112,16 @@ public class Nsgaiii {
 	private void obtenerNuevaGeneracion(Poblacion hijos) {
 		//List<Individuo> frenteI;
 		//Reemplazo
-		System.out.println("Obteniendo población transitoria");
+		//System.out.println("Obteniendo población transitoria");
 		Poblacion total = Utils.juntarPoblaciones(this.poblacion, hijos, this.problema);
 		Poblacion totalAux = total;
-		System.out.println("Obteniendo frentes");
+		//System.out.println("Obteniendo frentes");
 		this.reemplazo.obtenerFrentes(totalAux, this.problema);
 		//frenteI = this.reemplazo.getFrentesDePareto().get(0);
-		System.out.println("Añadiendo frente a aux");
+		//System.out.println("Añadiendo frente a aux");
 		//this.frentesAux = Utils.juntarListas(frentesAux, frenteI);
 		//Elegir grupos según el ranking y aplicar el método de Das y Dennis cuando corresponda
-		System.out.println("Rellenando nueva poblacion");
+		//System.out.println("Rellenando nueva poblacion");
 		this.poblacion = this.reemplazo.rellenarPoblacionConFrentes(this.poblacion,
 				total, this.problema);
 	}

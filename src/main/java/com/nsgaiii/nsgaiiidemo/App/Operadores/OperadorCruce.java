@@ -127,5 +127,47 @@ public class OperadorCruce {
 		
 		return hijos;
 	}
+	
+	
+	public ArrayList<Individuo> cruceDosPuntos (Individuo padre1, Individuo padre2, Problema prob){
+		Individuo hijo1 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
+		Individuo hijo2 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
+		ArrayList<Individuo> hijos = new ArrayList<Individuo>(2);
+		hijos.add(padre1);
+		hijos.add(padre2);
+		
+		if (Utils.isProbValid(this.probCruce) && Utils.getRandNumber(0.0, Math.nextUp(1.0)) <= this.probCruce) {
+			// 1. Calcular el punto de cruce
+			//float mitad = prob.getNumVariables()/2;
+			//System.out.println("Mitad: " + mitad);
+			int crossoverPoint = Utils.getRandNumber(0, prob.getNumVariables());
+			int crossoverPoint2 = Utils.getRandNumber(crossoverPoint + 1, prob.getNumVariables());
+			//System.out.println("Punto 1: " + crossoverPoint);
+			//System.out.println("Punto 2: " + crossoverPoint2);
+		    // 2. Aplicar el cruce sobre las variables que se encuentran antes del punto de cruce 1
+		    for (int i = 0; i < crossoverPoint; i++) {
+		    	hijo1.setIVariable(i, padre1.getVariables().get(i));
+		    	hijo2.setIVariable(i, padre2.getVariables().get(i));
+		    }
+		    // 3. Aplicar el cruce sobre las variables que se encuentran después del punto de cruce 1
+		    // y antes del 2
+		    for (int i = crossoverPoint; i < crossoverPoint2; i++) {
+		    	double swap = padre2.getVariables().get(i);
+		    	hijo1.setIVariable(i, swap);
+		    	hijo2.setIVariable(i, padre1.getVariables().get(i));
+		    }
+		    // 4. Aplicar el cruce sobre las variables que se encuentran después del punto de cruce 2
+		    for (int i = crossoverPoint2; i < prob.getNumVariables(); i++) {
+		    	hijo1.setIVariable(i, padre1.getVariables().get(i));
+		    	hijo2.setIVariable(i, padre2.getVariables().get(i));
+		    }
+		    
+		    hijos.set(0, hijo1);
+			hijos.set(1, hijo2);
+		    
+		}
+		
+		return hijos;
+	}
 
 }

@@ -1,20 +1,27 @@
 package com.nsgaiii.nsgaiiidemo.App;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 
 import com.nsgaiii.nsgaiiidemo.App.Lectura.LecturaDeDatos;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
+import com.nsgaiii.nsgaiiidemo.App.Modelo.Poblacion;
+import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorCruce;
+import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorReemplazo;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Vuelos;
+import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
+import com.opencsv.exceptions.CsvException;
 
 public class EvaluarIndividuo {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) throws Exception, IOException, CsvException {
 		
 		Map<List<String>, Integer> conexiones = new HashMap<>();
         Map<List<String>, Double> riesgos = new HashMap<>();
@@ -51,18 +58,58 @@ public class EvaluarIndividuo {
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
+    	System.out.println(conexiones);
+    	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
+    	        
     	
-    	Individuo ind = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());
+    	/*ArrayList<Individuo> lista = new ArrayList<>();
+    	String nombre = "problemaVuelos20230118143133.csv";
+    	
+    	String nombreSolD = "solucionDavid.csv";
+    	
+    	List<Individuo> frenteDePareto = Utils.leerCSV(nombre);
+    	
+    	List<Individuo> solD = Utils.leerCSV(nombreSolD);
+    	
+    	System.out.println("David: " + solD.size());
+    	System.out.println("Yo: " + frenteDePareto.size());
+    	
+    	lista = Utils.juntarListass(frenteDePareto, solD);
+    	
+    	Poblacion poblacion = new Poblacion(lista.size(), problema);
+    	poblacion.setPoblacion(null);
+    	System.out.println("Total: " + lista.size());
+    	
+    	System.out.println(reemplazo.obtenerFrentes(lista, problema).get(0));*/
+    	
+    	OperadorCruce cruce = new OperadorCruce(1, 0);
+    	
+    	Individuo padre1 = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());
     	
     	ArrayList<Double> valores = new ArrayList<>();
     	for(int i = 0; i < problema.getNumVariables(); i++) {
-    		valores.add(1.0);
+    		valores.add(0.0);
     	}
-    	//valores.set(0, 0.0);
     	
-    	ind.setVariables(valores);
+    	padre1.setVariables(valores);
     	
-    	System.out.println(problema.evaluate(ind));
+    	Individuo padre2 = new Individuo(problema.getNumVariables(), 3);
+    	
+    	ArrayList<Double> valores2 = new ArrayList<>();
+    	for(int i = 0; i < problema.getNumVariables(); i++) {
+    		valores2.add(1.0);
+    	}
+    	
+    	padre2.setVariables(valores2);
+    	
+    	System.out.println(padre1);
+    	System.out.println(padre2);
+    	System.out.println(problema.evaluate(padre1));
+    	System.out.println(problema.evaluate(padre2));
+    	
+    	System.out.println(cruce.cruceDosPuntos(padre1, padre2, problema));
+    	
+		
 
 	}
 

@@ -29,7 +29,7 @@ public class Utils {
 	
 	public static Double getRandBinNumber() {
 		double rand = Math.random();
-		if (rand < 0.6) {
+		if (rand < 0.8) {
 			return 0.0;
 		}
 		else
@@ -119,6 +119,24 @@ public class Utils {
 			Alista.add(i);
 		}
 		return Alista;
+	}
+	
+	public static List<Individuo> juntarListas (List<Individuo> Alista, List<Individuo> frente){
+		for(Individuo i : frente) {
+			Alista.add(i);
+		}
+		return Alista;
+	}
+	
+	public static ArrayList<Individuo> juntarListass (List<Individuo> Alista, List<Individuo> frente){
+		ArrayList<Individuo> Blista = new ArrayList<>();
+		for(Individuo i : Alista) {
+			Blista.add(i);
+		}
+		for(Individuo i : frente) {
+			Blista.add(i);
+		}
+		return Blista;
 	}
 	
 	public static ArrayList<Double> inicializarLista (int tamaño){
@@ -227,15 +245,28 @@ public class Utils {
 			
 			for(int i = 1; i < r.size(); i++) {
 		    	Individuo ind = new Individuo(numVariables, numObjetivos);
+		    	ArrayList<Double> Var = new ArrayList<>();
 		    	ArrayList<Double> Fobj = new ArrayList<>();
+		    	for (int k = 0; k < numVariables; k++) {
+		    		Var.add(Double.valueOf(r.get(i)[k]));
+		    	}
 		    	for (int j = numVariables; j < r.get(i).length; j++) {
 		    		Fobj.add(Double.valueOf(r.get(i)[j]));
 		    	}
+		    	ind.setVariables(Var);
 		    	ind.setObjetivos(Fobj);
 		    	frente.add(ind);
 		    }
 		    return frente;
 		}
+	}
+	
+	public static ArrayList<Individuo> pasarAArrayList(List<Individuo> frente){
+		ArrayList<Individuo> Afrente = new ArrayList<Individuo>();
+		for (Individuo i : frente) {
+			Afrente.add(i);
+		}
+		return Afrente;
 	}
 	
 	public static int encontrarIndiceEnLista(List<List<String>> listaConexiones, List<String> origenDestino){

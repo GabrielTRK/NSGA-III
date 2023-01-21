@@ -1,8 +1,12 @@
 package com.nsgaiii.nsgaiiidemo.App.Modelo;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
+import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
+import com.opencsv.exceptions.CsvException;
 
 
 public class Poblacion {
@@ -44,9 +48,15 @@ public class Poblacion {
 		}
 	}
 
-	public void generarPoblacionInicial(Problema p) {
-		this.obtenerValores(p);
-		this.calcularObjetivos(p);
+	public void generarPoblacionInicial(Problema p, boolean leerFichero, String nombreFichero) throws FileNotFoundException, IOException, CsvException {
+		if(!leerFichero) {
+			this.obtenerValores(p);
+			this.calcularObjetivos(p);
+		}else {
+			this.poblacion = Utils.pasarAArrayList(Utils.leerCSV(nombreFichero));
+			this.obtenerIndividuosRestantes(p);
+		}
+		
 	}
 	
 	public void obtenerValores(Problema p) {
@@ -62,6 +72,15 @@ public class Poblacion {
 			Individuo individuo = this.poblacion.get(i);
 			individuo = p.evaluate(individuo);
 			this.poblacion.set(i, individuo);
+		}
+	}
+	
+	public void obtenerIndividuosRestantes(Problema p) {
+		while(this.poblacion.size() < this.numIndividuos) {
+			Individuo individuo = new Individuo(p.getNumVariables(), p.getNumObjetivos());
+			individuo = p.inicializarValores(individuo);
+			individuo = p.evaluate(individuo);
+			this.poblacion.add(individuo);
 		}
 	}
 	

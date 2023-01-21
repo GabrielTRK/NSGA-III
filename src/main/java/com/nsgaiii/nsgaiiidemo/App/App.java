@@ -89,16 +89,18 @@ public class App extends AWTAbstractAnalysis
     	
     	
     	//Indicar parámetros del problema y algoritmo
-    	int numeroDeIndividuos = 24;
+    	int numeroDeIndividuos = 48;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 200000;
+    	int numeroDeGeneraciones = 50000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
     	double probabilidadDeMutacion = 1.0 / problema.getNumVariables();
     	//double probabilidadDeMutacion = 1.0 / numeroDeVariables;
-    	int divisiones = 5;
+    	int divisiones = 8;
     	//int numeroDeObjetivos = 3;
+    	boolean leerFichero = true;
+    	String nombreFichero = "problemaVuelos20230122002328.csv";
     	
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	long startTime = System.nanoTime();
@@ -106,7 +108,7 @@ public class App extends AWTAbstractAnalysis
         Nsgaiii nsgaiii = new Nsgaiii(numeroDeIndividuos, 
         		numeroDeGeneraciones, indiceDeDistribucionC,
         		indiceDeDistribucionM, probabilidadDeCruce, probabilidadDeMutacion,
-        		 divisiones, problema);
+        		 divisiones, problema, leerFichero, nombreFichero);
         
         //Ejecutar algoritmo
         frenteDePareto = nsgaiii.ejecutarNSGAIII();
@@ -122,7 +124,7 @@ public class App extends AWTAbstractAnalysis
         	System.out.println("Tiempo de ejecucion en segundos: "
                     + elapsedTime);
         }
-        
+        System.out.println(frenteDePareto.size());
         //Guarda resultados en un csv y crea un diagrama de dispersión
         String nombre = Utils.crearCSVConObjetivos(frenteDePareto, problema.getNombre());
     	frenteDePareto = Utils.leerCSV(nombre);

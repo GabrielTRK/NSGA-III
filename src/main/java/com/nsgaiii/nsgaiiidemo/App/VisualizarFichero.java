@@ -1,5 +1,6 @@
 package com.nsgaiii.nsgaiiidemo.App;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.jzy3d.analysis.AWTAbstractAnalysis;
@@ -13,24 +14,32 @@ import org.jzy3d.maths.Coord3d;
 import org.jzy3d.plot3d.primitives.Scatter;
 import org.jzy3d.plot3d.rendering.canvas.Quality;
 
+import com.jogamp.common.util.Bitfield.Util;
 import com.jogamp.opengl.GLCapabilities;
 import com.jogamp.opengl.GLProfile;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
+import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorReemplazo;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
 
 public class VisualizarFichero extends AWTAbstractAnalysis{
 	
 	static List<Individuo> frenteDePareto;
 	static List<Individuo> indSimplex;
+	static List<Individuo> solD;
     public static void main( String[] args ) throws Exception
     {
-    	String nombre = "problemaVuelosTodos.csv";
+    	
+    	List<Individuo> lista = new ArrayList<>();
+    	String nombre = "problemaVuelos20230121184124.csv";
     	
     	String nombreSimplex = "simplex.csv";
+    	
+    	String nombreSolD = "solucionDavid.csv";
         
     	frenteDePareto = Utils.leerCSV(nombre);
-    	indSimplex = Utils.leerCSV(nombreSimplex);
-        
+    	//indSimplex = Utils.leerCSV(nombreSimplex);
+    	solD = Utils.leerCSV(nombreSolD);
+    	
     	AnalysisLauncher.open(new VisualizarFichero());
     }
 	
@@ -41,8 +50,8 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 	    float y;
 	    float z;
 	    
-	    Coord3d[] pointsPareto = new Coord3d[frenteDePareto.size() + 1 + indSimplex.size()];
-	    Color[] colorsPareto = new Color[frenteDePareto.size() + 1 + indSimplex.size()];
+	    Coord3d[] pointsPareto = new Coord3d[frenteDePareto.size() + 1 + solD.size()];
+	    Color[] colorsPareto = new Color[frenteDePareto.size() + 1 + solD.size()];
 	    
 	    for (int i = 0; i < frenteDePareto.size(); i++) {
 	    	
@@ -57,7 +66,7 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 	    pointsPareto[frenteDePareto.size()] = new Coord3d(0, 0, 0);
 	    colorsPareto[frenteDePareto.size()] = Color.BLACK;
 	    
-	    for (int i = 0; i < indSimplex.size(); i++) {
+	    /*for (int i = 0; i < indSimplex.size(); i++) {
 	    	
 	    	
 		      x = indSimplex.get(i).getObjetivos().get(0).floatValue();
@@ -65,7 +74,18 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 		      z = indSimplex.get(i).getObjetivos().get(2).floatValue();
 		      pointsPareto[i + frenteDePareto.size() + 1] = new Coord3d(x, y, z);
 		      colorsPareto[i + frenteDePareto.size() + 1] = Color.BLUE;
+		}*/
+	    
+	    for (int i = 0; i < solD.size(); i++) {
+	    	
+	    	
+		      x = solD.get(i).getObjetivos().get(0).floatValue();
+		      y = solD.get(i).getObjetivos().get(1).floatValue();
+		      z = solD.get(i).getObjetivos().get(2).floatValue();
+		      pointsPareto[i + frenteDePareto.size() + 1] = new Coord3d(x, y, z);
+		      colorsPareto[i + frenteDePareto.size() + 1] = Color.CYAN;
 		}
+	    
 
 	    Scatter scatter = new Scatter(pointsPareto, colorsPareto);
 	    scatter.setWidth(5);

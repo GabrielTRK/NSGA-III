@@ -37,7 +37,6 @@ public class LecturaDeDatos {
                 } else {
                 	vuelos.put(List.of(split[2], split[1]), 1);
                 }
-
             }
             // Closing the scanner
             scanner.close();
