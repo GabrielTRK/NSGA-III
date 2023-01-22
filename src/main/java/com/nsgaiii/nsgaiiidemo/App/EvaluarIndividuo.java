@@ -62,17 +62,17 @@ public class EvaluarIndividuo {
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
     	        
     	
-    	/*ArrayList<Individuo> lista = new ArrayList<>();
-    	String nombre = "problemaVuelos20230118143133.csv";
+    	ArrayList<Individuo> lista = new ArrayList<>();
+    	String nombre = "problemaVuelos20230122202827.csv";
     	
-    	String nombreSolD = "solucionDavid.csv";
+    	String nombreSolD = "problemaVuelos20230123004342.csv";
     	
     	List<Individuo> frenteDePareto = Utils.leerCSV(nombre);
     	
     	List<Individuo> solD = Utils.leerCSV(nombreSolD);
     	
-    	System.out.println("David: " + solD.size());
-    	System.out.println("Yo: " + frenteDePareto.size());
+    	System.out.println("Antes: " + solD.size());
+    	System.out.println("Despues: " + frenteDePareto.size());
     	
     	lista = Utils.juntarListass(frenteDePareto, solD);
     	
@@ -80,9 +80,9 @@ public class EvaluarIndividuo {
     	poblacion.setPoblacion(null);
     	System.out.println("Total: " + lista.size());
     	
-    	System.out.println(reemplazo.obtenerFrentes(lista, problema).get(0));*/
+    	System.out.println(reemplazo.obtenerFrentes(lista, problema).get(0));
     	
-    	OperadorCruce cruce = new OperadorCruce(1, 0);
+    	/*OperadorCruce cruce = new OperadorCruce(1, 0);
     	
     	Individuo padre1 = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());
     	
@@ -107,7 +107,7 @@ public class EvaluarIndividuo {
     	System.out.println(problema.evaluate(padre1));
     	System.out.println(problema.evaluate(padre2));
     	
-    	System.out.println(cruce.cruceDosPuntos(padre1, padre2, problema));
+    	System.out.println(cruce.cruceDosPuntos(padre1, padre2, problema));*/
     	
 		
 
