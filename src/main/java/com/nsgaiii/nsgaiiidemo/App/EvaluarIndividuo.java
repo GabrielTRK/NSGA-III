@@ -63,24 +63,29 @@ public class EvaluarIndividuo {
     	        
     	
     	ArrayList<Individuo> lista = new ArrayList<>();
-    	String nombre = "problemaVuelos20230122202827.csv";
+    	String antes = "problemaVuelos20230123221339.csv";
     	
-    	String nombreSolD = "problemaVuelos20230123004342.csv";
+    	String despues = "problemaVuelos20230124004516.csv";
     	
-    	List<Individuo> frenteDePareto = Utils.leerCSV(nombre);
+    	List<Individuo> frenteAntes = Utils.leerCSV(antes);
     	
-    	List<Individuo> solD = Utils.leerCSV(nombreSolD);
+    	List<Individuo> frenteDespues = Utils.leerCSV(despues);
     	
-    	System.out.println("Antes: " + solD.size());
-    	System.out.println("Despues: " + frenteDePareto.size());
+    	System.out.println("Antes: " + frenteAntes.size());
+    	System.out.println("Despues: " + frenteDespues.size());
     	
-    	lista = Utils.juntarListass(frenteDePareto, solD);
+    	lista = Utils.juntarListass(frenteAntes, frenteDespues);
     	
     	Poblacion poblacion = new Poblacion(lista.size(), problema);
     	poblacion.setPoblacion(null);
     	System.out.println("Total: " + lista.size());
     	
-    	System.out.println(reemplazo.obtenerFrentes(lista, problema).get(0));
+    	List<List<Individuo>> frentes = reemplazo.obtenerFrentes(lista, problema);
+    	System.out.println("Frente 1: " + frentes.get(0).size());
+    	System.out.println("Frente 2: " + frentes.get(1).size());
+    	
+    	System.out.println(frentes.get(0));
+    	System.out.println(frentes.get(1));
     	
     	/*OperadorCruce cruce = new OperadorCruce(1, 0);
     	

@@ -17,7 +17,6 @@ public class OperadorSeleccion {
 		int rand1 = Utils.getRandNumber(0, p.getNumIndividuos());
 		int rand2 = Utils.getRandNumber(0, p.getNumIndividuos());
 		while(rand1 == rand2) {
-			System.out.println("Padres iguales");
 			rand2 = Utils.getRandNumber(0, p.getNumIndividuos());
 		}
 		

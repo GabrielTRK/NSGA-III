@@ -30,7 +30,7 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
     {
     	
     	List<Individuo> lista = new ArrayList<>();
-    	String nombre = "problemaVuelos20230123004342.csv";
+    	String nombre = "problemaVuelos20230124004516.csv";
     	
     	String nombreSimplex = "simplex.csv";
     	
