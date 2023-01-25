@@ -60,12 +60,12 @@ public class EvaluarIndividuo {
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
     	System.out.println(conexiones);
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
-    	        
+    	/*        
     	
     	ArrayList<Individuo> lista = new ArrayList<>();
-    	String antes = "problemaVuelos20230124021956.csv";
+    	String antes = "problemaVuelos20230125010213.csv";
     	
-    	String despues = "problemaVuelos20230124162358.csv";
+    	String despues = "problemaVuelos20230125154316.csv";
     	
     	List<Individuo> frenteAntes = Utils.leerCSV(antes);
     	
@@ -85,7 +85,7 @@ public class EvaluarIndividuo {
     	System.out.println("Frente 2: " + frentes.get(1).size());
     	
     	System.out.println(frentes.get(0));
-    	System.out.println(frentes.get(1));
+    	System.out.println(frentes.get(1));*/
     	
     	/*OperadorCruce cruce = new OperadorCruce(1, 0);
     	
@@ -113,9 +113,36 @@ public class EvaluarIndividuo {
     	System.out.println(problema.evaluate(padre2));
     	
     	System.out.println(cruce.cruceDosPuntos(padre1, padre2, problema));*/
+    	String s = "";
+    	Poblacion poblacion = new Poblacion(32768 - 1, problema);
+    	ArrayList<Individuo> indi = new ArrayList<>();
+    	for (int i = 0; i < 32768; i++) {
+    		String result = Integer.toBinaryString(i);
+    		String resultWithPadding = String.format("%15s", result).replaceAll(" ", "0");
+    		Individuo ind = new Individuo(15, 3);
+    		ArrayList<Double> var  = new ArrayList<Double>(15);
+    		for (int j = 0; j < 15; j++) {
+    			var.add(j, Double.valueOf(resultWithPadding.charAt(j) + s));
+    		}
+    		ind.setVariables(var);
+    		ind = problema.evaluate(ind);
+    		indi.add(ind);
+    	}
+    	poblacion.setPoblacion(indi);
+    	List<List<Individuo>> frentes = reemplazo.obtenerFrentes(poblacion, problema);
+    	System.out.println(frentes.get(0).size());
+    	Utils.crearCSVConObjetivos(frentes.get(0), problema.getNombre());
+    	System.out.println("a");
     	
-		
-
+    	//int input = 32768 - 1;
+    	
+    	/*String result = Integer.toBinaryString(input);
+    	String resultWithPadding = String.format("%15s", result).replaceAll(" ", "0");  // 32-bit Integer
+    	System.out.println(resultWithPadding);
+    	char[] chars = resultWithPadding.toCharArray();
+    	System.out.println(chars[0]);
+    	
+    	System.out.println(Double.valueOf(chars[0] + s));*/
 	}
 
 }

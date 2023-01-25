@@ -100,8 +100,8 @@ public class App extends AWTAbstractAnalysis
     	//double probabilidadDeMutacion = 1.0 / numeroDeVariables;
     	int divisiones = 8;
     	//int numeroDeObjetivos = 3;
-    	boolean leerFichero = true;
-    	String nombreFichero = "problemaVuelos20230124234519.csv";
+    	boolean leerFichero = false;
+    	String nombreFichero = "problemaVuelos20230125010213.csv";
     	
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	long startTime = System.nanoTime();
@@ -146,10 +146,10 @@ public class App extends AWTAbstractAnalysis
 	    float y;
 	    float z;
 	    
-	    Coord3d[] pointsPareto = new Coord3d[frenteDePareto.size() + 1 + indD.size() + indSimplex.size()];
-	    Color[] colorsPareto = new Color[frenteDePareto.size() + 1 + indD.size() + indSimplex.size()];
-	    //Coord3d[] pointsPareto = new Coord3d[frenteDePareto.size() + 1];
-	    //Color[] colorsPareto = new Color[frenteDePareto.size() + 1];
+	    //Coord3d[] pointsPareto = new Coord3d[frenteDePareto.size() + 1 + indD.size() + indSimplex.size()];
+	    //Color[] colorsPareto = new Color[frenteDePareto.size() + 1 + indD.size() + indSimplex.size()];
+	    Coord3d[] pointsPareto = new Coord3d[frenteDePareto.size() + 1];
+	    Color[] colorsPareto = new Color[frenteDePareto.size() + 1];
 	    
 	    
 	    //Obtener coordenadas a partir de los valores objetivo
@@ -167,7 +167,7 @@ public class App extends AWTAbstractAnalysis
 	    pointsPareto[frenteDePareto.size()] = new Coord3d(0, 0, 0);
 	    colorsPareto[frenteDePareto.size()] = Color.BLACK;
 	    
-	    for (int i = 0; i < indD.size(); i++) {
+	    /*for (int i = 0; i < indD.size(); i++) {
 	    	
 	    	
 		      x = indD.get(i).getObjetivos().get(0).floatValue();
@@ -185,7 +185,7 @@ public class App extends AWTAbstractAnalysis
 	      z = indSimplex.get(i).getObjetivos().get(2).floatValue();
 	      pointsPareto[i + frenteDePareto.size() + 1 + indD.size()] = new Coord3d(x, y, z);
 	      colorsPareto[i + frenteDePareto.size() + 1 + indD.size()] = Color.BLUE;
-		}
+		}*/
 
 	    Scatter scatter = new Scatter(pointsPareto, colorsPareto);
 	    scatter.setWidth(5);

@@ -1,8 +1,36 @@
 ﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
 96.0,VLG,ACE,BCN,Lanzarote Airport,Barcelona International Airport
 103.0,MAY,ACE,BGY,Lanzarote Airport,Milan Bergamo Airport
+103.0,TVS,ACE,BJL,Lanzarote Airport,Banjul International Airport
 103.0,RYR,ACE,BRS,Lanzarote Airport,Bristol Airport
 103.0,RYR,ACE,DUB,Lanzarote Airport,Dublin Airport
 103.0,RYR,ACE,DUB,Lanzarote Airport,Dublin Airport
 87.0,EIN,ACE,DUB,Lanzarote Airport,Dublin Airport
-103.0,TRA,AGP,AMS,Málaga Airport,Amsterdam Airport Schiphol
+103.0,RYR,ACE,EMA,Lanzarote Airport,East Midlands Airport
+115.0,EZY,ACE,LGW,Lanzarote Airport,London Gatwick Airport
+45.0,IBB,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,IBB,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,IBB,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,IBB,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,IBB,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,IBB,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,IBB,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,IBB,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,IBB,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,CNF,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,CNF,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,CNF,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+45.0,CNF,ACE,LPA,Lanzarote Airport,Gran Canaria Airport
+89.0,LGL,ACE,LUX,Lanzarote Airport,Luxembourg-Findel International Airport
+103.0,RYR,ACE,MAD,Lanzarote Airport,Adolfo Suárez Madrid–Barajas Airport
+115.0,IBS,ACE,MAD,Lanzarote Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,RYR,ACE,MAN,Lanzarote Airport,Manchester Airport
+103.0,RYR,ACE,ORK,Lanzarote Airport,Cork Airport
+103.0,RYR,ACE,STN,Lanzarote Airport,London Stansted Airport
+45.0,IBB,ACE,TFN,Lanzarote Airport,Tenerife Norte Airport
+45.0,IBB,ACE,TFN,Lanzarote Airport,Tenerife Norte Airport
+45.0,IBB,ACE,TFN,Lanzarote Airport,Tenerife Norte Airport
+45.0,IBB,ACE,TFN,Lanzarote Airport,Tenerife Norte Airport
+45.0,CNF,ACE,TFN,Lanzarote Airport,Tenerife Norte Airport
+103.0,RYR,ACE,VLC,Lanzarote Airport,Valencia Airport
+96.0,VLG,ACE,VLC,Lanzarote Airport,Valencia Airport
