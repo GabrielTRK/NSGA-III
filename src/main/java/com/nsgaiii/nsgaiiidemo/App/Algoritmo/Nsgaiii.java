@@ -85,7 +85,7 @@ public class Nsgaiii {
 			nuevosHijos = this.seleccion.seleccionAleatoria(this.poblacion);
 			
 			//Cruce
-			nuevosHijos = this.cruce.cruceUnPunto(
+			nuevosHijos = this.cruce.cruceDosPuntos(
 					nuevosHijos.get(0),
 					nuevosHijos.get(1),
 					this.problema);

@@ -63,9 +63,9 @@ public class EvaluarIndividuo {
     	        
     	
     	ArrayList<Individuo> lista = new ArrayList<>();
-    	String antes = "problemaVuelos20230123221339.csv";
+    	String antes = "problemaVuelos20230124021956.csv";
     	
-    	String despues = "problemaVuelos20230124004516.csv";
+    	String despues = "problemaVuelos20230124162358.csv";
     	
     	List<Individuo> frenteAntes = Utils.leerCSV(antes);
     	

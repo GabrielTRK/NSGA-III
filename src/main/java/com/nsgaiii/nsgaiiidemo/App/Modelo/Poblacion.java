@@ -53,7 +53,13 @@ public class Poblacion {
 			this.obtenerValores(p);
 			this.calcularObjetivos(p);
 		}else {
-			this.poblacion = Utils.pasarAArrayList(Utils.leerCSV(nombreFichero));
+			ArrayList<Individuo> poblacionAux = new ArrayList<Individuo>();
+			poblacionAux = Utils.pasarAArrayList(Utils.leerCSV(nombreFichero));
+			if (poblacionAux.size() > this.numIndividuos) {
+				poblacionAux = Utils.pasarAArrayList(poblacionAux.subList(0, this.numIndividuos));
+			}
+			this.poblacion = poblacionAux;
+			
 			this.obtenerIndividuosRestantes(p);
 		}
 		
