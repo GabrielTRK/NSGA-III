@@ -59,9 +59,8 @@ public class EvaluarIndividuo {
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
     	System.out.println(riesgos.size());
-    	System.out.println(riesgos);
+    	System.out.println(pasajerosCompanyia);
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
-    	
     	
     	
     	/*        
