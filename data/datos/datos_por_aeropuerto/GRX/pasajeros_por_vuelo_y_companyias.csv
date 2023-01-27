@@ -1,0 +1,12 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+2.0,UNKNOWN,GRX,AGP,Federico Garcia Lorca Airport,Málaga Airport
+2.0,UNKNOWN,GRX,AGP,Federico Garcia Lorca Airport,Málaga Airport
+2.0,UNKNOWN,GRX,AGP,Federico Garcia Lorca Airport,Málaga Airport
+87.0,VLG,GRX,BCN,Federico Garcia Lorca Airport,Barcelona International Airport
+58.0,ANE,GRX,MAD,Federico Garcia Lorca Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,ANE,GRX,MAD,Federico Garcia Lorca Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,VLG,GRX,MAH,Federico Garcia Lorca Airport,Menorca Airport
+45.0,ANE,GRX,MLN,Federico Garcia Lorca Airport,Melilla Airport
+103.0,AEA,GRX,PMI,Federico Garcia Lorca Airport,Palma De Mallorca Airport
+107.0,VLG,GRX,PMI,Federico Garcia Lorca Airport,Palma De Mallorca Airport
+87.0,VLG,GRX,TFN,Federico Garcia Lorca Airport,Tenerife Norte Airport

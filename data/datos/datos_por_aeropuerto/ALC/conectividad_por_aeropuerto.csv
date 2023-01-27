@@ -1,0 +1,33 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+ALC,ABZ,1,44,5,Alicante International Airport,Aberdeen Dyce Airport
+ALC,AMS,1,342,58263,Alicante International Airport,Amsterdam Airport Schiphol
+ALC,BCN,1,152,4353,Alicante International Airport,Barcelona International Airport
+ALC,BHX,1,52,194,Alicante International Airport,Birmingham International Airport
+ALC,BIO,1,25,52,Alicante International Airport,Bilbao Airport
+ALC,BLL,1,23,22,Alicante International Airport,Billund Airport
+ALC,BRE,1,22,15,Alicante International Airport,Bremen Airport
+ALC,BRS,2,47,301,Alicante International Airport,Bristol Airport
+ALC,BRU,1,103,6325,Alicante International Airport,Brussels Airport
+ALC,DUB,1,98,4365,Alicante International Airport,Dublin Airport
+ALC,EDI,1,66,151,Alicante International Airport,Edinburgh Airport
+ALC,EIN,2,37,86,Alicante International Airport,Eindhoven Airport
+ALC,EMA,2,89,43,Alicante International Airport,East Midlands Airport
+ALC,FMM,1,21,4,Alicante International Airport,Memmingen Allgau Airport
+ALC,GLA,2,42,66,Alicante International Airport,Glasgow International Airport
+ALC,INN,1,15,2,Alicante International Airport,Innsbruck Airport
+ALC,KUN,1,13,1,Alicante International Airport,Kaunas International Airport
+ALC,LGW,3,118,1492,Alicante International Airport,London Gatwick Airport
+ALC,LTN,2,84,173,Alicante International Airport,London Luton Airport
+ALC,MAD,3,185,22933,Alicante International Airport,Adolfo Suárez Madrid–Barajas Airport
+ALC,MAN,3,95,1370,Alicante International Airport,Manchester Airport
+ALC,NCL,1,25,43,Alicante International Airport,Newcastle Airport
+ALC,ORK,1,14,9,Alicante International Airport,Cork Airport
+ALC,OSL,1,165,4003,Alicante International Airport,Oslo Gardermoen Airport
+ALC,OTP,1,49,347,Alicante International Airport,Henri Coandă International Airport
+ALC,PMI,2,117,201,Alicante International Airport,Palma De Mallorca Airport
+ALC,RTM,1,17,4,Alicante International Airport,Rotterdam The Hague Airport
+ALC,SDR,1,9,1,Alicante International Airport,Santander Airport
+ALC,SOF,1,43,44,Alicante International Airport,Sofia Airport
+ALC,STN,3,130,1617,Alicante International Airport,London Stansted Airport
+ALC,TFN,1,53,46,Alicante International Airport,Tenerife Norte Airport
+ALC,VXO,1,1,0,Alicante International Airport,Växjö Kronoberg Airport

@@ -1,0 +1,67 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+45.0,IBB,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,IBB,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,IBB,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,IBB,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,IBB,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,IBB,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,IBB,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,IBB,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,IBB,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,IBB,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,CNF,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,CNF,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+45.0,CNF,LPA,ACE,Gran Canaria Airport,Lanzarote Airport
+87.0,VLG,LPA,AGP,Gran Canaria Airport,Málaga Airport
+107.0,VLG,LPA,BCN,Gran Canaria Airport,Barcelona International Airport
+107.0,VLG,LPA,BCN,Gran Canaria Airport,Barcelona International Airport
+96.0,VLG,LPA,BIO,Gran Canaria Airport,Bilbao Airport
+103.0,MAY,LPA,BLQ,Gran Canaria Airport,Bologna Guglielmo Marconi Airport
+45.0,SWT,LPA,DSS,Gran Canaria Airport,Blaise Diagne International Airport
+103.0,RYR,LPA,DUB,Gran Canaria Airport,Dublin Airport
+45.0,IBB,LPA,FNC,Gran Canaria Airport,Madeira Airport
+45.0,IBB,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,IBB,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,CNF,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,CNF,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,CNF,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,IBB,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,IBB,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,IBB,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,IBB,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+45.0,IBB,LPA,FUE,Gran Canaria Airport,Fuerteventura Airport
+87.0,IBE,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+113.0,SWT,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,SWT,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+97.0,SWT,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,SWT,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,RYR,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+115.0,IBS,LPA,MAD,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,VLG,LPA,OVD,Gran Canaria Airport,Asturias Airport
+1.0,IBB,LPA,PMI,Gran Canaria Airport,Palma De Mallorca Airport
+1.0,IBB,LPA,SDR,Gran Canaria Airport,Santander Airport
+45.0,CNF,LPA,SPC,Gran Canaria Airport,La Palma Airport
+45.0,IBB,LPA,SPC,Gran Canaria Airport,La Palma Airport
+45.0,IBB,LPA,SPC,Gran Canaria Airport,La Palma Airport
+45.0,IBB,LPA,SPC,Gran Canaria Airport,La Palma Airport
+103.0,RYR,LPA,STN,Gran Canaria Airport,London Stansted Airport
+103.0,RYR,LPA,SVQ,Gran Canaria Airport,Sevilla Airport
+96.0,VLG,LPA,SVQ,Gran Canaria Airport,Sevilla Airport
+45.0,IBB,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,IBB,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,IBB,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,IBB,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,IBB,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,IBB,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,IBB,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,IBB,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,IBB,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+1.0,IBB,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,CNF,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,CNF,LPA,TFN,Gran Canaria Airport,Tenerife Norte Airport
+45.0,IBB,LPA,TFS,Gran Canaria Airport,Tenerife South Airport
+45.0,IBB,LPA,TFS,Gran Canaria Airport,Tenerife South Airport
+45.0,IBB,LPA,TFS,Gran Canaria Airport,Tenerife South Airport
+45.0,IBB,LPA,VDE,Gran Canaria Airport,Hierro Airport

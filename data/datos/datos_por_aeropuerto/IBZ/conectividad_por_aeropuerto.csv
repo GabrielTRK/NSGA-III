@@ -1,0 +1,29 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+IBZ,AGP,1,94,102,Ibiza Airport,Málaga Airport
+IBZ,AMS,1,342,58263,Ibiza Airport,Amsterdam Airport Schiphol
+IBZ,BCN,9,152,4353,Ibiza Airport,Barcelona International Airport
+IBZ,BGY,2,87,302,Ibiza Airport,Milan Bergamo Airport
+IBZ,BHX,1,52,194,Ibiza Airport,Birmingham International Airport
+IBZ,BLQ,1,51,150,Ibiza Airport,Bologna Guglielmo Marconi Airport
+IBZ,CRL,1,44,73,Ibiza Airport,Brussels South Charleroi Airport
+IBZ,DUB,1,98,4365,Ibiza Airport,Dublin Airport
+IBZ,DUS,1,89,3254,Ibiza Airport,Düsseldorf Airport
+IBZ,EIN,2,37,86,Ibiza Airport,Eindhoven Airport
+IBZ,FCO,1,138,14854,Ibiza Airport,Leonardo da Vinci–Fiumicino Airport
+IBZ,LGW,1,118,1492,Ibiza Airport,London Gatwick Airport
+IBZ,LHR,2,251,33904,Ibiza Airport,London Heathrow Airport
+IBZ,LIS,1,132,6494,Ibiza Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+IBZ,LTN,1,84,173,Ibiza Airport,London Luton Airport
+IBZ,MAD,5,185,22933,Ibiza Airport,Adolfo Suárez Madrid–Barajas Airport
+IBZ,MAN,1,95,1370,Ibiza Airport,Manchester Airport
+IBZ,MRS,1,65,190,Ibiza Airport,Marseille Provence Airport
+IBZ,MUC,1,185,36058,Ibiza Airport,Munich Airport
+IBZ,MXP,3,140,1267,Ibiza Airport,Malpensa International Airport
+IBZ,ORY,1,148,1289,Ibiza Airport,Paris-Orly Airport
+IBZ,PMI,8,117,201,Ibiza Airport,Palma De Mallorca Airport
+IBZ,STN,1,130,1617,Ibiza Airport,London Stansted Airport
+IBZ,SVQ,1,38,67,Ibiza Airport,Sevilla Airport
+IBZ,TXL,1,93,776,Ibiza Airport,Berlin-Tegel Airport
+IBZ,VIE,1,151,15655,Ibiza Airport,Vienna International Airport
+IBZ,VLC,2,38,61,Ibiza Airport,Valencia Airport
+IBZ,ZRH,1,122,18392,Ibiza Airport,Zürich Airport

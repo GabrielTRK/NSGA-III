@@ -1,0 +1,2 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+78.0,RFR,LEN,BZZ,Leon Airport,RAF Brize Norton

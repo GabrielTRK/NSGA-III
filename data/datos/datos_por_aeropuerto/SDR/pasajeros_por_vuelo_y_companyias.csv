@@ -1,0 +1,7 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+103.0,RYR,SDR,BCN,Santander Airport,Barcelona International Airport
+1.0,IBB,SDR,LPA,Santander Airport,Gran Canaria Airport
+96.0,IBE,SDR,MAD,Santander Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,VLG,SDR,PMI,Santander Airport,Palma De Mallorca Airport
+103.0,RYR,SDR,VIE,Santander Airport,Vienna International Airport
+103.0,RYR,SDR,VLC,Santander Airport,Valencia Airport

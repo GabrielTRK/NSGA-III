@@ -1,0 +1,17 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+97.0,SWT,VIT,ALC,Vitoria/Foronda Airport,Alicante International Airport
+97.0,SWT,VIT,BCN,Vitoria/Foronda Airport,Barcelona International Airport
+154.0,BCS,VIT,BRU,Vitoria/Foronda Airport,Brussels Airport
+97.0,SWT,VIT,CGN,Vitoria/Foronda Airport,Cologne Bonn Airport
+148.0,SRR,VIT,CGN,Vitoria/Foronda Airport,Cologne Bonn Airport
+97.0,SWT,VIT,EMA,Vitoria/Foronda Airport,East Midlands Airport
+2.0,UNKNOWN,VIT,ILD,Vitoria/Foronda Airport,Lleida-Alguaire Airport
+2.0,UNKNOWN,VIT,ILD,Vitoria/Foronda Airport,Lleida-Alguaire Airport
+154.0,BCS,VIT,LEJ,Vitoria/Foronda Airport,Leipzig/Halle Airport
+113.0,BCS,VIT,LEJ,Vitoria/Foronda Airport,Leipzig/Halle Airport
+113.0,BCS,VIT,LIS,Vitoria/Foronda Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+97.0,SWT,VIT,SCQ,Vitoria/Foronda Airport,Santiago de Compostela Airport
+6.0,ITN,VIT,SDR,Vitoria/Foronda Airport,Santander Airport
+154.0,BCS,VIT,SVQ,Vitoria/Foronda Airport,Sevilla Airport
+148.0,SRR,VIT,SVQ,Vitoria/Foronda Airport,Sevilla Airport
+97.0,SWT,VIT,VLC,Vitoria/Foronda Airport,Valencia Airport

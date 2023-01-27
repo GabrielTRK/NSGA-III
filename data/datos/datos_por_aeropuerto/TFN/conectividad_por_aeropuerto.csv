@@ -1,0 +1,16 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+SVQ,TFN,1,53,46,Sevilla Airport,Tenerife Norte Airport
+SVQ,TFS,1,23,4,Sevilla Airport,Tenerife South Airport
+TFN,ACE,5,34,2,Tenerife Norte Airport,Lanzarote Airport
+TFN,AGP,1,94,102,Tenerife Norte Airport,Málaga Airport
+TFN,ALC,1,53,37,Tenerife Norte Airport,Alicante International Airport
+TFN,BCN,2,152,4353,Tenerife Norte Airport,Barcelona International Airport
+TFN,BIO,1,25,52,Tenerife Norte Airport,Bilbao Airport
+TFN,FUE,5,23,2,Tenerife Norte Airport,Fuerteventura Airport
+TFN,GRX,1,9,1,Tenerife Norte Airport,Federico Garcia Lorca Airport
+TFN,LIS,1,132,6494,Tenerife Norte Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+TFN,LPA,14,68,68,Tenerife Norte Airport,Gran Canaria Airport
+TFN,MAD,6,185,22933,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+TFN,SPC,11,16,0,Tenerife Norte Airport,La Palma Airport
+TFN,SVQ,1,38,67,Tenerife Norte Airport,Sevilla Airport
+TFN,VGO,1,6,1,Tenerife Norte Airport,Vigo Airport

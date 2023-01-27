@@ -1,0 +1,24 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+103.0,RYR,MAH,BCN,Menorca Airport,Barcelona International Airport
+96.0,VLG,MAH,BCN,Menorca Airport,Barcelona International Airport
+87.0,VLG,MAH,BCN,Menorca Airport,Barcelona International Airport
+87.0,VLG,MAH,BCN,Menorca Airport,Barcelona International Airport
+87.0,VLG,MAH,BCN,Menorca Airport,Barcelona International Airport
+87.0,VLG,MAH,BCN,Menorca Airport,Barcelona International Airport
+96.0,VLG,MAH,BCN,Menorca Airport,Barcelona International Airport
+87.0,VLG,MAH,BCN,Menorca Airport,Barcelona International Airport
+68.0,VOE,MAH,BIO,Menorca Airport,Bilbao Airport
+96.0,VLG,MAH,BIO,Menorca Airport,Bilbao Airport
+87.0,VLG,MAH,GRX,Menorca Airport,Federico Garcia Lorca Airport
+87.0,EZY,MAH,LGW,Menorca Airport,London Gatwick Airport
+103.0,RYR,MAH,MAD,Menorca Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,IBS,MAH,MAD,Menorca Airport,Adolfo Suárez Madrid–Barajas Airport
+4.0,UNKNOWN,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+45.0,SWT,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+45.0,SWT,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+58.0,ANE,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+58.0,ANE,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+58.0,ANE,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+58.0,ANE,MAH,PMI,Menorca Airport,Palma De Mallorca Airport
+68.0,VOE,MAH,VLC,Menorca Airport,Valencia Airport
+96.0,VLG,MAH,VLC,Menorca Airport,Valencia Airport

@@ -1,0 +1,24 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),entrada.iata,salida.iata,entrada.airportName,salida.airportName
+9.0,TFS,BCN,Tenerife South Airport,Barcelona International Airport
+103.0,TFS,BHX,Tenerife South Airport,Birmingham International Airport
+96.0,TFS,BRS,Tenerife South Airport,Bristol Airport
+103.0,TFS,BRS,Tenerife South Airport,Bristol Airport
+221.0,TFS,BRU,Tenerife South Airport,Brussels Airport
+103.0,TFS,DUB,Tenerife South Airport,Dublin Airport
+103.0,TFS,KTW,Tenerife South Airport,Katowice International Airport
+115.0,TFS,LGW,Tenerife South Airport,London Gatwick Airport
+45.0,TFS,LPA,Tenerife South Airport,Gran Canaria Airport
+45.0,TFS,LPA,Tenerife South Airport,Gran Canaria Airport
+45.0,TFS,LPA,Tenerife South Airport,Gran Canaria Airport
+87.0,TFS,LTN,Tenerife South Airport,London Luton Airport
+87.0,TFS,MAD,Tenerife South Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,TFS,MAN,Tenerife South Airport,Manchester Airport
+103.0,TFS,MAN,Tenerife South Airport,Manchester Airport
+87.0,TFS,MXP,Tenerife South Airport,Malpensa International Airport
+103.0,TFS,SCQ,Tenerife South Airport,Santiago de Compostela Airport
+103.0,TFS,SNN,Tenerife South Airport,Shannon Airport
+103.0,TFS,STN,Tenerife South Airport,London Stansted Airport
+103.0,TFS,SVQ,Tenerife South Airport,Sevilla Airport
+87.0,TFS,VIE,Tenerife South Airport,Vienna International Airport
+103.0,TFS,WAW,Tenerife South Airport,Warsaw Chopin Airport
+87.0,TFS,ZRH,Tenerife South Airport,Zürich Airport

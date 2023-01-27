@@ -1,0 +1,6 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+68.0,VOE,OVD,AGP,Asturias Airport,Málaga Airport
+87.0,VLG,OVD,BCN,Asturias Airport,Barcelona International Airport
+107.0,VLG,OVD,LPA,Asturias Airport,Gran Canaria Airport
+96.0,IBE,OVD,MAD,Asturias Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,IBE,OVD,MAD,Asturias Airport,Adolfo Suárez Madrid–Barajas Airport

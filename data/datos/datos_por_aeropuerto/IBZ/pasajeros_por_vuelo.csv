@@ -1,0 +1,56 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),entrada.iata,salida.iata,entrada.airportName,salida.airportName
+103.0,IBZ,AGP,Ibiza Airport,Málaga Airport
+103.0,IBZ,AMS,Ibiza Airport,Amsterdam Airport Schiphol
+103.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+103.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+107.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+87.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+96.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+96.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+87.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+87.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+87.0,IBZ,BCN,Ibiza Airport,Barcelona International Airport
+103.0,IBZ,BGY,Ibiza Airport,Milan Bergamo Airport
+103.0,IBZ,BGY,Ibiza Airport,Milan Bergamo Airport
+103.0,IBZ,BHX,Ibiza Airport,Birmingham International Airport
+103.0,IBZ,BLQ,Ibiza Airport,Bologna Guglielmo Marconi Airport
+103.0,IBZ,CRL,Ibiza Airport,Brussels South Charleroi Airport
+103.0,IBZ,DUB,Ibiza Airport,Dublin Airport
+87.0,IBZ,DUS,Ibiza Airport,Düsseldorf Airport
+103.0,IBZ,EIN,Ibiza Airport,Eindhoven Airport
+103.0,IBZ,EIN,Ibiza Airport,Eindhoven Airport
+103.0,IBZ,FCO,Ibiza Airport,Leonardo da Vinci–Fiumicino Airport
+103.0,IBZ,LBA,Ibiza Airport,Leeds Bradford Airport
+96.0,IBZ,LGW,Ibiza Airport,London Gatwick Airport
+72.0,IBZ,LHR,Ibiza Airport,London Heathrow Airport
+72.0,IBZ,LHR,Ibiza Airport,London Heathrow Airport
+107.0,IBZ,LIS,Ibiza Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+96.0,IBZ,LTN,Ibiza Airport,London Luton Airport
+103.0,IBZ,MAD,Ibiza Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,IBZ,MAD,Ibiza Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,IBZ,MAD,Ibiza Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,IBZ,MAD,Ibiza Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,IBZ,MAD,Ibiza Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,IBZ,MAN,Ibiza Airport,Manchester Airport
+103.0,IBZ,MRS,Ibiza Airport,Marseille Provence Airport
+72.0,IBZ,MUC,Ibiza Airport,Munich Airport
+87.0,IBZ,MXP,Ibiza Airport,Malpensa International Airport
+87.0,IBZ,MXP,Ibiza Airport,Malpensa International Airport
+87.0,IBZ,MXP,Ibiza Airport,Malpensa International Airport
+103.0,IBZ,NRN,Ibiza Airport,Weeze Airport
+103.0,IBZ,ORY,Ibiza Airport,Paris-Orly Airport
+45.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+45.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+45.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+45.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+58.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+58.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+58.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+58.0,IBZ,PMI,Ibiza Airport,Palma De Mallorca Airport
+103.0,IBZ,STN,Ibiza Airport,London Stansted Airport
+103.0,IBZ,SVQ,Ibiza Airport,Sevilla Airport
+103.0,IBZ,TXL,Ibiza Airport,Berlin-Tegel Airport
+87.0,IBZ,VIE,Ibiza Airport,Vienna International Airport
+103.0,IBZ,VLC,Ibiza Airport,Valencia Airport
+29.0,IBZ,VLC,Ibiza Airport,Valencia Airport
+3.0,IBZ,ZRH,Ibiza Airport,Zürich Airport

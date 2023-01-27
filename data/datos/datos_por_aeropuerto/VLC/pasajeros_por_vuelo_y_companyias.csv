@@ -1,0 +1,37 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+103.0,RYR,VLC,ACE,Valencia Airport,Lanzarote Airport
+96.0,VLG,VLC,ACE,Valencia Airport,Lanzarote Airport
+103.0,TRA,VLC,AMS,Valencia Airport,Amsterdam Airport Schiphol
+56.0,KLC,VLC,AMS,Valencia Airport,Amsterdam Airport Schiphol
+56.0,KLC,VLC,AMS,Valencia Airport,Amsterdam Airport Schiphol
+133.0,UPS,VLC,BCN,Valencia Airport,Barcelona International Airport
+97.0,TAY,VLC,BCN,Valencia Airport,Barcelona International Airport
+103.0,RYR,VLC,BGY,Valencia Airport,Milan Bergamo Airport
+68.0,VOE,VLC,BIO,Valencia Airport,Bilbao Airport
+58.0,ANE,VLC,BIO,Valencia Airport,Bilbao Airport
+87.0,VLG,VLC,BIO,Valencia Airport,Bilbao Airport
+103.0,RYR,VLC,BRU,Valencia Airport,Brussels Airport
+103.0,AEA,VLC,CDG,Valencia Airport,Charles de Gaulle International Airport
+103.0,RYR,VLC,CGN,Valencia Airport,Cologne Bonn Airport
+103.0,RYR,VLC,DUB,Valencia Airport,Dublin Airport
+103.0,RYR,VLC,EMA,Valencia Airport,East Midlands Airport
+87.0,DLH,VLC,FRA,Valencia Airport,Frankfurt am Main Airport
+103.0,RYR,VLC,IBZ,Valencia Airport,Ibiza Airport
+29.0,ANE,VLC,IBZ,Valencia Airport,Ibiza Airport
+45.0,WHT,VLC,LIS,Valencia Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+45.0,SWT,VLC,MAD,Valencia Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,ANE,VLC,MAD,Valencia Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,ANE,VLC,MAD,Valencia Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,VLG,VLC,MAH,Valencia Airport,Menorca Airport
+68.0,VOE,VLC,MAH,Valencia Airport,Menorca Airport
+103.0,MAY,VLC,MXP,Valencia Airport,Malpensa International Airport
+103.0,RYR,VLC,NTE,Valencia Airport,Nantes Atlantique Airport
+103.0,TVF,VLC,ORY,Valencia Airport,Paris-Orly Airport
+45.0,SWT,VLC,PMI,Valencia Airport,Palma De Mallorca Airport
+103.0,RYR,VLC,PMI,Valencia Airport,Palma De Mallorca Airport
+103.0,AEA,VLC,PMI,Valencia Airport,Palma De Mallorca Airport
+96.0,VLG,VLC,PMI,Valencia Airport,Palma De Mallorca Airport
+103.0,RYR,VLC,SDR,Valencia Airport,Santander Airport
+103.0,RYR,VLC,STN,Valencia Airport,London Stansted Airport
+97.0,SWT,VLC,VIT,Valencia Airport,Vitoria/Foronda Airport
+93.0,SWR,VLC,ZRH,Valencia Airport,Zürich Airport

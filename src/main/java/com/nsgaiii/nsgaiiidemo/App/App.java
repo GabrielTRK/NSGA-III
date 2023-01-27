@@ -92,7 +92,7 @@ public class App extends AWTAbstractAnalysis
     	//Indicar parámetros del problema y algoritmo
     	int numeroDeIndividuos = 48;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 10000;
+    	int numeroDeGeneraciones = 100000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;

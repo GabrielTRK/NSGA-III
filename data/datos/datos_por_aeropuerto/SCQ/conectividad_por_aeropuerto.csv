@@ -1,0 +1,8 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+SCQ,AGP,1,94,102,Santiago de Compostela Airport,Málaga Airport
+SCQ,BCN,3,152,4353,Santiago de Compostela Airport,Barcelona International Airport
+SCQ,MAD,2,185,22933,Santiago de Compostela Airport,Adolfo Suárez Madrid–Barajas Airport
+SCQ,PMI,1,117,201,Santiago de Compostela Airport,Palma De Mallorca Airport
+SCQ,STN,2,130,1617,Santiago de Compostela Airport,London Stansted Airport
+SCQ,SVQ,1,38,67,Santiago de Compostela Airport,Sevilla Airport
+SCQ,TFS,1,23,4,Santiago de Compostela Airport,Tenerife South Airport

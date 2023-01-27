@@ -1,0 +1,6 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+45.0,IBB,VDE,LPA,Hierro Airport,Gran Canaria Airport
+45.0,IBB,VDE,TFN,Hierro Airport,Tenerife Norte Airport
+45.0,IBB,VDE,TFN,Hierro Airport,Tenerife Norte Airport
+45.0,IBB,VDE,TFN,Hierro Airport,Tenerife Norte Airport
+45.0,IBB,VDE,TFN,Hierro Airport,Tenerife Norte Airport

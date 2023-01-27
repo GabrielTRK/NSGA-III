@@ -1,0 +1,89 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),entrada.iata,salida.iata,entrada.airportName,salida.airportName
+103.0,AGP,AMS,Málaga Airport,Amsterdam Airport Schiphol
+96.0,AGP,ARN,Málaga Airport,Stockholm-Arlanda Airport
+103.0,AGP,ARN,Málaga Airport,Stockholm-Arlanda Airport
+103.0,AGP,BCN,Málaga Airport,Barcelona International Airport
+96.0,AGP,BCN,Málaga Airport,Barcelona International Airport
+87.0,AGP,BCN,Málaga Airport,Barcelona International Airport
+103.0,AGP,BFS,Málaga Airport,Belfast International Airport
+103.0,AGP,BGY,Málaga Airport,Milan Bergamo Airport
+103.0,AGP,BHX,Málaga Airport,Birmingham International Airport
+68.0,AGP,BIO,Málaga Airport,Bilbao Airport
+87.0,AGP,BIO,Málaga Airport,Bilbao Airport
+103.0,AGP,BLL,Málaga Airport,Billund Airport
+72.0,AGP,BOD,Málaga Airport,Bordeaux-Mérignac Airport
+103.0,AGP,BOH,Málaga Airport,Bournemouth Airport
+103.0,AGP,BRE,Málaga Airport,Bremen Airport
+96.0,AGP,BRS,Málaga Airport,Bristol Airport
+103.0,AGP,BRS,Málaga Airport,Bristol Airport
+103.0,AGP,BRU,Málaga Airport,Brussels Airport
+87.0,AGP,BRU,Málaga Airport,Brussels Airport
+103.0,AGP,CDG,Málaga Airport,Charles de Gaulle International Airport
+103.0,AGP,CDG,Málaga Airport,Charles de Gaulle International Airport
+103.0,AGP,CGN,Málaga Airport,Cologne Bonn Airport
+103.0,AGP,CMN,Málaga Airport,Mohammed V International Airport
+96.0,AGP,CPH,Málaga Airport,Copenhagen Kastrup Airport
+103.0,AGP,CPH,Málaga Airport,Copenhagen Kastrup Airport
+103.0,AGP,CRL,Málaga Airport,Brussels South Charleroi Airport
+103.0,AGP,DUB,Málaga Airport,Dublin Airport
+103.0,AGP,DUB,Málaga Airport,Dublin Airport
+87.0,AGP,DUB,Málaga Airport,Dublin Airport
+103.0,AGP,EDI,Málaga Airport,Edinburgh Airport
+103.0,AGP,EIN,Málaga Airport,Eindhoven Airport
+103.0,AGP,EIN,Málaga Airport,Eindhoven Airport
+103.0,AGP,EMA,Málaga Airport,East Midlands Airport
+103.0,AGP,EMA,Málaga Airport,East Midlands Airport
+29.0,AGP,FAB,Málaga Airport,Farnborough Airport
+103.0,AGP,FCO,Málaga Airport,Leonardo da Vinci–Fiumicino Airport
+103.0,AGP,FKB,Málaga Airport,Karlsruhe Baden-Baden Airport
+103.0,AGP,FRA,Málaga Airport,Frankfurt am Main Airport
+96.0,AGP,GLA,Málaga Airport,Glasgow International Airport
+103.0,AGP,GLA,Málaga Airport,Glasgow International Airport
+103.0,AGP,IBZ,Málaga Airport,Ibiza Airport
+115.0,AGP,IST,Málaga Airport,Istanbul Airport
+72.0,AGP,LGW,Málaga Airport,London Gatwick Airport
+115.0,AGP,LGW,Málaga Airport,London Gatwick Airport
+87.0,AGP,LHR,Málaga Airport,London Heathrow Airport
+11.0,AGP,LIS,Málaga Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+45.0,AGP,LIS,Málaga Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+87.0,AGP,LPA,Málaga Airport,Gran Canaria Airport
+96.0,AGP,LPL,Málaga Airport,Liverpool John Lennon Airport
+87.0,AGP,LPL,Málaga Airport,Liverpool John Lennon Airport
+103.0,AGP,LPL,Málaga Airport,Liverpool John Lennon Airport
+103.0,AGP,LPL,Málaga Airport,Liverpool John Lennon Airport
+87.0,AGP,LTN,Málaga Airport,London Luton Airport
+87.0,AGP,LTN,Málaga Airport,London Luton Airport
+103.0,AGP,LTN,Málaga Airport,London Luton Airport
+58.0,AGP,MAD,Málaga Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,AGP,MAD,Málaga Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,AGP,MAD,Málaga Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,AGP,MAN,Málaga Airport,Manchester Airport
+103.0,AGP,MAN,Málaga Airport,Manchester Airport
+103.0,AGP,MAN,Málaga Airport,Manchester Airport
+5.0,AGP,MLN,Málaga Airport,Melilla Airport
+45.0,AGP,MLN,Málaga Airport,Melilla Airport
+5.0,AGP,MLN,Málaga Airport,Melilla Airport
+45.0,AGP,MLN,Málaga Airport,Melilla Airport
+5.0,AGP,MLN,Málaga Airport,Melilla Airport
+45.0,AGP,MLN,Málaga Airport,Melilla Airport
+96.0,AGP,MUC,Málaga Airport,Munich Airport
+115.0,AGP,MXP,Málaga Airport,Malpensa International Airport
+103.0,AGP,NCL,Málaga Airport,Newcastle Airport
+103.0,AGP,NYO,Málaga Airport,Stockholm Skavsta Airport
+103.0,AGP,ORY,Málaga Airport,Paris-Orly Airport
+103.0,AGP,OSL,Málaga Airport,Oslo Gardermoen Airport
+68.0,AGP,OVD,Málaga Airport,Asturias Airport
+103.0,AGP,PIK,Málaga Airport,Glasgow Prestwick Airport
+3.0,AGP,PMI,Málaga Airport,Palma De Mallorca Airport
+103.0,AGP,PMI,Málaga Airport,Palma De Mallorca Airport
+87.0,AGP,PMI,Málaga Airport,Palma De Mallorca Airport
+103.0,AGP,PRG,Málaga Airport,Václav Havel Airport Prague
+103.0,AGP,SCQ,Málaga Airport,Santiago de Compostela Airport
+103.0,AGP,SEN,Málaga Airport,Southend Airport
+103.0,AGP,STN,Málaga Airport,London Stansted Airport
+103.0,AGP,STN,Málaga Airport,London Stansted Airport
+2.0,AGP,SVQ,Málaga Airport,Sevilla Airport
+96.0,AGP,TFN,Málaga Airport,Tenerife Norte Airport
+87.0,AGP,TNG,Málaga Airport,Ibn Batouta Airport
+103.0,AGP,VIE,Málaga Airport,Vienna International Airport
+93.0,AGP,ZRH,Málaga Airport,Zürich Airport

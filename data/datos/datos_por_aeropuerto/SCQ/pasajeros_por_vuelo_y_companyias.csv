@@ -1,0 +1,13 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+103.0,RYR,SCQ,AGP,Santiago de Compostela Airport,Málaga Airport
+103.0,RYR,SCQ,BCN,Santiago de Compostela Airport,Barcelona International Airport
+96.0,VLG,SCQ,BCN,Santiago de Compostela Airport,Barcelona International Airport
+107.0,VLG,SCQ,BCN,Santiago de Compostela Airport,Barcelona International Airport
+87.0,IBS,SCQ,MAD,Santiago de Compostela Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,IBS,SCQ,MAD,Santiago de Compostela Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,VLG,SCQ,PMI,Santiago de Compostela Airport,Palma De Mallorca Airport
+5.0,RYR,SCQ,STN,Santiago de Compostela Airport,London Stansted Airport
+103.0,RYR,SCQ,STN,Santiago de Compostela Airport,London Stansted Airport
+103.0,RYR,SCQ,SVQ,Santiago de Compostela Airport,Sevilla Airport
+103.0,RYR,SCQ,TFS,Santiago de Compostela Airport,Tenerife South Airport
+97.0,SWT,SCQ,VIT,Santiago de Compostela Airport,Vitoria/Foronda Airport

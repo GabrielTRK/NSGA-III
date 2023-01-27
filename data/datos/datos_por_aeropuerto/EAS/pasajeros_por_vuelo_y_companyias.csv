@@ -1,0 +1,3 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+72.0,VLG,EAS,BCN,San Sebastian Airport,Barcelona International Airport
+45.0,ANE,EAS,MAD,San Sebastian Airport,Adolfo Suárez Madrid–Barajas Airport

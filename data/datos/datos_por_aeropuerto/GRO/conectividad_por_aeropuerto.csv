@@ -1,0 +1,4 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+GRO,BRS,1,47,301,Girona Airport,Bristol Airport
+GRO,EDI,1,66,151,Girona Airport,Edinburgh Airport
+GRO,HAJ,1,38,91,Girona Airport,Hannover Airport

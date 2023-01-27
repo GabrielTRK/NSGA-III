@@ -1,0 +1,25 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+68.0,VOE,BIO,AGP,Bilbao Airport,Málaga Airport
+87.0,VLG,BIO,AGP,Bilbao Airport,Málaga Airport
+87.0,VLG,BIO,ALC,Bilbao Airport,Alicante International Airport
+89.0,KLM,BIO,AMS,Bilbao Airport,Amsterdam Airport Schiphol
+89.0,KLM,BIO,AMS,Bilbao Airport,Amsterdam Airport Schiphol
+87.0,VLG,BIO,BCN,Bilbao Airport,Barcelona International Airport
+96.0,VLG,BIO,BCN,Bilbao Airport,Barcelona International Airport
+87.0,VLG,BIO,BCN,Bilbao Airport,Barcelona International Airport
+87.0,VLG,BIO,LGW,Bilbao Airport,London Gatwick Airport
+96.0,VLG,BIO,LPA,Bilbao Airport,Gran Canaria Airport
+107.0,IBE,BIO,MAD,Bilbao Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,IBE,BIO,MAD,Bilbao Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,BIO,MAD,Bilbao Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,VLG,BIO,MAH,Bilbao Airport,Menorca Airport
+68.0,VOE,BIO,MAH,Bilbao Airport,Menorca Airport
+47.0,CLH,BIO,MUC,Bilbao Airport,Munich Airport
+107.0,VLG,BIO,PMI,Bilbao Airport,Palma De Mallorca Airport
+68.0,VOE,BIO,SVQ,Bilbao Airport,Sevilla Airport
+96.0,VLG,BIO,SVQ,Bilbao Airport,Sevilla Airport
+87.0,VLG,BIO,SVQ,Bilbao Airport,Sevilla Airport
+87.0,VLG,BIO,TFN,Bilbao Airport,Tenerife Norte Airport
+68.0,VOE,BIO,VLC,Bilbao Airport,Valencia Airport
+58.0,ANE,BIO,VLC,Bilbao Airport,Valencia Airport
+87.0,VLG,BIO,VLC,Bilbao Airport,Valencia Airport

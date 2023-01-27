@@ -1,0 +1,46 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+AGP,AMS,1,342,58263,Málaga Airport,Amsterdam Airport Schiphol
+AGP,ARN,2,113,3000,Málaga Airport,Stockholm-Arlanda Airport
+AGP,BCN,3,152,4353,Málaga Airport,Barcelona International Airport
+AGP,BGY,1,87,302,Málaga Airport,Milan Bergamo Airport
+AGP,BHX,1,52,194,Málaga Airport,Birmingham International Airport
+AGP,BIO,2,25,52,Málaga Airport,Bilbao Airport
+AGP,BLL,1,23,22,Málaga Airport,Billund Airport
+AGP,BOD,1,31,120,Málaga Airport,Bordeaux-Mérignac Airport
+AGP,BRE,1,22,15,Málaga Airport,Bremen Airport
+AGP,BRS,2,47,301,Málaga Airport,Bristol Airport
+AGP,BRU,2,103,6325,Málaga Airport,Brussels Airport
+AGP,CDG,2,295,47556,Málaga Airport,Charles de Gaulle International Airport
+AGP,CGN,1,139,592,Málaga Airport,Cologne Bonn Airport
+AGP,CPH,2,146,6081,Málaga Airport,Copenhagen Kastrup Airport
+AGP,CRL,1,44,73,Málaga Airport,Brussels South Charleroi Airport
+AGP,DUB,3,98,4365,Málaga Airport,Dublin Airport
+AGP,EDI,1,66,151,Málaga Airport,Edinburgh Airport
+AGP,EIN,2,37,86,Málaga Airport,Eindhoven Airport
+AGP,EMA,2,89,43,Málaga Airport,East Midlands Airport
+AGP,FCO,1,138,14854,Málaga Airport,Leonardo da Vinci–Fiumicino Airport
+AGP,FRA,1,254,78773,Málaga Airport,Frankfurt am Main Airport
+AGP,GLA,2,42,66,Málaga Airport,Glasgow International Airport
+AGP,IBZ,1,56,41,Málaga Airport,Ibiza Airport
+AGP,IST,1,202,41539,Málaga Airport,Istanbul Airport
+AGP,LGW,2,118,1492,Málaga Airport,London Gatwick Airport
+AGP,LHR,1,251,33904,Málaga Airport,London Heathrow Airport
+AGP,LIS,2,132,6494,Málaga Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+AGP,LPA,1,68,68,Málaga Airport,Gran Canaria Airport
+AGP,LTN,3,84,173,Málaga Airport,London Luton Airport
+AGP,MAD,3,185,22933,Málaga Airport,Adolfo Suárez Madrid–Barajas Airport
+AGP,MAN,3,95,1370,Málaga Airport,Manchester Airport
+AGP,MUC,1,185,36058,Málaga Airport,Munich Airport
+AGP,MXP,1,140,1267,Málaga Airport,Malpensa International Airport
+AGP,NCL,1,25,43,Málaga Airport,Newcastle Airport
+AGP,ORY,1,148,1289,Málaga Airport,Paris-Orly Airport
+AGP,OSL,1,165,4003,Málaga Airport,Oslo Gardermoen Airport
+AGP,OVD,1,5,1,Málaga Airport,Asturias Airport
+AGP,PMI,3,117,201,Málaga Airport,Palma De Mallorca Airport
+AGP,PRG,1,79,1676,Málaga Airport,Václav Havel Airport Prague
+AGP,SCQ,1,13,11,Málaga Airport,Santiago de Compostela Airport
+AGP,STN,2,130,1617,Málaga Airport,London Stansted Airport
+AGP,SVQ,1,38,67,Málaga Airport,Sevilla Airport
+AGP,TFN,1,53,46,Málaga Airport,Tenerife Norte Airport
+AGP,VIE,1,151,15655,Málaga Airport,Vienna International Airport
+AGP,ZRH,1,122,18392,Málaga Airport,Zürich Airport

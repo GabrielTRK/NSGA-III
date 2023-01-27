@@ -1,0 +1,175 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+103.0,RYR,MAD,ACE,Adolfo Suárez Madrid–Barajas Airport,Lanzarote Airport
+115.0,IBS,MAD,ACE,Adolfo Suárez Madrid–Barajas Airport,Lanzarote Airport
+58.0,ANE,MAD,AGP,Adolfo Suárez Madrid–Barajas Airport,Málaga Airport
+58.0,ANE,MAD,AGP,Adolfo Suárez Madrid–Barajas Airport,Málaga Airport
+45.0,OVA,MAD,AGP,Adolfo Suárez Madrid–Barajas Airport,Málaga Airport
+58.0,ANE,MAD,ALC,Adolfo Suárez Madrid–Barajas Airport,Alicante International Airport
+58.0,ANE,MAD,ALC,Adolfo Suárez Madrid–Barajas Airport,Alicante International Airport
+58.0,OVA,MAD,ALC,Adolfo Suárez Madrid–Barajas Airport,Alicante International Airport
+87.0,IBE,MAD,AMS,Adolfo Suárez Madrid–Barajas Airport,Amsterdam Airport Schiphol
+103.0,AEA,MAD,AMS,Adolfo Suárez Madrid–Barajas Airport,Amsterdam Airport Schiphol
+89.0,KLM,MAD,AMS,Adolfo Suárez Madrid–Barajas Airport,Amsterdam Airport Schiphol
+89.0,KLM,MAD,AMS,Adolfo Suárez Madrid–Barajas Airport,Amsterdam Airport Schiphol
+96.0,IBE,MAD,ARN,Adolfo Suárez Madrid–Barajas Airport,Stockholm-Arlanda Airport
+168.0,ETD,MAD,AUH,Adolfo Suárez Madrid–Barajas Airport,Abu Dhabi International Airport
+96.0,IBE,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+96.0,IBE,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+107.0,IBE,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+87.0,IBE,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+103.0,AEA,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+87.0,VLG,MAD,BCN,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+103.0,TVS,MAD,BEY,Adolfo Suárez Madrid–Barajas Airport,Beirut Rafic Hariri International Airport
+103.0,RYR,MAD,BGY,Adolfo Suárez Madrid–Barajas Airport,Milan Bergamo Airport
+96.0,IBE,MAD,BIO,Adolfo Suárez Madrid–Barajas Airport,Bilbao Airport
+103.0,AEA,MAD,BIO,Adolfo Suárez Madrid–Barajas Airport,Bilbao Airport
+107.0,IBE,MAD,BIO,Adolfo Suárez Madrid–Barajas Airport,Bilbao Airport
+58.0,ANE,MAD,BLQ,Adolfo Suárez Madrid–Barajas Airport,Bologna Guglielmo Marconi Airport
+96.0,IBE,MAD,BRU,Adolfo Suárez Madrid–Barajas Airport,Brussels Airport
+96.0,IBE,MAD,BRU,Adolfo Suárez Madrid–Barajas Airport,Brussels Airport
+113.0,BCS,MAD,BRU,Adolfo Suárez Madrid–Barajas Airport,Brussels Airport
+133.0,FDX,MAD,CDG,Adolfo Suárez Madrid–Barajas Airport,Charles de Gaulle International Airport
+72.0,AFR,MAD,CDG,Adolfo Suárez Madrid–Barajas Airport,Charles de Gaulle International Airport
+72.0,AFR,MAD,CDG,Adolfo Suárez Madrid–Barajas Airport,Charles de Gaulle International Airport
+97.0,ABR,MAD,CDG,Adolfo Suárez Madrid–Barajas Airport,Charles de Gaulle International Airport
+133.0,UPS,MAD,CGN,Adolfo Suárez Madrid–Barajas Airport,Cologne Bonn Airport
+103.0,MAY,MAD,CGN,Adolfo Suárez Madrid–Barajas Airport,Cologne Bonn Airport
+97.0,ABR,MAD,CGN,Adolfo Suárez Madrid–Barajas Airport,Cologne Bonn Airport
+103.0,RYR,MAD,CIA,Adolfo Suárez Madrid–Barajas Airport,Ciampino–G. B. Pastine International Airport
+45.0,SWT,MAD,CMN,Adolfo Suárez Madrid–Barajas Airport,Mohammed V International Airport
+232.0,AAL,MAD,DFW,Adolfo Suárez Madrid–Barajas Airport,Dallas Fort Worth International Airport
+188.0,QTR,MAD,DOH,Adolfo Suárez Madrid–Barajas Airport,Hamad International Airport
+229.0,QTR,MAD,DOH,Adolfo Suárez Madrid–Barajas Airport,Hamad International Airport
+188.0,QTR,MAD,DOH,Adolfo Suárez Madrid–Barajas Airport,Hamad International Airport
+87.0,IBE,MAD,DUB,Adolfo Suárez Madrid–Barajas Airport,Dublin Airport
+103.0,RYR,MAD,DUB,Adolfo Suárez Madrid–Barajas Airport,Dublin Airport
+232.0,UAE,MAD,DXB,Adolfo Suárez Madrid–Barajas Airport,Dubai International Airport
+45.0,ANE,MAD,EAS,Adolfo Suárez Madrid–Barajas Airport,San Sebastian Airport
+113.0,DHK,MAD,EMA,Adolfo Suárez Madrid–Barajas Airport,East Midlands Airport
+97.0,ABR,MAD,EMA,Adolfo Suárez Madrid–Barajas Airport,East Midlands Airport
+5.0,NJE,MAD,FAO,Adolfo Suárez Madrid–Barajas Airport,Faro Airport
+107.0,IBE,MAD,FCO,Adolfo Suárez Madrid–Barajas Airport,Leonardo da Vinci–Fiumicino Airport
+72.0,AZA,MAD,FCO,Adolfo Suárez Madrid–Barajas Airport,Leonardo da Vinci–Fiumicino Airport
+21.0,AEG,MAD,FKB,Adolfo Suárez Madrid–Barajas Airport,Karlsruhe Baden-Baden Airport
+72.0,VLG,MAD,FLR,Adolfo Suárez Madrid–Barajas Airport,Peretola Airport
+96.0,DLH,MAD,FRA,Adolfo Suárez Madrid–Barajas Airport,Frankfurt am Main Airport
+96.0,DLH,MAD,FRA,Adolfo Suárez Madrid–Barajas Airport,Frankfurt am Main Airport
+115.0,IBS,MAD,FUE,Adolfo Suárez Madrid–Barajas Airport,Fuerteventura Airport
+58.0,ANE,MAD,GRX,Adolfo Suárez Madrid–Barajas Airport,Federico Garcia Lorca Airport
+58.0,ANE,MAD,GRX,Adolfo Suárez Madrid–Barajas Airport,Federico Garcia Lorca Airport
+107.0,IBE,MAD,GVA,Adolfo Suárez Madrid–Barajas Airport,Geneva Cointrin International Airport
+87.0,IBE,MAD,GVA,Adolfo Suárez Madrid–Barajas Airport,Geneva Cointrin International Airport
+221.0,AEA,MAD,GYE,Adolfo Suárez Madrid–Barajas Airport,José Joaquín de Olmedo International Airport
+160.0,IBE,MAD,HAV,Adolfo Suárez Madrid–Barajas Airport,José Martí International Airport
+103.0,RYR,MAD,IBZ,Adolfo Suárez Madrid–Barajas Airport,Ibiza Airport
+103.0,AEA,MAD,IBZ,Adolfo Suárez Madrid–Barajas Airport,Ibiza Airport
+103.0,AEA,MAD,IBZ,Adolfo Suárez Madrid–Barajas Airport,Ibiza Airport
+107.0,IBS,MAD,IBZ,Adolfo Suárez Madrid–Barajas Airport,Ibiza Airport
+107.0,VLG,MAD,IBZ,Adolfo Suárez Madrid–Barajas Airport,Ibiza Airport
+145.0,KZU,MAD,ISL,Adolfo Suárez Madrid–Barajas Airport,Istanbul Atatürk Airport
+115.0,THY,MAD,IST,Adolfo Suárez Madrid–Barajas Airport,Istanbul Airport
+103.0,RYR,MAD,KBP,Adolfo Suárez Madrid–Barajas Airport,Boryspil International Airport
+96.0,IBE,MAD,LCG,Adolfo Suárez Madrid–Barajas Airport,A Coruña Airport
+96.0,IBE,MAD,LCG,Adolfo Suárez Madrid–Barajas Airport,A Coruña Airport
+103.0,AEA,MAD,LCG,Adolfo Suárez Madrid–Barajas Airport,A Coruña Airport
+58.0,ANE,MAD,LEI,Adolfo Suárez Madrid–Barajas Airport,Almería International Airport
+58.0,ANE,MAD,LEI,Adolfo Suárez Madrid–Barajas Airport,Almería International Airport
+113.0,BCS,MAD,LEJ,Adolfo Suárez Madrid–Barajas Airport,Leipzig/Halle Airport
+154.0,BCS,MAD,LEJ,Adolfo Suárez Madrid–Barajas Airport,Leipzig/Halle Airport
+232.0,CAO,MAD,LGG,Adolfo Suárez Madrid–Barajas Airport,Liège Airport
+97.0,TAY,MAD,LGG,Adolfo Suárez Madrid–Barajas Airport,Liège Airport
+72.0,EZY,MAD,LGW,Adolfo Suárez Madrid–Barajas Airport,London Gatwick Airport
+188.0,IBE,MAD,LHR,Adolfo Suárez Madrid–Barajas Airport,London Heathrow Airport
+107.0,IBE,MAD,LHR,Adolfo Suárez Madrid–Barajas Airport,London Heathrow Airport
+221.0,BAW,MAD,LHR,Adolfo Suárez Madrid–Barajas Airport,London Heathrow Airport
+5.0,UNKNOWN,MAD,LIN,Adolfo Suárez Madrid–Barajas Airport,Milano Linate Airport
+96.0,IBE,MAD,LIS,Adolfo Suárez Madrid–Barajas Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+96.0,IBE,MAD,LIS,Adolfo Suárez Madrid–Barajas Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+72.0,TAP,MAD,LIS,Adolfo Suárez Madrid–Barajas Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+45.0,WHT,MAD,LIS,Adolfo Suárez Madrid–Barajas Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+45.0,WHT,MAD,LIS,Adolfo Suárez Madrid–Barajas Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+87.0,IBE,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+45.0,SWT,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+45.0,SWT,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+103.0,RYR,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+103.0,AEA,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+103.0,AEA,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+115.0,IBS,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+115.0,IBS,MAD,LPA,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+43.0,LGL,MAD,LUX,Adolfo Suárez Madrid–Barajas Airport,Luxembourg-Findel International Airport
+58.0,ANE,MAD,LYS,Adolfo Suárez Madrid–Barajas Airport,Lyon Saint-Exupéry Airport
+103.0,RYR,MAD,MAH,Adolfo Suárez Madrid–Barajas Airport,Menorca Airport
+87.0,IBS,MAD,MAH,Adolfo Suárez Madrid–Barajas Airport,Menorca Airport
+103.0,RYR,MAD,MAN,Adolfo Suárez Madrid–Barajas Airport,Manchester Airport
+168.0,AMX,MAD,MEX,Adolfo Suárez Madrid–Barajas Airport,Licenciado Benito Juarez International Airport
+103.0,MAY,MAD,MLA,Adolfo Suárez Madrid–Barajas Airport,Malta International Airport
+58.0,ANE,MAD,MRS,Adolfo Suárez Madrid–Barajas Airport,Marseille Provence Airport
+96.0,IBE,MAD,MUC,Adolfo Suárez Madrid–Barajas Airport,Munich Airport
+72.0,CLH,MAD,MUC,Adolfo Suárez Madrid–Barajas Airport,Munich Airport
+96.0,IBE,MAD,MXP,Adolfo Suárez Madrid–Barajas Airport,Malpensa International Airport
+103.0,RYR,MAD,MXP,Adolfo Suárez Madrid–Barajas Airport,Malpensa International Airport
+97.0,ABR,MAD,MXP,Adolfo Suárez Madrid–Barajas Airport,Malpensa International Airport
+5.0,UNKNOWN,MAD,NTE,Adolfo Suárez Madrid–Barajas Airport,Nantes Atlantique Airport
+58.0,ANE,MAD,OPO,Adolfo Suárez Madrid–Barajas Airport,Francisco de Sá Carneiro Airport
+107.0,IBE,MAD,ORY,Adolfo Suárez Madrid–Barajas Airport,Paris-Orly Airport
+107.0,IBE,MAD,ORY,Adolfo Suárez Madrid–Barajas Airport,Paris-Orly Airport
+107.0,IBE,MAD,ORY,Adolfo Suárez Madrid–Barajas Airport,Paris-Orly Airport
+103.0,TVF,MAD,ORY,Adolfo Suárez Madrid–Barajas Airport,Paris-Orly Airport
+103.0,AEA,MAD,ORY,Adolfo Suárez Madrid–Barajas Airport,Paris-Orly Airport
+103.0,RYR,MAD,OTP,Adolfo Suárez Madrid–Barajas Airport,Henri Coandă International Airport
+87.0,WZZ,MAD,OTP,Adolfo Suárez Madrid–Barajas Airport,Henri Coandă International Airport
+96.0,IBE,MAD,OVD,Adolfo Suárez Madrid–Barajas Airport,Asturias Airport
+96.0,IBE,MAD,OVD,Adolfo Suárez Madrid–Barajas Airport,Asturias Airport
+17.0,SWT,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+45.0,SWT,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+45.0,SWT,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,RYR,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,RYR,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,AEA,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,AEA,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,AEA,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,AEA,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+115.0,IBS,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+107.0,IBS,MAD,PMI,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+103.0,RYR,MAD,PMO,Adolfo Suárez Madrid–Barajas Airport,Falcone–Borsellino Airport
+58.0,ANE,MAD,PNA,Adolfo Suárez Madrid–Barajas Airport,Pamplona Airport
+58.0,ANE,MAD,PNA,Adolfo Suárez Madrid–Barajas Airport,Pamplona Airport
+103.0,MAY,MAD,PSA,Adolfo Suárez Madrid–Barajas Airport,Pisa International Airport
+188.0,CES,MAD,PVG,Adolfo Suárez Madrid–Barajas Airport,Shanghai Pudong International Airport
+87.0,IBS,MAD,SCQ,Adolfo Suárez Madrid–Barajas Airport,Santiago de Compostela Airport
+87.0,IBS,MAD,SCQ,Adolfo Suárez Madrid–Barajas Airport,Santiago de Compostela Airport
+160.0,IBE,MAD,SDQ,Adolfo Suárez Madrid–Barajas Airport,Las Américas International Airport
+96.0,IBE,MAD,SDR,Adolfo Suárez Madrid–Barajas Airport,Santander Airport
+97.0,AWC,MAD,SEN,Adolfo Suárez Madrid–Barajas Airport,Southend Airport
+143.0,IBE,MAD,SJO,Adolfo Suárez Madrid–Barajas Airport,Juan Santamaria International Airport
+87.0,IBE,MAD,SPC,Adolfo Suárez Madrid–Barajas Airport,La Palma Airport
+103.0,RYR,MAD,STN,Adolfo Suárez Madrid–Barajas Airport,London Stansted Airport
+87.0,IBE,MAD,SVQ,Adolfo Suárez Madrid–Barajas Airport,Sevilla Airport
+87.0,IBE,MAD,SVQ,Adolfo Suárez Madrid–Barajas Airport,Sevilla Airport
+87.0,SVR,MAD,SVX,Adolfo Suárez Madrid–Barajas Airport,Koltsovo Airport
+29.0,ANE,MAD,SXB,Adolfo Suárez Madrid–Barajas Airport,Strasbourg Airport
+103.0,RYR,MAD,SXF,Adolfo Suárez Madrid–Barajas Airport,Berlin-Schönefeld Airport
+87.0,IBE,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+97.0,SWT,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+113.0,SWT,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+103.0,AEA,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+103.0,AEA,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+87.0,IBS,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+87.0,IBS,MAD,TFN,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+87.0,IBE,MAD,TFS,Adolfo Suárez Madrid–Barajas Airport,Tenerife South Airport
+58.0,ANE,MAD,TLS,Adolfo Suárez Madrid–Barajas Airport,Toulouse-Blagnac Airport
+87.0,MAC,MAD,TNG,Adolfo Suárez Madrid–Barajas Airport,Ibn Batouta Airport
+0.0,AME,MAD,TOJ,Adolfo Suárez Madrid–Barajas Airport,Torrejón Airport
+87.0,IBE,MAD,TXL,Adolfo Suárez Madrid–Barajas Airport,Berlin-Tegel Airport
+96.0,IBE,MAD,VCE,Adolfo Suárez Madrid–Barajas Airport,Venice Marco Polo Airport
+103.0,AEA,MAD,VGO,Adolfo Suárez Madrid–Barajas Airport,Vigo Airport
+96.0,IBE,MAD,VGO,Adolfo Suárez Madrid–Barajas Airport,Vigo Airport
+87.0,IBE,MAD,VGO,Adolfo Suárez Madrid–Barajas Airport,Vigo Airport
+87.0,LDM,MAD,VIE,Adolfo Suárez Madrid–Barajas Airport,Vienna International Airport
+45.0,SWT,MAD,VLC,Adolfo Suárez Madrid–Barajas Airport,Valencia Airport
+58.0,ANE,MAD,VLC,Adolfo Suárez Madrid–Barajas Airport,Valencia Airport
+58.0,ANE,MAD,VLC,Adolfo Suárez Madrid–Barajas Airport,Valencia Airport
+45.0,ANE,MAD,VLC,Adolfo Suárez Madrid–Barajas Airport,Valencia Airport
+5.0,INI,MAD,XRY,Adolfo Suárez Madrid–Barajas Airport,Jerez Airport
+58.0,ANE,MAD,XRY,Adolfo Suárez Madrid–Barajas Airport,Jerez Airport
+58.0,ANE,MAD,XRY,Adolfo Suárez Madrid–Barajas Airport,Jerez Airport

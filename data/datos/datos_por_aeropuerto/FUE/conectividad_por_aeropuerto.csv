@@ -1,0 +1,11 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+FUE,BCN,1,152,4353,Fuerteventura Airport,Barcelona International Airport
+FUE,BGY,1,87,302,Fuerteventura Airport,Milan Bergamo Airport
+FUE,DUB,1,98,4365,Fuerteventura Airport,Dublin Airport
+FUE,EDI,1,66,151,Fuerteventura Airport,Edinburgh Airport
+FUE,LGW,1,118,1492,Fuerteventura Airport,London Gatwick Airport
+FUE,LPA,10,68,68,Fuerteventura Airport,Gran Canaria Airport
+FUE,MAD,1,185,22933,Fuerteventura Airport,Adolfo Suárez Madrid–Barajas Airport
+FUE,STN,1,130,1617,Fuerteventura Airport,London Stansted Airport
+FUE,SVQ,1,38,67,Fuerteventura Airport,Sevilla Airport
+FUE,TFN,6,53,46,Fuerteventura Airport,Tenerife Norte Airport

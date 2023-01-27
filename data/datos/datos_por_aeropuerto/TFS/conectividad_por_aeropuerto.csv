@@ -1,0 +1,19 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+TFS,BCN,1,152,4353,Tenerife South Airport,Barcelona International Airport
+TFS,BHX,1,52,194,Tenerife South Airport,Birmingham International Airport
+TFS,BRS,2,47,301,Tenerife South Airport,Bristol Airport
+TFS,BRU,1,103,6325,Tenerife South Airport,Brussels Airport
+TFS,DUB,1,98,4365,Tenerife South Airport,Dublin Airport
+TFS,LGW,1,118,1492,Tenerife South Airport,London Gatwick Airport
+TFS,LPA,3,68,68,Tenerife South Airport,Gran Canaria Airport
+TFS,LTN,1,84,173,Tenerife South Airport,London Luton Airport
+TFS,MAD,1,185,22933,Tenerife South Airport,Adolfo Suárez Madrid–Barajas Airport
+TFS,MAN,2,95,1370,Tenerife South Airport,Manchester Airport
+TFS,MXP,1,140,1267,Tenerife South Airport,Malpensa International Airport
+TFS,SCQ,1,13,11,Tenerife South Airport,Santiago de Compostela Airport
+TFS,SNN,1,9,41,Tenerife South Airport,Shannon Airport
+TFS,STN,1,130,1617,Tenerife South Airport,London Stansted Airport
+TFS,SVQ,1,38,67,Tenerife South Airport,Sevilla Airport
+TFS,VIE,1,151,15655,Tenerife South Airport,Vienna International Airport
+TFS,WAW,1,140,6329,Tenerife South Airport,Warsaw Chopin Airport
+TFS,ZRH,1,122,18392,Tenerife South Airport,Zürich Airport

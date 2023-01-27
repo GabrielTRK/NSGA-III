@@ -1,0 +1,9 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+45.0,ANE,MLN,AGP,Melilla Airport,Málaga Airport
+45.0,ANE,MLN,AGP,Melilla Airport,Málaga Airport
+45.0,ANE,MLN,AGP,Melilla Airport,Málaga Airport
+5.0,UGC,MLN,AGP,Melilla Airport,Málaga Airport
+5.0,UGC,MLN,AGP,Melilla Airport,Málaga Airport
+5.0,UGC,MLN,AGP,Melilla Airport,Málaga Airport
+45.0,ANE,MLN,GRX,Melilla Airport,Federico Garcia Lorca Airport
+45.0,ANE,MLN,LEI,Melilla Airport,Almería International Airport

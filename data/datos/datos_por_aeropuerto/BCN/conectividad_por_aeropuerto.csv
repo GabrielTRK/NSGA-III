@@ -1,0 +1,61 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+BCN,ACE,1,34,2,Barcelona International Airport,Lanzarote Airport
+BCN,AGP,3,94,102,Barcelona International Airport,Málaga Airport
+BCN,ALC,1,53,37,Barcelona International Airport,Alicante International Airport
+BCN,AMS,4,342,58263,Barcelona International Airport,Amsterdam Airport Schiphol
+BCN,ARN,1,113,3000,Barcelona International Airport,Stockholm-Arlanda Airport
+BCN,BGY,1,87,302,Barcelona International Airport,Milan Bergamo Airport
+BCN,BHX,1,52,194,Barcelona International Airport,Birmingham International Airport
+BCN,BIO,3,25,52,Barcelona International Airport,Bilbao Airport
+BCN,BLQ,2,51,150,Barcelona International Airport,Bologna Guglielmo Marconi Airport
+BCN,BOD,1,31,120,Barcelona International Airport,Bordeaux-Mérignac Airport
+BCN,BRS,1,47,301,Barcelona International Airport,Bristol Airport
+BCN,BRU,2,103,6325,Barcelona International Airport,Brussels Airport
+BCN,BSL,1,44,321,Barcelona International Airport,EuroAirport Basel-Mulhouse-Freiburg Airport
+BCN,CDG,4,295,47556,Barcelona International Airport,Charles de Gaulle International Airport
+BCN,CGN,2,139,592,Barcelona International Airport,Cologne Bonn Airport
+BCN,CPH,1,146,6081,Barcelona International Airport,Copenhagen Kastrup Airport
+BCN,DUB,1,98,4365,Barcelona International Airport,Dublin Airport
+BCN,EMA,1,89,43,Barcelona International Airport,East Midlands Airport
+BCN,FCO,4,138,14854,Barcelona International Airport,Leonardo da Vinci–Fiumicino Airport
+BCN,FRA,2,254,78773,Barcelona International Airport,Frankfurt am Main Airport
+BCN,FUE,1,23,2,Barcelona International Airport,Fuerteventura Airport
+BCN,GRX,1,9,1,Barcelona International Airport,Federico Garcia Lorca Airport
+BCN,GVA,1,75,1207,Barcelona International Airport,Geneva Cointrin International Airport
+BCN,HAM,1,86,563,Barcelona International Airport,Hamburg Airport
+BCN,IBZ,9,56,41,Barcelona International Airport,Ibiza Airport
+BCN,IST,1,202,41539,Barcelona International Airport,Istanbul Airport
+BCN,KEF,1,13,2818,Barcelona International Airport,Keflavik International Airport
+BCN,LCG,1,4,0,Barcelona International Airport,A Coruña Airport
+BCN,LGG,1,59,0,Barcelona International Airport,Liège Airport
+BCN,LGW,2,118,1492,Barcelona International Airport,London Gatwick Airport
+BCN,LIS,3,132,6494,Barcelona International Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+BCN,LPA,2,68,68,Barcelona International Airport,Gran Canaria Airport
+BCN,LTN,1,84,173,Barcelona International Airport,London Luton Airport
+BCN,MAD,7,185,22933,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+BCN,MAH,8,23,2,Barcelona International Airport,Menorca Airport
+BCN,MAN,3,95,1370,Barcelona International Airport,Manchester Airport
+BCN,MUC,2,185,36058,Barcelona International Airport,Munich Airport
+BCN,MXP,3,140,1267,Barcelona International Airport,Malpensa International Airport
+BCN,NAP,2,44,90,Barcelona International Airport,Naples International Airport
+BCN,NTE,1,40,78,Barcelona International Airport,Nantes Atlantique Airport
+BCN,OPO,2,61,241,Barcelona International Airport,Francisco de Sá Carneiro Airport
+BCN,ORY,4,148,1289,Barcelona International Airport,Paris-Orly Airport
+BCN,OVD,1,5,1,Barcelona International Airport,Asturias Airport
+BCN,PMI,11,117,201,Barcelona International Airport,Palma De Mallorca Airport
+BCN,PMO,1,55,14,Barcelona International Airport,Falcone–Borsellino Airport
+BCN,PRG,1,79,1676,Barcelona International Airport,Václav Havel Airport Prague
+BCN,SCQ,3,13,11,Barcelona International Airport,Santiago de Compostela Airport
+BCN,SDR,1,9,1,Barcelona International Airport,Santander Airport
+BCN,SOF,2,43,44,Barcelona International Airport,Sofia Airport
+BCN,STN,2,130,1617,Barcelona International Airport,London Stansted Airport
+BCN,STR,1,84,908,Barcelona International Airport,Stuttgart Airport
+BCN,SVO,1,236,24879,Barcelona International Airport,Sheremetyevo International Airport
+BCN,SVQ,4,38,67,Barcelona International Airport,Sevilla Airport
+BCN,SXF,2,41,57,Barcelona International Airport,Berlin-Schönefeld Airport
+BCN,TFN,2,53,46,Barcelona International Airport,Tenerife Norte Airport
+BCN,VCE,2,52,354,Barcelona International Airport,Venice Marco Polo Airport
+BCN,VGO,1,6,1,Barcelona International Airport,Vigo Airport
+BCN,VIE,1,151,15655,Barcelona International Airport,Vienna International Airport
+BCN,VLC,2,38,61,Barcelona International Airport,Valencia Airport
+BCN,ZRH,1,122,18392,Barcelona International Airport,Zürich Airport

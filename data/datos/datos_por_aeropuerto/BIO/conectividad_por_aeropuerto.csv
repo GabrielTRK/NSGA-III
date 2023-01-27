@@ -1,0 +1,14 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+BIO,AGP,2,94,102,Bilbao Airport,Málaga Airport
+BIO,ALC,1,53,37,Bilbao Airport,Alicante International Airport
+BIO,AMS,2,342,58263,Bilbao Airport,Amsterdam Airport Schiphol
+BIO,BCN,3,152,4353,Bilbao Airport,Barcelona International Airport
+BIO,LGW,1,118,1492,Bilbao Airport,London Gatwick Airport
+BIO,LPA,1,68,68,Bilbao Airport,Gran Canaria Airport
+BIO,MAD,3,185,22933,Bilbao Airport,Adolfo Suárez Madrid–Barajas Airport
+BIO,MAH,2,23,2,Bilbao Airport,Menorca Airport
+BIO,MUC,1,185,36058,Bilbao Airport,Munich Airport
+BIO,PMI,1,117,201,Bilbao Airport,Palma De Mallorca Airport
+BIO,SVQ,3,38,67,Bilbao Airport,Sevilla Airport
+BIO,TFN,1,53,46,Bilbao Airport,Tenerife Norte Airport
+BIO,VLC,3,38,61,Bilbao Airport,Valencia Airport

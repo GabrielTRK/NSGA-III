@@ -1,0 +1,55 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+45.0,IBB,TFN,ACE,Tenerife Norte Airport,Lanzarote Airport
+45.0,IBB,TFN,ACE,Tenerife Norte Airport,Lanzarote Airport
+45.0,IBB,TFN,ACE,Tenerife Norte Airport,Lanzarote Airport
+45.0,IBB,TFN,ACE,Tenerife Norte Airport,Lanzarote Airport
+45.0,CNF,TFN,ACE,Tenerife Norte Airport,Lanzarote Airport
+96.0,VLG,TFN,AGP,Tenerife Norte Airport,Málaga Airport
+87.0,VLG,TFN,ALC,Tenerife Norte Airport,Alicante International Airport
+87.0,VLG,TFN,BCN,Tenerife Norte Airport,Barcelona International Airport
+87.0,VLG,TFN,BCN,Tenerife Norte Airport,Barcelona International Airport
+87.0,VLG,TFN,BIO,Tenerife Norte Airport,Bilbao Airport
+45.0,CNF,TFN,FUE,Tenerife Norte Airport,Fuerteventura Airport
+45.0,IBB,TFN,FUE,Tenerife Norte Airport,Fuerteventura Airport
+45.0,IBB,TFN,FUE,Tenerife Norte Airport,Fuerteventura Airport
+45.0,IBB,TFN,FUE,Tenerife Norte Airport,Fuerteventura Airport
+45.0,IBB,TFN,FUE,Tenerife Norte Airport,Fuerteventura Airport
+87.0,VLG,TFN,GRX,Tenerife Norte Airport,Federico Garcia Lorca Airport
+1.0,IBB,TFN,LIS,Tenerife Norte Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+97.0,SWT,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+113.0,SWT,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,IBB,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,IBB,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,IBB,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,IBB,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,IBB,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,IBB,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,IBB,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+1.0,IBB,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,IBB,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,CNF,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,CNF,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+45.0,CNF,TFN,LPA,Tenerife Norte Airport,Gran Canaria Airport
+87.0,IBE,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,IBS,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,IBS,TFN,MAD,Tenerife Norte Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,IBB,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,IBB,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,IBB,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,IBB,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,CNF,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,IBB,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,CNF,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,IBB,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,IBB,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,CNF,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+45.0,IBB,TFN,SPC,Tenerife Norte Airport,La Palma Airport
+96.0,VLG,TFN,SVQ,Tenerife Norte Airport,Sevilla Airport
+45.0,IBB,TFN,VDE,Tenerife Norte Airport,Hierro Airport
+45.0,IBB,TFN,VDE,Tenerife Norte Airport,Hierro Airport
+45.0,IBB,TFN,VDE,Tenerife Norte Airport,Hierro Airport
+45.0,IBB,TFN,VDE,Tenerife Norte Airport,Hierro Airport
+1.0,IBB,TFN,VGO,Tenerife Norte Airport,Vigo Airport

@@ -1,0 +1,18 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+LPA,ACE,13,34,2,Gran Canaria Airport,Lanzarote Airport
+LPA,AGP,1,94,102,Gran Canaria Airport,Málaga Airport
+LPA,BCN,2,152,4353,Gran Canaria Airport,Barcelona International Airport
+LPA,BIO,1,25,52,Gran Canaria Airport,Bilbao Airport
+LPA,BLQ,1,51,150,Gran Canaria Airport,Bologna Guglielmo Marconi Airport
+LPA,DUB,1,98,4365,Gran Canaria Airport,Dublin Airport
+LPA,FNC,1,15,2,Gran Canaria Airport,Madeira Airport
+LPA,FUE,10,23,2,Gran Canaria Airport,Fuerteventura Airport
+LPA,MAD,9,185,22933,Gran Canaria Airport,Adolfo Suárez Madrid–Barajas Airport
+LPA,OVD,1,5,1,Gran Canaria Airport,Asturias Airport
+LPA,PMI,1,117,201,Gran Canaria Airport,Palma De Mallorca Airport
+LPA,SDR,1,9,1,Gran Canaria Airport,Santander Airport
+LPA,SPC,4,16,0,Gran Canaria Airport,La Palma Airport
+LPA,STN,1,130,1617,Gran Canaria Airport,London Stansted Airport
+LPA,SVQ,2,38,67,Gran Canaria Airport,Sevilla Airport
+LPA,TFN,12,53,46,Gran Canaria Airport,Tenerife Norte Airport
+LPA,TFS,3,23,4,Gran Canaria Airport,Tenerife South Airport

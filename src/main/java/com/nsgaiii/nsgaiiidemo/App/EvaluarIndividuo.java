@@ -58,8 +58,12 @@ public class EvaluarIndividuo {
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
-    	System.out.println(conexiones);
+    	System.out.println(riesgos.size());
+    	System.out.println(riesgos);
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
+    	
+    	
+    	
     	/*        
     	
     	ArrayList<Individuo> lista = new ArrayList<>();
@@ -87,7 +91,7 @@ public class EvaluarIndividuo {
     	System.out.println(frentes.get(0));
     	System.out.println(frentes.get(1));*/
     	
-    	/*OperadorCruce cruce = new OperadorCruce(1, 0);
+    	OperadorCruce cruce = new OperadorCruce(1, 0);
     	
     	Individuo padre1 = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());
     	
@@ -112,7 +116,8 @@ public class EvaluarIndividuo {
     	System.out.println(problema.evaluate(padre1));
     	System.out.println(problema.evaluate(padre2));
     	
-    	System.out.println(cruce.cruceDosPuntos(padre1, padre2, problema));*/
+    	System.out.println(cruce.cruceDosPuntos(padre1, padre2, problema));
+    	/*
     	String s = "";
     	Poblacion poblacion = new Poblacion(32768 - 1, problema);
     	ArrayList<Individuo> indi = new ArrayList<>();
@@ -133,16 +138,7 @@ public class EvaluarIndividuo {
     	System.out.println(frentes.get(0).size());
     	Utils.crearCSVConObjetivos(frentes.get(0), problema.getNombre());
     	System.out.println("a");
-    	
-    	//int input = 32768 - 1;
-    	
-    	/*String result = Integer.toBinaryString(input);
-    	String resultWithPadding = String.format("%15s", result).replaceAll(" ", "0");  // 32-bit Integer
-    	System.out.println(resultWithPadding);
-    	char[] chars = resultWithPadding.toCharArray();
-    	System.out.println(chars[0]);
-    	
-    	System.out.println(Double.valueOf(chars[0] + s));*/
+    	*/
 	}
 
 }

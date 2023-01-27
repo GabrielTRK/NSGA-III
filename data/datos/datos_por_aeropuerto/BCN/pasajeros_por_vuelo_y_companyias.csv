@@ -1,0 +1,152 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+96.0,VLG,BCN,ACE,Barcelona International Airport,Lanzarote Airport
+103.0,RYR,BCN,AGP,Barcelona International Airport,Málaga Airport
+87.0,VLG,BCN,AGP,Barcelona International Airport,Málaga Airport
+96.0,VLG,BCN,AGP,Barcelona International Airport,Málaga Airport
+87.0,VLG,BCN,ALC,Barcelona International Airport,Alicante International Airport
+89.0,KLM,BCN,AMS,Barcelona International Airport,Amsterdam Airport Schiphol
+103.0,KLM,BCN,AMS,Barcelona International Airport,Amsterdam Airport Schiphol
+89.0,TRA,BCN,AMS,Barcelona International Airport,Amsterdam Airport Schiphol
+72.0,VLG,BCN,AMS,Barcelona International Airport,Amsterdam Airport Schiphol
+96.0,VLG,BCN,ARN,Barcelona International Airport,Stockholm-Arlanda Airport
+168.0,ETD,BCN,AUH,Barcelona International Airport,Abu Dhabi International Airport
+103.0,RYR,BCN,BGY,Barcelona International Airport,Milan Bergamo Airport
+103.0,RYR,BCN,BHX,Barcelona International Airport,Birmingham International Airport
+87.0,VLG,BCN,BIO,Barcelona International Airport,Bilbao Airport
+96.0,VLG,BCN,BIO,Barcelona International Airport,Bilbao Airport
+87.0,VLG,BCN,BIO,Barcelona International Airport,Bilbao Airport
+103.0,RYR,BCN,BLQ,Barcelona International Airport,Bologna Guglielmo Marconi Airport
+87.0,VLG,BCN,BLQ,Barcelona International Airport,Bologna Guglielmo Marconi Airport
+87.0,VLG,BCN,BOD,Barcelona International Airport,Bordeaux-Mérignac Airport
+3.0,GAC,BCN,BQH,Barcelona International Airport,London Biggin Hill Airport
+87.0,EJU,BCN,BRS,Barcelona International Airport,Bristol Airport
+103.0,RYR,BCN,BRU,Barcelona International Airport,Brussels Airport
+113.0,BCS,BCN,BRU,Barcelona International Airport,Brussels Airport
+87.0,EJU,BCN,BSL,Barcelona International Airport,EuroAirport Basel-Mulhouse-Freiburg Airport
+103.0,RYR,BCN,BVA,Barcelona International Airport,Paris Beauvais Tillé Airport
+113.0,FDX,BCN,CDG,Barcelona International Airport,Charles de Gaulle International Airport
+72.0,AFR,BCN,CDG,Barcelona International Airport,Charles de Gaulle International Airport
+72.0,AFR,BCN,CDG,Barcelona International Airport,Charles de Gaulle International Airport
+72.0,AFR,BCN,CDG,Barcelona International Airport,Charles de Gaulle International Airport
+133.0,UPS,BCN,CGN,Barcelona International Airport,Cologne Bonn Airport
+103.0,RYR,BCN,CGN,Barcelona International Airport,Cologne Bonn Airport
+87.0,VLG,BCN,CPH,Barcelona International Airport,Copenhagen Kastrup Airport
+229.0,QTR,BCN,DOH,Barcelona International Airport,Hamad International Airport
+188.0,QTR,BCN,DOH,Barcelona International Airport,Hamad International Airport
+188.0,QTR,BCN,DOH,Barcelona International Airport,Hamad International Airport
+72.0,SZN,BCN,DSS,Barcelona International Airport,Blaise Diagne International Airport
+103.0,RYR,BCN,DUB,Barcelona International Airport,Dublin Airport
+72.0,VLG,BCN,EAS,Barcelona International Airport,San Sebastian Airport
+103.0,RYR,BCN,EMA,Barcelona International Airport,East Midlands Airport
+103.0,RYR,BCN,FCO,Barcelona International Airport,Leonardo da Vinci–Fiumicino Airport
+51.0,CYL,BCN,FCO,Barcelona International Airport,Leonardo da Vinci–Fiumicino Airport
+96.0,VLG,BCN,FCO,Barcelona International Airport,Leonardo da Vinci–Fiumicino Airport
+87.0,VLG,BCN,FCO,Barcelona International Airport,Leonardo da Vinci–Fiumicino Airport
+96.0,DLH,BCN,FRA,Barcelona International Airport,Frankfurt am Main Airport
+72.0,DLH,BCN,FRA,Barcelona International Airport,Frankfurt am Main Airport
+87.0,VLG,BCN,FUE,Barcelona International Airport,Fuerteventura Airport
+87.0,VLG,BCN,GRX,Barcelona International Airport,Federico Garcia Lorca Airport
+87.0,EZS,BCN,GVA,Barcelona International Airport,Geneva Cointrin International Airport
+103.0,RYR,BCN,HAM,Barcelona International Airport,Hamburg Airport
+103.0,RYR,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+103.0,RYR,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+96.0,VLG,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+96.0,VLG,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+87.0,VLG,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+87.0,VLG,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+87.0,VLG,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+87.0,VLG,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+107.0,VLG,BCN,IBZ,Barcelona International Airport,Ibiza Airport
+115.0,THY,BCN,IST,Barcelona International Airport,Istanbul Airport
+87.0,VLG,BCN,KEF,Barcelona International Airport,Keflavik International Airport
+11.0,NJE,BCN,LBG,Barcelona International Airport,Paris-Le Bourget Airport
+87.0,VLG,BCN,LCG,Barcelona International Airport,A Coruña Airport
+97.0,SWT,BCN,LEJ,Barcelona International Airport,Leipzig/Halle Airport
+113.0,BCS,BCN,LEJ,Barcelona International Airport,Leipzig/Halle Airport
+97.0,FPO,BCN,LEJ,Barcelona International Airport,Leipzig/Halle Airport
+97.0,TAY,BCN,LGG,Barcelona International Airport,Liège Airport
+72.0,EZY,BCN,LGW,Barcelona International Airport,London Gatwick Airport
+96.0,VLG,BCN,LGW,Barcelona International Airport,London Gatwick Airport
+72.0,TAP,BCN,LIS,Barcelona International Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+87.0,VLG,BCN,LIS,Barcelona International Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+56.0,PGA,BCN,LIS,Barcelona International Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+107.0,VLG,BCN,LPA,Barcelona International Airport,Gran Canaria Airport
+107.0,VLG,BCN,LPA,Barcelona International Airport,Gran Canaria Airport
+103.0,RYR,BCN,LPL,Barcelona International Airport,Liverpool John Lennon Airport
+96.0,EZY,BCN,LTN,Barcelona International Airport,London Luton Airport
+87.0,IBE,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,IBE,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,IBE,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,IBE,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,IBE,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,VLG,BCN,MAD,Barcelona International Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,RYR,BCN,MAH,Barcelona International Airport,Menorca Airport
+96.0,VLG,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,VLG,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,VLG,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,VLG,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,VLG,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,VLG,BCN,MAH,Barcelona International Airport,Menorca Airport
+96.0,VLG,BCN,MAH,Barcelona International Airport,Menorca Airport
+87.0,EZY,BCN,MAN,Barcelona International Airport,Manchester Airport
+103.0,RYR,BCN,MAN,Barcelona International Airport,Manchester Airport
+103.0,RYR,BCN,MAN,Barcelona International Airport,Manchester Airport
+72.0,CLH,BCN,MUC,Barcelona International Airport,Munich Airport
+96.0,VLG,BCN,MUC,Barcelona International Airport,Munich Airport
+97.0,SWT,BCN,MXP,Barcelona International Airport,Malpensa International Airport
+96.0,VLG,BCN,MXP,Barcelona International Airport,Malpensa International Airport
+87.0,VLG,BCN,MXP,Barcelona International Airport,Malpensa International Airport
+103.0,RYR,BCN,NAP,Barcelona International Airport,Naples International Airport
+87.0,VLG,BCN,NAP,Barcelona International Airport,Naples International Airport
+87.0,MAC,BCN,NDR,Barcelona International Airport,Nador International Airport
+87.0,MAC,BCN,NDR,Barcelona International Airport,Nador International Airport
+87.0,VLG,BCN,NTE,Barcelona International Airport,Nantes Atlantique Airport
+103.0,RYR,BCN,OPO,Barcelona International Airport,Francisco de Sá Carneiro Airport
+87.0,VLG,BCN,OPO,Barcelona International Airport,Francisco de Sá Carneiro Airport
+87.0,VLG,BCN,ORY,Barcelona International Airport,Paris-Orly Airport
+87.0,VLG,BCN,ORY,Barcelona International Airport,Paris-Orly Airport
+87.0,VLG,BCN,ORY,Barcelona International Airport,Paris-Orly Airport
+107.0,VLG,BCN,ORY,Barcelona International Airport,Paris-Orly Airport
+87.0,VLG,BCN,OVD,Barcelona International Airport,Asturias Airport
+17.0,SWT,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,RYR,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,RYR,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,AEA,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,AEA,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,AEA,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+103.0,AEA,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+107.0,VLG,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+87.0,VLG,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+107.0,VLG,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+107.0,VLG,BCN,PMI,Barcelona International Airport,Palma De Mallorca Airport
+87.0,VLG,BCN,PMO,Barcelona International Airport,Falcone–Borsellino Airport
+103.0,RYR,BCN,PRG,Barcelona International Airport,Václav Havel Airport Prague
+107.0,VLG,BCN,SCQ,Barcelona International Airport,Santiago de Compostela Airport
+103.0,RYR,BCN,SCQ,Barcelona International Airport,Santiago de Compostela Airport
+96.0,VLG,BCN,SCQ,Barcelona International Airport,Santiago de Compostela Airport
+103.0,RYR,BCN,SDR,Barcelona International Airport,Santander Airport
+97.0,AWC,BCN,SEN,Barcelona International Airport,Southend Airport
+107.0,WZZ,BCN,SOF,Barcelona International Airport,Sofia Airport
+103.0,RYS,BCN,SOF,Barcelona International Airport,Sofia Airport
+103.0,RYR,BCN,STN,Barcelona International Airport,London Stansted Airport
+103.0,RYR,BCN,STN,Barcelona International Airport,London Stansted Airport
+72.0,EWG,BCN,STR,Barcelona International Airport,Stuttgart Airport
+87.0,AFL,BCN,SVO,Barcelona International Airport,Sheremetyevo International Airport
+103.0,RYR,BCN,SVQ,Barcelona International Airport,Sevilla Airport
+87.0,VLG,BCN,SVQ,Barcelona International Airport,Sevilla Airport
+96.0,VLG,BCN,SVQ,Barcelona International Airport,Sevilla Airport
+96.0,VLG,BCN,SVQ,Barcelona International Airport,Sevilla Airport
+87.0,EJU,BCN,SXF,Barcelona International Airport,Berlin-Schönefeld Airport
+103.0,MAY,BCN,SXF,Barcelona International Airport,Berlin-Schönefeld Airport
+87.0,VLG,BCN,TFN,Barcelona International Airport,Tenerife Norte Airport
+87.0,VLG,BCN,TFN,Barcelona International Airport,Tenerife Norte Airport
+23.0,VKA,BCN,TNG,Barcelona International Airport,Ibn Batouta Airport
+103.0,RYR,BCN,VCE,Barcelona International Airport,Venice Marco Polo Airport
+87.0,VLG,BCN,VCE,Barcelona International Airport,Venice Marco Polo Airport
+87.0,VLG,BCN,VGO,Barcelona International Airport,Vigo Airport
+87.0,LDM,BCN,VIE,Barcelona International Airport,Vienna International Airport
+133.0,UPS,BCN,VLC,Barcelona International Airport,Valencia Airport
+97.0,TAY,BCN,VLC,Barcelona International Airport,Valencia Airport
+103.0,RYR,BCN,VLL,Barcelona International Airport,Valladolid Airport
+77.0,SWR,BCN,ZRH,Barcelona International Airport,Zürich Airport

@@ -1,0 +1,4 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+VGO,BCN,1,152,4353,Vigo Airport,Barcelona International Airport
+VGO,MAD,3,185,22933,Vigo Airport,Adolfo Suárez Madrid–Barajas Airport
+VGO,TFN,1,53,46,Vigo Airport,Tenerife Norte Airport

@@ -1,0 +1,24 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+SVQ,AMS,1,342,58263,Sevilla Airport,Amsterdam Airport Schiphol
+SVQ,BCN,4,152,4353,Sevilla Airport,Barcelona International Airport
+SVQ,BGY,1,87,302,Sevilla Airport,Milan Bergamo Airport
+SVQ,BIO,3,25,52,Sevilla Airport,Bilbao Airport
+SVQ,CDG,1,295,47556,Sevilla Airport,Charles de Gaulle International Airport
+SVQ,CGN,1,139,592,Sevilla Airport,Cologne Bonn Airport
+SVQ,CRL,1,44,73,Sevilla Airport,Brussels South Charleroi Airport
+SVQ,FCO,1,138,14854,Sevilla Airport,Leonardo da Vinci–Fiumicino Airport
+SVQ,FUE,1,23,2,Sevilla Airport,Fuerteventura Airport
+SVQ,GVA,1,75,1207,Sevilla Airport,Geneva Cointrin International Airport
+SVQ,IBZ,1,56,41,Sevilla Airport,Ibiza Airport
+SVQ,LPA,2,68,68,Sevilla Airport,Gran Canaria Airport
+SVQ,MAD,2,185,22933,Sevilla Airport,Adolfo Suárez Madrid–Barajas Airport
+SVQ,MRS,1,65,190,Sevilla Airport,Marseille Provence Airport
+SVQ,NTE,1,40,78,Sevilla Airport,Nantes Atlantique Airport
+SVQ,ORY,2,148,1289,Sevilla Airport,Paris-Orly Airport
+SVQ,PMI,2,117,201,Sevilla Airport,Palma De Mallorca Airport
+SVQ,SCQ,1,13,11,Sevilla Airport,Santiago de Compostela Airport
+SVQ,SDR,1,9,1,Sevilla Airport,Santander Airport
+SVQ,STN,1,130,1617,Sevilla Airport,London Stansted Airport
+SVQ,SXF,1,41,57,Sevilla Airport,Berlin-Schönefeld Airport
+SVQ,TFN,1,53,46,Sevilla Airport,Tenerife Norte Airport
+SVQ,TFS,1,23,4,Sevilla Airport,Tenerife South Airport

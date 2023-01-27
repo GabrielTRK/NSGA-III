@@ -1,0 +1,11 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+VIT,ALC,1,53,37,Vitoria/Foronda Airport,Alicante International Airport
+VIT,BCN,1,152,4353,Vitoria/Foronda Airport,Barcelona International Airport
+VIT,BRU,1,103,6325,Vitoria/Foronda Airport,Brussels Airport
+VIT,CGN,2,139,592,Vitoria/Foronda Airport,Cologne Bonn Airport
+VIT,EMA,1,89,43,Vitoria/Foronda Airport,East Midlands Airport
+VIT,LIS,1,132,6494,Vitoria/Foronda Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+VIT,SCQ,1,13,11,Vitoria/Foronda Airport,Santiago de Compostela Airport
+VIT,SDR,1,9,1,Vitoria/Foronda Airport,Santander Airport
+VIT,SVQ,2,38,67,Vitoria/Foronda Airport,Sevilla Airport
+VIT,VLC,1,38,61,Vitoria/Foronda Airport,Valencia Airport

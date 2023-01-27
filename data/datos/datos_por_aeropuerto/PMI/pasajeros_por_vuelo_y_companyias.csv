@@ -1,0 +1,120 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+103.0,RYR,PMI,AGP,Palma De Mallorca Airport,Málaga Airport
+87.0,VLG,PMI,AGP,Palma De Mallorca Airport,Málaga Airport
+87.0,VLG,PMI,ALC,Palma De Mallorca Airport,Alicante International Airport
+58.0,OVA,PMI,ALC,Palma De Mallorca Airport,Alicante International Airport
+103.0,TRA,PMI,AMS,Palma De Mallorca Airport,Amsterdam Airport Schiphol
+96.0,SAS,PMI,ARN,Palma De Mallorca Airport,Stockholm-Arlanda Airport
+17.0,SWT,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+17.0,SWT,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,RYR,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,RYR,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,AEA,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,AEA,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,AEA,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+103.0,AEA,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+107.0,VLG,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+107.0,VLG,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+87.0,VLG,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+107.0,VLG,PMI,BCN,Palma De Mallorca Airport,Barcelona International Airport
+87.0,EJU,PMI,BFS,Palma De Mallorca Airport,Belfast International Airport
+11.0,EJA,PMI,BGI,Palma De Mallorca Airport,Grantley Adams International Airport
+103.0,MAY,PMI,BGY,Palma De Mallorca Airport,Milan Bergamo Airport
+103.0,RYR,PMI,BHX,Palma De Mallorca Airport,Birmingham International Airport
+107.0,VLG,PMI,BIO,Palma De Mallorca Airport,Bilbao Airport
+5.0,NJE,PMI,BMA,Palma De Mallorca Airport,Stockholm-Bromma Airport
+96.0,EZY,PMI,BRS,Palma De Mallorca Airport,Bristol Airport
+103.0,RYR,PMI,BRS,Palma De Mallorca Airport,Bristol Airport
+103.0,RYR,PMI,BRU,Palma De Mallorca Airport,Brussels Airport
+87.0,EJU,PMI,BSL,Palma De Mallorca Airport,EuroAirport Basel-Mulhouse-Freiburg Airport
+87.0,EJU,PMI,BSL,Palma De Mallorca Airport,EuroAirport Basel-Mulhouse-Freiburg Airport
+72.0,EWG,PMI,CGN,Palma De Mallorca Airport,Cologne Bonn Airport
+103.0,MAY,PMI,CGN,Palma De Mallorca Airport,Cologne Bonn Airport
+103.0,MAY,PMI,CGN,Palma De Mallorca Airport,Cologne Bonn Airport
+103.0,MAY,PMI,CIA,Palma De Mallorca Airport,Ciampino–G. B. Pastine International Airport
+107.0,VLG,PMI,CWL,Palma De Mallorca Airport,Cardiff International Airport
+103.0,RYR,PMI,DTM,Palma De Mallorca Airport,Dortmund Airport
+87.0,EWG,PMI,DUS,Palma De Mallorca Airport,Düsseldorf Airport
+103.0,RYR,PMI,EDI,Palma De Mallorca Airport,Edinburgh Airport
+103.0,TRA,PMI,EIN,Palma De Mallorca Airport,Eindhoven Airport
+7.0,BNJ,PMI,EIN,Palma De Mallorca Airport,Eindhoven Airport
+103.0,RYR,PMI,EMA,Palma De Mallorca Airport,East Midlands Airport
+103.0,MAY,PMI,FKB,Palma De Mallorca Airport,Karlsruhe Baden-Baden Airport
+3.0,UNKNOWN,PMI,FMM,Palma De Mallorca Airport,Memmingen Allgau Airport
+103.0,RYR,PMI,FMM,Palma De Mallorca Airport,Memmingen Allgau Airport
+72.0,DLH,PMI,FRA,Palma De Mallorca Airport,Frankfurt am Main Airport
+96.0,DLH,PMI,FRA,Palma De Mallorca Airport,Frankfurt am Main Airport
+103.0,MAY,PMI,FRA,Palma De Mallorca Airport,Frankfurt am Main Airport
+107.0,VLG,PMI,GRX,Palma De Mallorca Airport,Federico Garcia Lorca Airport
+103.0,AEA,PMI,GRX,Palma De Mallorca Airport,Federico Garcia Lorca Airport
+87.0,EJU,PMI,GVA,Palma De Mallorca Airport,Geneva Cointrin International Airport
+87.0,EWG,PMI,HAM,Palma De Mallorca Airport,Hamburg Airport
+103.0,RYR,PMI,HAM,Palma De Mallorca Airport,Hamburg Airport
+103.0,RYR,PMI,HAM,Palma De Mallorca Airport,Hamburg Airport
+103.0,MAY,PMI,HHN,Palma De Mallorca Airport,Frankfurt-Hahn Airport
+45.0,SWT,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+45.0,SWT,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+45.0,SWT,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+17.0,SWT,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+45.0,SWT,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+58.0,ANE,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+58.0,ANE,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+58.0,ANE,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+58.0,ANE,PMI,IBZ,Palma De Mallorca Airport,Ibiza Airport
+103.0,RYR,PMI,LBA,Palma De Mallorca Airport,Leeds Bradford Airport
+87.0,EJU,PMI,LGW,Palma De Mallorca Airport,London Gatwick Airport
+87.0,EJU,PMI,LGW,Palma De Mallorca Airport,London Gatwick Airport
+72.0,BAW,PMI,LHR,Palma De Mallorca Airport,London Heathrow Airport
+1.0,IBB,PMI,LPA,Palma De Mallorca Airport,Gran Canaria Airport
+96.0,EZY,PMI,LPL,Palma De Mallorca Airport,Liverpool John Lennon Airport
+96.0,EZY,PMI,LTN,Palma De Mallorca Airport,London Luton Airport
+87.0,EZY,PMI,LTN,Palma De Mallorca Airport,London Luton Airport
+43.0,LGL,PMI,LUX,Palma De Mallorca Airport,Luxembourg-Findel International Airport
+17.0,SWT,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,SWT,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,SWT,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,RYR,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,RYR,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+107.0,IBS,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+115.0,IBS,PMI,MAD,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+45.0,SWT,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+58.0,ANE,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+45.0,SWT,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+58.0,ANE,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+4.0,UNKNOWN,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+58.0,ANE,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+58.0,ANE,PMI,MAH,Palma De Mallorca Airport,Menorca Airport
+96.0,EZY,PMI,MAN,Palma De Mallorca Airport,Manchester Airport
+103.0,RYR,PMI,MAN,Palma De Mallorca Airport,Manchester Airport
+103.0,RYR,PMI,MAN,Palma De Mallorca Airport,Manchester Airport
+87.0,EJU,PMI,MXP,Palma De Mallorca Airport,Malpensa International Airport
+103.0,RYR,PMI,NCL,Palma De Mallorca Airport,Newcastle Airport
+72.0,VOE,PMI,NTE,Palma De Mallorca Airport,Nantes Atlantique Airport
+103.0,RYR,PMI,OPO,Palma De Mallorca Airport,Francisco de Sá Carneiro Airport
+103.0,AEA,PMI,ORY,Palma De Mallorca Airport,Paris-Orly Airport
+107.0,VLG,PMI,ORY,Palma De Mallorca Airport,Paris-Orly Airport
+103.0,RYR,PMI,PIK,Palma De Mallorca Airport,Glasgow Prestwick Airport
+107.0,VLG,PMI,SCQ,Palma De Mallorca Airport,Santiago de Compostela Airport
+107.0,VLG,PMI,SDR,Palma De Mallorca Airport,Santander Airport
+103.0,RYR,PMI,SEN,Palma De Mallorca Airport,Southend Airport
+103.0,RYR,PMI,STN,Palma De Mallorca Airport,London Stansted Airport
+87.0,EWG,PMI,STR,Palma De Mallorca Airport,Stuttgart Airport
+103.0,RYR,PMI,SVQ,Palma De Mallorca Airport,Sevilla Airport
+107.0,VLG,PMI,SVQ,Palma De Mallorca Airport,Sevilla Airport
+87.0,EJU,PMI,SXF,Palma De Mallorca Airport,Berlin-Schönefeld Airport
+103.0,MAY,PMI,SXF,Palma De Mallorca Airport,Berlin-Schönefeld Airport
+11.0,NJE,PMI,SXF,Palma De Mallorca Airport,Berlin-Schönefeld Airport
+87.0,EJU,PMI,TXL,Palma De Mallorca Airport,Berlin-Tegel Airport
+87.0,EJU,PMI,TXL,Palma De Mallorca Airport,Berlin-Tegel Airport
+103.0,RYR,PMI,TXL,Palma De Mallorca Airport,Berlin-Tegel Airport
+87.0,LDM,PMI,VIE,Palma De Mallorca Airport,Vienna International Airport
+45.0,SWT,PMI,VLC,Palma De Mallorca Airport,Valencia Airport
+103.0,RYR,PMI,VLC,Palma De Mallorca Airport,Valencia Airport
+103.0,AEA,PMI,VLC,Palma De Mallorca Airport,Valencia Airport
+96.0,VLG,PMI,VLC,Palma De Mallorca Airport,Valencia Airport
+103.0,RYR,PMI,VLL,Palma De Mallorca Airport,Valladolid Airport
+93.0,SWR,PMI,ZRH,Palma De Mallorca Airport,Zürich Airport

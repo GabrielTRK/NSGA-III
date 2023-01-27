@@ -1,0 +1,4 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+103.0,RYR,REU,CRL,Reus Air Base,Brussels South Charleroi Airport
+103.0,RYR,REU,LPL,Reus Air Base,Liverpool John Lennon Airport
+103.0,RYR,REU,STN,Reus Air Base,London Stansted Airport

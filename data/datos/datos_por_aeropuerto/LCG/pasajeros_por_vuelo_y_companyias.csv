@@ -1,0 +1,5 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+87.0,VLG,LCG,BCN,A Coruña Airport,Barcelona International Airport
+96.0,IBE,LCG,MAD,A Coruña Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,IBE,LCG,MAD,A Coruña Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,AEA,LCG,MAD,A Coruña Airport,Adolfo Suárez Madrid–Barajas Airport

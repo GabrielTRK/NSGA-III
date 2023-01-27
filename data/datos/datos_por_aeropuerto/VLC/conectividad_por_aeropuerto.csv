@@ -1,0 +1,23 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+VLC,ACE,2,34,2,Valencia Airport,Lanzarote Airport
+VLC,AMS,3,342,58263,Valencia Airport,Amsterdam Airport Schiphol
+VLC,BCN,2,152,4353,Valencia Airport,Barcelona International Airport
+VLC,BGY,1,87,302,Valencia Airport,Milan Bergamo Airport
+VLC,BIO,3,25,52,Valencia Airport,Bilbao Airport
+VLC,BRU,1,103,6325,Valencia Airport,Brussels Airport
+VLC,CDG,1,295,47556,Valencia Airport,Charles de Gaulle International Airport
+VLC,CGN,1,139,592,Valencia Airport,Cologne Bonn Airport
+VLC,DUB,1,98,4365,Valencia Airport,Dublin Airport
+VLC,EMA,1,89,43,Valencia Airport,East Midlands Airport
+VLC,FRA,1,254,78773,Valencia Airport,Frankfurt am Main Airport
+VLC,IBZ,2,56,41,Valencia Airport,Ibiza Airport
+VLC,LIS,1,132,6494,Valencia Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+VLC,MAD,3,185,22933,Valencia Airport,Adolfo Suárez Madrid–Barajas Airport
+VLC,MAH,2,23,2,Valencia Airport,Menorca Airport
+VLC,MXP,1,140,1267,Valencia Airport,Malpensa International Airport
+VLC,NTE,1,40,78,Valencia Airport,Nantes Atlantique Airport
+VLC,ORY,1,148,1289,Valencia Airport,Paris-Orly Airport
+VLC,PMI,4,117,201,Valencia Airport,Palma De Mallorca Airport
+VLC,SDR,1,9,1,Valencia Airport,Santander Airport
+VLC,STN,1,130,1617,Valencia Airport,London Stansted Airport
+VLC,ZRH,1,122,18392,Valencia Airport,Zürich Airport

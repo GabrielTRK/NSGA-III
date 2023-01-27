@@ -1,0 +1,4 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+SPC,LPA,4,68,68,La Palma Airport,Gran Canaria Airport
+SPC,MAD,1,185,22933,La Palma Airport,Adolfo Suárez Madrid–Barajas Airport
+SPC,TFN,10,53,46,La Palma Airport,Tenerife Norte Airport

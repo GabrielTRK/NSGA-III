@@ -1,0 +1,56 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+103.0,RYR,ALC,ABZ,Alicante International Airport,Aberdeen Dyce Airport
+103.0,TRA,ALC,AMS,Alicante International Airport,Amsterdam Airport Schiphol
+87.0,VLG,ALC,BCN,Alicante International Airport,Barcelona International Airport
+103.0,RYR,ALC,BHX,Alicante International Airport,Birmingham International Airport
+87.0,VLG,ALC,BIO,Alicante International Airport,Bilbao Airport
+103.0,RYR,ALC,BLL,Alicante International Airport,Billund Airport
+103.0,RYR,ALC,BRE,Alicante International Airport,Bremen Airport
+96.0,EZY,ALC,BRS,Alicante International Airport,Bristol Airport
+103.0,RYR,ALC,BRS,Alicante International Airport,Bristol Airport
+103.0,RYR,ALC,BRU,Alicante International Airport,Brussels Airport
+103.0,RYR,ALC,BVA,Alicante International Airport,Paris Beauvais Tillé Airport
+87.0,VLG,ALC,CWL,Alicante International Airport,Cardiff International Airport
+103.0,RYR,ALC,DUB,Alicante International Airport,Dublin Airport
+103.0,RYR,ALC,EDI,Alicante International Airport,Edinburgh Airport
+103.0,RYR,ALC,EIN,Alicante International Airport,Eindhoven Airport
+103.0,TRA,ALC,EIN,Alicante International Airport,Eindhoven Airport
+103.0,RYR,ALC,EMA,Alicante International Airport,East Midlands Airport
+5.0,CLF,ALC,EMA,Alicante International Airport,East Midlands Airport
+103.0,MAY,ALC,FKB,Alicante International Airport,Karlsruhe Baden-Baden Airport
+103.0,MAY,ALC,FMM,Alicante International Airport,Memmingen Allgau Airport
+96.0,EZY,ALC,GLA,Alicante International Airport,Glasgow International Airport
+103.0,RYR,ALC,GLA,Alicante International Airport,Glasgow International Airport
+6.0,TYW,ALC,INN,Alicante International Airport,Innsbruck Airport
+103.0,RYR,ALC,KUN,Alicante International Airport,Kaunas International Airport
+2.0,UNKNOWN,ALC,LEI,Alicante International Airport,Almería International Airport
+96.0,EZY,ALC,LGW,Alicante International Airport,London Gatwick Airport
+87.0,EZY,ALC,LGW,Alicante International Airport,London Gatwick Airport
+103.0,RYR,ALC,LGW,Alicante International Airport,London Gatwick Airport
+87.0,EZY,ALC,LPL,Alicante International Airport,Liverpool John Lennon Airport
+103.0,RYR,ALC,LPL,Alicante International Airport,Liverpool John Lennon Airport
+96.0,EZY,ALC,LTN,Alicante International Airport,London Luton Airport
+103.0,RYR,ALC,LTN,Alicante International Airport,London Luton Airport
+58.0,ANE,ALC,MAD,Alicante International Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,ANE,ALC,MAD,Alicante International Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,OVA,ALC,MAD,Alicante International Airport,Adolfo Suárez Madrid–Barajas Airport
+96.0,EZY,ALC,MAN,Alicante International Airport,Manchester Airport
+103.0,RYR,ALC,MAN,Alicante International Airport,Manchester Airport
+103.0,RYR,ALC,MAN,Alicante International Airport,Manchester Airport
+103.0,RYR,ALC,NCL,Alicante International Airport,Newcastle Airport
+103.0,RYR,ALC,ORK,Alicante International Airport,Cork Airport
+103.0,NSW,ALC,OSL,Alicante International Airport,Oslo Gardermoen Airport
+87.0,WZZ,ALC,OTP,Alicante International Airport,Henri Coandă International Airport
+103.0,RYR,ALC,PED,Alicante International Airport,Pardubice Airport
+103.0,RYR,ALC,PIK,Alicante International Airport,Glasgow Prestwick Airport
+87.0,VLG,ALC,PMI,Alicante International Airport,Palma De Mallorca Airport
+58.0,OVA,ALC,PMI,Alicante International Airport,Palma De Mallorca Airport
+89.0,TRA,ALC,RTM,Alicante International Airport,Rotterdam The Hague Airport
+5.0,MLT,ALC,SDR,Alicante International Airport,Santander Airport
+87.0,WZZ,ALC,SOF,Alicante International Airport,Sofia Airport
+103.0,RYR,ALC,STN,Alicante International Airport,London Stansted Airport
+5.0,RYR,ALC,STN,Alicante International Airport,London Stansted Airport
+103.0,RYR,ALC,STN,Alicante International Airport,London Stansted Airport
+87.0,VLG,ALC,TFN,Alicante International Airport,Tenerife Norte Airport
+97.0,SWT,ALC,VIT,Alicante International Airport,Vitoria/Foronda Airport
+103.0,RYR,ALC,VXO,Alicante International Airport,Växjö Kronoberg Airport

@@ -1,0 +1,6 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+LEI,HHN,1,15,4,Almería International Airport,Frankfurt-Hahn Airport
+LEI,LGW,1,118,1492,Almería International Airport,London Gatwick Airport
+LEI,MAD,2,185,22933,Almería International Airport,Adolfo Suárez Madrid–Barajas Airport
+LEI,MAN,1,95,1370,Almería International Airport,Manchester Airport
+LEI,VLC,1,38,61,Almería International Airport,Valencia Airport

@@ -1,0 +1,8 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+MAH,BCN,8,152,4353,Menorca Airport,Barcelona International Airport
+MAH,BIO,2,25,52,Menorca Airport,Bilbao Airport
+MAH,GRX,1,9,1,Menorca Airport,Federico Garcia Lorca Airport
+MAH,LGW,1,118,1492,Menorca Airport,London Gatwick Airport
+MAH,MAD,2,185,22933,Menorca Airport,Adolfo Suárez Madrid–Barajas Airport
+MAH,PMI,7,117,201,Menorca Airport,Palma De Mallorca Airport
+MAH,VLC,2,38,61,Menorca Airport,Valencia Airport

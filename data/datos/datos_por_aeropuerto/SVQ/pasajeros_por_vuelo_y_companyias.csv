@@ -1,0 +1,60 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+103.0,TRA,SVQ,AMS,Sevilla Airport,Amsterdam Airport Schiphol
+103.0,RYR,SVQ,BCN,Sevilla Airport,Barcelona International Airport
+96.0,VLG,SVQ,BCN,Sevilla Airport,Barcelona International Airport
+96.0,VLG,SVQ,BCN,Sevilla Airport,Barcelona International Airport
+87.0,VLG,SVQ,BCN,Sevilla Airport,Barcelona International Airport
+103.0,RYR,SVQ,BGY,Sevilla Airport,Milan Bergamo Airport
+87.0,VLG,SVQ,BIO,Sevilla Airport,Bilbao Airport
+68.0,VOE,SVQ,BIO,Sevilla Airport,Bilbao Airport
+96.0,VLG,SVQ,BIO,Sevilla Airport,Bilbao Airport
+62.0,AFR,SVQ,CDG,Sevilla Airport,Charles de Gaulle International Airport
+103.0,RYR,SVQ,CGN,Sevilla Airport,Cologne Bonn Airport
+103.0,RYR,SVQ,CRL,Sevilla Airport,Brussels South Charleroi Airport
+103.0,MAY,SVQ,FCO,Sevilla Airport,Leonardo da Vinci–Fiumicino Airport
+96.0,VLG,SVQ,FUE,Sevilla Airport,Fuerteventura Airport
+87.0,EZS,SVQ,GVA,Sevilla Airport,Geneva Cointrin International Airport
+103.0,RYR,SVQ,IBZ,Sevilla Airport,Ibiza Airport
+103.0,RYR,SVQ,LPA,Sevilla Airport,Gran Canaria Airport
+96.0,VLG,SVQ,LPA,Sevilla Airport,Gran Canaria Airport
+87.0,IBE,SVQ,MAD,Sevilla Airport,Adolfo Suárez Madrid–Barajas Airport
+87.0,IBE,SVQ,MAD,Sevilla Airport,Adolfo Suárez Madrid–Barajas Airport
+7.0,JFA,SVQ,MPL,Sevilla Airport,Montpellier-Méditerranée Airport
+11.0,TJT,SVQ,MRS,Sevilla Airport,Marseille Provence Airport
+103.0,TVF,SVQ,NTE,Sevilla Airport,Nantes Atlantique Airport
+103.0,TVF,SVQ,ORY,Sevilla Airport,Paris-Orly Airport
+87.0,VLG,SVQ,ORY,Sevilla Airport,Paris-Orly Airport
+103.0,RYR,SVQ,PMI,Sevilla Airport,Palma De Mallorca Airport
+107.0,VLG,SVQ,PMI,Sevilla Airport,Palma De Mallorca Airport
+103.0,RYR,SVQ,SCQ,Sevilla Airport,Santiago de Compostela Airport
+68.0,VOE,SVQ,SDR,Sevilla Airport,Santander Airport
+103.0,RYR,SVQ,STN,Sevilla Airport,London Stansted Airport
+103.0,RYR,SVQ,SXF,Sevilla Airport,Berlin-Schönefeld Airport
+96.0,VLG,SVQ,TFN,Sevilla Airport,Tenerife Norte Airport
+103.0,RYR,SVQ,TFS,Sevilla Airport,Tenerife South Airport
+154.0,BCS,SVQ,TNG,Sevilla Airport,Ibn Batouta Airport
+148.0,SRR,SVQ,VIT,Sevilla Airport,Vitoria/Foronda Airport
+97.0,TAY,SVQ,VIT,Sevilla Airport,Vitoria/Foronda Airport
+154.0,BCS,SVQ,VIT,Sevilla Airport,Vitoria/Foronda Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,UNKNOWN,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,UNKNOWN,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,UNKNOWN,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,UNKNOWN,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,UNKNOWN,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,UNKNOWN,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,UNKNOWN,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,UNKNOWN,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,AYR,SVQ,XRY,Sevilla Airport,Jerez Airport
+2.0,UNKNOWN,SVQ,XRY,Sevilla Airport,Jerez Airport

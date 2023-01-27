@@ -1,0 +1,63 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+MAD,ACE,2,34,2,Adolfo Suárez Madrid–Barajas Airport,Lanzarote Airport
+MAD,AGP,3,94,102,Adolfo Suárez Madrid–Barajas Airport,Málaga Airport
+MAD,ALC,3,53,37,Adolfo Suárez Madrid–Barajas Airport,Alicante International Airport
+MAD,AMS,4,342,58263,Adolfo Suárez Madrid–Barajas Airport,Amsterdam Airport Schiphol
+MAD,ARN,1,113,3000,Adolfo Suárez Madrid–Barajas Airport,Stockholm-Arlanda Airport
+MAD,BCN,6,152,4353,Adolfo Suárez Madrid–Barajas Airport,Barcelona International Airport
+MAD,BGY,1,87,302,Adolfo Suárez Madrid–Barajas Airport,Milan Bergamo Airport
+MAD,BIO,3,25,52,Adolfo Suárez Madrid–Barajas Airport,Bilbao Airport
+MAD,BLQ,1,51,150,Adolfo Suárez Madrid–Barajas Airport,Bologna Guglielmo Marconi Airport
+MAD,BRU,3,103,6325,Adolfo Suárez Madrid–Barajas Airport,Brussels Airport
+MAD,CDG,4,295,47556,Adolfo Suárez Madrid–Barajas Airport,Charles de Gaulle International Airport
+MAD,CGN,3,139,592,Adolfo Suárez Madrid–Barajas Airport,Cologne Bonn Airport
+MAD,CIA,1,31,37,Adolfo Suárez Madrid–Barajas Airport,Ciampino–G. B. Pastine International Airport
+MAD,DUB,2,98,4365,Adolfo Suárez Madrid–Barajas Airport,Dublin Airport
+MAD,EMA,2,89,43,Adolfo Suárez Madrid–Barajas Airport,East Midlands Airport
+MAD,FAO,1,53,17,Adolfo Suárez Madrid–Barajas Airport,Faro Airport
+MAD,FCO,2,138,14854,Adolfo Suárez Madrid–Barajas Airport,Leonardo da Vinci–Fiumicino Airport
+MAD,FLR,1,20,25,Adolfo Suárez Madrid–Barajas Airport,Peretola Airport
+MAD,FRA,2,254,78773,Adolfo Suárez Madrid–Barajas Airport,Frankfurt am Main Airport
+MAD,FUE,1,23,2,Adolfo Suárez Madrid–Barajas Airport,Fuerteventura Airport
+MAD,GRX,2,9,1,Adolfo Suárez Madrid–Barajas Airport,Federico Garcia Lorca Airport
+MAD,GVA,2,75,1207,Adolfo Suárez Madrid–Barajas Airport,Geneva Cointrin International Airport
+MAD,IBZ,5,56,41,Adolfo Suárez Madrid–Barajas Airport,Ibiza Airport
+MAD,IST,1,202,41539,Adolfo Suárez Madrid–Barajas Airport,Istanbul Airport
+MAD,KBP,1,57,1085,Adolfo Suárez Madrid–Barajas Airport,Boryspil International Airport
+MAD,LCG,3,4,0,Adolfo Suárez Madrid–Barajas Airport,A Coruña Airport
+MAD,LGG,2,59,0,Adolfo Suárez Madrid–Barajas Airport,Liège Airport
+MAD,LGW,1,118,1492,Adolfo Suárez Madrid–Barajas Airport,London Gatwick Airport
+MAD,LHR,3,251,33904,Adolfo Suárez Madrid–Barajas Airport,London Heathrow Airport
+MAD,LIN,1,57,596,Adolfo Suárez Madrid–Barajas Airport,Milano Linate Airport
+MAD,LIS,5,132,6494,Adolfo Suárez Madrid–Barajas Airport,Humberto Delgado Airport (Lisbon Portela Airport)
+MAD,LPA,8,68,68,Adolfo Suárez Madrid–Barajas Airport,Gran Canaria Airport
+MAD,LUX,1,58,82,Adolfo Suárez Madrid–Barajas Airport,Luxembourg-Findel International Airport
+MAD,LYS,1,87,489,Adolfo Suárez Madrid–Barajas Airport,Lyon Saint-Exupéry Airport
+MAD,MAH,2,23,2,Adolfo Suárez Madrid–Barajas Airport,Menorca Airport
+MAD,MAN,1,95,1370,Adolfo Suárez Madrid–Barajas Airport,Manchester Airport
+MAD,MLA,1,51,79,Adolfo Suárez Madrid–Barajas Airport,Malta International Airport
+MAD,MRS,1,65,190,Adolfo Suárez Madrid–Barajas Airport,Marseille Provence Airport
+MAD,MUC,2,185,36058,Adolfo Suárez Madrid–Barajas Airport,Munich Airport
+MAD,MXP,3,140,1267,Adolfo Suárez Madrid–Barajas Airport,Malpensa International Airport
+MAD,NTE,1,40,78,Adolfo Suárez Madrid–Barajas Airport,Nantes Atlantique Airport
+MAD,OPO,1,61,241,Adolfo Suárez Madrid–Barajas Airport,Francisco de Sá Carneiro Airport
+MAD,ORY,5,148,1289,Adolfo Suárez Madrid–Barajas Airport,Paris-Orly Airport
+MAD,OTP,2,49,347,Adolfo Suárez Madrid–Barajas Airport,Henri Coandă International Airport
+MAD,OVD,2,5,1,Adolfo Suárez Madrid–Barajas Airport,Asturias Airport
+MAD,PMI,11,117,201,Adolfo Suárez Madrid–Barajas Airport,Palma De Mallorca Airport
+MAD,PMO,1,55,14,Adolfo Suárez Madrid–Barajas Airport,Falcone–Borsellino Airport
+MAD,SCQ,2,13,11,Adolfo Suárez Madrid–Barajas Airport,Santiago de Compostela Airport
+MAD,SDR,1,9,1,Adolfo Suárez Madrid–Barajas Airport,Santander Airport
+MAD,SPC,1,16,0,Adolfo Suárez Madrid–Barajas Airport,La Palma Airport
+MAD,STN,1,130,1617,Adolfo Suárez Madrid–Barajas Airport,London Stansted Airport
+MAD,SVQ,2,38,67,Adolfo Suárez Madrid–Barajas Airport,Sevilla Airport
+MAD,SXB,1,15,10,Adolfo Suárez Madrid–Barajas Airport,Strasbourg Airport
+MAD,SXF,1,41,57,Adolfo Suárez Madrid–Barajas Airport,Berlin-Schönefeld Airport
+MAD,TFN,7,53,46,Adolfo Suárez Madrid–Barajas Airport,Tenerife Norte Airport
+MAD,TFS,1,23,4,Adolfo Suárez Madrid–Barajas Airport,Tenerife South Airport
+MAD,TLS,1,111,62,Adolfo Suárez Madrid–Barajas Airport,Toulouse-Blagnac Airport
+MAD,TXL,1,93,776,Adolfo Suárez Madrid–Barajas Airport,Berlin-Tegel Airport
+MAD,VCE,1,52,354,Adolfo Suárez Madrid–Barajas Airport,Venice Marco Polo Airport
+MAD,VGO,3,6,1,Adolfo Suárez Madrid–Barajas Airport,Vigo Airport
+MAD,VIE,1,151,15655,Adolfo Suárez Madrid–Barajas Airport,Vienna International Airport
+MAD,VLC,4,38,61,Adolfo Suárez Madrid–Barajas Airport,Valencia Airport

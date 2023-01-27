@@ -1,0 +1,49 @@
+﻿llegada.iata,salida.iata,totalVuelosEntrantes,totalVuelosSalientes,conectividadSaliente,llegada.airportName,salida.airportName
+PMI,AGP,2,94,102,Palma De Mallorca Airport,Málaga Airport
+PMI,ALC,2,53,37,Palma De Mallorca Airport,Alicante International Airport
+PMI,AMS,1,342,58263,Palma De Mallorca Airport,Amsterdam Airport Schiphol
+PMI,ARN,1,113,3000,Palma De Mallorca Airport,Stockholm-Arlanda Airport
+PMI,BCN,12,152,4353,Palma De Mallorca Airport,Barcelona International Airport
+PMI,BGY,1,87,302,Palma De Mallorca Airport,Milan Bergamo Airport
+PMI,BHX,1,52,194,Palma De Mallorca Airport,Birmingham International Airport
+PMI,BIO,1,25,52,Palma De Mallorca Airport,Bilbao Airport
+PMI,BMA,1,38,341,Palma De Mallorca Airport,Stockholm-Bromma Airport
+PMI,BRS,2,47,301,Palma De Mallorca Airport,Bristol Airport
+PMI,BRU,1,103,6325,Palma De Mallorca Airport,Brussels Airport
+PMI,BSL,2,44,321,Palma De Mallorca Airport,EuroAirport Basel-Mulhouse-Freiburg Airport
+PMI,CGN,3,139,592,Palma De Mallorca Airport,Cologne Bonn Airport
+PMI,CIA,1,31,37,Palma De Mallorca Airport,Ciampino–G. B. Pastine International Airport
+PMI,DUS,1,89,3254,Palma De Mallorca Airport,Düsseldorf Airport
+PMI,EDI,1,66,151,Palma De Mallorca Airport,Edinburgh Airport
+PMI,EIN,2,37,86,Palma De Mallorca Airport,Eindhoven Airport
+PMI,EMA,1,89,43,Palma De Mallorca Airport,East Midlands Airport
+PMI,FMM,2,21,4,Palma De Mallorca Airport,Memmingen Allgau Airport
+PMI,FRA,3,254,78773,Palma De Mallorca Airport,Frankfurt am Main Airport
+PMI,GRX,2,9,1,Palma De Mallorca Airport,Federico Garcia Lorca Airport
+PMI,GVA,1,75,1207,Palma De Mallorca Airport,Geneva Cointrin International Airport
+PMI,HAM,3,86,563,Palma De Mallorca Airport,Hamburg Airport
+PMI,HHN,1,15,4,Palma De Mallorca Airport,Frankfurt-Hahn Airport
+PMI,IBZ,9,56,41,Palma De Mallorca Airport,Ibiza Airport
+PMI,LGW,2,118,1492,Palma De Mallorca Airport,London Gatwick Airport
+PMI,LHR,1,251,33904,Palma De Mallorca Airport,London Heathrow Airport
+PMI,LPA,1,68,68,Palma De Mallorca Airport,Gran Canaria Airport
+PMI,LTN,2,84,173,Palma De Mallorca Airport,London Luton Airport
+PMI,LUX,1,58,82,Palma De Mallorca Airport,Luxembourg-Findel International Airport
+PMI,MAD,11,185,22933,Palma De Mallorca Airport,Adolfo Suárez Madrid–Barajas Airport
+PMI,MAH,7,23,2,Palma De Mallorca Airport,Menorca Airport
+PMI,MAN,3,95,1370,Palma De Mallorca Airport,Manchester Airport
+PMI,MXP,1,140,1267,Palma De Mallorca Airport,Malpensa International Airport
+PMI,NCL,1,25,43,Palma De Mallorca Airport,Newcastle Airport
+PMI,NTE,1,40,78,Palma De Mallorca Airport,Nantes Atlantique Airport
+PMI,OPO,1,61,241,Palma De Mallorca Airport,Francisco de Sá Carneiro Airport
+PMI,ORY,2,148,1289,Palma De Mallorca Airport,Paris-Orly Airport
+PMI,SCQ,1,13,11,Palma De Mallorca Airport,Santiago de Compostela Airport
+PMI,SDR,1,9,1,Palma De Mallorca Airport,Santander Airport
+PMI,STN,1,130,1617,Palma De Mallorca Airport,London Stansted Airport
+PMI,STR,1,84,908,Palma De Mallorca Airport,Stuttgart Airport
+PMI,SVQ,2,38,67,Palma De Mallorca Airport,Sevilla Airport
+PMI,SXF,3,41,57,Palma De Mallorca Airport,Berlin-Schönefeld Airport
+PMI,TXL,3,93,776,Palma De Mallorca Airport,Berlin-Tegel Airport
+PMI,VIE,1,151,15655,Palma De Mallorca Airport,Vienna International Airport
+PMI,VLC,4,38,61,Palma De Mallorca Airport,Valencia Airport
+PMI,ZRH,1,122,18392,Palma De Mallorca Airport,Zürich Airport

@@ -1,0 +1,8 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+9.0,UNKNOWN,LEI,HHN,Almería International Airport,Frankfurt-Hahn Airport
+72.0,EZY,LEI,LGW,Almería International Airport,London Gatwick Airport
+58.0,ANE,LEI,MAD,Almería International Airport,Adolfo Suárez Madrid–Barajas Airport
+58.0,ANE,LEI,MAD,Almería International Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,RYR,LEI,MAN,Almería International Airport,Manchester Airport
+45.0,ANE,LEI,MLN,Almería International Airport,Melilla Airport
+10.0,GES,LEI,VLC,Almería International Airport,Valencia Airport

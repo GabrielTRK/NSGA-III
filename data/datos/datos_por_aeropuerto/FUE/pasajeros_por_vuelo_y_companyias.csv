@@ -1,0 +1,25 @@
+﻿round(f.occupancyPercentage * f.seatsCapacity/100),f.operator,entrada.iata,salida.iata,entrada.airportName,salida.airportName
+87.0,VLG,FUE,BCN,Fuerteventura Airport,Barcelona International Airport
+103.0,MAY,FUE,BGY,Fuerteventura Airport,Milan Bergamo Airport
+103.0,RYR,FUE,DUB,Fuerteventura Airport,Dublin Airport
+103.0,RYR,FUE,EDI,Fuerteventura Airport,Edinburgh Airport
+115.0,EZY,FUE,LGW,Fuerteventura Airport,London Gatwick Airport
+45.0,IBB,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,IBB,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,IBB,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,IBB,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,IBB,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,IBB,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,IBB,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,CNF,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,CNF,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+45.0,CNF,FUE,LPA,Fuerteventura Airport,Gran Canaria Airport
+115.0,IBS,FUE,MAD,Fuerteventura Airport,Adolfo Suárez Madrid–Barajas Airport
+103.0,RYR,FUE,STN,Fuerteventura Airport,London Stansted Airport
+96.0,VLG,FUE,SVQ,Fuerteventura Airport,Sevilla Airport
+45.0,IBB,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
+45.0,IBB,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
+45.0,IBB,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
+45.0,IBB,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
+45.0,CNF,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
+5.0,UGC,FUE,TFN,Fuerteventura Airport,Tenerife Norte Airport
