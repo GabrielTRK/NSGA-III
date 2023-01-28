@@ -15,6 +15,7 @@ import com.nsgaiii.nsgaiiidemo.App.Modelo.Poblacion;
 import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorCruce;
 import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorReemplazo;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
+import com.nsgaiii.nsgaiiidemo.App.Problemas.SubVuelos;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Vuelos;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
 import com.opencsv.exceptions.CsvException;
@@ -38,8 +39,9 @@ public class EvaluarIndividuo {
         Map<String, Double> conectividadesAeropuertosOrigen = new HashMap<>();
         Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol = new HashMap<>();
         Map<String, Set<String>> listaConexionesSalidas = new HashMap<>();
-        
-        
+        List<Integer> indPorAeropuerto = new ArrayList<>();
+    	
+    	
     	LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);
     	LecturaDeDatos.leerDatosAeropuertosEspanyoles(AeropuertosEspanyoles);
     	LecturaDeDatos.leerDatosAeropuertosOrigen(AeropuertosOrigen);
@@ -51,18 +53,28 @@ public class EvaluarIndividuo {
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
+    	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto);
     	
-    	Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, conexiones, vuelos, 
+    	Problema problema = new SubVuelos(conexiones.keySet().size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
-    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto);
     	System.out.println(riesgos.size());
-    	System.out.println(pasajerosCompanyia);
+    	System.out.println(conexiones);
+    	System.out.println(AeropuertosEspanyoles);
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
     	
     	
+    	System.out.println(indPorAeropuerto);
+    	
+    	for (int i = 0; i < 5; i++) {
+    		Individuo indNuevo = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());
+        	System.out.println(problema.inicializarValores(indNuevo));
+        	
+    	}
+    	Individuo indNuevo = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());
     	/*        
     	
     	ArrayList<Individuo> lista = new ArrayList<>();
@@ -89,14 +101,14 @@ public class EvaluarIndividuo {
     	
     	System.out.println(frentes.get(0));
     	System.out.println(frentes.get(1));*/
-    	
+    	/*
     	OperadorCruce cruce = new OperadorCruce(1, 0);
     	
     	Individuo padre1 = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());
     	
     	ArrayList<Double> valores = new ArrayList<>();
     	for(int i = 0; i < problema.getNumVariables(); i++) {
-    		valores.add(0.0);
+    		valores.add(Utils.getRandNumber(0, 10) * 1.0);
     	}
     	
     	padre1.setVariables(valores);
@@ -105,27 +117,27 @@ public class EvaluarIndividuo {
     	
     	ArrayList<Double> valores2 = new ArrayList<>();
     	for(int i = 0; i < problema.getNumVariables(); i++) {
-    		valores2.add(1.0);
+    		valores2.add(Utils.getRandNumber(0, 10) * 1.0);
     	}
     	
     	padre2.setVariables(valores2);
     	
     	System.out.println(padre1);
     	System.out.println(padre2);
-    	System.out.println(problema.evaluate(padre1));
-    	System.out.println(problema.evaluate(padre2));
+    	//System.out.println(problema.evaluate(padre1));
+    	//System.out.println(problema.evaluate(padre2));
     	
-    	System.out.println(cruce.cruceDosPuntos(padre1, padre2, problema));
-    	/*
-    	String s = "";
-    	Poblacion poblacion = new Poblacion(32768 - 1, problema);
+    	System.out.println(cruce.cruceUniforme(padre1, padre2, problema));
+    	*/
+    	/*String s = "";
+    	Poblacion poblacion = new Poblacion(1073741824 - 1, problema);
     	ArrayList<Individuo> indi = new ArrayList<>();
-    	for (int i = 0; i < 32768; i++) {
+    	for (int i = 0; i < 1073741824; i++) {
     		String result = Integer.toBinaryString(i);
-    		String resultWithPadding = String.format("%15s", result).replaceAll(" ", "0");
-    		Individuo ind = new Individuo(15, 3);
-    		ArrayList<Double> var  = new ArrayList<Double>(15);
-    		for (int j = 0; j < 15; j++) {
+    		String resultWithPadding = String.format("%30s", result).replaceAll(" ", "0");
+    		Individuo ind = new Individuo(30, 3);
+    		ArrayList<Double> var  = new ArrayList<Double>(30);
+    		for (int j = 0; j < 30; j++) {
     			var.add(j, Double.valueOf(resultWithPadding.charAt(j) + s));
     		}
     		ind.setVariables(var);

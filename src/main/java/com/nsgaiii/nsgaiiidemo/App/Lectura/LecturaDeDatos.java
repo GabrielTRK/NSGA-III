@@ -2,6 +2,8 @@ package com.nsgaiii.nsgaiiidemo.App.Lectura;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -11,6 +13,10 @@ import java.util.Scanner;
 import java.util.Set;
 
 import com.nsgaiii.nsgaiiidemo.App.Constantes.Constantes;
+import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
+import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvException;
 
 public class LecturaDeDatos {
 	
@@ -19,7 +25,7 @@ public class LecturaDeDatos {
 	public static void leerDatos(Map<List<String>, Integer> conexiones, Map<List<String>, 
 			Double> riesgos, Map<List<String>, Integer> vuelos) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroSIR + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroSIR + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -105,7 +111,7 @@ public class LecturaDeDatos {
 	
 	public static void leerDatosDineroMedio(Map<List<String>, Double> dineroMedio) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroDineroPorVuelo + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroDineroPorVuelo + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -130,7 +136,7 @@ public class LecturaDeDatos {
 	
 	public static void leerDatosPasajeros(Map<List<String>, Integer> pasajeros) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroPasajerosPorVuelo + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroPasajerosPorVuelo + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -153,7 +159,7 @@ public class LecturaDeDatos {
 	
 	public static void leerDatosPasajerosCompanyia(Map<List<String>, Integer> pasajerosCompanyia) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroPasajerosCompanyia + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroPasajerosCompanyia + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -191,7 +197,7 @@ public class LecturaDeDatos {
         }
         
         try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroPasajerosConectividad + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroPasajerosConectividad + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -258,6 +264,19 @@ public class LecturaDeDatos {
                 }
             }
         }
+	}
+	
+	public static void leerFicherosAeropuertos(List<String> AeropuertosEspanyoles, 
+			List<Integer> indPorAeropuerto) throws FileNotFoundException, IOException, CsvException {
+		for (String nombreAeropuerto : AeropuertosEspanyoles) {
+			try (CSVReader reader = new CSVReader(new FileReader(Constantes.rutaDatos_por_aeropuerto + 
+					nombreAeropuerto + "\\" + "problemaVuelos" + nombreAeropuerto + 
+					Constantes.extensionFichero))) {
+				List<String[]> r = reader.readAll();
+				indPorAeropuerto.add(r.size() - 1);
+			}
+		}
+		
 	}
 
 }

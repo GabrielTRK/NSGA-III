@@ -169,5 +169,38 @@ public class OperadorCruce {
 		
 		return hijos;
 	}
+	
+	public ArrayList<Individuo> cruceUniforme (Individuo padre1, Individuo padre2, Problema prob){
+		Individuo hijo1 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
+		Individuo hijo2 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
+		ArrayList<Individuo> hijos = new ArrayList<Individuo>(2);
+		hijos.add(padre1);
+		hijos.add(padre2);
+		ArrayList<Double> mascara = new ArrayList<>(prob.getNumVariables());
+		for (int i = 0; i< prob.getNumVariables(); i++) {
+			mascara.add(Utils.getRandBinNumber());
+		}
+		//System.out.println(mascara);
+		if (Utils.isProbValid(this.probCruce) && Utils.getRandNumber(0.0, Math.nextUp(1.0)) <= this.probCruce) {
+			// 1. Si la posición i de la máscara es 0 -> gen i de padre 1
+			//  Sino gen i de padre 2
+			
+		    for (int i = 0; i < prob.getNumVariables(); i++) {
+		    	if(mascara.get(i) == 1.0) {
+		    		hijo1.setIVariable(i, padre2.getVariables().get(i));
+		    		hijo2.setIVariable(i, padre1.getVariables().get(i));
+		    	} else {
+		    		hijo1.setIVariable(i, padre1.getVariables().get(i));
+		    		hijo2.setIVariable(i, padre2.getVariables().get(i));
+		    	}
+		    }
+		    
+		    hijos.set(0, hijo1);
+			hijos.set(1, hijo2);
+		    
+		}
+		
+		return hijos;
+	}
 
 }

@@ -396,4 +396,22 @@ public class Vuelos extends Problema{
         return solucion;
     }
 
+	public int getIndCont() {
+		return indCont;
+	}
+
+	public void setIndCont(int indCont) {
+		this.indCont = indCont;
+	}
+
+	public List<String> getAeropuertosEspanyoles() {
+		return AeropuertosEspanyoles;
+	}
+
+	public void setAeropuertosEspanyoles(List<String> aeropuertosEspanyoles) {
+		AeropuertosEspanyoles = aeropuertosEspanyoles;
+	}
+	
+	
+
 }
