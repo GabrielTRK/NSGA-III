@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -267,16 +268,41 @@ public class LecturaDeDatos {
 	}
 	
 	public static void leerFicherosAeropuertos(List<String> AeropuertosEspanyoles, 
-			List<Integer> indPorAeropuerto) throws FileNotFoundException, IOException, CsvException {
+			List<Integer> indPorAeropuerto, Map<String, List<List<String>>> conexionesPorAeropuerto) throws FileNotFoundException, IOException, CsvException {
 		for (String nombreAeropuerto : AeropuertosEspanyoles) {
 			try (CSVReader reader = new CSVReader(new FileReader(Constantes.rutaDatos_por_aeropuerto + 
 					nombreAeropuerto + "\\" + "problemaVuelos" + nombreAeropuerto + 
 					Constantes.extensionFichero))) {
 				List<String[]> r = reader.readAll();
 				indPorAeropuerto.add(r.size() - 1);
+				leerDatosAeropuerto(conexionesPorAeropuerto, nombreAeropuerto);
 			}
 		}
 		
+	}
+	
+	public static void leerDatosAeropuerto(Map<String, List<List<String>>> conexionesPorAeropuerto, 
+			String nombreAeropuerto) {
+		Map<List<String>, Integer> conexiones = new HashMap<>();
+		try {
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + 
+					nombreAeropuerto + "\\" + Constantes.nombreFicheroSIR + Constantes.extensionFichero));
+            //Comma as a delimiter
+            scanner.useDelimiter("\n");
+            scanner.next();
+            while (scanner.hasNext()) {
+                String str = scanner.next();
+                String split[] = str.split(",");
+                conexiones.put(List.of(split[2], split[1]), 0);
+            }
+            List<List<String>> listaConexionesAerupuerto = new ArrayList<>(conexiones.keySet());
+            conexionesPorAeropuerto.put(nombreAeropuerto, listaConexionesAerupuerto);
+            // Closing the scanner
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("El path del documento conexiones no está bien especificado");
+            //do something with e, or handle this case
+        }
 	}
 
 }

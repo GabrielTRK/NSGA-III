@@ -411,6 +411,22 @@ public class Vuelos extends Problema{
 	public void setAeropuertosEspanyoles(List<String> aeropuertosEspanyoles) {
 		AeropuertosEspanyoles = aeropuertosEspanyoles;
 	}
+
+	public Map<List<String>, Integer> getConexiones() {
+		return conexiones;
+	}
+
+	public void setConexiones(Map<List<String>, Integer> conexiones) {
+		this.conexiones = conexiones;
+	}
+
+	public List<List<String>> getListaConexiones() {
+		return listaConexiones;
+	}
+
+	public void setListaConexiones(List<List<String>> listaConexiones) {
+		this.listaConexiones = listaConexiones;
+	}
 	
 	
 

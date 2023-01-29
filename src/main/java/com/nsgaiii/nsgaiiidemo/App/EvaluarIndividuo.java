@@ -40,6 +40,7 @@ public class EvaluarIndividuo {
         Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol = new HashMap<>();
         Map<String, Set<String>> listaConexionesSalidas = new HashMap<>();
         List<Integer> indPorAeropuerto = new ArrayList<>();
+        Map<String, List<List<String>>> conexionesPorAeropuerto = new HashMap<>();
     	
     	
     	LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);
@@ -53,28 +54,39 @@ public class EvaluarIndividuo {
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
-    	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto);
+    	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
     	
-    	Problema problema = new SubVuelos(conexiones.keySet().size(), riesgos, conexiones, vuelos, 
+    	
+    	SubVuelos problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
-    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto);
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
+    			conexionesPorAeropuerto);
     	System.out.println(riesgos.size());
-    	System.out.println(conexiones);
+    	System.out.println(conexiones.keySet());
     	System.out.println(AeropuertosEspanyoles);
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
     	
     	
     	System.out.println(indPorAeropuerto);
     	
-    	for (int i = 0; i < 5; i++) {
+    	System.out.println(conexionesPorAeropuerto.get("ACE"));
+    	System.out.println(conexionesPorAeropuerto.get("ACE").size());
+    	Individuo ind = new Individuo(indPorAeropuerto.size(), 3);
+    	ind = problema.inicializarValores(ind);
+    	System.out.println(problema.encontrarBitsEnFichero(480, 0));
+    	System.out.println(problema.traducirIndividuo(ind));
+    	
+    	
+    	/*for (int i = 0; i < 5; i++) {
     		Individuo indNuevo = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());
         	System.out.println(problema.inicializarValores(indNuevo));
         	
     	}
-    	Individuo indNuevo = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());
+    	Individuo indNuevo = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());*/
+    	
     	/*        
     	
     	ArrayList<Individuo> lista = new ArrayList<>();
