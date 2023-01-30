@@ -57,27 +57,26 @@ public class EvaluarIndividuo {
     	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
     	
     	
-    	SubVuelos problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
     			conexionesPorAeropuerto);
-    	System.out.println(riesgos.size());
+    	/*System.out.println(riesgos.size());
     	System.out.println(conexiones.keySet());
     	System.out.println(AeropuertosEspanyoles);
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
-    	
+    	*/
     	
     	System.out.println(indPorAeropuerto);
-    	
-    	System.out.println(conexionesPorAeropuerto.get("ACE"));
-    	System.out.println(conexionesPorAeropuerto.get("ACE").size());
     	Individuo ind = new Individuo(indPorAeropuerto.size(), 3);
     	ind = problema.inicializarValores(ind);
-    	System.out.println(problema.encontrarBitsEnFichero(480, 0));
-    	System.out.println(problema.traducirIndividuo(ind));
+    	ind = problema.inicializarValores(ind);
+    	ind = problema.inicializarValores(ind);
+    	System.out.println(ind);
+    	System.out.println(problema.evaluate(ind));
     	
     	
     	/*for (int i = 0; i < 5; i++) {

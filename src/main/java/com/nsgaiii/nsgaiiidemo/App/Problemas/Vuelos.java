@@ -1,5 +1,7 @@
 package com.nsgaiii.nsgaiiidemo.App.Problemas;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.Set;
 import com.nsgaiii.nsgaiiidemo.App.Constantes.Constantes;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
+import com.opencsv.exceptions.CsvException;
 
 public class Vuelos extends Problema{
 
@@ -74,7 +77,7 @@ public class Vuelos extends Problema{
 	 * Posición 5: Conectividad de la red de transporte aéreo
 	 */
 	@Override
-	public Individuo evaluate(Individuo solution) {
+	public Individuo evaluate(Individuo solution) throws FileNotFoundException, IOException, CsvException {
 		ArrayList<Double> objetivos = new ArrayList<>(super.getNumObjetivos());
 		
 		ArrayList<Double> riesgoPasajerosIngresos = calcularRiesgoPasajerosIngresosHPasajerosHIngresos(solution);

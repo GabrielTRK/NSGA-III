@@ -26,7 +26,7 @@ public class OperadorMutacion {
 		ArrayList<Double> solucionVal = solucion.getVariables();
 		
 		for (int i = 0; i < prob.getNumVariables(); i++) {
-			if (Utils.getRandNumber(0.0, Math.nextUp(1.0)) <= this.probMuta) {
+			if (Utils.getRandNumber(0.0, Math.nextUp(1.0)) < this.probMuta) {
 				y = solucionVal.get(i);
 				yl = prob.getLimitesInferiores().get(i);
 				yu = prob.getLimitesSuperiores().get(i);
@@ -62,7 +62,7 @@ public class OperadorMutacion {
 	public Individuo cambioDeBit(Individuo solucion, Problema prob) {
 		ArrayList<Double> solucionVal = solucion.getVariables();
 		for (int j = 0; j < prob.getNumVariables(); j++) {
-			if (Utils.getRandNumber(0.0, Math.nextUp(1.0)) <= this.probMuta) {
+			if (Utils.getRandNumber(0.0, Math.nextUp(1.0)) < this.probMuta) {
 				if (solucionVal.get(j).equals(0.0)) {
 					solucionVal.set(j, 1.0);
 				} else {
@@ -74,6 +74,21 @@ public class OperadorMutacion {
 		solucion.setVariables(solucionVal);
 		return solucion;
 	}
+	
+	//Mutación cambio de bit
+		public Individuo numeroAleatorio(Individuo solucion, Problema prob) {
+			ArrayList<Double> solucionVal = solucion.getVariables();
+			for (int j = 0; j < prob.getNumVariables(); j++) {
+				if (Utils.getRandNumber(0.0, Math.nextUp(1.0)) < this.probMuta) {
+					solucionVal.set(j, Utils.getRandNumber(prob.getLimitesInferiores().get(j), prob.getLimitesSuperiores().get(j)));
+				}
+			}
+				
+			solucion.setVariables(solucionVal);
+			
+			
+			return solucion;
+		}
 	
 
 }

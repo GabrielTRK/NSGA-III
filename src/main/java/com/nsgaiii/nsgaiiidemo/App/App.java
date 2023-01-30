@@ -36,6 +36,7 @@ import com.nsgaiii.nsgaiiidemo.App.Problemas.DTLZ2;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.DTLZ5;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.DTLZ7;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
+import com.nsgaiii.nsgaiiidemo.App.Problemas.SubVuelos;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Vuelos;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
 
@@ -65,6 +66,8 @@ public class App extends AWTAbstractAnalysis
         Map<String, Double> conectividadesAeropuertosOrigen = new HashMap<>();
         Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol = new HashMap<>();
         Map<String, Set<String>> listaConexionesSalidas = new HashMap<>();
+        List<Integer> indPorAeropuerto = new ArrayList<>();
+        Map<String, List<List<String>>> conexionesPorAeropuerto = new HashMap<>();
         
         
     	LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);
@@ -78,21 +81,22 @@ public class App extends AWTAbstractAnalysis
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
+    	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
     	
     	//Declarar problema y pasarselo al algoritmo
     	
-    	Problema problema = new Vuelos(conexiones.keySet().size(), riesgos, conexiones, vuelos, 
+    	Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
-    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
-    	
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
+    			conexionesPorAeropuerto);
     	
     	//Indicar parámetros del problema y algoritmo
     	int numeroDeIndividuos = 48;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 100;
+    	int numeroDeGeneraciones = 5000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
@@ -100,8 +104,8 @@ public class App extends AWTAbstractAnalysis
     	//double probabilidadDeMutacion = 1.0 / numeroDeVariables;
     	int divisiones = 8;
     	//int numeroDeObjetivos = 3;
-    	boolean leerFichero = false;
-    	String nombreFichero = "problemaVuelos20230125010213.csv";
+    	boolean leerFichero = true;
+    	String nombreFichero = "problemaSubVuelos20230130005411.csv";
     	
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	long startTime = System.nanoTime();

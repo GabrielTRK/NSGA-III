@@ -49,9 +49,10 @@ public class Nsgaiii {
 		this.numGeneraciones = numGeneraciones;
 		
 		this.poblacion.generarPoblacionInicial(this.problema, leerF, nombreFichero);
+
 	}
 	
-	public List<Individuo> ejecutarNSGAIII(){
+	public List<Individuo> ejecutarNSGAIII() throws FileNotFoundException, IOException, CsvException{
 		Poblacion hijos;
 		
 		int contadorGeneraciones = 0;
@@ -61,7 +62,6 @@ public class Nsgaiii {
 		while (!condicionDeParadaConseguida(contadorGeneraciones, this.poblacion, elapsedTime)) {
 			startTime = System.nanoTime();
 			System.out.println(contadorGeneraciones);
-			//System.out.println("Generando hijos");
 			hijos = generarDescendientes(); //Seleccion, cruce y mutacion
 			//System.out.println("Nueva poblacion");
 			obtenerNuevaGeneracion(hijos); //Reemplazo
@@ -73,7 +73,7 @@ public class Nsgaiii {
 		return this.frenteDePareto; //Devuelve el frente de pareto obtenido
 	}
 	
-	private Poblacion generarDescendientes() {
+	private Poblacion generarDescendientes() throws FileNotFoundException, IOException, CsvException {
 		Poblacion poblacionHijos = new Poblacion(this.poblacion.getNumIndividuos(), this.problema);
 		ArrayList<Individuo> totalHijos = new ArrayList<Individuo>(this.poblacion.getNumIndividuos());
 		
@@ -85,13 +85,13 @@ public class Nsgaiii {
 			nuevosHijos = this.seleccion.seleccionAleatoria(this.poblacion);
 			
 			//Cruce
-			nuevosHijos = this.cruce.cruceDosPuntos(
+			nuevosHijos = this.cruce.cruceUniforme(
 					nuevosHijos.get(0),
 					nuevosHijos.get(1),
 					this.problema);
 			//Mutacion
-			nuevosHijos.set(0, this.mutacion.cambioDeBit(nuevosHijos.get(0), this.problema));
-			nuevosHijos.set(1, this.mutacion.cambioDeBit(nuevosHijos.get(1), this.problema));
+			nuevosHijos.set(0, this.mutacion.numeroAleatorio(nuevosHijos.get(0), this.problema));
+			nuevosHijos.set(1, this.mutacion.numeroAleatorio(nuevosHijos.get(1), this.problema));
 			
 			//Añadir hijos e incrementar el contador
 			contadorIndividuos = contadorIndividuos + 2;

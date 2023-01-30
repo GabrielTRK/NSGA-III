@@ -73,7 +73,7 @@ public class Poblacion {
 		}
 	}
 	
-	public void calcularObjetivos(Problema p) {
+	public void calcularObjetivos(Problema p) throws FileNotFoundException, IOException, CsvException {
 		for (int i = 0; i < this.numIndividuos; i++) {
 			Individuo individuo = this.poblacion.get(i);
 			individuo = p.evaluate(individuo);
@@ -81,7 +81,7 @@ public class Poblacion {
 		}
 	}
 	
-	public void obtenerIndividuosRestantes(Problema p) {
+	public void obtenerIndividuosRestantes(Problema p) throws FileNotFoundException, IOException, CsvException {
 		while(this.poblacion.size() < this.numIndividuos) {
 			Individuo individuo = new Individuo(p.getNumVariables(), p.getNumObjetivos());
 			individuo = p.inicializarValores(individuo);

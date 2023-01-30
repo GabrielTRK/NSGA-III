@@ -34,34 +34,23 @@ public class SubVuelos extends Vuelos{
 				conectividadesAeropuertosOrigen, listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
 		this.indPorAeropuerto = indPorAeropuerto;
 		this.conexionesPorAeropuerto = conexionesPorAeropuerto;
+		super.setNombre(Constantes.nombreProblemaSubVuelos);
+		List<Double> limInf = new ArrayList<Double>(numVariables);
+		List<Double> limSup = new ArrayList<Double>(numVariables);
+		for (int i = 0; i < numVariables; i++) {
+			limInf.add(1.0);
+			limSup.add((indPorAeropuerto.get(i) + 1) * 1.0);
+		}
+		super.setLimitesInferiores(limInf);
+		super.setLimitesSuperiores(limSup);
 	}
 	
 	@Override
-	public Individuo evaluate(Individuo solution) {
+	public Individuo evaluate(Individuo solution) throws FileNotFoundException, IOException, CsvException {
 		//1. Traducir individuo con numeros reales a bits
+		Individuo indTraducido = this.traducirIndividuo(solution);
 		//2. Calcular obj
-		
-		
-		ArrayList<Double> objetivos = new ArrayList<>(super.getNumObjetivos());
-		
-		//ArrayList<Double> riesgoPasajerosIngresos = calcularRiesgoPasajerosIngresosHPasajerosHIngresos(solution);
-		
-		//objetivos.add(0, riesgoPasajerosIngresos.get(0));
-		//objetivos.add(1, Utils.mediaDeValoresObjetivo(riesgoPasajerosIngresos.subList(1, 5)));
-		/*objetivos.add(1, riesgoPasajerosIngresos.get(1));
-		objetivos.add(2, riesgoPasajerosIngresos.get(2));
-		objetivos.add(3, riesgoPasajerosIngresos.get(3));
-		objetivos.add(4, riesgoPasajerosIngresos.get(4));*/
-		
-		
-		/*objetivos.add(0, calcularRiesgo(solution));
-		objetivos.add(1, calcularPasajerosPerdidos(solution));
-		objetivos.add(2, calcularPerdidaDeIngresos(solution));*/
-		//objetivos.add(3, calculoHomogeneidadPasajerosAerolineas(solution));
-		//objetivos.add(4, calculoHomogeneidadIngresosTurismoAeropuertos(solution));
-		//objetivos.add(2, calculoConectividad(solution));
-		
-		solution.setObjetivos(objetivos);
+		solution.setObjetivos(super.evaluate(indTraducido).getObjetivos());
 		return solution;
 	}
 	
@@ -76,7 +65,7 @@ public class SubVuelos extends Vuelos{
 			else if(super.getIndCont() == 1) {
 				valores.add(i, this.indPorAeropuerto.get(i) * 1.0);
 			} else {
-				valores.add(i, Utils.getRandNumber(0, this.indPorAeropuerto.get(i)) * 1.0);
+				valores.add(i, Utils.getRandNumber(1, this.indPorAeropuerto.get(i) + 1) * 1.0);
 			}
 		}
 		super.setIndCont(getIndCont() + 1);;

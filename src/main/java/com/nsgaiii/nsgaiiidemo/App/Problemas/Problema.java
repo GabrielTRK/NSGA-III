@@ -1,11 +1,14 @@
 package com.nsgaiii.nsgaiiidemo.App.Problemas;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.nsgaiii.nsgaiiidemo.App.Constantes.Constantes;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
+import com.opencsv.exceptions.CsvException;
 
 public class Problema {
 	
@@ -98,7 +101,7 @@ public class Problema {
 	}
 
 	//Metodo por defecto de cálculo de objetivos
-	public Individuo evaluate(Individuo solution) {
+	public Individuo evaluate(Individuo solution) throws FileNotFoundException, IOException, CsvException {
 		ArrayList<Double> objetivos = new ArrayList<>(this.numObjetivos);
 		
 		for (int i = 0; i < this.numObjetivos; i++) {
