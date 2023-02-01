@@ -54,16 +54,22 @@ public class EvaluarIndividuo {
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
-    	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
+    	//LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
     	
+    	Problema problema = new Vuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    			AeropuertosEspanyoles, AeropuertosOrigen,
+    			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
+    			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
+    			vuelosSalientes, conectividadesAeropuertosOrigen,
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
     	
-    	Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	/*Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
-    			conexionesPorAeropuerto);
+    			conexionesPorAeropuerto);*/
     	//System.out.println(riesgos.size());
     	System.out.println(conexiones.keySet());
     	System.out.println(AeropuertosEspanyoles);
@@ -71,14 +77,11 @@ public class EvaluarIndividuo {
     	
     	
     	System.out.println(indPorAeropuerto);
-    	Individuo ind = new Individuo(indPorAeropuerto.size(), 3);
-    	ind = problema.inicializarValores(ind);
-    	ind = problema.inicializarValores(ind);
+    	Individuo sol = new Individuo(indPorAeropuerto.size(), 3);
+    	sol = problema.inicializarValores(sol);
+    	sol = problema.inicializarValores(sol);
     	//ind = problema.inicializarValores(ind);
-    	System.out.println(problema.evaluate(ind));
-    	
-    	System.out.println(Utils.getRandNumber((int)Math.round(0.0), 
-							(int)Math.round(10.0)));
+    	System.out.println(problema.evaluate(sol));
     	
     	/*ArrayList<Individuo> lista = new ArrayList<>();
     	String antes = "problemaVuelos20230125154316.csv";
@@ -105,43 +108,16 @@ public class EvaluarIndividuo {
     	System.out.println(frentes.get(0));
     	System.out.println(frentes.get(1));*/
     	
-    	/*
-    	OperadorCruce cruce = new OperadorCruce(1, 0);
-    	
-    	Individuo padre1 = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());
-    	
-    	ArrayList<Double> valores = new ArrayList<>();
-    	for(int i = 0; i < problema.getNumVariables(); i++) {
-    		valores.add(Utils.getRandNumber(0, 10) * 1.0);
-    	}
-    	
-    	padre1.setVariables(valores);
-    	
-    	Individuo padre2 = new Individuo(problema.getNumVariables(), 3);
-    	
-    	ArrayList<Double> valores2 = new ArrayList<>();
-    	for(int i = 0; i < problema.getNumVariables(); i++) {
-    		valores2.add(Utils.getRandNumber(0, 10) * 1.0);
-    	}
-    	
-    	padre2.setVariables(valores2);
-    	
-    	System.out.println(padre1);
-    	System.out.println(padre2);
-    	//System.out.println(problema.evaluate(padre1));
-    	//System.out.println(problema.evaluate(padre2));
-    	
-    	System.out.println(cruce.cruceUniforme(padre1, padre2, problema));
-    	*/
-    	/*String s = "";
-    	Poblacion poblacion = new Poblacion(1073741824 - 1, problema);
+    	String s = "";
+    	Poblacion poblacion = new Poblacion(8388608 - 1, problema);
     	ArrayList<Individuo> indi = new ArrayList<>();
-    	for (int i = 0; i < 1073741824; i++) {
+    	for (int i = 0; i < 8388608; i++) {
+    		System.out.println(i);
     		String result = Integer.toBinaryString(i);
-    		String resultWithPadding = String.format("%30s", result).replaceAll(" ", "0");
-    		Individuo ind = new Individuo(30, 3);
-    		ArrayList<Double> var  = new ArrayList<Double>(30);
-    		for (int j = 0; j < 30; j++) {
+    		String resultWithPadding = String.format("%23s", result).replaceAll(" ", "0");
+    		Individuo ind = new Individuo(23, 3);
+    		ArrayList<Double> var  = new ArrayList<Double>(23);
+    		for (int j = 0; j < 23; j++) {
     			var.add(j, Double.valueOf(resultWithPadding.charAt(j) + s));
     		}
     		ind.setVariables(var);
@@ -149,11 +125,11 @@ public class EvaluarIndividuo {
     		indi.add(ind);
     	}
     	poblacion.setPoblacion(indi);
-    	List<List<Individuo>> frentes = reemplazo.obtenerFrentes(poblacion, problema);
-    	System.out.println(frentes.get(0).size());
-    	Utils.crearCSVConObjetivos(frentes.get(0), problema.getNombre());
+    	List<Individuo> frentes = reemplazo.obtenerPrimerFrente(poblacion, problema);
+    	System.out.println(frentes.size());
+    	Utils.crearCSVConObjetivos(frentes, problema.getNombre());
     	System.out.println("a");
-    	*/
+    	
 	}
 
 }

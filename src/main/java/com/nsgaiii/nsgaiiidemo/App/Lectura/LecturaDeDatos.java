@@ -26,7 +26,7 @@ public class LecturaDeDatos {
 	public static void leerDatos(Map<List<String>, Integer> conexiones, Map<List<String>, 
 			Double> riesgos, Map<List<String>, Integer> vuelos) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroSIR + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroSIR + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -44,6 +44,50 @@ public class LecturaDeDatos {
                 } else {
                 	vuelos.put(List.of(split[2], split[1]), 1);
                 }
+            }
+            // Closing the scanner
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("El path del documento conexiones no está bien especificado");
+            //do something with e, or handle this case
+        }
+	}
+	
+	public static void leerDatosNuevo(List<List<String>> conexiones, List<Double> riesgos, List<Integer> vuelos) {
+		try {
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroSIR + Constantes.extensionFichero));
+            //Comma as a delimiter
+            scanner.useDelimiter("\n");
+            scanner.next();
+            while (scanner.hasNext()) {
+                String str = scanner.next();
+                String split[] = str.split(",");
+                if(!conexiones.contains(List.of(split[2], split[1]))) {
+                	conexiones.add(List.of(split[2], split[1]));
+                }
+                if(conexiones.contains(List.of(split[2], split[1]))) {
+                	boolean encontrado = false;
+                	int posicion = 0;
+                	int indice = 0;
+                	while(!encontrado && indice < conexiones.size()) {
+                		if(conexiones.get(posicion).equals(List.of(split[2], split[1]))) {
+                			encontrado = true;
+                			posicion = indice;
+                		}
+                		posicion++;
+                	}
+                	if (posicion < riesgos.size()) {
+                    	riesgos.add(posicion, Double.parseDouble(split[0]) + riesgos.get(posicion));
+                    } else {
+                    	riesgos.add(posicion, Double.parseDouble(split[0]) + 0);
+                    }
+                    if (posicion < vuelos.size()) {
+                    	vuelos.add(posicion, vuelos.get(posicion) + 1);
+                    } else {
+                    	vuelos.add(posicion, 1);
+                    }
+                }
+                
             }
             // Closing the scanner
             scanner.close();
@@ -112,7 +156,7 @@ public class LecturaDeDatos {
 	
 	public static void leerDatosDineroMedio(Map<List<String>, Double> dineroMedio) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroDineroPorVuelo + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroDineroPorVuelo + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -135,9 +179,45 @@ public class LecturaDeDatos {
         }
 	}
 	
+	public static void leerDatosDineroMedioNuevo(List<List<String>> conexiones, List<Double> dineroMedio) {
+		try {
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroDineroPorVuelo + Constantes.extensionFichero));
+            //Comma as a delimiter
+            scanner.useDelimiter("\n");
+            scanner.next();
+            while (scanner.hasNext()) {
+                String str = scanner.next();
+                String split[] = str.split(",");
+                if(conexiones.contains(List.of(split[2], split[1]))) {
+                	boolean encontrado = false;
+                	int posicion = 0;
+                	int indice = 0;
+                	while(!encontrado && indice < conexiones.size()) {
+                		if(conexiones.get(posicion).equals(List.of(split[2], split[1]))) {
+                			encontrado = true;
+                			posicion = indice;
+                		}
+                		posicion++;
+                	}
+                	if (posicion < dineroMedio.size()) {
+                		dineroMedio.add(posicion, dineroMedio.get(posicion) +
+                            Double.parseDouble(split[0]));
+                	} else {
+                		dineroMedio.add(posicion, Double.parseDouble(split[0]) + 0);
+                	}
+                }
+            }
+            // Closing the scanner
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("El path del documento dineroMedio no está bien especificado");
+            //do something with e, or handle this case
+        }
+	}
+	
 	public static void leerDatosPasajeros(Map<List<String>, Integer> pasajeros) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroPasajerosPorVuelo + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroPasajerosPorVuelo + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -158,9 +238,44 @@ public class LecturaDeDatos {
         }
 	}
 	
+	public static void leerDatosPasajerosNuevo(List<List<String>> conexiones, List<Integer> pasajeros) {
+		try {
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroPasajerosPorVuelo + Constantes.extensionFichero));
+            //Comma as a delimiter
+            scanner.useDelimiter("\n");
+            scanner.next();
+            while (scanner.hasNext()) {
+                String str = scanner.next();
+                String split[] = str.split(",");
+                if(conexiones.contains(List.of(split[2], split[1]))) {
+                	boolean encontrado = false;
+                	int posicion = 0;
+                	int indice = 0;
+                	while(!encontrado && indice < conexiones.size()) {
+                		if(conexiones.get(posicion).equals(List.of(split[2], split[1]))) {
+                			encontrado = true;
+                			posicion = indice;
+                		}
+                		posicion++;
+                	}
+                	if (posicion < pasajeros.size()) {
+                		pasajeros.add(posicion, pasajeros.get(posicion) + (int) Double.parseDouble(split[0]));
+                	} else {
+                		pasajeros.add(posicion, (int) Double.parseDouble(split[0]) + 0);
+                	}
+                }
+            }
+            // Closing the scanner
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("El path del documento pasajeros no está bien especificado");
+            //do something with e, or handle this case
+        }
+	}
+	
 	public static void leerDatosPasajerosCompanyia(Map<List<String>, Integer> pasajerosCompanyia) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroPasajerosCompanyia + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroPasajerosCompanyia + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -198,7 +313,7 @@ public class LecturaDeDatos {
         }
         
         try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroPasajerosConectividad + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroPasajerosConectividad + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
