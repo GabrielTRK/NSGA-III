@@ -64,34 +64,26 @@ public class EvaluarIndividuo {
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
     			conexionesPorAeropuerto);
-    	/*System.out.println(riesgos.size());
+    	//System.out.println(riesgos.size());
     	System.out.println(conexiones.keySet());
     	System.out.println(AeropuertosEspanyoles);
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
-    	*/
+    	
     	
     	System.out.println(indPorAeropuerto);
     	Individuo ind = new Individuo(indPorAeropuerto.size(), 3);
     	ind = problema.inicializarValores(ind);
     	ind = problema.inicializarValores(ind);
-    	ind = problema.inicializarValores(ind);
-    	System.out.println(ind);
+    	//ind = problema.inicializarValores(ind);
     	System.out.println(problema.evaluate(ind));
     	
+    	System.out.println(Utils.getRandNumber((int)Math.round(0.0), 
+							(int)Math.round(10.0)));
     	
-    	/*for (int i = 0; i < 5; i++) {
-    		Individuo indNuevo = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());
-        	System.out.println(problema.inicializarValores(indNuevo));
-        	
-    	}
-    	Individuo indNuevo = new Individuo(problema.getNumVariables(), problema.getNumObjetivos());*/
+    	/*ArrayList<Individuo> lista = new ArrayList<>();
+    	String antes = "problemaVuelos20230125154316.csv";
     	
-    	/*        
-    	
-    	ArrayList<Individuo> lista = new ArrayList<>();
-    	String antes = "problemaVuelos20230125010213.csv";
-    	
-    	String despues = "problemaVuelos20230125154316.csv";
+    	String despues = "problemaSubVuelos20230130182709.csv";
     	
     	List<Individuo> frenteAntes = Utils.leerCSV(antes);
     	
@@ -112,6 +104,7 @@ public class EvaluarIndividuo {
     	
     	System.out.println(frentes.get(0));
     	System.out.println(frentes.get(1));*/
+    	
     	/*
     	OperadorCruce cruce = new OperadorCruce(1, 0);
     	
