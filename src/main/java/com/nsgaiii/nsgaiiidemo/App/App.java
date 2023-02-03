@@ -103,7 +103,7 @@ public class App extends AWTAbstractAnalysis
     	//Indicar parámetros del problema y algoritmo
     	int numeroDeIndividuos = 48;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 10000;
+    	int numeroDeGeneraciones = 1;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
@@ -112,14 +112,15 @@ public class App extends AWTAbstractAnalysis
     	int divisiones = 8;
     	//int numeroDeObjetivos = 3;
     	boolean leerFichero = true;
-    	String nombreFichero = "problemaSubVuelos20230202220446.csv";
+    	String nombreFichero = "problemaSubVuelos20230203180219.csv";
+    	boolean elitismo = true;
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	long startTime = System.nanoTime();
     	
         Nsgaiii nsgaiii = new Nsgaiii(numeroDeIndividuos, 
         		numeroDeGeneraciones, indiceDeDistribucionC,
         		indiceDeDistribucionM, probabilidadDeCruce, probabilidadDeMutacion,
-        		 divisiones, problema, leerFichero, nombreFichero);
+        		 divisiones, problema, leerFichero, nombreFichero, elitismo);
         
         //Ejecutar algoritmo
         frenteDePareto = nsgaiii.ejecutarNSGAIII();

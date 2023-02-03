@@ -21,7 +21,7 @@ public class Nsgaiii {
 	
 	private Poblacion poblacion;
 	private List<Individuo> frenteDePareto;
-	private ArrayList<Individuo> frentesAux = new ArrayList<>();
+	private List<Individuo> frentesAux = new ArrayList<>();
 	private int numGeneraciones;
 	private OperadorCruce cruce;
 	private OperadorMutacion mutacion;
@@ -31,10 +31,12 @@ public class Nsgaiii {
 	private OperadorReemplazo reemplazo;
 	private List<ReferencePoint> referencePoints = new Vector<>();
 	private Problema problema;
+	private boolean elitismo;
 	
 	public Nsgaiii (int numIndividuos,
 			int numGeneraciones, Double indiceDistrC, Double indiceDistrM, double probCruce,
-			double probMut, int numberOfDivisions, Problema prob, boolean leerF, String nombreFichero) throws FileNotFoundException, IOException, CsvException {
+			double probMut, int numberOfDivisions, Problema prob, boolean leerF, 
+			String nombreFichero, boolean elitismo) throws FileNotFoundException, IOException, CsvException {
 		
 		//Inicializar problema, poblacion y operadores
 		this.problema = prob;
@@ -47,7 +49,7 @@ public class Nsgaiii {
 		(new ReferencePoint()).generateReferencePoints(referencePoints, this.problema.getNumObjetivos(), numberOfDivisions);
 		this.reemplazo = new OperadorReemplazo(this.problema.getNumObjetivos(), referencePoints);
 		this.numGeneraciones = numGeneraciones;
-		
+		this.elitismo = elitismo;
 		this.poblacion.generarPoblacionInicial(this.problema, leerF, nombreFichero);
 
 	}
@@ -62,7 +64,7 @@ public class Nsgaiii {
 		while (!condicionDeParadaConseguida(contadorGeneraciones, this.poblacion, elapsedTime)) {
 			startTime = System.nanoTime();
 			System.out.println(contadorGeneraciones);
-			hijos = generarDescendientes(); //Seleccion, cruce y mutacion
+			hijos = generarDescendientes(contadorGeneraciones); //Seleccion, cruce y mutacion
 			//System.out.println("Nueva poblacion");
 			obtenerNuevaGeneracion(hijos); //Reemplazo
 			contadorGeneraciones++;
@@ -73,7 +75,7 @@ public class Nsgaiii {
 		return this.frenteDePareto; //Devuelve el frente de pareto obtenido
 	}
 	
-	private Poblacion generarDescendientes() throws FileNotFoundException, IOException, CsvException {
+	private Poblacion generarDescendientes(int contadorGeneraciones) throws FileNotFoundException, IOException, CsvException {
 		Poblacion poblacionHijos = new Poblacion(this.poblacion.getNumIndividuos(), this.problema);
 		ArrayList<Individuo> totalHijos = new ArrayList<Individuo>(this.poblacion.getNumIndividuos());
 		
@@ -82,7 +84,12 @@ public class Nsgaiii {
 		while (totalHijos.size() < this.poblacion.getNumIndividuos()) {
 			ArrayList<Individuo> nuevosHijos = new ArrayList<>(2);
 			//Seleccion
-			nuevosHijos = this.seleccion.seleccionAleatoria(this.poblacion);
+			if(this.elitismo && contadorGeneraciones > 0) {
+				nuevosHijos = this.seleccion.seleccionAleatoriaElitista(this.frentesAux);
+			}else {
+				nuevosHijos = this.seleccion.seleccionAleatoria(this.poblacion);
+			}
+			
 			
 			//Cruce
 			nuevosHijos = this.cruce.cruceUniforme(
@@ -116,7 +123,7 @@ public class Nsgaiii {
 		Poblacion total = Utils.juntarPoblaciones(this.poblacion, hijos, this.problema);
 		Poblacion totalAux = total;
 		//System.out.println("Obteniendo frentes");
-		this.reemplazo.obtenerFrentes(totalAux, this.problema);
+		this.frentesAux = this.reemplazo.obtenerFrentes(totalAux, this.problema).get(0);
 		//frenteI = this.reemplazo.getFrentesDePareto().get(0);
 		//System.out.println("Añadiendo frente a aux");
 		//this.frentesAux = Utils.juntarListas(frentesAux, frenteI);

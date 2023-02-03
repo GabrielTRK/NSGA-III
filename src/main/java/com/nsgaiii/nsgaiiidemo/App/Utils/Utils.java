@@ -4,6 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -228,7 +231,7 @@ public class Utils {
 		}
 		
 		Date date = new Date();
-		String fileName = nombreProblema + Constantes.formatoFecha.format(date) + Constantes.extensionFichero;
+		String fileName = "problemaSubVuelos20230201163623" + Constantes.extensionFichero;
 		try (CSVWriter writer = new CSVWriter(new FileWriter(Constantes.rutaFicheros + fileName))) {
 	            writer.writeAll(lista);
 		}
@@ -259,6 +262,11 @@ public class Utils {
 		    }
 		    return frente;
 		}
+	}
+	
+	public static void modificarCSV(String nombre, List<String> lista) throws IOException {
+		nombre = Constantes.rutaFicheros + nombre + Constantes.extensionFichero;
+		Files.write(Paths.get(nombre), lista, StandardCharsets.UTF_8);
 	}
 	
 	public static ArrayList<Individuo> pasarAArrayList(List<Individuo> frente){
