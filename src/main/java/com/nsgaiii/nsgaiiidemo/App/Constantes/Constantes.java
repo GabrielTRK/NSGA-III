@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 public class Constantes {
 	public static final String rutaFicheros = "c:\\Users\\penad\\Desktop\\Doctorado\\NSGA-III\\nsgaiiidemo\\data\\\\CSV\\";
 	public static final String rutaDatos = "c:\\Users\\penad\\Desktop\\Doctorado\\NSGA-III\\nsgaiiidemo\\data\\\\datos\\";
-	public static final String rutaDatos_por_aeropuerto = "c:\\Users\\penad\\Desktop\\Doctorado\\NSGA-III\\nsgaiiidemo\\data\\\\datos\\datos_por_aeropuerto\\VLC\\";
+	public static final String rutaDatos_por_aeropuerto = "c:\\Users\\penad\\Desktop\\Doctorado\\NSGA-III\\nsgaiiidemo\\data\\\\datos\\datos_por_aeropuerto\\";
 	public static final String extensionFichero = ".csv";
     public static final DateFormat formatoFecha = new SimpleDateFormat("yyyyMMddHHmmss");
     public static final String nombreProblemaDefecto = "problema";

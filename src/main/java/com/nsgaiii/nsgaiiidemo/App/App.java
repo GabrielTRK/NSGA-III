@@ -85,20 +85,20 @@ public class App extends AWTAbstractAnalysis
     	
     	//Declarar problema y pasarselo al algoritmo
     	
-    	/*Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
-    			conexionesPorAeropuerto);*/
+    			conexionesPorAeropuerto);
     	
-    	Problema problema = new Vuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	/*Problema problema = new Vuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
-    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);*/
     	
     	//Indicar parámetros del problema y algoritmo
     	int numeroDeIndividuos = 48;
@@ -112,7 +112,7 @@ public class App extends AWTAbstractAnalysis
     	int divisiones = 8;
     	//int numeroDeObjetivos = 3;
     	boolean leerFichero = true;
-    	String nombreFichero = "problemaSubVuelos20230201134856.csv";
+    	String nombreFichero = "problemaSubVuelos20230202220446.csv";
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	long startTime = System.nanoTime();
     	

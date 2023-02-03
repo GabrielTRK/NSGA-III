@@ -54,22 +54,22 @@ public class EvaluarIndividuo {
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
-    	//LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
+    	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
     	
-    	Problema problema = new Vuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	/*Problema problema = new Vuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
-    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);*/
     	
-    	/*Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
-    			conexionesPorAeropuerto);*/
+    			conexionesPorAeropuerto);
     	//System.out.println(riesgos.size());
     	System.out.println(conexiones.keySet());
     	System.out.println(AeropuertosEspanyoles);
@@ -82,6 +82,46 @@ public class EvaluarIndividuo {
     	sol = problema.inicializarValores(sol);
     	//ind = problema.inicializarValores(ind);
     	System.out.println(problema.evaluate(sol));
+    	
+    	ArrayList<Double> numeros = new ArrayList<>(indPorAeropuerto.size());
+    	
+    	/*ArrayList<Double> limInf = new ArrayList<>();
+    	ArrayList<Double> limSup = new ArrayList<>();
+    	
+    	for (int i =0; i<3; i++) {
+    		limInf.add(0.0);
+    		limSup.add(9.0);
+    	}
+    	*/
+    	
+    	for (int i = 0; i < indPorAeropuerto.size(); i++){
+    		numeros.add(problema.getLimitesInferiores().get(i));
+    	}
+    	
+    	double productorio = 1.0;
+    	for (int i = 0; i < indPorAeropuerto.size(); i++){
+    		productorio = productorio * problema.getLimitesSuperiores().get(i);
+    	}
+    	System.out.println(productorio);
+    	
+    	/*    	
+    	int cont = 0;
+    	System.out.println(numeros);
+    	while(!numeros.equals(problema.getLimitesSuperiores())) {
+    		int target = indPorAeropuerto.size() - 1;
+    		if(numeros.get(target) < problema.getLimitesSuperiores().get(target)) {
+    			numeros.set(target, numeros.get(target) + 1.0);
+    		}else {
+    			while(numeros.get(target) >= problema.getLimitesSuperiores().get(target)) {
+    				numeros.set(target, problema.getLimitesInferiores().get(target));
+    				target--;
+    			}
+    			numeros.set(target, numeros.get(target) + 1.0);
+    		}
+    		cont++;
+    		System.out.println(numeros);
+    	}
+    	System.out.println(cont);*/
     	
     	/*ArrayList<Individuo> lista = new ArrayList<>();
     	String antes = "problemaVuelos20230125154316.csv";
@@ -108,7 +148,7 @@ public class EvaluarIndividuo {
     	System.out.println(frentes.get(0));
     	System.out.println(frentes.get(1));*/
     	
-    	String s = "";
+    	/*String s = "";
     	Poblacion poblacion = new Poblacion(8388608 - 1, problema);
     	ArrayList<Individuo> indi = new ArrayList<>();
     	for (int i = 0; i < 8388608; i++) {
@@ -128,7 +168,7 @@ public class EvaluarIndividuo {
     	List<Individuo> frentes = reemplazo.obtenerPrimerFrente(poblacion, problema);
     	System.out.println(frentes.size());
     	Utils.crearCSVConObjetivos(frentes, problema.getNombre());
-    	System.out.println("a");
+    	System.out.println("a");*/
     	
 	}
 
