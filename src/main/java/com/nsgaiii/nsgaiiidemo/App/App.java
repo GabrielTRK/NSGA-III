@@ -31,6 +31,7 @@ import com.nsgaiii.nsgaiiidemo.App.Algoritmo.Nsgaiii;
 import com.nsgaiii.nsgaiiidemo.App.Lectura.LecturaDeDatos;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Poblacion;
+import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorReemplazo;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.DTLZ1;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.DTLZ2;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.DTLZ5;
@@ -101,19 +102,19 @@ public class App extends AWTAbstractAnalysis
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);*/
     	
     	//Indicar parámetros del problema y algoritmo
-    	int numeroDeIndividuos = 48;
+    	int numeroDeIndividuos = 56;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 1;
+    	int numeroDeGeneraciones = 500;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
     	double probabilidadDeMutacion = 1.0 / problema.getNumVariables();
     	//double probabilidadDeMutacion = 1.0 / numeroDeVariables;
-    	int divisiones = 8;
+    	int divisiones = 9;
     	//int numeroDeObjetivos = 3;
-    	boolean leerFichero = true;
-    	String nombreFichero = "problemaSubVuelos20230203180219.csv";
-    	boolean elitismo = true;
+    	boolean leerFichero = false;
+    	String nombreFichero = "problemaSubVuelos20230203215133.csv";
+    	boolean elitismo = false;
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	long startTime = System.nanoTime();
     	
@@ -137,9 +138,21 @@ public class App extends AWTAbstractAnalysis
                     + elapsedTime);
         }
         
+        List<Individuo> frenteD = Utils.leerCSV("solucionDavid.csv");
+        frenteDePareto = Utils.juntarListass(frenteD, frenteDePareto);
+        ArrayList<Individuo> frenteDeParetoAL = Utils.pasarAArrayList(frenteDePareto);
+        OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
+        
+        List<Individuo> frentes = reemplazo.obtenerFrentes(frenteDeParetoAL, problema).get(0);
+        
+        	for(Individuo i : frenteD) {
+        		frentes.remove(i);
+        	}
+        
         //Guarda resultados en un csv y crea un diagrama de dispersión
-        String nombre = Utils.crearCSVConObjetivos(frenteDePareto, problema.getNombre());
-    	frenteDePareto = Utils.leerCSV(nombre);
+        Utils.modificarCSV("problemaSubVuelosFrente", frentes);
+        //String nombre = Utils.crearCSVConObjetivos(frenteDePareto, problema.getNombre());
+        frenteDePareto = Utils.leerCSV("problemaSubVuelosFrente.csv");
     	
     	String nombreD = "solucionDavid.csv";
     	String nombreSimplex = "simplex.csv";

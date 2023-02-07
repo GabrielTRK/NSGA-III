@@ -208,34 +208,39 @@ public class Utils {
 	}
 	
 	public static String crearCSVConObjetivos(List<Individuo> frente, String nombreProblema) throws IOException {
-		List<String[]> lista = new ArrayList<>();
-		
-		String[] Cabecera = new String[2];
-		Cabecera[0] = String.valueOf(frente.get(0).getVariables().size());
-		Cabecera[1] = String.valueOf(frente.get(0).getObjetivos().size());
-		
-		lista.add(Cabecera);
-		
-		for(int i = 0; i < frente.size(); i++) {
-			Individuo ind = frente.get(i);
-			String[] VariablesYObjetivos = new String[ind.getVariables().size()
-			                                          + ind.getObjetivos().size()];
-			
-			for(int j = 0; j < ind.getVariables().size(); j++) {
-				VariablesYObjetivos[j] = String.valueOf(ind.getVariables().get(j));
-			}
-			for(int k = ind.getVariables().size(); k < ind.getVariables().size() + ind.getObjetivos().size(); k++) {
-				VariablesYObjetivos[k] = String.valueOf(ind.getObjetivos().get(k - ind.getVariables().size()));
-			}
-			lista.add(VariablesYObjetivos);
-		}
-		
 		Date date = new Date();
-		String fileName = "problemaSubVuelos20230201163623" + Constantes.extensionFichero;
-		try (CSVWriter writer = new CSVWriter(new FileWriter(Constantes.rutaFicheros + fileName))) {
-	            writer.writeAll(lista);
+		String fileName = "problemaSubVuelosFrente" + Constantes.extensionFichero;
+		if(frente.size() == 0) {
+			return fileName;
+		}else {
+			List<String[]> lista = new ArrayList<>();
+			
+			String[] Cabecera = new String[2];
+			Cabecera[0] = String.valueOf(frente.get(0).getVariables().size());
+			Cabecera[1] = String.valueOf(frente.get(0).getObjetivos().size());
+			
+			lista.add(Cabecera);
+			
+			for(int i = 0; i < frente.size(); i++) {
+				Individuo ind = frente.get(i);
+				String[] VariablesYObjetivos = new String[ind.getVariables().size()
+				                                          + ind.getObjetivos().size()];
+				
+				for(int j = 0; j < ind.getVariables().size(); j++) {
+					VariablesYObjetivos[j] = String.valueOf(ind.getVariables().get(j));
+				}
+				for(int k = ind.getVariables().size(); k < ind.getVariables().size() + ind.getObjetivos().size(); k++) {
+					VariablesYObjetivos[k] = String.valueOf(ind.getObjetivos().get(k - ind.getVariables().size()));
+				}
+				lista.add(VariablesYObjetivos);
+			}
+			
+			try (CSVWriter writer = new CSVWriter(new FileWriter(Constantes.rutaFicheros + fileName))) {
+		            writer.writeAll(lista);
+			}
+			return fileName;
 		}
-		return fileName;
+		
 	}
 	
 	public static List<Individuo> leerCSV(String nombre) throws FileNotFoundException, IOException, CsvException {
@@ -264,9 +269,43 @@ public class Utils {
 		}
 	}
 	
-	public static void modificarCSV(String nombre, List<String> lista) throws IOException {
-		nombre = Constantes.rutaFicheros + nombre + Constantes.extensionFichero;
-		Files.write(Paths.get(nombre), lista, StandardCharsets.UTF_8);
+	public static String modificarCSV(String nombre, List<Individuo> listanueva) throws IOException, CsvException {
+		String fileName = nombre + Constantes.extensionFichero;
+		if(listanueva.size() == 0) {
+			return fileName;
+		}
+		else {
+			List<Individuo> listaPrevia = leerCSV(nombre + Constantes.extensionFichero);
+			listaPrevia = juntarListas(listaPrevia, listanueva);
+			List<String[]> lista = new ArrayList<>();
+			
+			String[] Cabecera = new String[2];
+			Cabecera[0] = String.valueOf(listanueva.get(0).getVariables().size());
+			Cabecera[1] = String.valueOf(listanueva.get(0).getObjetivos().size());
+			
+			lista.add(Cabecera);
+			
+			for(int i = 0; i < listaPrevia.size(); i++) {
+				Individuo ind = listaPrevia.get(i);
+				String[] VariablesYObjetivos = new String[ind.getVariables().size()
+				                                          + ind.getObjetivos().size()];
+				
+				for(int j = 0; j < ind.getVariables().size(); j++) {
+					VariablesYObjetivos[j] = String.valueOf(ind.getVariables().get(j));
+				}
+				for(int k = ind.getVariables().size(); k < ind.getVariables().size() + ind.getObjetivos().size(); k++) {
+					VariablesYObjetivos[k] = String.valueOf(ind.getObjetivos().get(k - ind.getVariables().size()));
+				}
+				lista.add(VariablesYObjetivos);
+			}
+			
+			
+			try (CSVWriter writer = new CSVWriter(new FileWriter(Constantes.rutaFicheros + fileName))) {
+		            writer.writeAll(lista);
+			}
+			return fileName;
+		}
+		
 	}
 	
 	public static ArrayList<Individuo> pasarAArrayList(List<Individuo> frente){
@@ -304,5 +343,14 @@ public class Utils {
 		}
 		return suma / valores.size();
 	}
+	
+	public static ArrayList<Double> copiarValoresDeLista(ArrayList<Double> listaaCopiar){
+		ArrayList<Double> nueva = new ArrayList<>();
+		for(Double num : listaaCopiar) {
+			nueva.add(num);
+		}
+		return nueva;
+	}
+	
 	
 }

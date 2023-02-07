@@ -81,7 +81,7 @@ public class OperadorMutacion {
 			for (int j = 0; j < prob.getNumVariables(); j++) {
 				if (Utils.getRandNumber(0.0, Math.nextUp(1.0)) < this.probMuta) {
 					solucionVal.set(j, 1.0 * Utils.getRandNumber((int)Math.round(prob.getLimitesInferiores().get(j)), 
-							(int)Math.round(prob.getLimitesSuperiores().get(j))));
+							(int)Math.round(prob.getLimitesSuperiores().get(j) / 2.0)));
 				}
 			}
 				

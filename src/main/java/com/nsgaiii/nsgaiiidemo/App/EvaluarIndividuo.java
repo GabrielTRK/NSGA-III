@@ -77,56 +77,83 @@ public class EvaluarIndividuo {
     	
     	
     	System.out.println(indPorAeropuerto);
-    	Individuo sol = new Individuo(indPorAeropuerto.size(), 3);
-    	sol = problema.inicializarValores(sol);
-    	sol = problema.inicializarValores(sol);
+    	//Individuo sol = new Individuo(indPorAeropuerto.size(), 3);
+    	//sol = problema.inicializarValores(sol);
+    	//sol = problema.inicializarValores(sol);
     	//ind = problema.inicializarValores(ind);
-    	System.out.println(problema.evaluate(sol));
+    	//System.out.println(problema.evaluate(sol));
     	
     	ArrayList<Double> numeros = new ArrayList<>(indPorAeropuerto.size());
     	
-    	/*ArrayList<Double> limInf = new ArrayList<>();
+    	//ArrayList<Double> limInf = new ArrayList<>();
     	ArrayList<Double> limSup = new ArrayList<>();
     	
-    	for (int i =0; i<3; i++) {
-    		limInf.add(0.0);
-    		limSup.add(9.0);
+    	for (int i = 0; i < indPorAeropuerto.size(); i++) {
+    		//limInf.add(0.0);
+    		limSup.add(problema.getLimitesSuperiores().get(i) - 1.0);
     	}
-    	*/
-    	/*
+    	
+    	
     	for (int i = 0; i < indPorAeropuerto.size(); i++){
     		numeros.add(problema.getLimitesInferiores().get(i));
     	}
-    	
-    	double productorio = 1.0;
+    	/*double productorio = 1.0;
     	for (int i = 0; i < indPorAeropuerto.size(); i++){
     		productorio = productorio * problema.getLimitesSuperiores().get(i);
     	}
     	System.out.println(productorio);*/
     	
-    	/*    	
+    	
+    	List<Individuo> solucionesOptimas = Utils.leerCSV("problemaSubVuelosMejoresPuntos.csv");
+    	//System.out.println(solucionesOptimas);
+    	if(solucionesOptimas.size() != 0) {
+    		numeros = solucionesOptimas.get(solucionesOptimas.size() - 1).getVariables();
+    		//System.out.println(numeros);
+    		
+    	}
+    	
+    	ArrayList<Individuo> solucionesTemporales = new ArrayList<>();
     	int cont = 0;
     	System.out.println(numeros);
-    	while(!numeros.equals(problema.getLimitesSuperiores())) {
+    	while(!numeros.equals(limSup) && cont < 1000000) {
+    		Individuo sol = new Individuo(indPorAeropuerto.size(), 3);
+    		sol.setVariables(numeros);
+			problema.evaluate(sol);
+			solucionesTemporales.add(sol);
     		int target = indPorAeropuerto.size() - 1;
-    		if(numeros.get(target) < problema.getLimitesSuperiores().get(target)) {
+    		numeros = Utils.copiarValoresDeLista(solucionesTemporales.get(cont).getVariables());
+    		if(solucionesTemporales.get(cont).getVariables().get(target) < problema.getLimitesSuperiores().get(target) - 1) {
     			numeros.set(target, numeros.get(target) + 1.0);
     		}else {
-    			while(numeros.get(target) >= problema.getLimitesSuperiores().get(target)) {
+    			while(solucionesTemporales.get(cont).getVariables().get(target) >= problema.getLimitesSuperiores().get(target) - 1) {
     				numeros.set(target, problema.getLimitesInferiores().get(target));
     				target--;
     			}
     			numeros.set(target, numeros.get(target) + 1.0);
     		}
+    		
+			
     		cont++;
-    		System.out.println(numeros);
+    		System.out.println(cont);
     	}
-    	System.out.println(cont);*/
+    	System.out.println(cont);
+    	if(cont == 1000000) {
+    		List<Individuo> solucionesOptimasAux = new ArrayList<>();
+    		solucionesOptimasAux = Utils.juntarListass(solucionesOptimas, solucionesTemporales);
+			ArrayList<Individuo> frenteDeParetoAL = Utils.pasarAArrayList(solucionesOptimasAux);
+			solucionesOptimasAux = reemplazo.obtenerPrimerFrente(frenteDeParetoAL, problema);
+			//solucionesOptimasAux = reemplazo.obtenerFrentes(frenteDeParetoAL, problema).get(0);
+			for(Individuo i : solucionesOptimas) {
+				solucionesOptimasAux.remove(i);
+			}
+			solucionesOptimasAux.remove(0);
+			Utils.modificarCSV("problemaSubVuelosMejoresPuntos", solucionesOptimasAux);
+		}
     	
-    	ArrayList<Individuo> lista = new ArrayList<>();
+    	/*ArrayList<Individuo> lista = new ArrayList<>();
     	String antes = "solucionDavid.csv";
     	
-    	String despues = "problemaSubVuelos20230201163623.csv";
+    	String despues = "problemaSubVuelosFrente.csv";
     	
     	List<Individuo> frenteAntes = Utils.leerCSV(antes);
     	
@@ -143,16 +170,15 @@ public class EvaluarIndividuo {
     	
     	List<List<Individuo>> frentes = reemplazo.obtenerFrentes(lista, problema);
     	System.out.println("Frente 1: " + frentes.get(0).size());
-    	System.out.println("Frente 2: " + frentes.get(1).size());
-    	
     	System.out.println(frentes.get(0));
-    	System.out.println(frentes.get(1));
-    	List<String> strings = new ArrayList<>();
-    	strings.add("a");
-    	strings.add("a");
-    	strings.add("a");
+    	if(frentes.size() > 1) {
+    		System.out.println("Frente 2: " + frentes.get(1).size());
+    		System.out.println(frentes.get(1));
+    	}
     	
-    	Utils.modificarCSV("problemaSubVuelos20230201163623", strings);
+    	
+    	System.out.println(frentes.get(0).size());
+    	Utils.crearCSVConObjetivos(frentes.get(0), "a");*/
     	
     	/*String s = "";
     	Poblacion poblacion = new Poblacion(8388608 - 1, problema);
