@@ -54,22 +54,22 @@ public class EvaluarIndividuo {
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
-    	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
+    	//LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
     	
-    	/*Problema problema = new Vuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	Problema problema = new Vuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
-    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);*/
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
     	
-    	Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	/*Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
-    			conexionesPorAeropuerto);
+    			conexionesPorAeropuerto);*/
     	//System.out.println(riesgos.size());
     	System.out.println(conexiones.keySet());
     	System.out.println(AeropuertosEspanyoles);
@@ -83,7 +83,7 @@ public class EvaluarIndividuo {
     	//ind = problema.inicializarValores(ind);
     	//System.out.println(problema.evaluate(sol));
     	
-    	ArrayList<Double> numeros = new ArrayList<>(indPorAeropuerto.size());
+    	/*ArrayList<Double> numeros = new ArrayList<>(indPorAeropuerto.size());
     	
     	//ArrayList<Double> limInf = new ArrayList<>();
     	ArrayList<Double> limSup = new ArrayList<>();
@@ -96,7 +96,7 @@ public class EvaluarIndividuo {
     	
     	for (int i = 0; i < indPorAeropuerto.size(); i++){
     		numeros.add(problema.getLimitesInferiores().get(i));
-    	}
+    	}*/
     	/*double productorio = 1.0;
     	for (int i = 0; i < indPorAeropuerto.size(); i++){
     		productorio = productorio * problema.getLimitesSuperiores().get(i);
@@ -104,7 +104,7 @@ public class EvaluarIndividuo {
     	System.out.println(productorio);*/
     	
     	
-    	List<Individuo> solucionesOptimas = Utils.leerCSV("problemaSubVuelosMejoresPuntos.csv");
+    	/*List<Individuo> solucionesOptimas = Utils.leerCSV("problemaSubVuelosMejoresPuntos.csv");
     	//System.out.println(solucionesOptimas);
     	if(solucionesOptimas.size() != 0) {
     		numeros = solucionesOptimas.get(solucionesOptimas.size() - 1).getVariables();
@@ -115,7 +115,7 @@ public class EvaluarIndividuo {
     	ArrayList<Individuo> solucionesTemporales = new ArrayList<>();
     	int cont = 0;
     	System.out.println(numeros);
-    	while(!numeros.equals(limSup) && cont < 1000000) {
+    	while(!numeros.equals(limSup) && cont < 100000) {
     		Individuo sol = new Individuo(indPorAeropuerto.size(), 3);
     		sol.setVariables(numeros);
 			problema.evaluate(sol);
@@ -137,7 +137,7 @@ public class EvaluarIndividuo {
     		System.out.println(cont);
     	}
     	System.out.println(cont);
-    	if(cont == 1000000) {
+    	if(cont == 100000) {
     		List<Individuo> solucionesOptimasAux = new ArrayList<>();
     		solucionesOptimasAux = Utils.juntarListass(solucionesOptimas, solucionesTemporales);
 			ArrayList<Individuo> frenteDeParetoAL = Utils.pasarAArrayList(solucionesOptimasAux);
@@ -148,7 +148,7 @@ public class EvaluarIndividuo {
 			}
 			solucionesOptimasAux.remove(0);
 			Utils.modificarCSV("problemaSubVuelosMejoresPuntos", solucionesOptimasAux);
-		}
+		}*/
     	
     	/*ArrayList<Individuo> lista = new ArrayList<>();
     	String antes = "solucionDavid.csv";
@@ -180,10 +180,10 @@ public class EvaluarIndividuo {
     	System.out.println(frentes.get(0).size());
     	Utils.crearCSVConObjetivos(frentes.get(0), "a");*/
     	
-    	/*String s = "";
-    	Poblacion poblacion = new Poblacion(8388608 - 1, problema);
+    	String s = "";
+    	//Poblacion poblacion = new Poblacion(8388608 - 1, problema);
     	ArrayList<Individuo> indi = new ArrayList<>();
-    	for (int i = 0; i < 8388608; i++) {
+    	for (int i = 0; i < 4194340; i++) {
     		System.out.println(i);
     		String result = Integer.toBinaryString(i);
     		String resultWithPadding = String.format("%23s", result).replaceAll(" ", "0");
@@ -196,11 +196,28 @@ public class EvaluarIndividuo {
     		ind = problema.evaluate(ind);
     		indi.add(ind);
     	}
-    	poblacion.setPoblacion(indi);
-    	List<Individuo> frentes = reemplazo.obtenerPrimerFrente(poblacion, problema);
+    	
+    	
+    	
+    	for (int i = 4194340; i < 8388608; i++) {
+    		System.out.println(i);
+    		String result = Integer.toBinaryString(i);
+    		String resultWithPadding = String.format("%23s", result).replaceAll(" ", "0");
+    		Individuo ind = new Individuo(23, 3);
+    		ArrayList<Double> var  = new ArrayList<Double>(23);
+    		for (int j = 0; j < 23; j++) {
+    			var.add(j, Double.valueOf(resultWithPadding.charAt(j) + s));
+    		}
+    		ind.setVariables(var);
+    		ind = problema.evaluate(ind);
+    		indi.add(ind);
+    	}
+    	//poblacion.setPoblacion(indi);
+    	//List<Individuo> frentes = reemplazo.obtenerPrimerFrente(poblacion, problema);
+    	List<Individuo> frentes = reemplazo.obtenerPrimerFrente(indi, problema);
     	System.out.println(frentes.size());
     	Utils.crearCSVConObjetivos(frentes, problema.getNombre());
-    	System.out.println("a");*/
+    	System.out.println("a");
     	
 	}
 

@@ -209,7 +209,8 @@ public class Utils {
 	
 	public static String crearCSVConObjetivos(List<Individuo> frente, String nombreProblema) throws IOException {
 		Date date = new Date();
-		String fileName = "problemaSubVuelosFrente" + Constantes.extensionFichero;
+		//String fileName = "problemaSubVuelosFrente" + Constantes.extensionFichero;
+		String fileName = nombreProblema + Constantes.formatoFecha.format(date) + Constantes.extensionFichero;
 		if(frente.size() == 0) {
 			return fileName;
 		}else {

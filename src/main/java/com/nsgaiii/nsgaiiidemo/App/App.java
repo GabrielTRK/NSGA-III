@@ -104,7 +104,7 @@ public class App extends AWTAbstractAnalysis
     	//Indicar parámetros del problema y algoritmo
     	int numeroDeIndividuos = 56;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 500;
+    	int numeroDeGeneraciones = 5000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
@@ -112,9 +112,9 @@ public class App extends AWTAbstractAnalysis
     	//double probabilidadDeMutacion = 1.0 / numeroDeVariables;
     	int divisiones = 9;
     	//int numeroDeObjetivos = 3;
-    	boolean leerFichero = false;
-    	String nombreFichero = "problemaSubVuelos20230203215133.csv";
-    	boolean elitismo = false;
+    	boolean leerFichero = true;
+    	String nombreFichero = "problemaSubVuelos20230208000246.csv";
+    	boolean elitismo = true;
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	long startTime = System.nanoTime();
     	
@@ -138,7 +138,7 @@ public class App extends AWTAbstractAnalysis
                     + elapsedTime);
         }
         
-        List<Individuo> frenteD = Utils.leerCSV("solucionDavid.csv");
+        /*List<Individuo> frenteD = Utils.leerCSV("solucionDavid.csv");
         frenteDePareto = Utils.juntarListass(frenteD, frenteDePareto);
         ArrayList<Individuo> frenteDeParetoAL = Utils.pasarAArrayList(frenteDePareto);
         OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
@@ -147,12 +147,14 @@ public class App extends AWTAbstractAnalysis
         
         	for(Individuo i : frenteD) {
         		frentes.remove(i);
-        	}
+        	}*/
         
         //Guarda resultados en un csv y crea un diagrama de dispersión
-        Utils.modificarCSV("problemaSubVuelosFrente", frentes);
-        //String nombre = Utils.crearCSVConObjetivos(frenteDePareto, problema.getNombre());
-        frenteDePareto = Utils.leerCSV("problemaSubVuelosFrente.csv");
+        //Utils.modificarCSV("problemaSubVuelosFrente", frentes);
+        //frenteDePareto = Utils.leerCSV("problemaSubVuelosFrente.csv");
+        
+        String nombre = Utils.crearCSVConObjetivos(frenteDePareto, problema.getNombre());
+        frenteDePareto = Utils.leerCSV(nombre);
     	
     	String nombreD = "solucionDavid.csv";
     	String nombreSimplex = "simplex.csv";
