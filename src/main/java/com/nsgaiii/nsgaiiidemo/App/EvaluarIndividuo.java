@@ -56,7 +56,7 @@ public class EvaluarIndividuo {
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
     	//LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
     	
-    	Problema problema = new Vuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	Problema problema = new Vuelos(conexiones.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
@@ -150,10 +150,10 @@ public class EvaluarIndividuo {
 			Utils.modificarCSV("problemaSubVuelosMejoresPuntos", solucionesOptimasAux);
 		}*/
     	
-    	/*ArrayList<Individuo> lista = new ArrayList<>();
-    	String antes = "solucionDavid.csv";
+    	ArrayList<Individuo> lista = new ArrayList<>();
+    	String antes = "problemaVuelosSVQ.csv";
     	
-    	String despues = "problemaSubVuelosFrente.csv";
+    	String despues = "problemaVuelos20230208213700.csv";
     	
     	List<Individuo> frenteAntes = Utils.leerCSV(antes);
     	
@@ -169,55 +169,40 @@ public class EvaluarIndividuo {
     	System.out.println("Total: " + lista.size());
     	
     	List<List<Individuo>> frentes = reemplazo.obtenerFrentes(lista, problema);
-    	System.out.println("Frente 1: " + frentes.get(0).size());
+    	/*System.out.println("Frente 1: " + frentes.get(0).size());
     	System.out.println(frentes.get(0));
     	if(frentes.size() > 1) {
     		System.out.println("Frente 2: " + frentes.get(1).size());
     		System.out.println(frentes.get(1));
+    	}*/
+    	for (int i = 0; i < frentes.size(); i++) {
+    		System.out.println("Frente " + i + ": " + frentes.get(i).size());
+    		System.out.println(frentes.get(i));
     	}
     	
     	
-    	System.out.println(frentes.get(0).size());
-    	Utils.crearCSVConObjetivos(frentes.get(0), "a");*/
+    	//System.out.println(frentes.get(0).size());
+    	//Utils.crearCSVConObjetivos(frentes.get(0), "a");
     	
-    	String s = "";
-    	//Poblacion poblacion = new Poblacion(8388608 - 1, problema);
+    	/*String s = "";
     	ArrayList<Individuo> indi = new ArrayList<>();
-    	for (int i = 0; i < 4194340; i++) {
+    	for (int i = 0; i < 134217728; i++) {
     		System.out.println(i);
     		String result = Integer.toBinaryString(i);
-    		String resultWithPadding = String.format("%23s", result).replaceAll(" ", "0");
-    		Individuo ind = new Individuo(23, 3);
-    		ArrayList<Double> var  = new ArrayList<Double>(23);
-    		for (int j = 0; j < 23; j++) {
+    		String resultWithPadding = String.format("%27s", result).replaceAll(" ", "0");
+    		Individuo ind = new Individuo(27, 3);
+    		ArrayList<Double> var  = new ArrayList<Double>(19);
+    		for (int j = 0; j < 27; j++) {
     			var.add(j, Double.valueOf(resultWithPadding.charAt(j) + s));
     		}
     		ind.setVariables(var);
     		ind = problema.evaluate(ind);
     		indi.add(ind);
     	}
-    	
-    	
-    	
-    	for (int i = 4194340; i < 8388608; i++) {
-    		System.out.println(i);
-    		String result = Integer.toBinaryString(i);
-    		String resultWithPadding = String.format("%23s", result).replaceAll(" ", "0");
-    		Individuo ind = new Individuo(23, 3);
-    		ArrayList<Double> var  = new ArrayList<Double>(23);
-    		for (int j = 0; j < 23; j++) {
-    			var.add(j, Double.valueOf(resultWithPadding.charAt(j) + s));
-    		}
-    		ind.setVariables(var);
-    		ind = problema.evaluate(ind);
-    		indi.add(ind);
-    	}
-    	//poblacion.setPoblacion(indi);
-    	//List<Individuo> frentes = reemplazo.obtenerPrimerFrente(poblacion, problema);
     	List<Individuo> frentes = reemplazo.obtenerPrimerFrente(indi, problema);
     	System.out.println(frentes.size());
     	Utils.crearCSVConObjetivos(frentes, problema.getNombre());
-    	System.out.println("a");
+    	System.out.println("a");*/
     	
 	}
 

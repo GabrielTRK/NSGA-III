@@ -82,38 +82,38 @@ public class App extends AWTAbstractAnalysis
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
-    	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
+    	//LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
     	
     	//Declarar problema y pasarselo al algoritmo
     	
-    	Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	/*Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
-    			conexionesPorAeropuerto);
+    			conexionesPorAeropuerto);*/
     	
-    	/*Problema problema = new Vuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	Problema problema = new Vuelos(conexiones.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
-    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);*/
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
     	
     	//Indicar parámetros del problema y algoritmo
-    	int numeroDeIndividuos = 56;
+    	int numeroDeIndividuos = 500;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 5000;
+    	int numeroDeGeneraciones = 10000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
     	double probabilidadDeMutacion = 1.0 / problema.getNumVariables();
     	//double probabilidadDeMutacion = 1.0 / numeroDeVariables;
-    	int divisiones = 9;
+    	int divisiones = 30;
     	//int numeroDeObjetivos = 3;
-    	boolean leerFichero = true;
-    	String nombreFichero = "problemaSubVuelos20230208000246.csv";
+    	boolean leerFichero = false;
+    	String nombreFichero = "problemaVuelos20230209003506.csv";
     	boolean elitismo = true;
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	long startTime = System.nanoTime();

@@ -92,13 +92,13 @@ public class Nsgaiii {
 			
 			
 			//Cruce
-			nuevosHijos = this.cruce.cruceUniforme(
+			nuevosHijos = this.cruce.cruceUnPunto(
 					nuevosHijos.get(0),
 					nuevosHijos.get(1),
 					this.problema);
 			//Mutacion
-			nuevosHijos.set(0, this.mutacion.numeroAleatorio(nuevosHijos.get(0), this.problema));
-			nuevosHijos.set(1, this.mutacion.numeroAleatorio(nuevosHijos.get(1), this.problema));
+			nuevosHijos.set(0, this.mutacion.cambioDeBit(nuevosHijos.get(0), this.problema));
+			nuevosHijos.set(1, this.mutacion.cambioDeBit(nuevosHijos.get(1), this.problema));
 			
 			//Añadir hijos e incrementar el contador
 			contadorIndividuos = contadorIndividuos + 2;
@@ -117,18 +117,11 @@ public class Nsgaiii {
 	}
 	
 	private void obtenerNuevaGeneracion(Poblacion hijos) {
-		//List<Individuo> frenteI;
 		//Reemplazo
-		//System.out.println("Obteniendo población transitoria");
 		Poblacion total = Utils.juntarPoblaciones(this.poblacion, hijos, this.problema);
 		Poblacion totalAux = total;
-		//System.out.println("Obteniendo frentes");
 		this.frentesAux = this.reemplazo.obtenerFrentes(totalAux, this.problema).get(0);
-		//frenteI = this.reemplazo.getFrentesDePareto().get(0);
-		//System.out.println("Añadiendo frente a aux");
-		//this.frentesAux = Utils.juntarListas(frentesAux, frenteI);
 		//Elegir grupos según el ranking y aplicar el método de Das y Dennis cuando corresponda
-		//System.out.println("Rellenando nueva poblacion");
 		this.poblacion = this.reemplazo.rellenarPoblacionConFrentes(this.poblacion,
 				total, this.problema);
 	}
