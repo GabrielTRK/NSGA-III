@@ -92,13 +92,13 @@ public class Nsgaiii {
 			
 			
 			//Cruce
-			nuevosHijos = this.cruce.cruceUnPunto(
+			nuevosHijos = this.cruce.cruceUniforme(
 					nuevosHijos.get(0),
 					nuevosHijos.get(1),
 					this.problema);
 			//Mutacion
-			nuevosHijos.set(0, this.mutacion.cambioDeBit(nuevosHijos.get(0), this.problema));
-			nuevosHijos.set(1, this.mutacion.cambioDeBit(nuevosHijos.get(1), this.problema));
+			nuevosHijos.set(0, this.mutacion.numeroAleatorio(nuevosHijos.get(0), this.problema));
+			nuevosHijos.set(1, this.mutacion.numeroAleatorio(nuevosHijos.get(1), this.problema));
 			
 			//Añadir hijos e incrementar el contador
 			contadorIndividuos = contadorIndividuos + 2;

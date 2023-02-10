@@ -150,7 +150,7 @@ public class EvaluarIndividuo {
 			Utils.modificarCSV("problemaSubVuelosMejoresPuntos", solucionesOptimasAux);
 		}*/
     	
-    	ArrayList<Individuo> lista = new ArrayList<>();
+    	/*ArrayList<Individuo> lista = new ArrayList<>();
     	String antes = "problemaVuelosSVQ.csv";
     	
     	String despues = "problemaVuelos20230208213700.csv";
@@ -169,16 +169,10 @@ public class EvaluarIndividuo {
     	System.out.println("Total: " + lista.size());
     	
     	List<List<Individuo>> frentes = reemplazo.obtenerFrentes(lista, problema);
-    	/*System.out.println("Frente 1: " + frentes.get(0).size());
-    	System.out.println(frentes.get(0));
-    	if(frentes.size() > 1) {
-    		System.out.println("Frente 2: " + frentes.get(1).size());
-    		System.out.println(frentes.get(1));
-    	}*/
     	for (int i = 0; i < frentes.size(); i++) {
     		System.out.println("Frente " + i + ": " + frentes.get(i).size());
     		System.out.println(frentes.get(i));
-    	}
+    	}*/
     	
     	
     	//System.out.println(frentes.get(0).size());

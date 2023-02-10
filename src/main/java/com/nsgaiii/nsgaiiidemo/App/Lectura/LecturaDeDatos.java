@@ -26,7 +26,7 @@ public class LecturaDeDatos {
 	public static void leerDatos(Map<List<String>, Integer> conexiones, Map<List<String>, 
 			Double> riesgos, Map<List<String>, Integer> vuelos) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroSIR + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroSIR + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -156,7 +156,7 @@ public class LecturaDeDatos {
 	
 	public static void leerDatosDineroMedio(Map<List<String>, Double> dineroMedio) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroDineroPorVuelo + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroDineroPorVuelo + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -217,7 +217,7 @@ public class LecturaDeDatos {
 	
 	public static void leerDatosPasajeros(Map<List<String>, Integer> pasajeros) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroPasajerosPorVuelo + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroPasajerosPorVuelo + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -275,7 +275,7 @@ public class LecturaDeDatos {
 	
 	public static void leerDatosPasajerosCompanyia(Map<List<String>, Integer> pasajerosCompanyia) {
 		try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroPasajerosCompanyia + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroPasajerosCompanyia + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
@@ -313,7 +313,7 @@ public class LecturaDeDatos {
         }
         
         try {
-            Scanner scanner = new Scanner(new File(Constantes.rutaDatos_por_aeropuerto + Constantes.nombreFicheroPasajerosConectividad + Constantes.extensionFichero));
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroPasajerosConectividad + Constantes.extensionFichero));
             //Comma as a delimiter
             scanner.useDelimiter("\n");
             scanner.next();
