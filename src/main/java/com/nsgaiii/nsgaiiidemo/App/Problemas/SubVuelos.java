@@ -108,6 +108,7 @@ public class SubVuelos extends Vuelos{
 			
 		    ArrayList<Double> Var = new ArrayList<>();
 		    for (int k = 0; k < numVariables; k++) {
+		    	
 		    	Var.add(Double.valueOf(r.get((int)filaFichero)[k]));
 		    }
 		    return Var;

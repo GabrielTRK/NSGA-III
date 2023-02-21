@@ -3,6 +3,7 @@ package com.nsgaiii.nsgaiiidemo.App;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -54,7 +55,7 @@ public class EvaluarIndividuo {
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
-    	//LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
+    	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
     	
     	Problema problema = new Vuelos(conexiones.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
@@ -63,25 +64,49 @@ public class EvaluarIndividuo {
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
     	
-    	/*Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	SubVuelos subproblema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
-    			conexionesPorAeropuerto);*/
+    			conexionesPorAeropuerto);
     	//System.out.println(riesgos.size());
-    	System.out.println(conexiones.keySet());
-    	System.out.println(AeropuertosEspanyoles);
+    	//System.out.println(conexiones.keySet());
+    	//System.out.println(AeropuertosEspanyoles);
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
     	
-    	
-    	System.out.println(indPorAeropuerto);
-    	//Individuo sol = new Individuo(indPorAeropuerto.size(), 3);
-    	//sol = problema.inicializarValores(sol);
-    	//sol = problema.inicializarValores(sol);
+    	String antes = "problemaSubVuelosFrente.csv";
+    	List<Individuo> frenteAntes = Utils.leerCSV(antes);
+    	ArrayList<Double> pesos = new ArrayList<>();
+    	pesos.add(0.1);
+    	pesos.add(0.3);
+    	pesos.add(0.6);
+    	//System.out.println(indPorAeropuerto);
+    	Individuo sol = frenteAntes.get(85);
+    	System.out.println("Sol: " + sol);
+    	//sol = subproblema.inicializarValores(sol);
+    	//sol = subproblema.inicializarValores(sol);
     	//ind = problema.inicializarValores(ind);
-    	//System.out.println(problema.evaluate(sol));
+    	subproblema.evaluate(sol).getVariables();
+    	//System.out.println(vuelos);
+    	
+    	ArrayList<Double> variables = subproblema.traducirIndividuo(sol).getVariables();
+    	//System.out.println(variables);
+    	
+    	int sumaPasajeros = 0;
+    	int totalPasajeros = 0;
+    	List<List<String>> keys = new ArrayList<>(pasajeros.keySet());
+    	for(int i = 0; i < variables.size(); i++) {
+    		totalPasajeros += pasajeros.get(keys.get(i));
+    		if(variables.get(i) == 1.0) {
+    			sumaPasajeros += pasajeros.get(keys.get(i));
+    		}
+    	}
+    	//System.out.println(totalPasajeros);
+    	//System.out.println(sumaPasajeros);
+    	
+    	System.out.println(pasajeros);
     	
     	/*ArrayList<Double> numeros = new ArrayList<>(indPorAeropuerto.size());
     	
@@ -150,33 +175,42 @@ public class EvaluarIndividuo {
 			Utils.modificarCSV("problemaSubVuelosMejoresPuntos", solucionesOptimasAux);
 		}*/
     	
-    	/*ArrayList<Individuo> lista = new ArrayList<>();
-    	String antes = "problemaVuelosSVQ.csv";
+    	ArrayList<Individuo> lista = new ArrayList<>();
     	
-    	String despues = "problemaVuelos20230208213700.csv";
     	
-    	List<Individuo> frenteAntes = Utils.leerCSV(antes);
     	
-    	List<Individuo> frenteDespues = Utils.leerCSV(despues);
+    	//String despues = "solucionDavid.csv";
+    	
+    	
+    	
+    	//List<Individuo> frenteDespues = Utils.leerCSV(despues);
     	
     	System.out.println("Antes: " + frenteAntes.size());
-    	System.out.println("Despues: " + frenteDespues.size());
+    	//System.out.println("Despues: " + frenteDespues.size());
+    	ArrayList<Double> sumaP = new ArrayList<>();
+    	for(int i = 0; i < frenteAntes.size(); i++) {
+    		sumaP.add(Utils.sumaPonderada(frenteAntes.get(i), pesos));
+    		System.out.println( i + " " + Utils.sumaPonderada(frenteAntes.get(i), pesos));
+    	}
+    	Collections.sort(sumaP);
+    	System.out.println(sumaP.get(sumaP.size()-1));
+    	System.out.println(sumaP.get(sumaP.size()-2));
+    	System.out.println(sumaP.get(0));
     	
-    	lista = Utils.juntarListass(frenteAntes, frenteDespues);
+    	/*lista = Utils.juntarListass(frenteAntes, frenteDespues);
     	
-    	Poblacion poblacion = new Poblacion(lista.size(), problema);
-    	poblacion.setPoblacion(null);
+    	
     	System.out.println("Total: " + lista.size());
     	
-    	List<List<Individuo>> frentes = reemplazo.obtenerFrentes(lista, problema);
+    	List<Individuo> frentes = reemplazo.obtenerPrimerFrente(lista, problema);
     	for (int i = 0; i < frentes.size(); i++) {
     		System.out.println("Frente " + i + ": " + frentes.get(i).size());
     		System.out.println(frentes.get(i));
-    	}*/
+    	}
     	
     	
     	//System.out.println(frentes.get(0).size());
-    	//Utils.crearCSVConObjetivos(frentes.get(0), "a");
+    	Utils.crearCSVConObjetivos(frentes, problema.getNombre());*/
     	
     	/*String s = "";
     	ArrayList<Individuo> indi = new ArrayList<>();

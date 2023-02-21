@@ -353,5 +353,11 @@ public class Utils {
 		return nueva;
 	}
 	
-	
+	public static Double sumaPonderada(Individuo ind, ArrayList<Double> pesos) {
+		double sumaP = 0;
+		for(int i = 0; i < ind.getObjetivos().size(); i++) {
+			sumaP = sumaP + ind.getObjetivos().get(i) * pesos.get(i);
+		}
+		return sumaP;
+	}
 }
