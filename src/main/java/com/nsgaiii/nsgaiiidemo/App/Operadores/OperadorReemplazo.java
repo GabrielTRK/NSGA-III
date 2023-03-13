@@ -39,26 +39,6 @@ public class OperadorReemplazo {
 		return this.frentesDePareto;
 	}
 	
-	public List<Individuo> obtenerPrimerFrente(Poblacion total, Problema prob){
-		
-		List<Individuo> frenteDePareto = new ArrayList<>();
-		
-		this.rankingNoDominanciaNuevo(total, prob);
-		frenteDePareto = Utils.obtenerFrenteConIndice(total, 0);
-		
-		return frenteDePareto;
-	}
-	
-public List<Individuo> obtenerPrimerFrente(ArrayList<Individuo> total, Problema prob){
-		
-		List<Individuo> frenteDePareto = new ArrayList<>();
-		
-		this.rankingNoDominanciaNuevo(total, prob);
-		frenteDePareto = Utils.obtenerFrenteConIndice(total, 0);
-		
-		return frenteDePareto;
-	}
-	
 	public List<List<Individuo>> obtenerFrentes(ArrayList<Individuo> total, Problema prob){
 		
 		List<List<Individuo>> frentesDePareto = new ArrayList<>();
@@ -72,6 +52,36 @@ public List<Individuo> obtenerPrimerFrente(ArrayList<Individuo> total, Problema 
 		}
 		this.frentesDePareto = frentesDePareto;
 		return this.frentesDePareto;
+	}
+	
+	public List<Individuo> obtenerPrimerFrente(Poblacion total, Problema prob){
+		
+		List<Individuo> frenteDePareto = new ArrayList<>();
+		
+		this.rankingNoDominanciaNuevo(total, prob);
+		frenteDePareto = Utils.obtenerFrenteConIndice(total, 0);
+		
+		return frenteDePareto;
+	}
+	
+	public List<Individuo> obtenerPrimerFrente(ArrayList<Individuo> total, Problema prob){
+		
+		List<Individuo> frenteDePareto = new ArrayList<>();
+		
+		this.rankingNoDominanciaNuevo(total, prob);
+		frenteDePareto = Utils.obtenerFrenteConIndice(total, 0);
+		
+		return frenteDePareto;
+	}
+	
+	public List<Individuo> obtenerPrimerFrente(List<Individuo> total, Problema prob){
+		
+		List<Individuo> frenteDePareto = new ArrayList<>();
+		
+		this.rankingNoDominanciaNuevo(total, prob);
+		frenteDePareto = Utils.obtenerFrenteConIndice(total, 0);
+		
+		return frenteDePareto;
 	}
 	
 	//Para cada individuo calcula cuántos individuos lo dominan
@@ -156,6 +166,29 @@ public List<Individuo> obtenerPrimerFrente(ArrayList<Individuo> total, Problema 
 			a.setdomina(domina);
 		}
 		ArrayList<Individuo> listaOrden = p;
+		Collections.sort(listaOrden);
+		p = listaOrden;
+		return p;
+	}
+	
+	public List<Individuo> rankingNoDominanciaNuevo(List<Individuo> p, Problema prob) {
+		for (int i = 0; i < p.size(); i++) {
+			System.out.println(i);
+			int domina = 0;
+			Individuo a = p.get(i);
+			int j = 0;
+			while (domina == 0 && j < p.size()) {
+				if (i != j) {
+					Individuo b = p.get(j);
+					if(esDominante(b, a, prob)) {
+						domina++;
+					}
+				}
+				j++;
+			}
+			a.setdomina(domina);
+		}
+		List<Individuo> listaOrden = p;
 		Collections.sort(listaOrden);
 		p = listaOrden;
 		return p;

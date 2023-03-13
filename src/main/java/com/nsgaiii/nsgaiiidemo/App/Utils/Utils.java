@@ -97,6 +97,19 @@ public class Utils {
 		return frente;
 	}
 	
+	public static List<Individuo> obtenerFrenteConIndice(List<Individuo> p, int pos){
+		List<Individuo> frente = new ArrayList<>();
+		frente.add(p.get(pos));
+		pos++;
+		while( pos < p.size()) {
+			if(frente.get(0).getdomina() == p.get(pos).getdomina()) {
+				frente.add(p.get(pos));
+			}
+			pos++;
+		}
+		return frente;
+	}
+	
 	public static Poblacion borrarElementosDeLista(List<Individuo> lista, Poblacion p) {
 		ArrayList<Individuo> poblacionABorrar = p.getPoblacion();
 		for(int i = 0; i < lista.size(); i++) {
@@ -359,5 +372,21 @@ public class Utils {
 			sumaP = sumaP + ind.getObjetivos().get(i) * pesos.get(i);
 		}
 		return sumaP;
+	}
+	
+	public static List<Individuo> quitarDuplicados(List<Individuo> p){
+		List<Individuo> indAQuitar = new ArrayList<Individuo>();
+		for(int i = 0; i < p.size(); i++) {
+			Individuo target = p.get(i);
+			for(int j = i + 1; j < p.size(); j++) {
+				if(target.getObjetivos().equals(p.get(j).getObjetivos())) {
+					indAQuitar.add(p.get(j));
+				}
+			}
+		}
+		for(Individuo ind : indAQuitar) {
+			p.remove(ind);
+		}
+		return p;
 	}
 }

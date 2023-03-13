@@ -32,11 +32,15 @@ public class Nsgaiii {
 	private List<ReferencePoint> referencePoints = new Vector<>();
 	private Problema problema;
 	private boolean elitismo;
+	private int tamañoAux;
+	private List<Individuo> structAux = new ArrayList<>();
+	private List<Individuo> structAuxAnterior = new ArrayList<>();
+	private int contIguales = 0;
 	
 	public Nsgaiii (int numIndividuos,
 			int numGeneraciones, Double indiceDistrC, Double indiceDistrM, double probCruce,
 			double probMut, int numberOfDivisions, Problema prob, boolean leerF, 
-			String nombreFichero, boolean elitismo) throws FileNotFoundException, IOException, CsvException {
+			String nombreFichero, boolean elitismo, int tamañoAux) throws FileNotFoundException, IOException, CsvException {
 		
 		//Inicializar problema, poblacion y operadores
 		this.problema = prob;
@@ -50,6 +54,8 @@ public class Nsgaiii {
 		this.reemplazo = new OperadorReemplazo(this.problema.getNumObjetivos(), referencePoints);
 		this.numGeneraciones = numGeneraciones;
 		this.elitismo = elitismo;
+		structAux = new ArrayList<>(tamañoAux);
+		this.tamañoAux = tamañoAux;
 		this.poblacion.generarPoblacionInicial(this.problema, leerF, nombreFichero);
 
 	}
@@ -72,7 +78,7 @@ public class Nsgaiii {
 		}
 		//this.frenteDePareto = this.reemplazo.obtenerFrentes(frentesAux, problema).get(0);
 		this.frenteDePareto = this.reemplazo.obtenerFrentes(poblacion, problema).get(0);
-		return this.frenteDePareto; //Devuelve el frente de pareto obtenido
+		return this.structAux; //Devuelve el frente de pareto obtenido
 	}
 	
 	private Poblacion generarDescendientes(int contadorGeneraciones) throws FileNotFoundException, IOException, CsvException {
@@ -121,6 +127,22 @@ public class Nsgaiii {
 		Poblacion total = Utils.juntarPoblaciones(this.poblacion, hijos, this.problema);
 		Poblacion totalAux = total;
 		this.frentesAux = this.reemplazo.obtenerFrentes(totalAux, this.problema).get(0);
+		
+		if(this.structAux.size() + this.frentesAux.size() <= this.tamañoAux) {
+			this.structAux.addAll(this.frentesAux);
+		}else {
+			int restantes = this.structAux.size() + this.frentesAux.size() - this.tamañoAux;
+			restantes = this.frentesAux.size() - restantes;
+			List<Individuo> temp = frentesAux.subList(0, restantes);
+			this.structAux.addAll(temp);
+		}
+		//quitar duplicados
+		this.structAux = Utils.quitarDuplicados(this.structAux);
+		//quitar dominados
+		this.structAux = this.reemplazo.obtenerPrimerFrente(this.structAux, problema);
+		if(structAux.equals(structAuxAnterior)) {
+			this.contIguales++;
+		}
 		//Elegir grupos según el ranking y aplicar el método de Das y Dennis cuando corresponda
 		this.poblacion = this.reemplazo.rellenarPoblacionConFrentes(this.poblacion,
 				total, this.problema);
@@ -129,7 +151,7 @@ public class Nsgaiii {
 	private boolean condicionDeParadaConseguida(int contadorGeneraciones, Poblacion p, long tiempo) {
 		
 		//Se comprueba la generación en la que se encuentra el algoritmo
-		if(contadorGeneraciones >= this.numGeneraciones || tiempo >= 5) {
+		if(this.contIguales >= this.numGeneraciones /*|| tiempo >= 5*/) {
 			return true;
 		} else {
 			return false;

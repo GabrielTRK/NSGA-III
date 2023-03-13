@@ -115,13 +115,14 @@ public class App extends AWTAbstractAnalysis
     	boolean leerFichero = true;
     	String nombreFichero = "problemaSubVuelos20230220005738.csv";
     	boolean elitismo = true;
+    	int tamañoAux = 1000;
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	long startTime = System.nanoTime();
     	
         Nsgaiii nsgaiii = new Nsgaiii(numeroDeIndividuos, 
         		numeroDeGeneraciones, indiceDeDistribucionC,
         		indiceDeDistribucionM, probabilidadDeCruce, probabilidadDeMutacion,
-        		 divisiones, problema, leerFichero, nombreFichero, elitismo);
+        		 divisiones, problema, leerFichero, nombreFichero, elitismo, tamañoAux);
         
         //Ejecutar algoritmo
         frenteDePareto = nsgaiii.ejecutarNSGAIII();
