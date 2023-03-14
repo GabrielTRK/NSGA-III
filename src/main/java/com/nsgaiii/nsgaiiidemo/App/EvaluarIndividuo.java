@@ -76,37 +76,34 @@ public class EvaluarIndividuo {
     	//System.out.println(AeropuertosEspanyoles);
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
     	
-    	String antes = "problemaSubVuelosFrente.csv";
+    	String antes = "problemaSubVuelos20230314134520.csv";
+    	String antes2 = "problemaSubVuelos20230314134520Copy.csv";
     	List<Individuo> frenteAntes = Utils.leerCSV(antes);
-    	ArrayList<Double> pesos = new ArrayList<>();
+    	List<Individuo> frenteAntes2 = Utils.leerCSV(antes2);
+    	
+    	System.out.println(Utils.listasIguales(frenteAntes, frenteAntes2));
+    	
+    	/*ArrayList<Double> pesos = new ArrayList<>();
     	pesos.add(0.1);
     	pesos.add(0.3);
     	pesos.add(0.6);
+    	ArrayList<Double> pesos2 = new ArrayList<>();
+    	pesos2.add(0.1);
+    	pesos2.add(0.3);
+    	pesos2.add(0.6);*/
+    	
     	//System.out.println(indPorAeropuerto);
-    	Individuo sol = frenteAntes.get(85);
-    	System.out.println("Sol: " + sol);
+    	//Individuo sol = frenteAntes.get(85);
+    	//System.out.println("Sol: " + sol);
     	//sol = subproblema.inicializarValores(sol);
     	//sol = subproblema.inicializarValores(sol);
     	//ind = problema.inicializarValores(ind);
-    	subproblema.evaluate(sol).getVariables();
+    	//subproblema.evaluate(sol).getVariables();
     	//System.out.println(vuelos);
     	
-    	ArrayList<Double> variables = subproblema.traducirIndividuo(sol).getVariables();
+    	//ArrayList<Double> variables = subproblema.traducirIndividuo(sol).getVariables();
     	//System.out.println(variables);
     	
-    	int sumaPasajeros = 0;
-    	int totalPasajeros = 0;
-    	List<List<String>> keys = new ArrayList<>(pasajeros.keySet());
-    	for(int i = 0; i < variables.size(); i++) {
-    		totalPasajeros += pasajeros.get(keys.get(i));
-    		if(variables.get(i) == 1.0) {
-    			sumaPasajeros += pasajeros.get(keys.get(i));
-    		}
-    	}
-    	//System.out.println(totalPasajeros);
-    	//System.out.println(sumaPasajeros);
-    	
-    	System.out.println(pasajeros);
     	
     	/*ArrayList<Double> numeros = new ArrayList<>(indPorAeropuerto.size());
     	
@@ -186,8 +183,9 @@ public class EvaluarIndividuo {
     	//List<Individuo> frenteDespues = Utils.leerCSV(despues);
     	
     	System.out.println("Antes: " + frenteAntes.size());
+    	System.out.println(reemplazo.obtenerPrimerFrente(frenteAntes, subproblema).size());
     	//System.out.println("Despues: " + frenteDespues.size());
-    	ArrayList<Double> sumaP = new ArrayList<>();
+    	/*ArrayList<Double> sumaP = new ArrayList<>();
     	for(int i = 0; i < frenteAntes.size(); i++) {
     		sumaP.add(Utils.sumaPonderada(frenteAntes.get(i), pesos));
     		System.out.println( i + " " + Utils.sumaPonderada(frenteAntes.get(i), pesos));
@@ -195,7 +193,7 @@ public class EvaluarIndividuo {
     	Collections.sort(sumaP);
     	System.out.println(sumaP.get(sumaP.size()-1));
     	System.out.println(sumaP.get(sumaP.size()-2));
-    	System.out.println(sumaP.get(0));
+    	System.out.println(sumaP.get(0));*/
     	
     	/*lista = Utils.juntarListass(frenteAntes, frenteDespues);
     	

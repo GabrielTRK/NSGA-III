@@ -54,7 +54,7 @@ public class Nsgaiii {
 		this.reemplazo = new OperadorReemplazo(this.problema.getNumObjetivos(), referencePoints);
 		this.numGeneraciones = numGeneraciones;
 		this.elitismo = elitismo;
-		structAux = new ArrayList<>(tamañoAux);
+		this.structAux = new ArrayList<>(tamañoAux);
 		this.tamañoAux = tamañoAux;
 		this.poblacion.generarPoblacionInicial(this.problema, leerF, nombreFichero);
 
@@ -71,7 +71,6 @@ public class Nsgaiii {
 			startTime = System.nanoTime();
 			System.out.println(contadorGeneraciones);
 			hijos = generarDescendientes(contadorGeneraciones); //Seleccion, cruce y mutacion
-			//System.out.println("Nueva poblacion");
 			obtenerNuevaGeneracion(hijos); //Reemplazo
 			contadorGeneraciones++;
 			elapsedTime = (System.nanoTime() - startTime) / 1000000000;
@@ -140,9 +139,11 @@ public class Nsgaiii {
 		this.structAux = Utils.quitarDuplicados(this.structAux);
 		//quitar dominados
 		this.structAux = this.reemplazo.obtenerPrimerFrente(this.structAux, problema);
-		if(structAux.equals(structAuxAnterior)) {
+		if(Utils.listasIguales(structAux, structAuxAnterior)) {
 			this.contIguales++;
 		}
+		this.structAuxAnterior = this.structAux;
+		
 		//Elegir grupos según el ranking y aplicar el método de Das y Dennis cuando corresponda
 		this.poblacion = this.reemplazo.rellenarPoblacionConFrentes(this.poblacion,
 				total, this.problema);
@@ -151,7 +152,7 @@ public class Nsgaiii {
 	private boolean condicionDeParadaConseguida(int contadorGeneraciones, Poblacion p, long tiempo) {
 		
 		//Se comprueba la generación en la que se encuentra el algoritmo
-		if(this.contIguales >= this.numGeneraciones /*|| tiempo >= 5*/) {
+		if(contIguales >= this.numGeneraciones /*|| tiempo >= 5*/) {
 			return true;
 		} else {
 			return false;

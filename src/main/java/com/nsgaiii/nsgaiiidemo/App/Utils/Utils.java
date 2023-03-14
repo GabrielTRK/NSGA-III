@@ -389,4 +389,30 @@ public class Utils {
 		}
 		return p;
 	}
+	
+	public static boolean listasIguales(List<Individuo> p, List<Individuo> q) {
+		boolean iguales = true;
+		
+		if(p.size() == q.size()) {
+			int i = 0;
+			while(iguales && i < p.size()) {
+				int j = 0;
+				boolean existe = false;
+				while(!existe && j < q.size()) {
+					if(p.get(i).getObjetivos().equals(q.get(j).getObjetivos())) {
+						existe = true;
+					}
+					j++;
+				}
+				if(!existe) {
+					iguales = false;
+				}
+				i++;
+			}
+		}
+		else {
+			iguales = false;
+		}
+		return iguales;
+	}
 }

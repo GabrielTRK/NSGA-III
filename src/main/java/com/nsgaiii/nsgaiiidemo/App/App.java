@@ -104,7 +104,7 @@ public class App extends AWTAbstractAnalysis
     	//Indicar parámetros del problema y algoritmo
     	int numeroDeIndividuos = 56;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 5000;
+    	int numeroDeGeneraciones = 1000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
@@ -115,7 +115,7 @@ public class App extends AWTAbstractAnalysis
     	boolean leerFichero = true;
     	String nombreFichero = "problemaSubVuelos20230220005738.csv";
     	boolean elitismo = true;
-    	int tamañoAux = 1000;
+    	int tamañoAux = 100;
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	long startTime = System.nanoTime();
     	

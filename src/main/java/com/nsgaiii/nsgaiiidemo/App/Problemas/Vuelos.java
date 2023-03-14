@@ -78,7 +78,6 @@ public class Vuelos extends Problema{
 	 */
 	@Override
 	public Individuo evaluate(Individuo solution) throws FileNotFoundException, IOException, CsvException {
-		calculoHomogeneidadIngresosTurismoAeropuertos(solution);
 		
 		
 		ArrayList<Double> objetivos = new ArrayList<>(super.getNumObjetivos());

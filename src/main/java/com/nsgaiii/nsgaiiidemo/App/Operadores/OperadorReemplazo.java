@@ -127,7 +127,6 @@ public class OperadorReemplazo {
 	
 	public Poblacion rankingNoDominanciaNuevo(Poblacion p, Problema prob) {
 		for (int i = 0; i < p.getPoblacion().size(); i++) {
-			System.out.println(i);
 			int domina = 0;
 			Individuo a = p.getPoblacion().get(i);
 			int j = 0;
@@ -150,7 +149,6 @@ public class OperadorReemplazo {
 	
 	public List<Individuo> rankingNoDominanciaNuevo(ArrayList<Individuo> p, Problema prob) {
 		for (int i = 0; i < p.size(); i++) {
-			System.out.println(i);
 			int domina = 0;
 			Individuo a = p.get(i);
 			int j = 0;
@@ -173,7 +171,6 @@ public class OperadorReemplazo {
 	
 	public List<Individuo> rankingNoDominanciaNuevo(List<Individuo> p, Problema prob) {
 		for (int i = 0; i < p.size(); i++) {
-			System.out.println(i);
 			int domina = 0;
 			Individuo a = p.get(i);
 			int j = 0;
