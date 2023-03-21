@@ -123,4 +123,8 @@ public class Problema {
 		return ind;
 	}
 	
+	public Individuo comprobarRestricciones(Individuo ind) {
+		return ind;
+	}
+	
 }

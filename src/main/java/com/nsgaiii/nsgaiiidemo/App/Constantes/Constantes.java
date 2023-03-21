@@ -16,6 +16,7 @@ public class Constantes {
     public static final String nombreDTLZ7 = "dtlz7";
     public static final String nombreProblemaVuelos = "problemaVuelos";
     public static final String nombreProblemaSubVuelos = "problemaSubVuelos";
+    public static final String nombreProblemaVuelosExt = "problemaVuelosExt";
     public static final String nombreFicheroSIR = "sir";
     public static final String nombreFicheroAeropuertos_Entradas = "aeropuertos_entradas";
     public static final String nombreFicheroAeropuertos_Origen = "aeropuertos_salida";

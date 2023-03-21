@@ -14,6 +14,9 @@ public class Individuo implements Comparable<Individuo> {
 	private int domina = 0;
 	private ArrayList<Double> objetivos;
 	private ArrayList<Double> objetivosNorm;
+	private ArrayList<Double> restricciones;
+	private boolean factible = true;
+	private Double constraintViolation = 0.0;
 	
 	public Individuo(int numVariables, int numObjetivos) {
 		this.variables = new ArrayList<Double>(numVariables);
@@ -67,6 +70,30 @@ public class Individuo implements Comparable<Individuo> {
 
 	public void setObjetivosNorm(ArrayList<Double> objetivosNorm) {
 		this.objetivosNorm = objetivosNorm;
+	}
+
+	public ArrayList<Double> getRestricciones() {
+		return restricciones;
+	}
+
+	public void setRestricciones(ArrayList<Double> restricciones) {
+		this.restricciones = restricciones;
+	}
+
+	public boolean isFactible() {
+		return factible;
+	}
+
+	public void setFactible(boolean factible) {
+		this.factible = factible;
+	}
+
+	public Double getConstraintViolation() {
+		return constraintViolation;
+	}
+
+	public void setConstraintViolation(Double constraintViolation) {
+		this.constraintViolation = constraintViolation;
 	}
 
 	//Se comparan el número de individuos que dominan a 2 individuos para asigarles un ranking
