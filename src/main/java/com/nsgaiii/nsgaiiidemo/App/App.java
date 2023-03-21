@@ -113,9 +113,9 @@ public class App extends AWTAbstractAnalysis
     	int divisiones = 9;
     	//int numeroDeObjetivos = 3;
     	boolean leerFichero = true;
-    	String nombreFichero = "problemaSubVuelos20230220005738.csv";
+    	String nombreFichero = "problemaSubVuelos20230315185704.csv";
     	boolean elitismo = true;
-    	int tamañoAux = 100;
+    	int tamañoAux = 1000;
     	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
     	long startTime = System.nanoTime();
     	

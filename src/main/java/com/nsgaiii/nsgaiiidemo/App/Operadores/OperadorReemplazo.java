@@ -54,6 +54,21 @@ public class OperadorReemplazo {
 		return this.frentesDePareto;
 	}
 	
+	public List<List<Individuo>> obtenerFrentes(List<Individuo> total, Problema prob){
+		
+		List<List<Individuo>> frentesDePareto = new ArrayList<>();
+		
+		this.rankingNoDominancia(total, prob);
+		while(total.size() != 0) {
+			List<Individuo> frenteTemp = Utils.obtenerFrenteConIndice(total, 0);
+			total = Utils.borrarElementosDeLista(frenteTemp, total);
+			frentesDePareto.add(frenteTemp);
+			this.rankingNoDominancia(total, prob);
+		}
+		this.frentesDePareto = frentesDePareto;
+		return this.frentesDePareto;
+	}
+	
 	public List<Individuo> obtenerPrimerFrente(Poblacion total, Problema prob){
 		
 		List<Individuo> frenteDePareto = new ArrayList<>();
@@ -120,6 +135,26 @@ public class OperadorReemplazo {
 			a.setdomina(domina);
 		}
 		ArrayList<Individuo> listaOrden = p;
+		Collections.sort(listaOrden);
+		p = listaOrden;
+		return p;
+	}
+	
+	public List<Individuo> rankingNoDominancia(List<Individuo> p, Problema prob) {
+		for (int i = 0; i < p.size(); i++) {
+			int domina = 0;
+			Individuo a = p.get(i);
+			for (int j = 0; j < p.size(); j++) {
+				if (i != j) {
+					Individuo b = p.get(j);
+					if(esDominante(b, a, prob)) {
+						domina++;
+					}
+				}
+			}
+			a.setdomina(domina);
+		}
+		List<Individuo> listaOrden = p;
 		Collections.sort(listaOrden);
 		p = listaOrden;
 		return p;

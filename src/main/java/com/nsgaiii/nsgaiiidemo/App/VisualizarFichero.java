@@ -2,6 +2,7 @@ package com.nsgaiii.nsgaiiidemo.App;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 import org.jzy3d.analysis.AWTAbstractAnalysis;
 import org.jzy3d.analysis.AnalysisLauncher;
@@ -18,6 +19,7 @@ import com.jogamp.common.util.Bitfield.Util;
 import com.jogamp.opengl.GLCapabilities;
 import com.jogamp.opengl.GLProfile;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
+import com.nsgaiii.nsgaiiidemo.App.Modelo.ReferencePoint;
 import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorReemplazo;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
 
@@ -30,14 +32,14 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
     {
     	
     	List<Individuo> lista = new ArrayList<>();
-    	String nombre = "problemaSubVuelosFrente - Copy.csv";
+    	String nombre = "problemaSubVuelos20230315204651.csv";
     	
-    	String nombreSimplex = "simplex.csv";
+    	String nombreSimplex = "problemaSubVuelosFrente.csv";
     	
-    	String nombreSolD = "zdt5Front.csv";
+    	String nombreSolD = "simplex.csv";
         
     	frenteDePareto = Utils.leerCSV(nombre);
-    	//indSimplex = Utils.leerCSV(nombreSimplex);
+    	indSimplex = Utils.leerCSV(nombreSimplex);
     	//solD = Utils.leerCSV(nombreSolD);
     	
     	AnalysisLauncher.open(new VisualizarFichero());
@@ -49,27 +51,25 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 	    float x;
 	    float y;
 	    float z;
+	    List<ReferencePoint> referencePoints = new Vector<>();
+    	(new ReferencePoint()).generateReferencePoints(referencePoints, 2, 9);
 	    
-	    Coord3d[] pointsPareto = new Coord3d[frenteDePareto.size() + 2/* + solD.size()*/];
-	    Color[] colorsPareto = new Color[frenteDePareto.size() + 2/*  solD.size()*/];
+	    Coord3d[] pointsPareto = new Coord3d[frenteDePareto.size() + 1 + indSimplex.size() + referencePoints.size()];
+	    Color[] colorsPareto = new Color[frenteDePareto.size() + 1 + indSimplex.size() + referencePoints.size()];
 	    
 	    for (int i = 0; i < frenteDePareto.size(); i++) {
 	    	
 	    	
 		      x = frenteDePareto.get(i).getObjetivos().get(0).floatValue();
-		      y = (float)-0.02 + frenteDePareto.get(i).getObjetivos().get(1).floatValue();
-		      z = (float)-0.02 + frenteDePareto.get(i).getObjetivos().get(2).floatValue();
+		      y = frenteDePareto.get(i).getObjetivos().get(1).floatValue();
+		      z = frenteDePareto.get(i).getObjetivos().get(2).floatValue();
 		      pointsPareto[i] = new Coord3d(x, y, z);
 		      colorsPareto[i] = Color.RED;
 		}
-	    /*pointsPareto[frenteDePareto.size()] = new Coord3d(0, 0, 0);
-	    colorsPareto[frenteDePareto.size()] = Color.BLACK;*/
-	    pointsPareto[frenteDePareto.size()] = new Coord3d(0.40362556010845024, 0.24322451882804139, 0.07265496832612796);
-	    colorsPareto[frenteDePareto.size()] = Color.GREEN;
-	    pointsPareto[frenteDePareto.size()+1] = new Coord3d(0.05371400120559103, 0.4996138647989145, 0.5908772990453174);
-	    colorsPareto[frenteDePareto.size()+1] = Color.BLUE;
+	    pointsPareto[frenteDePareto.size()] = new Coord3d(0, 0, 0);
+	    colorsPareto[frenteDePareto.size()] = Color.BLACK;
 	    
-	    /*for (int i = 0; i < indSimplex.size(); i++) {
+	    for (int i = 0; i < indSimplex.size(); i++) {
 	    	
 	    	
 		      x = indSimplex.get(i).getObjetivos().get(0).floatValue();
@@ -77,17 +77,17 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 		      z = indSimplex.get(i).getObjetivos().get(2).floatValue();
 		      pointsPareto[i + frenteDePareto.size() + 1] = new Coord3d(x, y, z);
 		      colorsPareto[i + frenteDePareto.size() + 1] = Color.BLUE;
-		}*/
+		}
 	    
-	    /*for (int i = 0; i < solD.size(); i++) {
+	    for (int i = 0; i < referencePoints.size(); i++) {
 	    	
 	    	
-		      x = solD.get(i).getObjetivos().get(0).floatValue();
-		      y = solD.get(i).getObjetivos().get(1).floatValue();
-		      z = solD.get(i).getObjetivos().get(2).floatValue();
-		      pointsPareto[i + frenteDePareto.size() + 1] = new Coord3d(x, y, z);
-		      colorsPareto[i + frenteDePareto.size() + 1] = Color.BLACK;
-		}*/
+		      x = referencePoints.get(i).position.get(0).floatValue();
+		      y = referencePoints.get(i).position.get(1).floatValue();
+		      z = /*referencePoints.get(i).position.get(2).floatValue()*/0;
+		      pointsPareto[i + frenteDePareto.size() + 1 + indSimplex.size()] = new Coord3d(x, y, z);
+		      colorsPareto[i + frenteDePareto.size() + 1 + indSimplex.size()] = Color.GREEN;
+		}
 	    
 
 	    Scatter scatter = new Scatter(pointsPareto, colorsPareto);

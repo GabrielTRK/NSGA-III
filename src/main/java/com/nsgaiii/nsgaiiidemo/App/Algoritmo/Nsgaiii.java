@@ -54,7 +54,7 @@ public class Nsgaiii {
 		this.reemplazo = new OperadorReemplazo(this.problema.getNumObjetivos(), referencePoints);
 		this.numGeneraciones = numGeneraciones;
 		this.elitismo = elitismo;
-		this.structAux = new ArrayList<>(tamañoAux);
+		this.structAux = new ArrayList<>();
 		this.tamañoAux = tamañoAux;
 		this.poblacion.generarPoblacionInicial(this.problema, leerF, nombreFichero);
 
@@ -126,27 +126,24 @@ public class Nsgaiii {
 		Poblacion total = Utils.juntarPoblaciones(this.poblacion, hijos, this.problema);
 		Poblacion totalAux = total;
 		this.frentesAux = this.reemplazo.obtenerFrentes(totalAux, this.problema).get(0);
+		//Elegir grupos según el ranking y aplicar el método de Das y Dennis cuando corresponda
+		this.poblacion = this.reemplazo.rellenarPoblacionConFrentes(this.poblacion,
+				total, this.problema);
 		
-		if(this.structAux.size() + this.frentesAux.size() <= this.tamañoAux) {
-			this.structAux.addAll(this.frentesAux);
-		}else {
-			int restantes = this.structAux.size() + this.frentesAux.size() - this.tamañoAux;
-			restantes = this.frentesAux.size() - restantes;
-			List<Individuo> temp = frentesAux.subList(0, restantes);
-			this.structAux.addAll(temp);
-		}
+		
+		this.structAux.addAll(this.frentesAux);
 		//quitar duplicados
 		this.structAux = Utils.quitarDuplicados(this.structAux);
 		//quitar dominados
 		this.structAux = this.reemplazo.obtenerPrimerFrente(this.structAux, problema);
-		if(Utils.listasIguales(structAux, structAuxAnterior)) {
-			this.contIguales++;
+		if(this.structAux.size() > this.tamañoAux) {
+			this.structAux = this.structAux.subList(0, this.tamañoAux);
 		}
-		this.structAuxAnterior = this.structAux;
-		
-		//Elegir grupos según el ranking y aplicar el método de Das y Dennis cuando corresponda
-		this.poblacion = this.reemplazo.rellenarPoblacionConFrentes(this.poblacion,
-				total, this.problema);
+		if(this.structAux.size() == this.tamañoAux) {
+			this.contIguales++;
+			System.out.println("aaaaa");
+		}
+		System.out.println("Cuenta: " + this.contIguales);
 	}
 	
 	private boolean condicionDeParadaConseguida(int contadorGeneraciones, Poblacion p, long tiempo) {

@@ -130,6 +130,16 @@ public class Utils {
 		return p;
 	}
 	
+	public static List<Individuo> borrarElementosDeLista(List<Individuo> lista, List<Individuo> p) {
+		List<Individuo> poblacionABorrar = p;
+		for(int i = 0; i < lista.size(); i++) {
+			Individuo ind = lista.get(i);
+			poblacionABorrar.remove(ind);
+		}
+		p = poblacionABorrar;
+		return p;
+	}
+	
 	public static ArrayList<Individuo> juntarListas (ArrayList<Individuo> Alista, List<Individuo> frente){
 		for(Individuo i : frente) {
 			Alista.add(i);

@@ -9,10 +9,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.Vector;
 
 import com.nsgaiii.nsgaiiidemo.App.Lectura.LecturaDeDatos;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Poblacion;
+import com.nsgaiii.nsgaiiidemo.App.Modelo.ReferencePoint;
 import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorCruce;
 import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorReemplazo;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
@@ -76,13 +78,10 @@ public class EvaluarIndividuo {
     	//System.out.println(AeropuertosEspanyoles);
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
     	
-    	String antes = "problemaSubVuelos20230314134520.csv";
-    	String antes2 = "problemaSubVuelos20230314134520Copy.csv";
-    	List<Individuo> frenteAntes = Utils.leerCSV(antes);
-    	List<Individuo> frenteAntes2 = Utils.leerCSV(antes2);
-    	
-    	System.out.println(Utils.listasIguales(frenteAntes, frenteAntes2));
-    	
+    	List<ReferencePoint> referencePoints = new Vector<>();
+    	(new ReferencePoint()).generateReferencePoints(referencePoints, 2, 9);
+    	System.out.println(referencePoints);
+    	System.out.println(referencePoints.size());
     	/*ArrayList<Double> pesos = new ArrayList<>();
     	pesos.add(0.1);
     	pesos.add(0.3);
@@ -172,9 +171,6 @@ public class EvaluarIndividuo {
 			Utils.modificarCSV("problemaSubVuelosMejoresPuntos", solucionesOptimasAux);
 		}*/
     	
-    	ArrayList<Individuo> lista = new ArrayList<>();
-    	
-    	
     	
     	//String despues = "solucionDavid.csv";
     	
@@ -182,8 +178,6 @@ public class EvaluarIndividuo {
     	
     	//List<Individuo> frenteDespues = Utils.leerCSV(despues);
     	
-    	System.out.println("Antes: " + frenteAntes.size());
-    	System.out.println(reemplazo.obtenerPrimerFrente(frenteAntes, subproblema).size());
     	//System.out.println("Despues: " + frenteDespues.size());
     	/*ArrayList<Double> sumaP = new ArrayList<>();
     	for(int i = 0; i < frenteAntes.size(); i++) {
