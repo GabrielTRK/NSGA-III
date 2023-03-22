@@ -20,6 +20,7 @@ import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorReemplazo;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.SubVuelos;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Vuelos;
+import com.nsgaiii.nsgaiiidemo.App.Problemas.VuelosExt;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
 import com.opencsv.exceptions.CsvException;
 
@@ -73,6 +74,13 @@ public class EvaluarIndividuo {
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
     			conexionesPorAeropuerto);
+    	
+    	Problema problemaext = new VuelosExt(conexiones.size(), riesgos, conexiones, vuelos, 
+    			AeropuertosEspanyoles, AeropuertosOrigen,
+    			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
+    			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
+    			vuelosSalientes, conectividadesAeropuertosOrigen,
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
     	//System.out.println(riesgos.size());
     	//System.out.println(conexiones.keySet());
     	//System.out.println(AeropuertosEspanyoles);
@@ -82,6 +90,7 @@ public class EvaluarIndividuo {
     	(new ReferencePoint()).generateReferencePoints(referencePoints, 2, 9);
     	System.out.println(referencePoints);
     	System.out.println(referencePoints.size());
+    	
     	/*ArrayList<Double> pesos = new ArrayList<>();
     	pesos.add(0.1);
     	pesos.add(0.3);
@@ -92,13 +101,15 @@ public class EvaluarIndividuo {
     	pesos2.add(0.6);*/
     	
     	//System.out.println(indPorAeropuerto);
-    	//Individuo sol = frenteAntes.get(85);
+    	Individuo sol = new Individuo(problemaext.getNumVariables(), problemaext.getNumObjetivos());
     	//System.out.println("Sol: " + sol);
-    	//sol = subproblema.inicializarValores(sol);
-    	//sol = subproblema.inicializarValores(sol);
+    	sol = problemaext.inicializarValores(sol);
+    	//sol = problemaext.inicializarValores(sol);
     	//ind = problema.inicializarValores(ind);
-    	//subproblema.evaluate(sol).getVariables();
-    	//System.out.println(vuelos);
+    	problemaext.evaluate(sol).getVariables();
+    	System.out.println(sol);
+    	System.out.println(sol.isFactible());
+    	System.out.println(sol.getConstraintViolation());
     	
     	//ArrayList<Double> variables = subproblema.traducirIndividuo(sol).getVariables();
     	//System.out.println(variables);

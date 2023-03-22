@@ -230,28 +230,42 @@ public class OperadorReemplazo {
 	private boolean esDominante (Individuo a, Individuo b, Problema prob) {
 		int mEstricto = 0;
 		int mOIgual = 0;
-		for (int i = 0; i < prob.getNumObjetivos(); i++) {
-			if(prob.getMinOMax().get(i)) {
-				if(a.getObjetivos().get(i) < b.getObjetivos().get(i) && mEstricto == 0) {
-					mEstricto = 1;
-				}
-				if (a.getObjetivos().get(i) <= b.getObjetivos().get(i)) {
-					mOIgual++;
-				}
-			}else {
-				if(a.getObjetivos().get(i) > b.getObjetivos().get(i) && mEstricto == 0) {
-					mEstricto = 1;
-				}
-				if (a.getObjetivos().get(i) >= b.getObjetivos().get(i)) {
-					mOIgual++;
+		if(a.isFactible() && b.isFactible()) {
+			for (int i = 0; i < prob.getNumObjetivos(); i++) {
+				if(prob.getMinOMax().get(i)) {
+					if(a.getObjetivos().get(i) < b.getObjetivos().get(i) && mEstricto == 0) {
+						mEstricto = 1;
+					}
+					if (a.getObjetivos().get(i) <= b.getObjetivos().get(i)) {
+						mOIgual++;
+					}
+				}else {
+					if(a.getObjetivos().get(i) > b.getObjetivos().get(i) && mEstricto == 0) {
+						mEstricto = 1;
+					}
+					if (a.getObjetivos().get(i) >= b.getObjetivos().get(i)) {
+						mOIgual++;
+					}
 				}
 			}
-		}
-		if(mEstricto == 1 && mOIgual == prob.getNumObjetivos()) {
+			if(mEstricto == 1 && mOIgual == prob.getNumObjetivos()) {
+				return true;
+			} else {
+				return false;
+			}
+		}else if(a.isFactible() && !b.isFactible()) {
 			return true;
-		} else {
+		}else if(!a.isFactible() && b.isFactible()) {
 			return false;
+		}else {
+			if(a.getConstraintViolation() < b.getConstraintViolation()) {
+				return true;
+			}
+			else {
+				return false;
+			}
 		}
+		
 	}
 	
 	//Inserta los individuos de cada frente según su ranking.

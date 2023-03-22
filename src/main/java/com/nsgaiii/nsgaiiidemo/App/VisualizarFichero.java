@@ -72,7 +72,7 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 	    for (int i = 0; i < indSimplex.size(); i++) {
 	    	
 	    	
-		      x = indSimplex.get(i).getObjetivos().get(0).floatValue();
+		      x = /*indSimplex.get(i).getObjetivos().get(0).floatValue()*/0;
 		      y = indSimplex.get(i).getObjetivos().get(1).floatValue();
 		      z = indSimplex.get(i).getObjetivos().get(2).floatValue();
 		      pointsPareto[i + frenteDePareto.size() + 1] = new Coord3d(x, y, z);
@@ -82,9 +82,9 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 	    for (int i = 0; i < referencePoints.size(); i++) {
 	    	
 	    	
-		      x = referencePoints.get(i).position.get(0).floatValue();
-		      y = referencePoints.get(i).position.get(1).floatValue();
-		      z = /*referencePoints.get(i).position.get(2).floatValue()*/0;
+		      x = /*referencePoints.get(i).position.get(0).floatValue()*/0;
+		      y = referencePoints.get(i).position.get(0).floatValue();
+		      z = referencePoints.get(i).position.get(1).floatValue();
 		      pointsPareto[i + frenteDePareto.size() + 1 + indSimplex.size()] = new Coord3d(x, y, z);
 		      colorsPareto[i + frenteDePareto.size() + 1 + indSimplex.size()] = Color.GREEN;
 		}

@@ -42,8 +42,41 @@ public class OperadorSeleccion {
 	}
 	
 	
-	public void seleccionPorTorneo() {
+	public void seleccionPorTorneoNSGAIII(Poblacion p) {
+		ArrayList<Individuo> padres = new ArrayList<>(2);
+		for(int i = 0; i < 2; i++) {
+			int rand1 = Utils.getRandNumber(0, p.getNumIndividuos());
+			int rand2 = Utils.getRandNumber(0, p.getNumIndividuos());
+			while(rand1 == rand2) {
+				rand2 = Utils.getRandNumber(0, p.getNumIndividuos());
+			}
+			if(!p.getPoblacion().get(rand1).isFactible() && !p.getPoblacion().get(rand2).isFactible()) {
+				if(p.getPoblacion().get(rand1).getConstraintViolation() < p.getPoblacion().get(rand2).getConstraintViolation()) {
+					padres.add(p.getPoblacion().get(rand1));
+				} else if(p.getPoblacion().get(rand1).getConstraintViolation() > p.getPoblacion().get(rand2).getConstraintViolation()) {
+					padres.add(p.getPoblacion().get(rand2));
+				}else {
+					if(Utils.getRandBinNumber() == 0.0) {
+						padres.add(p.getPoblacion().get(rand1));
+					}else {
+						padres.add(p.getPoblacion().get(rand2));
+					}
+				}
+			}else if(p.getPoblacion().get(rand1).isFactible() && !p.getPoblacion().get(rand2).isFactible()) {
+				padres.add(p.getPoblacion().get(rand1));
+			}else if(!p.getPoblacion().get(rand1).isFactible() && p.getPoblacion().get(rand2).isFactible()){
+				padres.add(p.getPoblacion().get(rand2));
+			}else{
+				if(Utils.getRandBinNumber() == 0.0) {
+					padres.add(p.getPoblacion().get(rand1));
+				}else {
+					padres.add(p.getPoblacion().get(rand2));
+				}
+			}
+		}
+		//Elegir 2 individuos y compararlos
 		
+		//Elegir 2 individuos y compararlos
 	}
 	
 }

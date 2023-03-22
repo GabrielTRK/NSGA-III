@@ -252,9 +252,9 @@ public class VuelosExt extends Problema{
 	
 	@Override
 	public Individuo comprobarRestricciones(Individuo ind) {
-		if(ind.getRestricciones().get(0) < 0) {
+		if(ind.getRestricciones().get(0) > 0.5) {
 			ind.setFactible(false);
-			ind.setConstraintViolation(Math.abs(0-ind.getRestricciones().get(0)));
+			ind.setConstraintViolation(Math.abs(0.5 - ind.getRestricciones().get(0)));
 		}
 		return ind;
 	}
