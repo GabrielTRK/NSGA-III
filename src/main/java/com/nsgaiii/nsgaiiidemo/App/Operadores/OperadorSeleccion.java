@@ -42,7 +42,7 @@ public class OperadorSeleccion {
 	}
 	
 	
-	public void seleccionPorTorneoNSGAIII(Poblacion p) {
+	public ArrayList<Individuo> seleccionPorTorneoNSGAIII(Poblacion p) {
 		ArrayList<Individuo> padres = new ArrayList<>(2);
 		for(int i = 0; i < 2; i++) {
 			int rand1 = Utils.getRandNumber(0, p.getNumIndividuos());
@@ -74,9 +74,8 @@ public class OperadorSeleccion {
 				}
 			}
 		}
-		//Elegir 2 individuos y compararlos
 		
-		//Elegir 2 individuos y compararlos
+		return padres;
 	}
 	
 }

@@ -14,6 +14,8 @@ import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
 import com.opencsv.exceptions.CsvException;
 
 public class VuelosExt extends Problema{
+	private Double resInf = 0.2;
+	private Double resSup = 0.5;
 
 	private Map<List<String>, Double> riesgos = new HashMap<>();
 	private Map<List<String>, Integer> conexiones = new HashMap<>();
@@ -252,9 +254,12 @@ public class VuelosExt extends Problema{
 	
 	@Override
 	public Individuo comprobarRestricciones(Individuo ind) {
-		if(ind.getRestricciones().get(0) > 0.5) {
+		if(ind.getRestricciones().get(0) > this.resSup) {
 			ind.setFactible(false);
-			ind.setConstraintViolation(Math.abs(0.5 - ind.getRestricciones().get(0)));
+			ind.setConstraintViolation(Math.abs(this.resSup - ind.getRestricciones().get(0)));
+		}else if(ind.getRestricciones().get(0) < this.resInf){
+			ind.setFactible(false);
+			ind.setConstraintViolation(Math.abs(this.resInf - ind.getRestricciones().get(0)));
 		}
 		return ind;
 	}

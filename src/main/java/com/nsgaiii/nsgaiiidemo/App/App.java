@@ -39,6 +39,7 @@ import com.nsgaiii.nsgaiiidemo.App.Problemas.DTLZ7;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.SubVuelos;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Vuelos;
+import com.nsgaiii.nsgaiiidemo.App.Problemas.VuelosExt;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
 
 
@@ -86,13 +87,13 @@ public class App extends AWTAbstractAnalysis
     	
     	//Declarar problema y pasarselo al algoritmo
     	
-    	Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
+    	/*Problema problema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
-    			conexionesPorAeropuerto);
+    			conexionesPorAeropuerto);*/
     	
     	/*Problema problema = new Vuelos(conexiones.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
@@ -101,22 +102,31 @@ public class App extends AWTAbstractAnalysis
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);*/
     	
+    	/*Problema problema = new VuelosExt(conexiones.size(), riesgos, conexiones, vuelos, 
+    			AeropuertosEspanyoles, AeropuertosOrigen,
+    			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
+    			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
+    			vuelosSalientes, conectividadesAeropuertosOrigen,
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);*/
+    	
+    	Problema problema = new DTLZ1(5, 2);
+    	
     	//Indicar parámetros del problema y algoritmo
-    	int numeroDeIndividuos = 56;
+    	int numeroDeIndividuos = 20;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 1000;
+    	int numeroDeGeneraciones = 100000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
     	double probabilidadDeMutacion = 1.0 / problema.getNumVariables();
     	//double probabilidadDeMutacion = 1.0 / numeroDeVariables;
-    	int divisiones = 9;
+    	int divisiones = 15;
     	//int numeroDeObjetivos = 3;
-    	boolean leerFichero = true;
+    	boolean leerFichero = false;
     	String nombreFichero = "problemaSubVuelos20230315185704.csv";
     	boolean elitismo = true;
-    	int tamañoAux = 1000;
-    	//Problema problema = new DTLZ1(numeroDeVariables, numeroDeObjetivos);
+    	int tamañoAux = 500;
+    	
     	long startTime = System.nanoTime();
     	
         Nsgaiii nsgaiii = new Nsgaiii(numeroDeIndividuos, 
@@ -187,7 +197,7 @@ public class App extends AWTAbstractAnalysis
 		      x = frenteDePareto.get(i).getObjetivos().get(0).floatValue();
 		      //y = Utils.mediaDeValoresObjetivo(frenteDePareto.get(i).getObjetivos().subList(1, 5)).floatValue();
 		      y = frenteDePareto.get(i).getObjetivos().get(1).floatValue();
-		      z = frenteDePareto.get(i).getObjetivos().get(2).floatValue();
+		      z = /*frenteDePareto.get(i).getObjetivos().get(2).floatValue()*/0;
 		      pointsPareto[i] = new Coord3d(x, y, z);
 		      colorsPareto[i] = Color.RED;
 		}

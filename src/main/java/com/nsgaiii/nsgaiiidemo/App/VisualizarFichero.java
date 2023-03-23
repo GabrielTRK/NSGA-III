@@ -34,7 +34,7 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
     	List<Individuo> lista = new ArrayList<>();
     	String nombre = "problemaSubVuelos20230315204651.csv";
     	
-    	String nombreSimplex = "problemaSubVuelosFrente.csv";
+    	String nombreSimplex = "dtlz120230323151118.csv";
     	
     	String nombreSolD = "simplex.csv";
         
@@ -72,9 +72,9 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 	    for (int i = 0; i < indSimplex.size(); i++) {
 	    	
 	    	
-		      x = /*indSimplex.get(i).getObjetivos().get(0).floatValue()*/0;
+		      x = indSimplex.get(i).getObjetivos().get(0).floatValue();
 		      y = indSimplex.get(i).getObjetivos().get(1).floatValue();
-		      z = indSimplex.get(i).getObjetivos().get(2).floatValue();
+		      z = /*indSimplex.get(i).getObjetivos().get(2).floatValue()*/0;
 		      pointsPareto[i + frenteDePareto.size() + 1] = new Coord3d(x, y, z);
 		      colorsPareto[i + frenteDePareto.size() + 1] = Color.BLUE;
 		}
@@ -82,9 +82,9 @@ public class VisualizarFichero extends AWTAbstractAnalysis{
 	    for (int i = 0; i < referencePoints.size(); i++) {
 	    	
 	    	
-		      x = /*referencePoints.get(i).position.get(0).floatValue()*/0;
-		      y = referencePoints.get(i).position.get(0).floatValue();
-		      z = referencePoints.get(i).position.get(1).floatValue();
+		      x = referencePoints.get(i).position.get(0).floatValue();
+		      y = referencePoints.get(i).position.get(1).floatValue();
+		      z = /*referencePoints.get(i).position.get(2).floatValue()*/0;
 		      pointsPareto[i + frenteDePareto.size() + 1 + indSimplex.size()] = new Coord3d(x, y, z);
 		      colorsPareto[i + frenteDePareto.size() + 1 + indSimplex.size()] = Color.GREEN;
 		}

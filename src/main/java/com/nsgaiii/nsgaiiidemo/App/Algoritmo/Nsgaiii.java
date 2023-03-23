@@ -89,21 +89,21 @@ public class Nsgaiii {
 		while (totalHijos.size() < this.poblacion.getNumIndividuos()) {
 			ArrayList<Individuo> nuevosHijos = new ArrayList<>(2);
 			//Seleccion
-			if(this.elitismo && contadorGeneraciones > 0) {
-				nuevosHijos = this.seleccion.seleccionAleatoriaElitista(this.frentesAux);
+			if(this.elitismo/* && contadorGeneraciones > 0*/) {
+				nuevosHijos = this.seleccion.seleccionPorTorneoNSGAIII(this.poblacion);
 			}else {
 				nuevosHijos = this.seleccion.seleccionAleatoria(this.poblacion);
 			}
 			
 			
 			//Cruce
-			nuevosHijos = this.cruce.cruceUniforme(
+			nuevosHijos = this.cruce.SBX(
 					nuevosHijos.get(0),
 					nuevosHijos.get(1),
 					this.problema);
 			//Mutacion
-			nuevosHijos.set(0, this.mutacion.numeroAleatorio(nuevosHijos.get(0), this.problema));
-			nuevosHijos.set(1, this.mutacion.numeroAleatorio(nuevosHijos.get(1), this.problema));
+			nuevosHijos.set(0, this.mutacion.polyMut(nuevosHijos.get(0), this.problema));
+			nuevosHijos.set(1, this.mutacion.polyMut(nuevosHijos.get(1), this.problema));
 			
 			//Añadir hijos e incrementar el contador
 			contadorIndividuos = contadorIndividuos + 2;
@@ -141,8 +141,8 @@ public class Nsgaiii {
 		}
 		if(this.structAux.size() == this.tamañoAux) {
 			this.contIguales++;
-			System.out.println("aaaaa");
 		}
+		System.out.println("Tamaño: " + this.structAux.size());
 		System.out.println("Cuenta: " + this.contIguales);
 	}
 	

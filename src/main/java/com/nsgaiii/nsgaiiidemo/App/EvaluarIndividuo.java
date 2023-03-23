@@ -17,6 +17,7 @@ import com.nsgaiii.nsgaiiidemo.App.Modelo.Poblacion;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.ReferencePoint;
 import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorCruce;
 import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorReemplazo;
+import com.nsgaiii.nsgaiiidemo.App.Operadores.OperadorSeleccion;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.SubVuelos;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Vuelos;
@@ -87,7 +88,7 @@ public class EvaluarIndividuo {
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
     	
     	List<ReferencePoint> referencePoints = new Vector<>();
-    	(new ReferencePoint()).generateReferencePoints(referencePoints, 2, 9);
+    	(new ReferencePoint()).generateReferencePoints(referencePoints, 2, 15);
     	System.out.println(referencePoints);
     	System.out.println(referencePoints.size());
     	
@@ -101,15 +102,21 @@ public class EvaluarIndividuo {
     	pesos2.add(0.6);*/
     	
     	//System.out.println(indPorAeropuerto);
-    	Individuo sol = new Individuo(problemaext.getNumVariables(), problemaext.getNumObjetivos());
+    	//Individuo sol = new Individuo(problemaext.getNumVariables(), problemaext.getNumObjetivos());
     	//System.out.println("Sol: " + sol);
-    	sol = problemaext.inicializarValores(sol);
+    	//sol = problemaext.inicializarValores(sol);
     	//sol = problemaext.inicializarValores(sol);
     	//ind = problema.inicializarValores(ind);
-    	problemaext.evaluate(sol).getVariables();
-    	System.out.println(sol);
-    	System.out.println(sol.isFactible());
-    	System.out.println(sol.getConstraintViolation());
+    	//problemaext.evaluate(sol).getVariables();
+    	//System.out.println(sol);
+    	
+    	Poblacion poblacion = new Poblacion(10, problemaext);
+    	poblacion.generarPoblacionInicial(problemaext, false, null);
+    	System.out.println(poblacion);
+    	//System.out.println(reemplazo.obtenerFrentes(poblacion, problemaext));
+    	OperadorSeleccion seleccion = new OperadorSeleccion();
+    	System.out.println(seleccion.seleccionPorTorneoNSGAIII(poblacion));
+    	
     	
     	//ArrayList<Double> variables = subproblema.traducirIndividuo(sol).getVariables();
     	//System.out.println(variables);
