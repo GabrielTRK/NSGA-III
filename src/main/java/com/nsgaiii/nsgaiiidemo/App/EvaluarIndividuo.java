@@ -46,6 +46,7 @@ public class EvaluarIndividuo {
         Map<String, Set<String>> listaConexionesSalidas = new HashMap<>();
         List<Integer> indPorAeropuerto = new ArrayList<>();
         Map<String, List<List<String>>> conexionesPorAeropuerto = new HashMap<>();
+        List<List<String>> conexionesAMantener = new ArrayList<>();
     	
     	
     	LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);
@@ -60,6 +61,7 @@ public class EvaluarIndividuo {
     	LecturaDeDatos.leerDatosListaConexiones(listaConexionesPorAeropuertoEspanyol, AeropuertosEspanyoles, conexiones);
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
     	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
+    	LecturaDeDatos.leerConexionesAMantener(conexionesAMantener);
     	
     	Problema problema = new Vuelos(conexiones.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
@@ -81,65 +83,16 @@ public class EvaluarIndividuo {
     			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
-    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
+    			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, conexionesAMantener);
     	//System.out.println(riesgos.size());
     	//System.out.println(conexiones.keySet());
     	//System.out.println(AeropuertosEspanyoles);
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
+    	OperadorCruce cruce = new OperadorCruce(1, 0);
     	
-    	List<ReferencePoint> referencePoints = new Vector<>();
-    	(new ReferencePoint()).generateReferencePoints(referencePoints, 2, 15);
-    	System.out.println(referencePoints);
-    	System.out.println(referencePoints.size());
-    	
-    	
-    	/*
-    	List<List<String>> listaConexiones = new ArrayList<>(conexiones.keySet());
-    	List<List<String>> listapasajerosCompanyia = new ArrayList<>(pasajerosCompanyia.keySet());
-    	
-    	List<List<String>> conexionesAEliminar = new ArrayList<>();
-    	
-    	for(int i = 0; i < AeropuertosEspanyoles.size(); i++) {
-    		for(int j = 0; j < listaConexiones.size(); j++) {
-    			if(AeropuertosEspanyoles.get(i).equals(listaConexiones.get(j).get(0))) {
-    				conexionesAEliminar.add(listaConexiones.get(j));
-    			}
-    		}
-    		AeropuertosOrigen.remove(AeropuertosEspanyoles.get(i));
-    		listaConexionesSalidas.remove(AeropuertosEspanyoles.get(i));
-    		conectividadesAeropuertosOrigen.remove(AeropuertosEspanyoles.get(i));
-    	}
-    	
-    	
-    	
-    	for(int i = 0; i < conexionesAEliminar.size(); i++) {
-    		conexiones.remove(conexionesAEliminar.get(i));
-    		
-    		riesgos.remove(conexionesAEliminar.get(i));
-    		pasajeros.remove(conexionesAEliminar.get(i));
-    		dineroMedio.remove(conexionesAEliminar.get(i));
-    		vuelosEntrantesConexion.remove(conexionesAEliminar.get(i));
-    		
-    		vuelos.remove(conexionesAEliminar.get(i));
-    		
-    		for(int j = 0; j < listapasajerosCompanyia.size(); j++) {
-    			List<String> conexion = new ArrayList<>();
-    			conexion.add(listapasajerosCompanyia.get(j).get(0));
-    			conexion.add(listapasajerosCompanyia.get(j).get(1));
-    			if(conexionesAEliminar.get(i).get(0).equals(conexion.get(0)) && conexionesAEliminar.get(i).get(1).equals(conexion.get(1))) {
-    				pasajerosCompanyia.remove(listapasajerosCompanyia.get(j));
-    			}
-    		}
-    		
-    	}
-    	
-    	*/
-    	
-    	Individuo ind = new Individuo(problemaext.getNumVariables(), problemaext.getNumObjetivos());
-    	problemaext.inicializarValores(ind);
-    	problemaext.inicializarValores(ind);
-    	problemaext.evaluate(ind);
-    	System.out.println(ind);
+    	System.out.println(conexionesAMantener);
+    	System.out.println(conexiones);
+    	//cruce.cruceUnPunto(null, null, problemaext);
     	
     	/*ArrayList<Double> pesos = new ArrayList<>();
     	pesos.add(0.1);
@@ -153,13 +106,14 @@ public class EvaluarIndividuo {
     	pesos.remove(pesos2.get(1));*/
     	
     	//System.out.println(indPorAeropuerto);
-    	//Individuo sol = new Individuo(problemaext.getNumVariables(), problemaext.getNumObjetivos());
+    	Individuo sol = new Individuo(problemaext.getNumVariables(), problemaext.getNumObjetivos());
     	//System.out.println("Sol: " + sol);
-    	//sol = problemaext.inicializarValores(sol);
+    	sol = problemaext.inicializarValores(sol);
     	//sol = problemaext.inicializarValores(sol);
     	//ind = problema.inicializarValores(ind);
-    	//problemaext.evaluate(sol).getVariables();
-    	//System.out.println(sol);
+    	problemaext.evaluate(sol);
+    	System.out.println(sol);
+    	System.out.println(sol.getVariables());
     	
     	
     	//ArrayList<Double> variables = subproblema.traducirIndividuo(sol).getVariables();

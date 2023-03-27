@@ -419,5 +419,25 @@ public class LecturaDeDatos {
             //do something with e, or handle this case
         }
 	}
+	
+	public static void leerConexionesAMantener(List<List<String>> conexionesAMantener) {
+		
+		try {
+            Scanner scanner = new Scanner(new File(Constantes.rutaDatos + Constantes.nombreFicheroConexionesAMantener + Constantes.extensionFichero));
+            //Comma as a delimiter
+            scanner.useDelimiter("\n");
+            scanner.next();
+            while (scanner.hasNext()) {
+                String str = scanner.next();
+                String split[] = str.split(",");
+                conexionesAMantener.add(List.of(split[1], split[0]));
+            }
+            // Closing the scanner
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("El path del documento conexiones no está bien especificado");
+            //do something with e, or handle this case
+        }
+	}
 
 }

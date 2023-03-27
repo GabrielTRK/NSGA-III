@@ -1,9 +1,12 @@
 package com.nsgaiii.nsgaiiidemo.App.Operadores;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import com.nsgaiii.nsgaiiidemo.App.Constantes.Constantes;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
+import com.nsgaiii.nsgaiiidemo.App.Problemas.VuelosExt;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
 
 public class OperadorCruce {
@@ -125,6 +128,41 @@ public class OperadorCruce {
 		    
 		}
 		
+		return hijos;
+	}
+	
+	//Cruce binario en un punto
+	public ArrayList<Individuo> cruceUnPunto (Individuo padre1, Individuo padre2, VuelosExt prob){
+		Individuo hijo1 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
+		Individuo hijo2 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
+		ArrayList<Individuo> hijos = new ArrayList<Individuo>(2);
+		hijos.add(padre1);
+		hijos.add(padre2);
+
+		if (Utils.isProbValid(this.probCruce) && Utils.getRandNumber(0.0, Math.nextUp(1.0)) <= this.probCruce) {
+			// 1. Calcular el punto de cruce
+			int crossoverPoint = Utils.getRandNumber(0, prob.getNumVariables() + 1);
+			// 2. Aplicar el cruce sobre las variables que se encuentran antes del punto de
+			// cruce
+			for (int i = 0; i < crossoverPoint; i++) {
+				double swap = padre1.getVariables().get(i);
+				hijo1.setIVariable(i, padre2.getVariables().get(i));
+				hijo2.setIVariable(i, swap);
+			}
+
+			// 3. Aplicar el cruce sobre las variables que se encuentran después del punto
+			// de cruce
+			for (int i = crossoverPoint; i < prob.getNumVariables(); i++) {
+				double swap = padre2.getVariables().get(i);
+				hijo1.setIVariable(i, padre1.getVariables().get(i));
+				hijo2.setIVariable(i, swap);
+			}
+
+			hijos.set(0, hijo1);
+			hijos.set(1, hijo2);
+
+		}
+
 		return hijos;
 	}
 	

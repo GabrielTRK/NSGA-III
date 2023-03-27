@@ -3,6 +3,7 @@ package com.nsgaiii.nsgaiiidemo.App.Problemas;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,6 +36,8 @@ public class VuelosExt extends Problema{
 	private Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol = new HashMap<>();
 	private Map<String, Set<String>> listaConexionesSalidas = new HashMap<>();
 	private int indCont = 0;
+	private List<List<String>> conexionesAMantener = new ArrayList<>();
+	private List<Integer> direccionesAMantener = new ArrayList<>();
 	
 	private List<List<String>> listaConexiones;
 
@@ -45,7 +48,8 @@ public class VuelosExt extends Problema{
 			Map<List<String>, Integer> pasajeros, Map<List<String>, Integer> pasajerosCompanyia, 
 			Map<List<String>, Integer> vuelosEntrantesConexion, Map<String, Integer> vuelosSalientesAEspanya, 
 			Map<String, Integer> vuelosSalientes, Map<String, Double> conectividadesAeropuertosOrigen, 
-			Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol, Map<String, Set<String>> listaConexionesSalidas) {
+			Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol, Map<String, Set<String>> listaConexionesSalidas, 
+			List<List<String>> conexionesAMantener) {
 		super(numVariables, 2);
 		super.setNombre(Constantes.nombreProblemaVuelosExt);
 		
@@ -87,6 +91,8 @@ public class VuelosExt extends Problema{
     		}
     		
     	}
+    	
+    	
 		
 		this.riesgos = riesgos;
 		this.conexiones = conexiones;
@@ -103,9 +109,12 @@ public class VuelosExt extends Problema{
 		this.conectividadesAeropuertosOrigen = conectividadesAeropuertosOrigen;
 		this.listaConexionesPorAeropuertoEspanyol = listaConexionesPorAeropuertoEspanyol;
 		this.listaConexionesSalidas = listaConexionesSalidas;
-		
+		this.conexionesAMantener = conexionesAMantener;
 		this.listaConexiones = new ArrayList<>(conexiones.keySet());
-		super.setNumVariables(conexiones.size());
+		this.calcularDireccionesAMantener();
+		super.setNumVariables(conexiones.size() - direccionesAMantener.size());
+		
+		
 	}
 	
 	/*Calcular valores de funcion objetivo. 6 objetivos en total
@@ -122,6 +131,14 @@ public class VuelosExt extends Problema{
 		
 		ArrayList<Double> objetivos = new ArrayList<>(super.getNumObjetivos());
 		ArrayList<Double> restricciones = new ArrayList<>(super.getNumObjetivos());
+		
+		ArrayList<Double> aux = solution.getVariables();
+		
+		for(int i = 0; i < direccionesAMantener.size(); i++) {
+			aux.add(direccionesAMantener.get(i), 1.0);
+		}
+		
+		solution.setVariables(aux);
 		
 		ArrayList<Double> riesgoPasajerosIngresos = calcularRiesgoPasajerosIngresosHPasajerosHIngresos(solution);
 		
@@ -143,6 +160,14 @@ public class VuelosExt extends Problema{
 		objetivos.add(1, calculoConectividad(solution));
 		
 		solution.setObjetivos(objetivos);
+		
+		int cont = 0;
+		for(int i = 0; i < direccionesAMantener.size(); i++) {
+			aux.remove((int)direccionesAMantener.get(i) - cont);
+			cont++;
+		}
+		solution.setVariables(aux);
+		
 		return solution;
 	}
 	
@@ -460,6 +485,13 @@ public class VuelosExt extends Problema{
         }
         return solucion;
     }
+	
+	private void calcularDireccionesAMantener() {
+		for(int i = 0; i < conexionesAMantener.size(); i++) {
+			direccionesAMantener.add(Utils.encontrarIndiceEnLista(listaConexiones, conexionesAMantener.get(i)));
+		}
+		Collections.sort(direccionesAMantener);
+	}
 
 	public int getIndCont() {
 		return indCont;
@@ -491,6 +523,14 @@ public class VuelosExt extends Problema{
 
 	public void setListaConexiones(List<List<String>> listaConexiones) {
 		this.listaConexiones = listaConexiones;
+	}
+
+	public List<Integer> getDireccionesAMantener() {
+		return direccionesAMantener;
+	}
+
+	public void setDireccionesAMantener(List<Integer> direccionesAMantener) {
+		this.direccionesAMantener = direccionesAMantener;
 	}
 
 }

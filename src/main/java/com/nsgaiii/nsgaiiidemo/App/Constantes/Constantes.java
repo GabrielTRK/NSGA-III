@@ -25,4 +25,5 @@ public class Constantes {
     public static final String nombreFicheroPasajerosPorVuelo = "pasajeros_por_vuelo";
     public static final String nombreFicheroPasajerosCompanyia = "pasajeros_por_vuelo_y_companyias";
     public static final String nombreFicheroPasajerosConectividad = "conectividad_por_aeropuerto";
+    public static final String nombreFicheroConexionesAMantener = "conexiones_A_Mantener";
 }
