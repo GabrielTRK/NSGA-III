@@ -111,10 +111,11 @@ public class EvaluarIndividuo {
     	sol = problemaext.inicializarValores(sol);
     	//sol = problemaext.inicializarValores(sol);
     	//ind = problema.inicializarValores(ind);
-    	problemaext.evaluate(sol);
-    	System.out.println(sol);
-    	System.out.println(sol.getVariables());
-    	
+    	//problemaext.evaluate(sol);
+    	//System.out.println(sol);
+    	System.out.println(sol.getVariables().size());
+    	System.out.println(problemaext.getNumVariables());
+    	System.out.println(conexiones.size());
     	
     	//ArrayList<Double> variables = subproblema.traducirIndividuo(sol).getVariables();
     	//System.out.println(variables);

@@ -92,7 +92,6 @@ public class VuelosExt extends Problema{
     		
     	}
     	
-    	
 		
 		this.riesgos = riesgos;
 		this.conexiones = conexiones;
