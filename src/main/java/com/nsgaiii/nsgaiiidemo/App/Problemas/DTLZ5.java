@@ -1,6 +1,7 @@
 package com.nsgaiii.nsgaiiidemo.App.Problemas;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.nsgaiii.nsgaiiidemo.App.Constantes.Constantes;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
@@ -14,8 +15,8 @@ public class DTLZ5 extends Problema{
 		super(numberOfVariables, numberOfObjectives);
 		
 
-		ArrayList<Double> lowerLimit = new ArrayList<Double>(super.getNumVariables());
-		ArrayList<Double> upperLimit = new ArrayList<Double>(super.getNumVariables());
+		List<Double> lowerLimit = new ArrayList<Double>(super.getNumVariables());
+		List<Double> upperLimit = new ArrayList<Double>(super.getNumVariables());
 
 		for (int i = 0; i < super.getNumVariables(); i++) {
 			lowerLimit.add(i, 0.0);
@@ -76,7 +77,7 @@ public class DTLZ5 extends Problema{
 	//Inicializar de forma aleatoria los valores de las variables según los límites
 	@Override
 	public Individuo inicializarValores(Individuo ind) {
-		ArrayList<Double> valores = new ArrayList<>(super.getNumVariables());
+		List<Double> valores = new ArrayList<>(super.getNumVariables());
 		for(int i = 0; i < super.getNumVariables(); i++) {
 			valores.add(i, Utils.getRandNumber(super.getLimitesInferiores().get(i),
 			super.getLimitesSuperiores().get(i)));

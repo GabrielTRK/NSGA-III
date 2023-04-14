@@ -109,18 +109,18 @@ public class App extends AWTAbstractAnalysis
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);*/
     	
-    	Problema problema = new DTLZ1(5, 2);
+    	Problema problema = new DTLZ1(5, 3);
     	
     	//Indicar parámetros del problema y algoritmo
-    	int numeroDeIndividuos = 20;
+    	int numeroDeIndividuos = 48;
     	//int numeroDeVariables = 7;
-    	int numeroDeGeneraciones = 100000;
+    	int numeroDeGeneraciones = 15000;
     	double indiceDeDistribucionM = 20.0;
     	double indiceDeDistribucionC = 30.0;
     	double probabilidadDeCruce = 1.0;
     	double probabilidadDeMutacion = 1.0 / problema.getNumVariables();
     	//double probabilidadDeMutacion = 1.0 / numeroDeVariables;
-    	int divisiones = 15;
+    	int divisiones = 8;
     	//int numeroDeObjetivos = 3;
     	boolean leerFichero = false;
     	String nombreFichero = "problemaSubVuelos20230315185704.csv";

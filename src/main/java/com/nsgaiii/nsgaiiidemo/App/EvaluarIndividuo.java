@@ -90,6 +90,10 @@ public class EvaluarIndividuo {
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
     	OperadorCruce cruce = new OperadorCruce(1, 0);
     	
+    	List<ReferencePoint> referencePoints = new Vector<>();
+    	(new ReferencePoint()).generateReferencePoints(referencePoints, 3, 8);
+    	System.out.println("Num puntos: " + referencePoints.size());
+    	
     	System.out.println(conexionesAMantener);
     	System.out.println(conexiones);
     	//cruce.cruceUnPunto(null, null, problemaext);

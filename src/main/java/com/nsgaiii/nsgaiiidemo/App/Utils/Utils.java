@@ -59,7 +59,7 @@ public class Utils {
 	}
 	
 	public static Poblacion juntarPoblaciones (Poblacion padres, Poblacion hijos, Problema problema) {
-		ArrayList<Individuo> lista = new ArrayList<>(2 * padres.getNumIndividuos());
+		List<Individuo> lista = new ArrayList<>(2 * padres.getNumIndividuos());
 		for (int i = 0; i < padres.getNumIndividuos(); i++) {
 			lista.add(padres.getPoblacion().get(i));
 		}
@@ -84,19 +84,6 @@ public class Utils {
 		return frente;
 	}
 	
-	public static List<Individuo> obtenerFrenteConIndice(ArrayList<Individuo> p, int pos){
-		List<Individuo> frente = new ArrayList<>();
-		frente.add(p.get(pos));
-		pos++;
-		while( pos < p.size()) {
-			if(frente.get(0).getdomina() == p.get(pos).getdomina()) {
-				frente.add(p.get(pos));
-			}
-			pos++;
-		}
-		return frente;
-	}
-	
 	public static List<Individuo> obtenerFrenteConIndice(List<Individuo> p, int pos){
 		List<Individuo> frente = new ArrayList<>();
 		frente.add(p.get(pos));
@@ -111,22 +98,12 @@ public class Utils {
 	}
 	
 	public static Poblacion borrarElementosDeLista(List<Individuo> lista, Poblacion p) {
-		ArrayList<Individuo> poblacionABorrar = p.getPoblacion();
+		List<Individuo> poblacionABorrar = p.getPoblacion();
 		for(int i = 0; i < lista.size(); i++) {
 			Individuo ind = lista.get(i);
 			poblacionABorrar.remove(ind);
 		}
 		p.setPoblacion(poblacionABorrar);
-		return p;
-	}
-	
-	public static ArrayList<Individuo> borrarElementosDeLista(List<Individuo> lista, ArrayList<Individuo> p) {
-		ArrayList<Individuo> poblacionABorrar = p;
-		for(int i = 0; i < lista.size(); i++) {
-			Individuo ind = lista.get(i);
-			poblacionABorrar.remove(ind);
-		}
-		p = poblacionABorrar;
 		return p;
 	}
 	
@@ -140,13 +117,6 @@ public class Utils {
 		return p;
 	}
 	
-	public static ArrayList<Individuo> juntarListas (ArrayList<Individuo> Alista, List<Individuo> frente){
-		for(Individuo i : frente) {
-			Alista.add(i);
-		}
-		return Alista;
-	}
-	
 	public static List<Individuo> juntarListas (List<Individuo> Alista, List<Individuo> frente){
 		for(Individuo i : frente) {
 			Alista.add(i);
@@ -154,8 +124,8 @@ public class Utils {
 		return Alista;
 	}
 	
-	public static ArrayList<Individuo> juntarListass (List<Individuo> Alista, List<Individuo> frente){
-		ArrayList<Individuo> Blista = new ArrayList<>();
+	public static List<Individuo> juntarListass (List<Individuo> Alista, List<Individuo> frente){
+		List<Individuo> Blista = new ArrayList<>();
 		for(Individuo i : Alista) {
 			Blista.add(i);
 		}
@@ -165,8 +135,8 @@ public class Utils {
 		return Blista;
 	}
 	
-	public static ArrayList<Double> inicializarLista (int tamaño){
-		ArrayList<Double> lista = new ArrayList<>();
+	public static List<Double> inicializarLista (int tamaño){
+		List<Double> lista = new ArrayList<>();
 		for (int i = 0; i < tamaño; i++) {
 			lista.add(0.0);
 		}
@@ -178,8 +148,8 @@ public class Utils {
 		return lower + rand.nextInt((upper - lower + 1)) ;
 	}
 	
-	public static ArrayList<Double> ArraytoArrayList(double[] array){
-		ArrayList<Double> list = new ArrayList<>(array.length);
+	public static List<Double> ArraytoArrayList(double[] array){
+		List<Double> list = new ArrayList<>(array.length);
 		for (int i = 0; i < array.length; i++) {
 			list.add(array[i]);
 		}
@@ -192,8 +162,8 @@ public class Utils {
 		}
 	}
 	
-	public static ArrayList<Double> mediaVariables (List<Individuo> frente){
-		ArrayList<Double> medias = new ArrayList<>();
+	public static List<Double> mediaVariables (List<Individuo> frente){
+		List<Double> medias = new ArrayList<>();
 		for(int j = 0; j < frente.get(0).getVariables().size(); j++) {
 			medias.add(0.0);
 		}
@@ -211,8 +181,8 @@ public class Utils {
 		return medias;
 	}
 	
-	public static ArrayList<Double> mediaObjetivos (List<Individuo> frente){
-		ArrayList<Double> medias = new ArrayList<>();
+	public static List<Double> mediaObjetivos (List<Individuo> frente){
+		List<Double> medias = new ArrayList<>();
 		for(int j = 0; j < frente.get(0).getObjetivos().size(); j++) {
 			medias.add(0.0);
 		}
@@ -277,8 +247,8 @@ public class Utils {
 			
 			for(int i = 1; i < r.size(); i++) {
 		    	Individuo ind = new Individuo(numVariables, numObjetivos);
-		    	ArrayList<Double> Var = new ArrayList<>();
-		    	ArrayList<Double> Fobj = new ArrayList<>();
+		    	List<Double> Var = new ArrayList<>();
+		    	List<Double> Fobj = new ArrayList<>();
 		    	for (int k = 0; k < numVariables; k++) {
 		    		Var.add(Double.valueOf(r.get(i)[k]));
 		    	}
@@ -332,14 +302,6 @@ public class Utils {
 		
 	}
 	
-	public static ArrayList<Individuo> pasarAArrayList(List<Individuo> frente){
-		ArrayList<Individuo> Afrente = new ArrayList<Individuo>();
-		for (Individuo i : frente) {
-			Afrente.add(i);
-		}
-		return Afrente;
-	}
-	
 	public static int encontrarIndiceEnLista(List<List<String>> listaConexiones, List<String> origenDestino){
 		int num = 0;
 		int indice = 0;
@@ -368,15 +330,15 @@ public class Utils {
 		return suma / valores.size();
 	}
 	
-	public static ArrayList<Double> copiarValoresDeLista(ArrayList<Double> listaaCopiar){
-		ArrayList<Double> nueva = new ArrayList<>();
+	public static List<Double> copiarValoresDeLista(List<Double> listaaCopiar){
+		List<Double> nueva = new ArrayList<>();
 		for(Double num : listaaCopiar) {
 			nueva.add(num);
 		}
 		return nueva;
 	}
 	
-	public static Double sumaPonderada(Individuo ind, ArrayList<Double> pesos) {
+	public static Double sumaPonderada(Individuo ind, List<Double> pesos) {
 		double sumaP = 0;
 		for(int i = 0; i < ind.getObjetivos().size(); i++) {
 			sumaP = sumaP + ind.getObjetivos().get(i) * pesos.get(i);

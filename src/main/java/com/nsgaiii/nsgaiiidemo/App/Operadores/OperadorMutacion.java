@@ -1,6 +1,6 @@
 package com.nsgaiii.nsgaiiidemo.App.Operadores;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
@@ -23,7 +23,7 @@ public class OperadorMutacion {
 	//Mutación polinómica
 	public Individuo polyMut(Individuo solucion, Problema prob) {
 		double rand, delta1, delta2, mutPow, deltaq, y, yl, yu, val, xy;
-		ArrayList<Double> solucionVal = solucion.getVariables();
+		List<Double> solucionVal = solucion.getVariables();
 		
 		for (int i = 0; i < prob.getNumVariables(); i++) {
 			if (Utils.getRandNumber(0.0, Math.nextUp(1.0)) < this.probMuta) {
@@ -60,7 +60,7 @@ public class OperadorMutacion {
 	
 	//Mutación cambio de bit
 	public Individuo cambioDeBit(Individuo solucion, Problema prob) {
-		ArrayList<Double> solucionVal = solucion.getVariables();
+		List<Double> solucionVal = solucion.getVariables();
 		for (int j = 0; j < prob.getNumVariables(); j++) {
 			if (Utils.getRandNumber(0.0, Math.nextUp(1.0)) < this.probMuta) {
 				if (solucionVal.get(j).equals(0.0)) {
@@ -77,7 +77,7 @@ public class OperadorMutacion {
 	
 	//Mutación cambio de bit
 		public Individuo numeroAleatorio(Individuo solucion, Problema prob) {
-			ArrayList<Double> solucionVal = solucion.getVariables();
+			List<Double> solucionVal = solucion.getVariables();
 			for (int j = 0; j < prob.getNumVariables(); j++) {
 				if (Utils.getRandNumber(0.0, Math.nextUp(1.0)) < this.probMuta) {
 					solucionVal.set(j, 1.0 * Utils.getRandNumber((int)Math.round(prob.getLimitesInferiores().get(j)), 

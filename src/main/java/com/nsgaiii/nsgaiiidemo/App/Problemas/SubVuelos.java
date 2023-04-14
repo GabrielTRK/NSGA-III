@@ -57,7 +57,7 @@ public class SubVuelos extends Vuelos{
 	//Inicializar de forma aleatoria los valores de las variables según los límites
 	@Override
 	public Individuo inicializarValores(Individuo ind) {
-		ArrayList<Double> valores = new ArrayList<>(super.getNumVariables());
+		List<Double> valores = new ArrayList<>(super.getNumVariables());
 		for(int i = 0; i < super.getNumVariables(); i++) {
 			if(super.getIndCont() == 0) {
 				valores.add(i, 1.0);
@@ -74,7 +74,7 @@ public class SubVuelos extends Vuelos{
 	}
 	
 	public Individuo traducirIndividuo(Individuo solucion) throws FileNotFoundException, IOException, CsvException {
-		ArrayList<Double> valores = new ArrayList<>(super.getConexiones().keySet().size());
+		List<Double> valores = new ArrayList<>(super.getConexiones().keySet().size());
 		for(int i = 0; i < super.getConexiones().keySet().size(); i++) {
 			valores.add(0.0);
 		}
@@ -82,7 +82,7 @@ public class SubVuelos extends Vuelos{
 		
 		for (int i = 0; i < super.getNumVariables(); i++) {
 			//Encontrar en el fichero correspondiente los bits
-			ArrayList<Double> valoresAeropuerto = this.encontrarBitsEnFichero(solucion.getVariables().get(i), i);
+			List<Double> valoresAeropuerto = this.encontrarBitsEnFichero(solucion.getVariables().get(i), i);
 			//Buscar la conexion para indicar el 0 o 1
 			for (int j = 0; j < valoresAeropuerto.size(); j++) {
 				List<String> conexion = new ArrayList<>();
@@ -97,7 +97,7 @@ public class SubVuelos extends Vuelos{
 		return indTraducido;
 	}
 	
-	public ArrayList<Double> encontrarBitsEnFichero(double filaFichero, int indiceArrayAeropuertos) throws FileNotFoundException, IOException, CsvException {
+	public List<Double> encontrarBitsEnFichero(double filaFichero, int indiceArrayAeropuertos) throws FileNotFoundException, IOException, CsvException {
 		try (CSVReader reader = new CSVReader(new FileReader(Constantes.rutaDatos_por_aeropuerto + 
 				getAeropuertosEspanyoles().get(indiceArrayAeropuertos) + "\\" + "problemaVuelos"
 				+ getAeropuertosEspanyoles().get(indiceArrayAeropuertos) +
@@ -106,7 +106,7 @@ public class SubVuelos extends Vuelos{
 			
 			int numVariables = Integer.valueOf((r.get(0)[0]));
 			
-		    ArrayList<Double> Var = new ArrayList<>();
+		    List<Double> Var = new ArrayList<>();
 		    for (int k = 0; k < numVariables; k++) {
 		    	
 		    	Var.add(Double.valueOf(r.get((int)filaFichero)[k]));

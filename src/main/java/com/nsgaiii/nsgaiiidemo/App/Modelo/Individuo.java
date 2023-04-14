@@ -1,6 +1,7 @@
 package com.nsgaiii.nsgaiiidemo.App.Modelo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Individuo implements Comparable<Individuo> {
 	/*Cada individuo está compuesto por: 
@@ -10,11 +11,11 @@ public class Individuo implements Comparable<Individuo> {
 		- El número de individuos que dominan al individuo en cuestión
 	*/
 	
-	private ArrayList<Double> variables;
+	private List<Double> variables;
 	private int domina = 0;
-	private ArrayList<Double> objetivos;
-	private ArrayList<Double> objetivosNorm;
-	private ArrayList<Double> restricciones;
+	private List<Double> objetivos;
+	private List<Double> objetivosNorm;
+	private List<Double> restricciones;
 	private boolean factible = true;
 	private Double constraintViolation = 0.0;
 	
@@ -23,11 +24,11 @@ public class Individuo implements Comparable<Individuo> {
 		this.objetivos = new ArrayList<Double>(numObjetivos);
 	}
 
-	public ArrayList<Double> getVariables() {
+	public List<Double> getVariables() {
 		return variables;
 	}
 
-	public void setVariables(ArrayList<Double> variables) {
+	public void setVariables(List<Double> variables) {
 		this.variables = variables;
 	}
 	
@@ -35,11 +36,11 @@ public class Individuo implements Comparable<Individuo> {
 		this.variables.add(posicion, variable);
 	}
 
-	public ArrayList<Double> getObjetivos() {
+	public List<Double> getObjetivos() {
 		return objetivos;
 	}
 
-	public void setObjetivos(ArrayList<Double> objetivos) {
+	public void setObjetivos(List<Double> objetivos) {
 		this.objetivos = objetivos;
 	}
 	
@@ -65,19 +66,19 @@ public class Individuo implements Comparable<Individuo> {
 		this.domina = domina;
 	}
 
-	public ArrayList<Double> getObjetivosNorm() {
+	public List<Double> getObjetivosNorm() {
 		return objetivosNorm;
 	}
 
-	public void setObjetivosNorm(ArrayList<Double> objetivosNorm) {
+	public void setObjetivosNorm(List<Double> objetivosNorm) {
 		this.objetivosNorm = objetivosNorm;
 	}
 
-	public ArrayList<Double> getRestricciones() {
+	public List<Double> getRestricciones() {
 		return restricciones;
 	}
 
-	public void setRestricciones(ArrayList<Double> restricciones) {
+	public void setRestricciones(List<Double> restricciones) {
 		this.restricciones = restricciones;
 	}
 

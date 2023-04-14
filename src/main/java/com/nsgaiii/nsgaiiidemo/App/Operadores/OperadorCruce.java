@@ -26,10 +26,10 @@ public class OperadorCruce {
 	}
 	
 	//Simulated Binary Crossover(SBX)
-	public ArrayList<Individuo> SBX (Individuo padre1, Individuo padre2, Problema prob){
+	public List<Individuo> SBX (Individuo padre1, Individuo padre2, Problema prob){
 		Individuo hijo1 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
 		Individuo hijo2 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
-		ArrayList<Individuo> hijos = new ArrayList<Individuo>(2);
+		List<Individuo> hijos = new ArrayList<Individuo>(2);
 		hijos.add(padre1);
 		hijos.add(padre2);
 		double valorP1, valorP2, y1, y2, min, max, rand, beta, alpha, betaq, c1, c2;
@@ -99,10 +99,10 @@ public class OperadorCruce {
 	}
 	
 	//Cruce binario en un punto
-	public ArrayList<Individuo> cruceUnPunto (Individuo padre1, Individuo padre2, Problema prob){
+	public List<Individuo> cruceUnPunto (Individuo padre1, Individuo padre2, Problema prob){
 		Individuo hijo1 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
 		Individuo hijo2 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
-		ArrayList<Individuo> hijos = new ArrayList<Individuo>(2);
+		List<Individuo> hijos = new ArrayList<Individuo>(2);
 		hijos.add(padre1);
 		hijos.add(padre2);
 		
@@ -132,10 +132,10 @@ public class OperadorCruce {
 	}
 	
 	//Cruce binario en un punto
-	public ArrayList<Individuo> cruceUnPunto (Individuo padre1, Individuo padre2, VuelosExt prob){
+	public List<Individuo> cruceUnPunto (Individuo padre1, Individuo padre2, VuelosExt prob){
 		Individuo hijo1 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
 		Individuo hijo2 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
-		ArrayList<Individuo> hijos = new ArrayList<Individuo>(2);
+		List<Individuo> hijos = new ArrayList<Individuo>(2);
 		hijos.add(padre1);
 		hijos.add(padre2);
 
@@ -167,10 +167,10 @@ public class OperadorCruce {
 	}
 	
 	
-	public ArrayList<Individuo> cruceDosPuntos (Individuo padre1, Individuo padre2, Problema prob){
+	public List<Individuo> cruceDosPuntos (Individuo padre1, Individuo padre2, Problema prob){
 		Individuo hijo1 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
 		Individuo hijo2 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
-		ArrayList<Individuo> hijos = new ArrayList<Individuo>(2);
+		List<Individuo> hijos = new ArrayList<Individuo>(2);
 		hijos.add(padre1);
 		hijos.add(padre2);
 		
@@ -208,13 +208,13 @@ public class OperadorCruce {
 		return hijos;
 	}
 	
-	public ArrayList<Individuo> cruceUniforme (Individuo padre1, Individuo padre2, Problema prob){
+	public List<Individuo> cruceUniforme (Individuo padre1, Individuo padre2, Problema prob){
 		Individuo hijo1 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
 		Individuo hijo2 = new Individuo(prob.getNumVariables(), prob.getNumObjetivos());
-		ArrayList<Individuo> hijos = new ArrayList<Individuo>(2);
+		List<Individuo> hijos = new ArrayList<Individuo>(2);
 		hijos.add(padre1);
 		hijos.add(padre2);
-		ArrayList<Double> mascara = new ArrayList<>(prob.getNumVariables());
+		List<Double> mascara = new ArrayList<>(prob.getNumVariables());
 		for (int i = 0; i< prob.getNumVariables(); i++) {
 			mascara.add(Utils.getRandBinNumber());
 		}

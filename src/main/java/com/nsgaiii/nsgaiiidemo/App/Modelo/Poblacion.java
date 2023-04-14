@@ -3,6 +3,7 @@ package com.nsgaiii.nsgaiiidemo.App.Modelo;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 import com.nsgaiii.nsgaiiidemo.App.Problemas.Problema;
 import com.nsgaiii.nsgaiiidemo.App.Utils.Utils;
@@ -16,7 +17,7 @@ public class Poblacion {
 	 */
 	
 	private int numIndividuos;
-	private ArrayList<Individuo> poblacion;
+	private List<Individuo> poblacion;
 	
 	public Poblacion(int numIndividuos, Problema p) {
 		this.numIndividuos = numIndividuos;
@@ -40,7 +41,7 @@ public class Poblacion {
 		this.numIndividuos = numIndividuos;
 	}
 	
-	public void setIIndividuo(int posicion, ArrayList<Double> valores) {
+	public void setIIndividuo(int posicion, List<Double> valores) {
 		if (!poblacion.isEmpty()) {
 			Individuo individuo = poblacion.get(posicion);
 			individuo.setVariables(valores);
@@ -53,10 +54,10 @@ public class Poblacion {
 			this.obtenerValores(p);
 			this.calcularObjetivos(p);
 		}else {
-			ArrayList<Individuo> poblacionAux = new ArrayList<Individuo>();
-			poblacionAux = Utils.pasarAArrayList(Utils.leerCSV(nombreFichero));
+			List<Individuo> poblacionAux = new ArrayList<Individuo>();
+			poblacionAux = Utils.leerCSV(nombreFichero);
 			if (poblacionAux.size() > this.numIndividuos) {
-				poblacionAux = Utils.pasarAArrayList(poblacionAux.subList(0, this.numIndividuos));
+				poblacionAux = poblacionAux.subList(0, this.numIndividuos);
 			}
 			this.poblacion = poblacionAux;
 			
@@ -100,19 +101,19 @@ public class Poblacion {
 		return contador;
 	}
 	
-	public void añadirALaPoblacion(ArrayList<Individuo> lista) {
+	public void añadirALaPoblacion(List<Individuo> lista) {
 		for (int i = 0; i < lista.size(); i++) {
 			this.poblacion.add(lista.get(i));
 		}
 	}
 	
 	
-	public ArrayList<Individuo> getPoblacion() {
+	public List<Individuo> getPoblacion() {
 		return poblacion;
 	}
 	
 	
-	public void setPoblacion(ArrayList<Individuo> poblacion) {
+	public void setPoblacion(List<Individuo> poblacion) {
 		this.poblacion = poblacion;
 	}
 

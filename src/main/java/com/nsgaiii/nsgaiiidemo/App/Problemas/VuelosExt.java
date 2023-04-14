@@ -128,10 +128,10 @@ public class VuelosExt extends Problema{
 	@Override
 	public Individuo evaluate(Individuo solution) throws FileNotFoundException, IOException, CsvException {
 		
-		ArrayList<Double> objetivos = new ArrayList<>(super.getNumObjetivos());
-		ArrayList<Double> restricciones = new ArrayList<>(super.getNumObjetivos());
+		List<Double> objetivos = new ArrayList<>(super.getNumObjetivos());
+		List<Double> restricciones = new ArrayList<>(super.getNumObjetivos());
 		
-		ArrayList<Double> aux = solution.getVariables();
+		List<Double> aux = solution.getVariables();
 		
 		for(int i = 0; i < direccionesAMantener.size(); i++) {
 			aux.add(direccionesAMantener.get(i), 1.0);
@@ -139,7 +139,7 @@ public class VuelosExt extends Problema{
 		
 		solution.setVariables(aux);
 		
-		ArrayList<Double> riesgoPasajerosIngresos = calcularRiesgoPasajerosIngresosHPasajerosHIngresos(solution);
+		List<Double> riesgoPasajerosIngresos = calcularRiesgoPasajerosIngresosHPasajerosHIngresos(solution);
 		
 		restricciones.add(0, riesgoPasajerosIngresos.get(0));
 		solution.setRestricciones(restricciones);
@@ -173,7 +173,7 @@ public class VuelosExt extends Problema{
 	//Inicializar de forma aleatoria los valores de las variables según los límites
 	@Override
 	public Individuo inicializarValores(Individuo ind) {
-		ArrayList<Double> valores = new ArrayList<>(super.getNumVariables());
+		List<Double> valores = new ArrayList<>(super.getNumVariables());
 		for(int i = 0; i < super.getNumVariables(); i++) {
 			if(this.indCont == 0) {
 				valores.add(i, 0.0);
@@ -189,8 +189,8 @@ public class VuelosExt extends Problema{
 		return ind;
 	}
 	
-	private ArrayList<Double> calcularRiesgoPasajerosIngresosHPasajerosHIngresos(Individuo solucion) {
-		ArrayList<Double> objetivos = new ArrayList<Double>(5);
+	private List<Double> calcularRiesgoPasajerosIngresosHPasajerosHIngresos(Individuo solucion) {
+		List<Double> objetivos = new ArrayList<Double>(5);
 		
 		Double Riesgosumatorio = 0.0;
         Double RiesgosumatorioTotal = 0.0;

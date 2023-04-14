@@ -31,8 +31,8 @@ public class Problema {
 	public Problema(int numVariables, int numObjetivos) {
 		this.numObjetivos = numObjetivos;
 		this.numVariables = numVariables;
-		ArrayList<Double> linf = new ArrayList<>(this.numVariables);
-		ArrayList<Double> lsup = new ArrayList<>(this.numVariables);
+		List<Double> linf = new ArrayList<>(this.numVariables);
+		List<Double> lsup = new ArrayList<>(this.numVariables);
 		for(int i = 0; i < this.numVariables; i++) {
 			lsup.add(i, Utils.getRandNumber(1.0, 10.0));
 			linf.add(i, Utils.getRandNumber(0.0, lsup.get(i)));
@@ -54,7 +54,7 @@ public class Problema {
 		MinOMax = minOMax;
 	}
 
-	public void setLimites(ArrayList<Double> inferiores, ArrayList<Double> superiores) {
+	public void setLimites(List<Double> inferiores, List<Double> superiores) {
 		this.limitesInferiores = inferiores;
 		this.limitesSuperiores = superiores;
 	}
@@ -102,7 +102,7 @@ public class Problema {
 
 	//Metodo por defecto de cálculo de objetivos
 	public Individuo evaluate(Individuo solution) throws FileNotFoundException, IOException, CsvException {
-		ArrayList<Double> objetivos = new ArrayList<>(this.numObjetivos);
+		List<Double> objetivos = new ArrayList<>(this.numObjetivos);
 		
 		for (int i = 0; i < this.numObjetivos; i++) {
 			objetivos.add(i, Utils.getRandNumber(0.0, 10.0));
@@ -113,7 +113,7 @@ public class Problema {
 	
 	//Metodo por defecto de inicialización de variables
 	public Individuo inicializarValores(Individuo ind) {
-		ArrayList<Double> variables = new ArrayList<>(this.numVariables);
+		List<Double> variables = new ArrayList<>(this.numVariables);
 		
 		for (int i = 0; i < this.numVariables; i++) {
 			variables.add(i, Utils.getRandNumber(this.limitesInferiores.get(i),

@@ -82,12 +82,12 @@ public class Nsgaiii {
 	
 	private Poblacion generarDescendientes(int contadorGeneraciones) throws FileNotFoundException, IOException, CsvException {
 		Poblacion poblacionHijos = new Poblacion(this.poblacion.getNumIndividuos(), this.problema);
-		ArrayList<Individuo> totalHijos = new ArrayList<Individuo>(this.poblacion.getNumIndividuos());
+		List<Individuo> totalHijos = new ArrayList<Individuo>(this.poblacion.getNumIndividuos());
 		
 		int contadorIndividuos = 0;
 		
 		while (totalHijos.size() < this.poblacion.getNumIndividuos()) {
-			ArrayList<Individuo> nuevosHijos = new ArrayList<>(2);
+			List<Individuo> nuevosHijos = new ArrayList<>(2);
 			//Seleccion
 			if(this.elitismo/* && contadorGeneraciones > 0*/) {
 				nuevosHijos = this.seleccion.seleccionPorTorneoNSGAIII(this.poblacion);

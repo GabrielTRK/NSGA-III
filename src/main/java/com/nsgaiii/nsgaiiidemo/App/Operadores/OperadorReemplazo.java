@@ -39,21 +39,6 @@ public class OperadorReemplazo {
 		return this.frentesDePareto;
 	}
 	
-	public List<List<Individuo>> obtenerFrentes(ArrayList<Individuo> total, Problema prob){
-		
-		List<List<Individuo>> frentesDePareto = new ArrayList<>();
-		
-		this.rankingNoDominancia(total, prob);
-		while(total.size() != 0) {
-			List<Individuo> frenteTemp = Utils.obtenerFrenteConIndice(total, 0);
-			total = Utils.borrarElementosDeLista(frenteTemp, total);
-			frentesDePareto.add(frenteTemp);
-			this.rankingNoDominancia(total, prob);
-		}
-		this.frentesDePareto = frentesDePareto;
-		return this.frentesDePareto;
-	}
-	
 	public List<List<Individuo>> obtenerFrentes(List<Individuo> total, Problema prob){
 		
 		List<List<Individuo>> frentesDePareto = new ArrayList<>();
@@ -70,16 +55,6 @@ public class OperadorReemplazo {
 	}
 	
 	public List<Individuo> obtenerPrimerFrente(Poblacion total, Problema prob){
-		
-		List<Individuo> frenteDePareto = new ArrayList<>();
-		
-		this.rankingNoDominanciaNuevo(total, prob);
-		frenteDePareto = Utils.obtenerFrenteConIndice(total, 0);
-		
-		return frenteDePareto;
-	}
-	
-	public List<Individuo> obtenerPrimerFrente(ArrayList<Individuo> total, Problema prob){
 		
 		List<Individuo> frenteDePareto = new ArrayList<>();
 		
@@ -114,29 +89,9 @@ public class OperadorReemplazo {
 			}
 			a.setdomina(domina);
 		}
-		ArrayList<Individuo> listaOrden = p.getPoblacion();
+		List<Individuo> listaOrden = p.getPoblacion();
 		Collections.sort(listaOrden);
 		p.setPoblacion(listaOrden);
-		return p;
-	}
-	
-	public ArrayList<Individuo> rankingNoDominancia(ArrayList<Individuo> p, Problema prob) {
-		for (int i = 0; i < p.size(); i++) {
-			int domina = 0;
-			Individuo a = p.get(i);
-			for (int j = 0; j < p.size(); j++) {
-				if (i != j) {
-					Individuo b = p.get(j);
-					if(esDominante(b, a, prob)) {
-						domina++;
-					}
-				}
-			}
-			a.setdomina(domina);
-		}
-		ArrayList<Individuo> listaOrden = p;
-		Collections.sort(listaOrden);
-		p = listaOrden;
 		return p;
 	}
 	
@@ -176,31 +131,9 @@ public class OperadorReemplazo {
 			}
 			a.setdomina(domina);
 		}
-		ArrayList<Individuo> listaOrden = p.getPoblacion();
+		List<Individuo> listaOrden = p.getPoblacion();
 		Collections.sort(listaOrden);
 		p.setPoblacion(listaOrden);
-		return p;
-	}
-	
-	public List<Individuo> rankingNoDominanciaNuevo(ArrayList<Individuo> p, Problema prob) {
-		for (int i = 0; i < p.size(); i++) {
-			int domina = 0;
-			Individuo a = p.get(i);
-			int j = 0;
-			while (domina == 0 && j < p.size()) {
-				if (i != j) {
-					Individuo b = p.get(j);
-					if(esDominante(b, a, prob)) {
-						domina++;
-					}
-				}
-				j++;
-			}
-			a.setdomina(domina);
-		}
-		ArrayList<Individuo> listaOrden = p;
-		Collections.sort(listaOrden);
-		p = listaOrden;
 		return p;
 	}
 	
@@ -273,7 +206,7 @@ public class OperadorReemplazo {
 	public Poblacion rellenarPoblacionConFrentes (Poblacion p, 
 			Poblacion total, Problema prob) {
 		
-		ArrayList<Individuo> nuevaLista = new ArrayList<>(p.getNumIndividuos());
+		List<Individuo> nuevaLista = new ArrayList<>(p.getNumIndividuos());
 		for (int i = 0; i < this.frentesDePareto.size(); i++) {
 			if(nuevaLista.size() + this.frentesDePareto.get(i).size() <= p.getNumIndividuos()) {
 				Utils.juntarListas(nuevaLista, this.frentesDePareto.get(i));
@@ -282,7 +215,7 @@ public class OperadorReemplazo {
 					this.frentesDePareto = this.frentesDePareto.subList(0, i + 1);
 					this.solutionsToSelect = p.getNumIndividuos() - nuevaLista.size();
 					//Metodo del hiperplano
-					ArrayList<Individuo> ultimosMiembros = dasDennis(prob);
+					List<Individuo> ultimosMiembros = dasDennis(prob);
 					Utils.juntarListas(nuevaLista, ultimosMiembros);
 				}
 				p.setPoblacion(nuevaLista);
@@ -293,7 +226,7 @@ public class OperadorReemplazo {
 		return p;
 	}
 	
-	private ArrayList<Individuo> dasDennis(Problema prob){
+	private List<Individuo> dasDennis(Problema prob){
 		//Restarle a cada individuo los valores del punto ideal
 		List<Double> punto_ideal = traducirObjetivos(prob);
 		//Calcular los puntos extremos con el Achivement Scalarization Function de cada individuo del primer frente
@@ -312,10 +245,10 @@ public class OperadorReemplazo {
 	    }
 	    
 	    
-	    ArrayList<Individuo> result = new ArrayList<>();
+	    List<Individuo> result = new ArrayList<>();
 
 	    while (result.size() < this.solutionsToSelect) {
-	    	final ArrayList<ReferencePoint> first = this.referencePointsTree.firstEntry().getValue();
+	    	final List<ReferencePoint> first = this.referencePointsTree.firstEntry().getValue();
 	    	final int min_rp_index = 1 == first.size() ? 0 : Utils.nextInt(0, first.size() - 1);
 	    	final ReferencePoint min_rp = first.remove(min_rp_index);
 	    	if (first.isEmpty()) this.referencePointsTree.pollFirstEntry();
@@ -331,7 +264,7 @@ public class OperadorReemplazo {
 	}
 	
 	private List<Double> traducirObjetivos(Problema prob){
-		ArrayList<Double> punto_ideal;
+		List<Double> punto_ideal;
 		punto_ideal = new ArrayList<>(prob.getNumObjetivos());
 		
 		//Obtener punto ideal
@@ -352,7 +285,7 @@ public class OperadorReemplazo {
 		//Restarle el punto ideal a cada valor de funcion objetivo
 		for (List<Individuo> list : this.frentesDePareto) {
 		    	for (Individuo i : list) {
-		    		ArrayList<Double> o = i.getObjetivosNorm();
+		    		List<Double> o = i.getObjetivosNorm();
 		    		for (int f = 0; f < prob.getNumObjetivos(); f += 1) {
 		    			o.set(f, i.getObjetivos().get(f) - punto_ideal.get(f));
 		        }
@@ -513,7 +446,7 @@ public class OperadorReemplazo {
 		return Math.sqrt(d);
 	}
 	
-	private TreeMap<Integer, ArrayList<ReferencePoint>> referencePointsTree = new TreeMap<>();
+	private TreeMap<Integer, List<ReferencePoint>> referencePointsTree = new TreeMap<>();
 	
 	private void addToTree(ReferencePoint rp) {
 		int key = rp.MemberSize();
