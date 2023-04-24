@@ -47,7 +47,12 @@ public class EvaluarIndividuo {
         List<Integer> indPorAeropuerto = new ArrayList<>();
         Map<String, List<List<String>>> conexionesPorAeropuerto = new HashMap<>();
         List<List<String>> conexionesAMantener = new ArrayList<>();
-    	
+        
+        List<List<String>> conexiones2 = new ArrayList<>();
+        List<Double> riesgos2 = new ArrayList<>();
+        List<Integer> vuelos2 = new ArrayList<>();
+        List<Double> dineroMedio2 = new ArrayList<>();
+        List<Integer> pasajeros2 = new ArrayList<>();
     	
     	LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);
     	LecturaDeDatos.leerDatosAeropuertosEspanyoles(AeropuertosEspanyoles);
@@ -62,6 +67,10 @@ public class EvaluarIndividuo {
     	LecturaDeDatos.leerDatosListaConexionesSalidas(listaConexionesSalidas, AeropuertosOrigen, conexiones);
     	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
     	LecturaDeDatos.leerConexionesAMantener(conexionesAMantener);
+    	
+    	LecturaDeDatos.leerDatosNuevo(conexiones2, riesgos2, vuelos2);
+    	LecturaDeDatos.leerDatosDineroMedioNuevo(conexiones2, dineroMedio2);
+    	LecturaDeDatos.leerDatosPasajerosNuevo(conexiones2, pasajeros2);
     	
     	Problema problema = new Vuelos(conexiones.size(), riesgos, conexiones, vuelos, 
     			AeropuertosEspanyoles, AeropuertosOrigen,
@@ -90,24 +99,14 @@ public class EvaluarIndividuo {
     	OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
     	OperadorCruce cruce = new OperadorCruce(1, 0);
     	
-    	List<ReferencePoint> referencePoints = new Vector<>();
+    	/*List<ReferencePoint> referencePoints = new Vector<>();
     	(new ReferencePoint()).generateReferencePoints(referencePoints, 3, 8);
-    	System.out.println("Num puntos: " + referencePoints.size());
+    	System.out.println("Num puntos: " + referencePoints.size());*/
     	
-    	System.out.println(conexionesAMantener);
-    	System.out.println(conexiones);
-    	//cruce.cruceUnPunto(null, null, problemaext);
+    	System.out.println(pasajeros2);
+    	System.out.println(pasajeros2.size());
+    	System.out.println();
     	
-    	/*ArrayList<Double> pesos = new ArrayList<>();
-    	pesos.add(0.1);
-    	pesos.add(0.3);
-    	pesos.add(0.6);
-    	ArrayList<Double> pesos2 = new ArrayList<>();
-    	pesos2.add(0.1);
-    	pesos2.add(0.3);
-    	pesos2.add(0.6);
-    	System.out.println(pesos);
-    	pesos.remove(pesos2.get(1));*/
     	
     	//System.out.println(indPorAeropuerto);
     	Individuo sol = new Individuo(problemaext.getNumVariables(), problemaext.getNumObjetivos());

@@ -70,19 +70,20 @@ public class LecturaDeDatos {
                 	int posicion = 0;
                 	int indice = 0;
                 	while(!encontrado && indice < conexiones.size()) {
-                		if(conexiones.get(posicion).equals(List.of(split[2], split[1]))) {
+                		if(conexiones.get(indice).equals(List.of(split[2], split[1]))) {
                 			encontrado = true;
                 			posicion = indice;
                 		}
-                		posicion++;
+                		indice++;
                 	}
+                	
                 	if (posicion < riesgos.size()) {
-                    	riesgos.add(posicion, Double.parseDouble(split[0]) + riesgos.get(posicion));
+                    	riesgos.set(posicion, Double.parseDouble(split[0]) + riesgos.get(posicion));
                     } else {
                     	riesgos.add(posicion, Double.parseDouble(split[0]) + 0);
                     }
                     if (posicion < vuelos.size()) {
-                    	vuelos.add(posicion, vuelos.get(posicion) + 1);
+                    	vuelos.set(posicion, vuelos.get(posicion) + 1);
                     } else {
                     	vuelos.add(posicion, 1);
                     }
@@ -193,14 +194,14 @@ public class LecturaDeDatos {
                 	int posicion = 0;
                 	int indice = 0;
                 	while(!encontrado && indice < conexiones.size()) {
-                		if(conexiones.get(posicion).equals(List.of(split[2], split[1]))) {
+                		if(conexiones.get(indice).equals(List.of(split[2], split[1]))) {
                 			encontrado = true;
                 			posicion = indice;
                 		}
-                		posicion++;
+                		indice++;
                 	}
                 	if (posicion < dineroMedio.size()) {
-                		dineroMedio.add(posicion, dineroMedio.get(posicion) +
+                		dineroMedio.set(posicion, dineroMedio.get(posicion) +
                             Double.parseDouble(split[0]));
                 	} else {
                 		dineroMedio.add(posicion, Double.parseDouble(split[0]) + 0);
@@ -252,14 +253,14 @@ public class LecturaDeDatos {
                 	int posicion = 0;
                 	int indice = 0;
                 	while(!encontrado && indice < conexiones.size()) {
-                		if(conexiones.get(posicion).equals(List.of(split[2], split[1]))) {
+                		if(conexiones.get(indice).equals(List.of(split[2], split[1]))) {
                 			encontrado = true;
                 			posicion = indice;
                 		}
-                		posicion++;
+                		indice++;
                 	}
                 	if (posicion < pasajeros.size()) {
-                		pasajeros.add(posicion, pasajeros.get(posicion) + (int) Double.parseDouble(split[0]));
+                		pasajeros.set(posicion, pasajeros.get(posicion) + (int) Double.parseDouble(split[0]));
                 	} else {
                 		pasajeros.add(posicion, (int) Double.parseDouble(split[0]) + 0);
                 	}
