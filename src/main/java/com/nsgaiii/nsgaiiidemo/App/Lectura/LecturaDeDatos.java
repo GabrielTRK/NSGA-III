@@ -299,6 +299,8 @@ public class LecturaDeDatos {
         }
 	}
 	
+	//No hace falta crear un método nuevo para PasajerosCompanyia
+	
 	public static void leerDatosConectividad(Map<List<String>, Integer> vuelosEntrantesConexion, 
 			Map<String, Integer> vuelosSalientesAEspanya, Map<String, Integer> vuelosSalientes,
 			Map<String, Double> conectividadesAeropuertosOrigen, Map<List<String>, Integer> conexiones, 

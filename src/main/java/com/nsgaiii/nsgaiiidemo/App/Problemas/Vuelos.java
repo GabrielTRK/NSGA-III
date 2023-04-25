@@ -325,11 +325,12 @@ public class Vuelos extends Problema{
         
         for (i = 0; i < porcentajePerdido.size(); i++) {
             porcentajePerdidoDesviacionMedia = porcentajePerdidoDesviacionMedia +
-                    Math.pow(Math.abs(porcentajePerdido.get(i) - porcentajePerdidoMedia),2);
+                    //Math.pow(Math.abs(porcentajePerdido.get(i) - porcentajePerdidoMedia),2);
+            		Math.abs(porcentajePerdido.get(i) - porcentajePerdidoMedia);
         }
         porcentajePerdidoDesviacionMedia = porcentajePerdidoDesviacionMedia / porcentajePerdido.size();
-        porcentajePerdidoDesviacionMedia = Math.sqrt(porcentajePerdidoDesviacionMedia);
-        System.out.println(porcentajePerdidoDesviacionMedia);
+        //porcentajePerdidoDesviacionMedia = Math.sqrt(porcentajePerdidoDesviacionMedia);
+        //System.out.println(porcentajePerdidoDesviacionMedia);
         return porcentajePerdidoDesviacionMedia;
 
     }
@@ -371,11 +372,12 @@ public class Vuelos extends Problema{
         
         for (i = 0; i < porcentajePerdido.size(); i++) {
             porcentajePerdidoDesviacionMedia = porcentajePerdidoDesviacionMedia +
-                    Math.pow(Math.abs(porcentajePerdido.get(i) - mediaPorcentajeVuelosPerdidos),2);
+                    //Math.pow(Math.abs(porcentajePerdido.get(i) - mediaPorcentajeVuelosPerdidos),2);
+            		Math.abs(porcentajePerdido.get(i) - mediaPorcentajeVuelosPerdidos);
         }
         porcentajePerdidoDesviacionMedia = porcentajePerdidoDesviacionMedia / porcentajePerdido.size();
-        porcentajePerdidoDesviacionMedia = Math.sqrt(porcentajePerdidoDesviacionMedia);
-        System.out.println(porcentajePerdidoDesviacionMedia);
+        //porcentajePerdidoDesviacionMedia = Math.sqrt(porcentajePerdidoDesviacionMedia);
+        //System.out.println(porcentajePerdidoDesviacionMedia);
         return porcentajePerdidoDesviacionMedia;
     }
 	

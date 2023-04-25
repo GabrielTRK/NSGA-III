@@ -103,8 +103,8 @@ public class EvaluarIndividuo {
     	(new ReferencePoint()).generateReferencePoints(referencePoints, 3, 8);
     	System.out.println("Num puntos: " + referencePoints.size());*/
     	
-    	System.out.println(pasajeros2);
-    	System.out.println(pasajeros2.size());
+    	System.out.println(conexiones2);
+    	System.out.println(conexiones2.size());
     	System.out.println();
     	
     	
