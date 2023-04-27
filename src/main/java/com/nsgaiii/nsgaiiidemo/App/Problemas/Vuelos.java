@@ -15,16 +15,9 @@ import com.opencsv.exceptions.CsvException;
 
 public class Vuelos extends Problema{
 
-	private Map<List<String>, Double> riesgos = new HashMap<>();
-	private Map<List<String>, Integer> conexiones = new HashMap<>();
-	private Map<List<String>, Integer> vuelos = new HashMap<>();
-	
-
 	private List<String> AeropuertosEspanyoles = new ArrayList<>();
 	private List<String> AeropuertosOrigen = new ArrayList<>();
 	private List<String> companyias = new ArrayList<>();
-	private Map<List<String>, Double> dineroMedio = new HashMap<>();
-	private Map<List<String>, Integer> pasajeros = new HashMap<>();
 	private Map<List<String>, Integer> pasajerosCompanyia = new HashMap<>();
 	private Map<List<String>, Integer> vuelosEntrantesConexion = new HashMap<>();
 	private Map<String, Integer> vuelosSalientesAEspanya = new HashMap<>();
@@ -35,26 +28,23 @@ public class Vuelos extends Problema{
 	private int indCont = 0;
 	
 	private List<List<String>> listaConexiones;
+	private List<List<String>> conexiones = new ArrayList<>();
+    private List<Double> riesgos = new ArrayList<>();
+    private List<Double> dineroMedio = new ArrayList<>();
+    private List<Integer> pasajeros = new ArrayList<>();
 
-	public Vuelos(int numVariables, Map<List<String>, Double> riesgos,
-			Map<List<String>, Integer> conexiones, Map<List<String>, Integer> vuelos, 
-			List<String> AeropuertosEspanyoles, List<String> AeropuertosOrigen, 
-			List<String> companyias, Map<List<String>, Double> dineroMedio, 
-			Map<List<String>, Integer> pasajeros, Map<List<String>, Integer> pasajerosCompanyia, 
+	public Vuelos(int numVariables, List<String> AeropuertosEspanyoles, List<String> AeropuertosOrigen, 
+			List<String> companyias, Map<List<String>, Integer> pasajerosCompanyia, 
 			Map<List<String>, Integer> vuelosEntrantesConexion, Map<String, Integer> vuelosSalientesAEspanya, 
 			Map<String, Integer> vuelosSalientes, Map<String, Double> conectividadesAeropuertosOrigen, 
-			Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol, Map<String, Set<String>> listaConexionesSalidas) {
+			Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol, Map<String, Set<String>> listaConexionesSalidas, 
+			List<List<String>> conexiones, List<Double> riesgos, List<Double> dineroMedio, List<Integer> pasajeros) {
 		super(numVariables, 3);
 		
 		super.setNombre(Constantes.nombreProblemaVuelos);
-		this.riesgos = riesgos;
-		this.conexiones = conexiones;
-		this.vuelos = vuelos;
 		this.AeropuertosEspanyoles = AeropuertosEspanyoles;
 		this.AeropuertosOrigen = AeropuertosOrigen;
 		this.companyias = companyias;
-		this.dineroMedio = dineroMedio;
-		this.pasajeros = pasajeros;
 		this.pasajerosCompanyia = pasajerosCompanyia;
 		this.vuelosEntrantesConexion = vuelosEntrantesConexion;
 		this.vuelosSalientesAEspanya = vuelosSalientesAEspanya;
@@ -63,8 +53,13 @@ public class Vuelos extends Problema{
 		this.listaConexionesPorAeropuertoEspanyol = listaConexionesPorAeropuertoEspanyol;
 		this.listaConexionesSalidas = listaConexionesSalidas;
 		
-		this.listaConexiones = new ArrayList<>(conexiones.keySet());
+		//this.listaConexiones = new ArrayList<>(conexiones.keySet()); //Sustituir por conexiones2
 		
+		this.conexiones = conexiones;
+		this.riesgos = riesgos;
+		this.dineroMedio = dineroMedio;
+		this.pasajeros = pasajeros;
+		this.listaConexiones = conexiones;
 	}
 	
 	/*Calcular valores de funcion objetivo. 6 objetivos en total
@@ -86,17 +81,6 @@ public class Vuelos extends Problema{
 		
 		objetivos.add(0, riesgoPasajerosIngresos.get(0));
 		objetivos.add(1, Utils.mediaDeValoresObjetivo(riesgoPasajerosIngresos.subList(1, 5)));
-		/*objetivos.add(1, riesgoPasajerosIngresos.get(1));
-		objetivos.add(2, riesgoPasajerosIngresos.get(2));
-		objetivos.add(3, riesgoPasajerosIngresos.get(3));
-		objetivos.add(4, riesgoPasajerosIngresos.get(4));*/
-		
-		
-		/*objetivos.add(0, calcularRiesgo(solution));
-		objetivos.add(1, calcularPasajerosPerdidos(solution));
-		objetivos.add(2, calcularPerdidaDeIngresos(solution));
-		objetivos.add(3, calculoHomogeneidadPasajerosAerolineas(solution));
-		objetivos.add(4, calculoHomogeneidadIngresosTurismoAeropuertos(solution));*/
 		objetivos.add(2, calculoConectividad(solution));
 		
 		solution.setObjetivos(objetivos);
@@ -149,37 +133,36 @@ public class Vuelos extends Problema{
         double porcentajePerdidoDesviacionMedia = 0.0;
         
         
-        List<List<String>> llaves = new ArrayList<>(this.riesgos.keySet());
         for (int j = 0; j < this.companyias.size(); j++) {
         	for (int i = 0; i < this.listaConexiones.size(); i++) {
         		if(!calculado) {
         			//Riesgo, Pasajeros e Ingresos -----------------------
-        			Riesgosumatorio += this.riesgos.get(listaConexiones.get(i)) * 
+        			Riesgosumatorio += this.riesgos.get(i) * //Sustituir por i
             			solucion.getVariables().get(i);
-        			RiesgosumatorioTotal += this.riesgos.get(llaves.get(i));
+        			RiesgosumatorioTotal += this.riesgos.get(i);
             	
-        			Pasajerossumatorio += this.pasajeros.get(llaves.get(i)) * 
+        			Pasajerossumatorio += this.pasajeros.get(i) * 	//Sustituir por i
                 		solucion.getVariables().get(i);
-        			Pasajerostotal += this.pasajeros.get(llaves.get(i));
+        			Pasajerostotal += this.pasajeros.get(i);
             	
-        			Ingresossuma += this.dineroMedio.get(llaves.get(i)) * 
+        			Ingresossuma += this.dineroMedio.get(i) * 	//Sustituir por i
             			solucion.getVariables().get(i);
-        			IngresostotalSuma += this.dineroMedio.get(llaves.get(i));
+        			IngresostotalSuma += this.dineroMedio.get(i);
         			//----------------------------------------------------
             	
         			//calculoHomogeneidadIngresosTurismoAeropuertos
         			if (numPasajerosAeropuerto.get(this.listaConexiones.get(i).get(1)) != null) {
         				numPasajerosAeropuerto.put(this.listaConexiones.get(i).get(1), numPasajerosAeropuerto.get(
-                    		this.listaConexiones.get(i).get(1)) + this.pasajeros.get(this.listaConexiones.get(i)));
+                    		this.listaConexiones.get(i).get(1)) + this.pasajeros.get(i)); //Sustituir por i
         			} else {
-        				numPasajerosAeropuerto.put(this.listaConexiones.get(i).get(1), this.pasajeros.get(this.listaConexiones.get(i)));
+        				numPasajerosAeropuerto.put(this.listaConexiones.get(i).get(1), this.pasajeros.get(i)); //Sustituir por i
         			}
-        			if (/*solucion.getVariables().get(i) == 1.0*/ solucion.getVariables().get(Utils.encontrarIndiceEnLista(this.listaConexiones, this.listaConexiones.get(i))) == 1.0) {
+        			if (solucion.getVariables().get(i) == 1.0) { //Descomentar la linea
         				if (numPasajerosAeropuertoConexiones.get(this.listaConexiones.get(i).get(1)) != null) {
         					numPasajerosAeropuertoConexiones.put(this.listaConexiones.get(i).get(1), numPasajerosAeropuertoConexiones.get(
-                        		this.listaConexiones.get(i).get(1)) + this.pasajeros.get(this.listaConexiones.get(i)));
+                        		this.listaConexiones.get(i).get(1)) + this.pasajeros.get(i)); //Sustituir por i
         				} else {
-                        numPasajerosAeropuertoConexiones.put(this.listaConexiones.get(i).get(1), this.pasajeros.get(this.listaConexiones.get(i)));
+                        numPasajerosAeropuertoConexiones.put(this.listaConexiones.get(i).get(1), this.pasajeros.get(i)); //Sustituir por i
         				}
         			}
         			//----------------------------------------------
@@ -189,7 +172,7 @@ public class Vuelos extends Problema{
                 		this.companyias.get(j))) != null) {
                     totalPasajerosCompanyias[j] = totalPasajerosCompanyias[j] + this.pasajerosCompanyia.get(
                             List.of(this.listaConexiones.get(i).get(0), this.listaConexiones.get(i).get(1), this.companyias.get(j)));
-                    if (/*solucion.getVariables().get(i) == 1.0*/ solucion.getVariables().get(Utils.encontrarIndiceEnLista(this.listaConexiones, this.listaConexiones.get(i))) == 1.0) {
+                    if (solucion.getVariables().get(i) == 1.0) { //Descomentar la linea
                         totalPasajerosConexiones[j] = totalPasajerosConexiones[j] + this.pasajerosCompanyia.
                                 get(List.of(this.listaConexiones.get(i).get(0), this.listaConexiones.get(i).get(1),this.companyias.get(j)));
                     }
@@ -250,7 +233,7 @@ public class Vuelos extends Problema{
 	
 	
 	//Función objetivo Riesgo
-	private Double calcularRiesgo(Individuo solucion) {
+	/*private Double calcularRiesgo(Individuo solucion) {
 		Double sumatorio = 0.0;
         Double sumatorioTotal = 0.0;
         List<List<String>> llaves = new ArrayList<>(this.riesgos.keySet());
@@ -261,10 +244,10 @@ public class Vuelos extends Problema{
             sumatorioTotal += this.riesgos.get(llaves.get(i));
         }
         return sumatorio / sumatorioTotal;
-	}
+	}*/
 	
 	//Función objetivo Pasajeros perdidos
-	private Double calcularPasajerosPerdidos(Individuo solucion) {
+	/*private Double calcularPasajerosPerdidos(Individuo solucion) {
 		Double sumatorio = 0.0;
         Double totalPasajeros = 0.0;
         List<List<String>> llaves = new ArrayList<>(this.pasajeros.keySet());
@@ -276,10 +259,10 @@ public class Vuelos extends Problema{
         }
         Double porcentaje = 1 - sumatorio / totalPasajeros;
         return porcentaje;
-	}
+	}*/
 	
 	//Función objetivo Perdida de ingresos
-	private Double calcularPerdidaDeIngresos(Individuo solucion) {
+	/*private Double calcularPerdidaDeIngresos(Individuo solucion) {
 		Double suma = 0.0;
         Double totalSuma = 0.0;
         List<List<String>> llaves = new ArrayList<>(this.conexiones.keySet());
@@ -294,9 +277,9 @@ public class Vuelos extends Problema{
             aux = suma / totalSuma;
         }
         return 1 - aux;
-	}
+	}*/
 	
-	private Double calculoHomogeneidadPasajerosAerolineas(Individuo solucion) {
+	/*private Double calculoHomogeneidadPasajerosAerolineas(Individuo solucion) {
         int i;
         int[] totalPasajerosCompanyias = new int[this.companyias.size()];
         int[] totalPasajerosConexiones = new int[this.companyias.size()];    
@@ -309,7 +292,7 @@ public class Vuelos extends Problema{
                 		this.companyias.get(j))) != null) {
                     totalPasajerosCompanyias[j] = totalPasajerosCompanyias[j] + this.pasajerosCompanyia.get(
                             List.of(this.listaConexiones.get(i).get(0), this.listaConexiones.get(i).get(1), this.companyias.get(j)));
-                    if (/*solucion.getVariables().get(i) == 1.0*/ solucion.getVariables().get(Utils.encontrarIndiceEnLista(this.listaConexiones, this.listaConexiones.get(i))) == 1.0) {
+                    if (solucion.getVariables().get(i) == 1.0 solucion.getVariables().get(Utils.encontrarIndiceEnLista(this.listaConexiones, this.listaConexiones.get(i))) == 1.0) {
                         totalPasajerosConexiones[j] = totalPasajerosConexiones[j] + this.pasajerosCompanyia.
                                 get(List.of(this.listaConexiones.get(i).get(0), this.listaConexiones.get(i).get(1),this.companyias.get(j)));
                     }
@@ -333,9 +316,9 @@ public class Vuelos extends Problema{
         //System.out.println(porcentajePerdidoDesviacionMedia);
         return porcentajePerdidoDesviacionMedia;
 
-    }
+    }*/
 	
-	private Double calculoHomogeneidadIngresosTurismoAeropuertos(Individuo solucion) {
+	/*private Double calculoHomogeneidadIngresosTurismoAeropuertos(Individuo solucion) {
         java.util.Map<String, Integer> numPasajerosAeropuerto = new java.util.HashMap<>();
         java.util.Map<String, Integer> numPasajerosAeropuertoConexiones = new java.util.HashMap<>();
         List<Double> porcentajePerdido = new ArrayList<>();
@@ -349,7 +332,7 @@ public class Vuelos extends Problema{
             } else {
                 numPasajerosAeropuerto.put(this.listaConexiones.get(i).get(1), this.pasajeros.get(this.listaConexiones.get(i)));
             }
-            if (/*solucion.getVariables().get(i) == 1.0*/ solucion.getVariables().get(Utils.encontrarIndiceEnLista(this.listaConexiones, this.listaConexiones.get(i))) == 1.0) {
+            if (solucion.getVariables().get(i) == 1.0 solucion.getVariables().get(Utils.encontrarIndiceEnLista(this.listaConexiones, this.listaConexiones.get(i))) == 1.0) {
                 if (numPasajerosAeropuertoConexiones.get(this.listaConexiones.get(i).get(1)) != null) {
                     numPasajerosAeropuertoConexiones.put(this.listaConexiones.get(i).get(1), numPasajerosAeropuertoConexiones.get(
                     		this.listaConexiones.get(i).get(1)) + this.pasajeros.get(this.listaConexiones.get(i)));
@@ -379,7 +362,7 @@ public class Vuelos extends Problema{
         //porcentajePerdidoDesviacionMedia = Math.sqrt(porcentajePerdidoDesviacionMedia);
         //System.out.println(porcentajePerdidoDesviacionMedia);
         return porcentajePerdidoDesviacionMedia;
-    }
+    }*/
 	
 	private Double calculoConectividad(Individuo solution) { // Perfecto, se compara con objetivo conectividad
         Double suma = 0.0;
@@ -425,11 +408,11 @@ public class Vuelos extends Problema{
 		AeropuertosEspanyoles = aeropuertosEspanyoles;
 	}
 
-	public Map<List<String>, Integer> getConexiones() {
+	public List<List<String>> getConexiones() {
 		return conexiones;
 	}
 
-	public void setConexiones(Map<List<String>, Integer> conexiones) {
+	public void setConexiones(List<List<String>> conexiones) {
 		this.conexiones = conexiones;
 	}
 

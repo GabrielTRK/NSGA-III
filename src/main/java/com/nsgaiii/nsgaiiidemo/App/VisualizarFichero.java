@@ -15,7 +15,6 @@ import org.jzy3d.maths.Coord3d;
 import org.jzy3d.plot3d.primitives.Scatter;
 import org.jzy3d.plot3d.rendering.canvas.Quality;
 
-import com.jogamp.common.util.Bitfield.Util;
 import com.jogamp.opengl.GLCapabilities;
 import com.jogamp.opengl.GLProfile;
 import com.nsgaiii.nsgaiiidemo.App.Modelo.Individuo;

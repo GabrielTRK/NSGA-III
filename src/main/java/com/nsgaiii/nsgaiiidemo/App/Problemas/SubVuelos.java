@@ -29,9 +29,8 @@ public class SubVuelos extends Vuelos{
 			Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol,
 			Map<String, Set<String>> listaConexionesSalidas, List<Integer> indPorAeropuerto, 
 			Map<String, List<List<String>>> conexionesPorAeropuerto) {
-		super(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, AeropuertosEspanyoles, AeropuertosOrigen, companyias, dineroMedio,
-				pasajeros, pasajerosCompanyia, vuelosEntrantesConexion, vuelosSalientesAEspanya, vuelosSalientes,
-				conectividadesAeropuertosOrigen, listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas);
+		super(AeropuertosEspanyoles.size(), AeropuertosEspanyoles, AeropuertosOrigen, companyias, pasajerosCompanyia, vuelosEntrantesConexion, vuelosSalientesAEspanya, vuelosSalientes,
+				conectividadesAeropuertosOrigen, listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, null, null, null, null);//TODO: Cambiar
 		this.indPorAeropuerto = indPorAeropuerto;
 		this.conexionesPorAeropuerto = conexionesPorAeropuerto;
 		super.setNombre(Constantes.nombreProblemaSubVuelos);
@@ -74,8 +73,8 @@ public class SubVuelos extends Vuelos{
 	}
 	
 	public Individuo traducirIndividuo(Individuo solucion) throws FileNotFoundException, IOException, CsvException {
-		List<Double> valores = new ArrayList<>(super.getConexiones().keySet().size());
-		for(int i = 0; i < super.getConexiones().keySet().size(); i++) {
+		List<Double> valores = new ArrayList<>(super.getConexiones().size());
+		for(int i = 0; i < super.getConexiones().size(); i++) {
 			valores.add(0.0);
 		}
 		
@@ -91,7 +90,7 @@ public class SubVuelos extends Vuelos{
 				valores.set(posicionBitUtils, valoresAeropuerto.get(j));
 			}
 		}
-		Individuo indTraducido = new Individuo(super.getConexiones().keySet().size(), getNumObjetivos());
+		Individuo indTraducido = new Individuo(super.getConexiones().size(), getNumObjetivos());
 		indTraducido.setVariables(valores);
 		
 		return indTraducido;
