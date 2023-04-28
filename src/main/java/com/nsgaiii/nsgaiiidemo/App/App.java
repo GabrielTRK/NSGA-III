@@ -53,14 +53,14 @@ public class App extends AWTAbstractAnalysis
     public static void main( String[] args ) throws Exception
     {
     	
-    	Map<List<String>, Integer> conexiones = new HashMap<>();
-        Map<List<String>, Double> riesgos = new HashMap<>();
-        Map<List<String>, Integer> vuelos = new HashMap<>();
+    	List<List<String>> conexiones = new ArrayList<>();
+        List<Double> riesgos = new ArrayList<>();
+        List<Integer> vuelos = new ArrayList<>();
+        List<Double> dineroMedio = new ArrayList<>();
+        List<Integer> pasajeros = new ArrayList<>();
         List<String> AeropuertosEspanyoles = new ArrayList<>();
         List<String> AeropuertosOrigen = new ArrayList<>();
         List<String> companyias = new ArrayList<>();
-        Map<List<String>, Double> dineroMedio = new HashMap<>();
-        Map<List<String>, Integer> pasajeros = new HashMap<>();
         Map<List<String>, Integer> pasajerosCompanyia = new HashMap<>();
         Map<List<String>, Integer> vuelosEntrantesConexion = new HashMap<>();
         Map<String, Integer> vuelosSalientesAEspanya = new HashMap<>();
@@ -72,12 +72,12 @@ public class App extends AWTAbstractAnalysis
         Map<String, List<List<String>>> conexionesPorAeropuerto = new HashMap<>();
         
         
-    	LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);
+        LecturaDeDatos.leerDatosNuevo(conexiones, riesgos, vuelos);
+    	LecturaDeDatos.leerDatosDineroMedioNuevo(conexiones, dineroMedio);
+    	LecturaDeDatos.leerDatosPasajerosNuevo(conexiones, pasajeros);
     	LecturaDeDatos.leerDatosAeropuertosEspanyoles(AeropuertosEspanyoles);
     	LecturaDeDatos.leerDatosAeropuertosOrigen(AeropuertosOrigen);
     	LecturaDeDatos.leerDatosCompanyias(companyias);
-    	LecturaDeDatos.leerDatosDineroMedio(dineroMedio);
-    	LecturaDeDatos.leerDatosPasajeros(pasajeros);
     	LecturaDeDatos.leerDatosPasajerosCompanyia(pasajerosCompanyia);
     	LecturaDeDatos.leerDatosConectividad(vuelosEntrantesConexion, vuelosSalientesAEspanya,
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);

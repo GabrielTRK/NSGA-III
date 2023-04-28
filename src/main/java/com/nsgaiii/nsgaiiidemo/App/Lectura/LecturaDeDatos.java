@@ -303,10 +303,10 @@ public class LecturaDeDatos {
 	
 	public static void leerDatosConectividad(Map<List<String>, Integer> vuelosEntrantesConexion, 
 			Map<String, Integer> vuelosSalientesAEspanya, Map<String, Integer> vuelosSalientes,
-			Map<String, Double> conectividadesAeropuertosOrigen, Map<List<String>, Integer> conexiones, 
+			Map<String, Double> conectividadesAeropuertosOrigen, List<List<String>> conexiones, 
 			List<String> AeropuertosOrigen) {
 		
-		for (List<String> conexion : conexiones.keySet()) {
+		for (List<String> conexion : conexiones) {
             vuelosEntrantesConexion.put(conexion, 0);
         }
         for (String aeropuerto : AeropuertosOrigen) {
@@ -346,13 +346,13 @@ public class LecturaDeDatos {
 	}
 	
 	public static void leerDatosListaConexiones(Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol, 
-			List<String> AeropuertosEspanyoles, Map<List<String>, Integer> conexiones) {
+			List<String> AeropuertosEspanyoles, List<List<String>> conexiones) {
 		for (String aeropuerto : AeropuertosEspanyoles) {
             Set<String> aux = Collections.emptySet();
             listaConexionesPorAeropuertoEspanyol.put(aeropuerto, aux);
         }
         for (String aeropuerto : AeropuertosEspanyoles) {
-            for (List<String> conexion : conexiones.keySet()) {
+            for (List<String> conexion : conexiones) {
                 if (conexion.get(1).equals(aeropuerto)) {
                     Set<String> aux = new HashSet<>();
                     if (listaConexionesPorAeropuertoEspanyol.get(aeropuerto).size() != 0) {
@@ -366,13 +366,13 @@ public class LecturaDeDatos {
 	}
 	
 	public static void leerDatosListaConexionesSalidas(Map<String, Set<String>> listaConexionesSalidas, 
-			List<String> AeropuertosOrigen, Map<List<String>, Integer> conexiones) {
+			List<String> AeropuertosOrigen, List<List<String>> conexiones) {
 		for (String aeropuerto : AeropuertosOrigen) {
             Set<String> aux = Collections.emptySet();
             listaConexionesSalidas.put(aeropuerto, aux);
         }
         for (String aeropuerto : AeropuertosOrigen) {
-            for (List<String> conexion : conexiones.keySet()) {
+            for (List<String> conexion : conexiones) {
                 if (conexion.get(0).equals(aeropuerto)) {
                     Set<String> aux = new HashSet<>();
                     if (listaConexionesSalidas.get(aeropuerto).size() != 0) {

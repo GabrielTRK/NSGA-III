@@ -29,14 +29,9 @@ public class EvaluarIndividuo {
 
 	public static void main(String[] args) throws Exception, IOException, CsvException {
 		
-		Map<List<String>, Integer> conexiones = new HashMap<>();
-        Map<List<String>, Double> riesgos = new HashMap<>();
-        Map<List<String>, Integer> vuelos = new HashMap<>();
         List<String> AeropuertosEspanyoles = new ArrayList<>();
         List<String> AeropuertosOrigen = new ArrayList<>();
         List<String> companyias = new ArrayList<>();
-        Map<List<String>, Double> dineroMedio = new HashMap<>();
-        Map<List<String>, Integer> pasajeros = new HashMap<>();
         Map<List<String>, Integer> pasajerosCompanyia = new HashMap<>();
         Map<List<String>, Integer> vuelosEntrantesConexion = new HashMap<>();
         Map<String, Integer> vuelosSalientesAEspanya = new HashMap<>();
@@ -48,18 +43,18 @@ public class EvaluarIndividuo {
         Map<String, List<List<String>>> conexionesPorAeropuerto = new HashMap<>();
         List<List<String>> conexionesAMantener = new ArrayList<>();
         
-        List<List<String>> conexiones2 = new ArrayList<>();
-        List<Double> riesgos2 = new ArrayList<>();
-        List<Integer> vuelos2 = new ArrayList<>();
-        List<Double> dineroMedio2 = new ArrayList<>();
-        List<Integer> pasajeros2 = new ArrayList<>();
+        List<List<String>> conexiones = new ArrayList<>();
+        List<Double> riesgos = new ArrayList<>();
+        List<Integer> vuelos = new ArrayList<>();
+        List<Double> dineroMedio = new ArrayList<>();
+        List<Integer> pasajeros = new ArrayList<>();
     	
-    	LecturaDeDatos.leerDatos(conexiones, riesgos, vuelos);
+        LecturaDeDatos.leerDatosNuevo(conexiones, riesgos, vuelos);
+    	LecturaDeDatos.leerDatosDineroMedioNuevo(conexiones, dineroMedio);
+    	LecturaDeDatos.leerDatosPasajerosNuevo(conexiones, pasajeros);
     	LecturaDeDatos.leerDatosAeropuertosEspanyoles(AeropuertosEspanyoles);
     	LecturaDeDatos.leerDatosAeropuertosOrigen(AeropuertosOrigen);
     	LecturaDeDatos.leerDatosCompanyias(companyias);
-    	LecturaDeDatos.leerDatosDineroMedio(dineroMedio);
-    	LecturaDeDatos.leerDatosPasajeros(pasajeros);
     	LecturaDeDatos.leerDatosPasajerosCompanyia(pasajerosCompanyia);
     	LecturaDeDatos.leerDatosConectividad(vuelosEntrantesConexion, vuelosSalientesAEspanya,
     			vuelosSalientes, conectividadesAeropuertosOrigen, conexiones, AeropuertosOrigen);
@@ -68,23 +63,18 @@ public class EvaluarIndividuo {
     	LecturaDeDatos.leerFicherosAeropuertos(AeropuertosEspanyoles, indPorAeropuerto, conexionesPorAeropuerto);
     	LecturaDeDatos.leerConexionesAMantener(conexionesAMantener);
     	
-    	LecturaDeDatos.leerDatosNuevo(conexiones2, riesgos2, vuelos2);
-    	LecturaDeDatos.leerDatosDineroMedioNuevo(conexiones2, dineroMedio2);
-    	LecturaDeDatos.leerDatosPasajerosNuevo(conexiones2, pasajeros2);
-    	
     	Vuelos problema = new Vuelos(conexiones.size(), AeropuertosEspanyoles, AeropuertosOrigen,
     			companyias, pasajerosCompanyia, vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, 
-    			conexiones2, riesgos2, dineroMedio2, pasajeros2);
+    			conexiones, riesgos, dineroMedio, pasajeros);
     	
-    	/*SubVuelos subproblema = new SubVuelos(AeropuertosEspanyoles.size(), riesgos, conexiones, vuelos, 
-    			AeropuertosEspanyoles, AeropuertosOrigen,
-    			companyias, dineroMedio, pasajeros, pasajerosCompanyia,
+    	SubVuelos subproblema = new SubVuelos(AeropuertosEspanyoles.size(), AeropuertosEspanyoles, AeropuertosOrigen,
+    			companyias, pasajerosCompanyia,
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, indPorAeropuerto, 
-    			conexionesPorAeropuerto);*/
+    			conexionesPorAeropuerto, conexiones, riesgos, dineroMedio, pasajeros);
     	
     	Problema problemaext = new VuelosExt(conexiones.size(), 
     			AeropuertosEspanyoles, AeropuertosOrigen,
@@ -92,7 +82,7 @@ public class EvaluarIndividuo {
     			vuelosEntrantesConexion, vuelosSalientesAEspanya, 
     			vuelosSalientes, conectividadesAeropuertosOrigen,
     			listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, conexionesAMantener, 
-    			conexiones2, riesgos2, vuelos2, dineroMedio2, pasajeros2);
+    			conexiones, riesgos, vuelos, dineroMedio, pasajeros);
     	//System.out.println(riesgos.size());
     	//System.out.println(conexiones.keySet());
     	//System.out.println(AeropuertosEspanyoles);
@@ -103,20 +93,22 @@ public class EvaluarIndividuo {
     	(new ReferencePoint()).generateReferencePoints(referencePoints, 3, 8);
     	System.out.println("Num puntos: " + referencePoints.size());*/
     	
-    	System.out.println(conexiones2);
-    	System.out.println(conexiones2.size());
+    	System.out.println(conexiones);
+    	System.out.println(conexiones.size());
     	System.out.println();
     	
     	//System.out.println(indPorAeropuerto);
     	Individuo sol = new Individuo(problemaext.getNumVariables(), problemaext.getNumObjetivos());
     	//System.out.println("Sol: " + sol);
     	sol = problemaext.inicializarValores(sol);
-    	//sol = problemaext.inicializarValores(sol);
+    	//sol = subproblema.inicializarValores(sol);
     	//sol = problema.inicializarValores(sol);
     	problemaext.evaluate(sol);
+    	System.out.println(sol.getVariables());
     	System.out.println(sol.getObjetivos());
-    	System.out.println(sol.getVariables().size());
+    	//System.out.println(sol.getVariables().size());
     	//System.out.println(conexiones.size());
+    	
     	
     	//ArrayList<Double> variables = subproblema.traducirIndividuo(sol).getVariables();
     	//System.out.println(variables);

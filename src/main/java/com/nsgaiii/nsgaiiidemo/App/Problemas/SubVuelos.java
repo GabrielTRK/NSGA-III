@@ -20,17 +20,16 @@ public class SubVuelos extends Vuelos{
 	Map<String, List<List<String>>> conexionesPorAeropuerto;
 	
 
-	public SubVuelos(int numVariables, Map<List<String>, Double> riesgos, Map<List<String>, Integer> conexiones,
-			Map<List<String>, Integer> vuelos, List<String> AeropuertosEspanyoles, List<String> AeropuertosOrigen,
-			List<String> companyias, Map<List<String>, Double> dineroMedio, Map<List<String>, Integer> pasajeros,
-			Map<List<String>, Integer> pasajerosCompanyia, Map<List<String>, Integer> vuelosEntrantesConexion,
+	public SubVuelos(int numVariables, List<String> AeropuertosEspanyoles, List<String> AeropuertosOrigen,
+			List<String> companyias, Map<List<String>, Integer> pasajerosCompanyia, Map<List<String>, Integer> vuelosEntrantesConexion,
 			Map<String, Integer> vuelosSalientesAEspanya, Map<String, Integer> vuelosSalientes,
 			Map<String, Double> conectividadesAeropuertosOrigen,
 			Map<String, Set<String>> listaConexionesPorAeropuertoEspanyol,
 			Map<String, Set<String>> listaConexionesSalidas, List<Integer> indPorAeropuerto, 
-			Map<String, List<List<String>>> conexionesPorAeropuerto) {
+			Map<String, List<List<String>>> conexionesPorAeropuerto, 
+			List<List<String>> conexiones, List<Double> riesgos, List<Double> dineroMedio, List<Integer> pasajeros) {
 		super(AeropuertosEspanyoles.size(), AeropuertosEspanyoles, AeropuertosOrigen, companyias, pasajerosCompanyia, vuelosEntrantesConexion, vuelosSalientesAEspanya, vuelosSalientes,
-				conectividadesAeropuertosOrigen, listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, null, null, null, null);//TODO: Cambiar
+				conectividadesAeropuertosOrigen, listaConexionesPorAeropuertoEspanyol, listaConexionesSalidas, conexiones, riesgos, dineroMedio, pasajeros);
 		this.indPorAeropuerto = indPorAeropuerto;
 		this.conexionesPorAeropuerto = conexionesPorAeropuerto;
 		super.setNombre(Constantes.nombreProblemaSubVuelos);
@@ -74,21 +73,22 @@ public class SubVuelos extends Vuelos{
 	
 	public Individuo traducirIndividuo(Individuo solucion) throws FileNotFoundException, IOException, CsvException {
 		List<Double> valores = new ArrayList<>(super.getConexiones().size());
-		for(int i = 0; i < super.getConexiones().size(); i++) {
+		/*for(int i = 0; i < super.getConexiones().size(); i++) {
 			valores.add(0.0);
-		}
+		}*/
 		
 		
 		for (int i = 0; i < super.getNumVariables(); i++) {
 			//Encontrar en el fichero correspondiente los bits
 			List<Double> valoresAeropuerto = this.encontrarBitsEnFichero(solucion.getVariables().get(i), i);
 			//Buscar la conexion para indicar el 0 o 1
-			for (int j = 0; j < valoresAeropuerto.size(); j++) {
+			valores.addAll(valoresAeropuerto);
+			/*for (int j = 0; j < valoresAeropuerto.size(); j++) {
 				List<String> conexion = new ArrayList<>();
 				conexion = this.conexionesPorAeropuerto.get(getAeropuertosEspanyoles().get(i)).get(j);
 				int posicionBitUtils = Utils.encontrarIndiceEnLista(super.getListaConexiones(), conexion);
 				valores.set(posicionBitUtils, valoresAeropuerto.get(j));
-			}
+			}*/
 		}
 		Individuo indTraducido = new Individuo(super.getConexiones().size(), getNumObjetivos());
 		indTraducido.setVariables(valores);
