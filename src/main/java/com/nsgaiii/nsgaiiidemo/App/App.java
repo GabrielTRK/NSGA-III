@@ -149,17 +149,6 @@ public class App extends AWTAbstractAnalysis
                     + elapsedTime);
         }
         
-        /*List<Individuo> frenteD = Utils.leerCSV("solucionDavid.csv");
-        frenteDePareto = Utils.juntarListass(frenteD, frenteDePareto);
-        ArrayList<Individuo> frenteDeParetoAL = Utils.pasarAArrayList(frenteDePareto);
-        OperadorReemplazo reemplazo = new OperadorReemplazo(3, null);
-        
-        List<Individuo> frentes = reemplazo.obtenerFrentes(frenteDeParetoAL, problema).get(0);
-        
-        	for(Individuo i : frenteD) {
-        		frentes.remove(i);
-        	}*/
-        
         //Guarda resultados en un csv y crea un diagrama de dispersión
         //Utils.modificarCSV("problemaSubVuelosFrente", frentes);
         //frenteDePareto = Utils.leerCSV("problemaSubVuelosFrente.csv");
