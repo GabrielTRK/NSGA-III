@@ -87,6 +87,21 @@ public class Vuelos extends Problema{
 		return solution;
 	}
 	
+public List<Double> evaluate2(Individuo solution) throws FileNotFoundException, IOException, CsvException {
+		
+		
+		List<Double> objetivos = new ArrayList<>(super.getNumObjetivos());
+		
+		List<Double> riesgoPasajerosIngresos = calcularRiesgoPasajerosIngresosHPasajerosHIngresos(solution);
+		
+		objetivos.add(0, riesgoPasajerosIngresos.get(0));
+		objetivos.addAll((riesgoPasajerosIngresos.subList(1, 5)));
+		objetivos.add(calculoConectividad(solution));
+		
+		solution.setObjetivos(objetivos);
+		return objetivos;
+	}
+	
 	//Inicializar de forma aleatoria los valores de las variables según los límites
 	@Override
 	public Individuo inicializarValores(Individuo ind) {

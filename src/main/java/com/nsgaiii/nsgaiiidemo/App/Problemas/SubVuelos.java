@@ -52,6 +52,15 @@ public class SubVuelos extends Vuelos{
 		return solution;
 	}
 	
+	@Override
+	public List<Double> evaluate2(Individuo solution) throws FileNotFoundException, IOException, CsvException {
+		//1. Traducir individuo con numeros reales a bits
+		Individuo indTraducido = this.traducirIndividuo(solution);
+		//2. Calcular obj
+		
+		return super.evaluate2(indTraducido);
+	}
+	
 	//Inicializar de forma aleatoria los valores de las variables según los límites
 	@Override
 	public Individuo inicializarValores(Individuo ind) {
