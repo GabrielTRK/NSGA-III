@@ -1,4 +1,4 @@
-This is the Java code of the NSGA-III implementation used for A Multi-Objective Approach to Deal with International Airspace Closure/Opening in Spain in an Early-Stage Pandemic Situation
+This is the Java code of the NSGA-III implementation proposed in "A Multi-Objective Approach to Deal with International Airspace Closure/Opening in Spain in an Early-Stage Pandemic Situation"
 (See https://ieeexplore.ieee.org/document/10284292 for more information)
 
 The air traffic system has been identified as one of the main channels of the global spread of COVID-19 during the early stages of the pandemic, and entry control is crucial for mitigating its transmission and reducing the impact on the population. 
